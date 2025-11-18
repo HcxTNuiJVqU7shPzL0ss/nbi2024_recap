@@ -63,12 +63,19 @@ print('\nYour input was: ' + first_string)
 
 if not first_string == 'Hello world':
     # Print expected
-    print('\nExpected was: Hello world\n')
+    print('Expected was: Hello world')
+    #press_continue()
+
+if '\"' in first_string:
+    print('You should not use " in your input.\n')
+    press_continue()
+else:
+    print('Please mind the Capitalization.\n')
     press_continue()
 
 
 # Print a welcome message
-print('\nThis program was made by', name, '\n')
+print('This program was made by', name, '\n')
 
 
 press_exit()
