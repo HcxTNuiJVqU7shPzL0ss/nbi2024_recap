@@ -19,14 +19,7 @@
 #####################################################################
 
 
-def press_exit():
-    """Use to prompt user to hit enter to continue."""
-    input('Press Return (Enter) to exit.\n')
-
-# Used to prompt user to hit enter to continue
-def press_continue():
-    """Use to hit enter to continue."""
-    input('Press Return (Enter) to continue.\n')
+from my_funct_dir.my_base_functions import *
 
 
 # Prompt user to input "Hello world"

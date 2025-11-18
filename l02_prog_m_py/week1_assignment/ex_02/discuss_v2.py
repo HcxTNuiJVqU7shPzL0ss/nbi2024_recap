@@ -19,9 +19,7 @@
 #####################################################################
 
 
-def press_exit():
-    """Use to prompt user to hit enter to exit."""
-    input('Press Return (Enter) to exit.\n')
+from my_funct_dir.my_base_functions import *
 
 
 def calc_funds_left(ticket_price, available_funds):

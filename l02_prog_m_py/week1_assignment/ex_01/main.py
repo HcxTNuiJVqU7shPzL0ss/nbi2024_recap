@@ -19,12 +19,10 @@
 #####################################################################
 
 
+from my_funct_dir.my_base_functions import *
+
+
 MY_NAME = 'Jan (gnoff)'
-
-
-def press_exit():
-    """Use to prompt user to hit enter to continue."""
-    input('Press Return (Enter) to exit.\n')
 
 
 # Print "Hello world"
