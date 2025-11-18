@@ -20,7 +20,7 @@
 
 
 def press_exit():
-    """Use to prompt user to hit enter to continue."""
+    """Use to prompt user to hit enter to exit."""
     input('Press Return (Enter) to exit.\n')
 
 
@@ -33,7 +33,7 @@ def calc_funds_left(ticket_price, available_funds):
 
 
 def calc_half_left(funds_left):
-    """Calculate half of what is left"""
+    """Calculate half of what is left."""
     half_left = funds_left / 2
     return half_left
 
