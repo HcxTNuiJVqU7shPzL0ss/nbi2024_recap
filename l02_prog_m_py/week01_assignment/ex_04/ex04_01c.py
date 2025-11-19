@@ -1,4 +1,4 @@
-"""Module for ex04, part 1b."""
+"""Module for ex04, part 1c."""
 
 
 #####################################################################
@@ -24,7 +24,23 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_int)
 
 
-print('\nExercise 4, part 1b.\n')
+def conv_sec(nr_of_seconds):
+    """Convert seconds.
+
+    From seconds into whole hours and minutes.
+    """
+    nr_of_hours = nr_of_seconds // 3600 # How many hours
+    nr_of_seconds %= 3600 # Remaining seconds
+    nr_of_minutes = nr_of_seconds // 60 # How many minutes
+    nr_of_seconds %= 60 # Remaining seconds
+
+    # pylint: disable=consider-using-f-string
+    return "%d:%02d:%02d" % (nr_of_hours, nr_of_minutes,
+                             nr_of_seconds)
+    # pylint: enable=consider-using-f-string
+
+
+print('\nExercise 4, part 1c.\n')
 # pylint: disable=duplicate-code
 press_continue()
 
@@ -39,7 +55,20 @@ speed_mps = (speed_kmh * 1000) / 3600
 
 nr_of_sec = (DISTANCE * 1000) / speed_mps
 
-nr_of_min = int(nr_of_sec / 60)
+result = conv_sec(nr_of_sec)
 
-print('\nIt will take you ~', nr_of_min, 'minutes to drive.')
+split_result = result.split(':')
+
+formatted = ''
+add_this = ''
+for i, split_result in enumerate(split_result):
+    if i == 0:
+        add_this = ' h, '
+    elif i == 1:
+        add_this = ' min, '
+    else:
+        add_this = ' sec'
+    formatted = formatted + split_result + add_this
+
+print('\nIt will take you:', formatted, 'to drive.')
 press_exit()
