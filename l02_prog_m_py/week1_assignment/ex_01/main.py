@@ -19,7 +19,7 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import *
+from my_funct_dir.my_base_functions import press_exit
 
 
 MY_NAME = 'Jan (gnoff)'

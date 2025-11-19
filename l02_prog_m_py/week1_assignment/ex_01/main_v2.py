@@ -19,13 +19,14 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import *
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit)
 
 
 # Prompt user to input "Hello world"
 while True:
     first_string = input('\nPlease type "Hello world": ')
-    clean_string = first_string.strip("\"")
+    clean_string = first_string.replace('\"', '')
     try:
         if clean_string.lower() == 'hello world':
             break
@@ -51,20 +52,21 @@ while True:
         continue
 
 
-# Print user input
-print('\nYour input was: ' + first_string)
-
 if not first_string == 'Hello world':
+    # Print user input
+    print('\nYour input was: ' + first_string)
     # Print expected
     print('Expected was: Hello world')
     #press_continue()
-
-if '\"' in first_string:
-    print('You should not use " in your input.\n')
-    press_continue()
+    if '\"' in first_string:
+        print('You should not use " in your input.\n')
+        press_continue()
+    else:
+        print('Please mind the Capitalization.\n')
+        press_continue()
 else:
-    print('Please mind the Capitalization.\n')
-    press_continue()
+    # If all correct, print what was expected
+    print('\nHello world')
 
 
 # Print a welcome message

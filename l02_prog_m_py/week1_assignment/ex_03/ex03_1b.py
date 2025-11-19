@@ -19,10 +19,13 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import *
+from my_funct_dir.my_base_functions import (press_goback,
+                                            press_continue,
+                                            press_exit)
 
 
 def int_input(in_string):
+    """Use to enter an integer."""
     while True:
         s_input = input('\n' + in_string)
         try:
@@ -38,12 +41,12 @@ print('\nExercise 3, part 1b.\n')
 press_continue()
 
 # First integer
-in_string1 = 'Enter the first integer: '
-i_input1 = int_input(in_string1)
+IN_STRING1 = 'Enter the first integer: '
+i_input1 = int_input(IN_STRING1)
 
 # Second integer
-in_string2 = 'Enter the second integer: '
-i_input2 = int_input(in_string2)
+IN_STRING2 = 'Enter the second integer: '
+i_input2 = int_input(IN_STRING2)
 
 # Add the two integers
 result_i = i_input1 + i_input2

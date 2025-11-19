@@ -1,4 +1,4 @@
-"""Module for 'Discuss'."""
+"""Module for 2a."""
 
 
 #####################################################################
@@ -19,22 +19,19 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import press_exit
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit)
 
 
-TICKET_PRICE = 100 # Ticket price
-FUNDS = 200 # Available funds
+print('\nExercise 3, part 2a.\n')
+press_continue()
 
+ORIG_PRICE = 2000
+DISCOUNT = 50
 
-# Calculate how much you will have left
-MONEY_LEFT = FUNDS - TICKET_PRICE
+DISC_PRICE = ORIG_PRICE * (DISCOUNT / 100)
 
-# Calculate half of what is left
-HALF_LEFT = MONEY_LEFT / 2
-
-
-print('\nThere is', MONEY_LEFT, "SEK over.")
-print('Half of what is left over is:', HALF_LEFT, '\n')
-
-
+print('\nThe original price was:', ORIG_PRICE)
+print('The discount was:', str(DISCOUNT) + '%')
+print('Your discounted price is:', DISC_PRICE, '\n')
 press_exit()

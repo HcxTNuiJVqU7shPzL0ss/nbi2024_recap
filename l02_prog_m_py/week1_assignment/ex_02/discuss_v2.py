@@ -19,13 +19,14 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import *
+from my_funct_dir.my_base_functions import press_exit
 
 
 def calc_funds_left(ticket_price, available_funds):
     """Calculate funds vs ticket price.
 
-    Subtract ticket price from available funds."""
+    Subtract ticket price from available funds.
+    """
     funds_left = available_funds - ticket_price
     return funds_left
 
@@ -44,9 +45,9 @@ while True:
         i_ticket_price = int(s_ticket_price)
         if i_ticket_price > 0:
             break
-        else:
-            print('\nNot a positive integer!')
-            continue
+        #else:
+        print('\nNot a positive integer!')
+        continue
     except ValueError:
         print('\nNot valid integer!')
         continue
@@ -60,9 +61,9 @@ while True:
         i_av_funds = int(s_av_funds)
         if i_av_funds > 0:
             break
-        else:
-            print('\nNot a positive integer!')
-            continue
+        #else:
+            # print('\nNot a positive integer!')
+            # continue
     except ValueError:
         print('\nNot valid integer!')
         continue

@@ -19,7 +19,9 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import *
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_goback,
+                                            press_exit)
 
 
 print('\nExercise 3, part 1a.\n')
