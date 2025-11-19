@@ -62,3 +62,20 @@ def enter_int(input_string, low, high, any_range):
             print('\nPlease use an integer!')
             press_goback()
             continue
+
+
+# Use to get a string input
+def enter_string(input_string):
+    """Use to prompt user for an input string."""
+    while True:
+        user_string = input(input_string)
+        try:
+            if len(user_string) > 0:
+                return user_string
+            #else:
+            print('\nNot enough characters, try again!\n')
+            press_goback()
+        except ValueError:
+            print('\nPlease try again\n')
+            press_goback()
+            continue
