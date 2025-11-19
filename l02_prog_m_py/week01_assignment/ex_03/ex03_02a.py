@@ -29,7 +29,7 @@ press_continue()
 ORIG_PRICE = 2000
 DISCOUNT = 50
 
-DISC_PRICE = ORIG_PRICE * (DISCOUNT / 100)
+DISC_PRICE = ORIG_PRICE - (ORIG_PRICE * (DISCOUNT / 100))
 
 print('\nThe original price was:', ORIG_PRICE)
 print('The discount was:', str(DISCOUNT) + '%')
