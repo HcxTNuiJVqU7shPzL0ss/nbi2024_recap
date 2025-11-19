@@ -71,15 +71,16 @@ while True:
             print('\nWelcome member!\n')
             press_continue()
             break
-        elif check_member.lower() == 'n':
+        #elif check_member.lower() == 'n':
+        if check_member.lower() == 'n':
             is_member = False
             print('\nSadly, no discount for you!\n')
             press_continue()
             break
-        else:
-            print('\nPlease try again!\n')
-            press_goback()
-            continue
+        #else:
+        print('\nPlease try again!\n')
+        press_goback()
+        continue
     except ValueError:
         print('\nSomething has gone wrong!\n')
         press_goback()
