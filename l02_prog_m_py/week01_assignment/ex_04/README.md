@@ -33,3 +33,15 @@ The user need to enter the length of the two shorter
 sides.
 
 ---
+
+## 3a
+Write a program which display today's date.
+
+---
+
+## 3b
+(More difficult)\
+Change the program so it can inform you which 
+date it is in 7 days.
+
+---

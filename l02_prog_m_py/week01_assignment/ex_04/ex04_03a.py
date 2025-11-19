@@ -1,4 +1,4 @@
-"""Module for ex04, part 2."""
+"""Module for ex04, part 3a."""
 
 
 #####################################################################
@@ -19,32 +19,15 @@
 #####################################################################
 
 
+from datetime import date
+
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit,
-                                            enter_int)
+                                            press_exit)
 
 
-print('\nExercise 4, part 2.\n')
+print('\nExercise 4, part 3a.\n')
 press_continue()
 
+print('\nThe date today is:', date.today(), '\n')
 
-INTEXT_SIDE1 = 'Enter the length of side 1 of the triangle: '
-INTEXT_SIDE2 = 'Enter the length of side 2 of the triangle: '
-
-LOW = 1
-HIGH = 99
-USE_RANGE = True
-
-
-side1_i = enter_int(INTEXT_SIDE1, LOW, HIGH, USE_RANGE)
-
-side2_i = enter_int(INTEXT_SIDE2, LOW, HIGH, USE_RANGE)
-
-hypo_sq = (side1_i * side1_i) + (side2_i * side2_i)
-
-hypo = hypo_sq ** 0.5
-
-print('')
-print(f"The hypotenuse is: {hypo:.2f}")
-print('')
 press_exit()
