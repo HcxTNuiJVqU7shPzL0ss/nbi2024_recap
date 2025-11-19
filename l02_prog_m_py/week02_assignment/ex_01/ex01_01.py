@@ -93,7 +93,8 @@ while True:
 ### New code ###
 # Handle check that input can be converted
 while True:
-    price = input("Välkommen, köp något dyrt: ")
+    # price = input("Välkommen, köp något dyrt: ")
+    price = input("Welcome, buy something: ")
     try:
         price = float(price)
         break
@@ -123,13 +124,17 @@ while True:
 use_discount = False
 if is_member:
     if price >= LEVEL2:
-        print("\nGrattis! Du har avancerat till nivå 2 och får 25% "
-              "rabatt.")
+        # print("\nGrattis! Du har avancerat till nivå 2 och får 25% "
+        #       "rabatt.")
+        print("\nCongratulations! You have advanced to Level 2 and will "
+              "receive a 25% discount!.")
         discount = discount + 25
         use_discount = True
     elif price >= LEVEL1:
-        print("\nGrattis! Du har avancerat till nivå 1 och får 10% "
-              "rabatt.")
+        # print("\nGrattis! Du har avancerat till nivå 1 och får 10% "
+        #       "rabatt.")
+        print("\nCongratulations! You have advanced to Level 1 and will "
+              "receive a 10% discount!.")
         discount = discount + 10
         use_discount = True
     else:
@@ -140,9 +145,13 @@ else:
 final_price = price * (100 - discount) / 100
 
 if use_discount:
-    print("\nEfter rabatter blir priset.... " + str(final_price))
+    # print("\nEfter rabatter blir priset.... " + str(final_price))
+    print("\nAfter discount, the price will be: "
+          + str(final_price))
 else:
-    print("\nUtan rabatter blir priset.... " + str(final_price))
+    # print("\nUtan rabatter blir priset.... " + str(final_price))
+    print("\nWithout discount, the price will be: "
+          + str(final_price))
 ### End of new block ###
 
 
