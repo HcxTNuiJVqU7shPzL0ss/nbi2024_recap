@@ -29,8 +29,13 @@ print('\nWeek 02, Exercise 05, Calculator.\n')
 press_continue()
 
 
+# CONSTANT PEP8
+CRASH_INFO = '\nSomething crashed, check your code!'
+
+
 def ask_for_some_ints():
     """Use to request user to input integers."""
+    # Version 1 (ask for "three" integers).
     loop_count = 3
     loop_nos = []
     base_string = 'Please input integer number '
@@ -46,27 +51,55 @@ def ask_for_some_ints():
     return loop_nos
 
 
-def sum_ints(int_list):
+def sum_ints(int_list_sum):
     """Use to add the integers from a list and report the sum."""
+    # Version 1 (sum up the integers).
     total_sum = 0
-    for value in int_list:
+    for value in int_list_sum:
         total_sum += value
     # Sanity check with built-in sum()
-    check_sum = sum(int_list)
+    check_sum = sum(int_list_sum)
     if total_sum == check_sum:
         return total_sum
     #else:
-    print('\nSomething crashed, check your code!')
+    print(CRASH_INFO)
     sys.exit()
 
 
-numbers_list = ask_for_some_ints()
-#print(numbers_list)
-your_sum = sum_ints(numbers_list)
+def largest_int(int_list_largest):
+    """Use to find the largest integer."""
+    # Variant 2 (find the largest integer).
+    # Smallest possible: -9223372036854775808
+    largest = -sys.maxsize - 1
+    for value in int_list_largest:
+        # pylint: disable=consider-using-max-builtin
+        # Part of assignment, have to use it!
+        if value > largest:
+            largest = value
+        # pylint: enable=consider-using-max-builtin
+    # Sanity check with built-in max()
+    sanity_large = max(int_list_largest)
+    if largest == sanity_large:
+        return largest
+    print(CRASH_INFO)
+    sys.exit()
 
-print('\nYour integers were:', numbers_list)
-print('\nYour sum of input integers is:', your_sum)
 
+def run_calculator():
+    """Run the program."""
+    numbers_list = ask_for_some_ints()
+    #print(numbers_list)
+    your_sum = sum_ints(numbers_list)
+    big_int = largest_int(numbers_list)
+
+    print('\nYour integers were:', numbers_list)
+    press_continue()
+    print('\nYour sum of input integers is:', your_sum)
+    press_continue()
+    print('\nThe largest integer entered was:', big_int)
+
+
+run_calculator()
 
 print('')
 press_exit()
