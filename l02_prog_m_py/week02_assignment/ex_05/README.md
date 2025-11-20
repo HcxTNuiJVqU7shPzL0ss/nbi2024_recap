@@ -53,14 +53,14 @@ Förslag på värden att testa med: \
 
 **Tabell för testning:**
 
-| t1 | t2 | t3 | Störst | Två lika? | Tre lika? | Mellerst? |
-|:--:|:--:|:--:|:------:|:---------:|:---------:|:---------:|
-| 1  | 2  | 3  |   3    |    nej    |    nej    |     2     |
-| 1  | 3  | 2  |   3    |    nej    |    nej    |     2     |
-| 3  | 2  | 1  |   3    |    nej    |    nej    |     2     |
-| -1 | -3 | -1 |   -1   |    ja     |    nej    |    nej    |
-| 9  | 9  | 9  |   9    |    nej    |    ja     |     9     |
-| 32 | 32 | 16 |   3    |    ja     |    nej    |    nej    |
+| t1 | t2 | t3 | Summa | Störst | Två lika? | Tre lika? | Mellerst? |
+|:--:|:--:|:--:|:-----:|:------:|:---------:|:---------:|:---------:|
+| 1  | 2  | 3  |   6   |   3    |    nej    |    nej    |     2     |
+| 1  | 3  | 2  |   6   |   3    |    nej    |    nej    |     2     |
+| 3  | 2  | 1  |   6   |   3    |    nej    |    nej    |     2     |
+| -1 | -3 | -1 |  -5   |   -1   |    ja     |    nej    |    nej    |
+| 9  | 9  | 9  |  27   |   9    |    nej    |    ja     |     9     |
+| 32 | 32 | 16 |  80   |   3    |    ja     |    nej    |    nej    |
 
 ---
 
