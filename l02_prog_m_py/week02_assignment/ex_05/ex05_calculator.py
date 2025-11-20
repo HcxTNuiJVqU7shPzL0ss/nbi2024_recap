@@ -33,10 +33,17 @@ press_continue()
 CRASH_INFO = '\nSomething crashed, check your code!'
 
 
-def ask_for_some_ints():
+def get_int_cnt():
+    """Use to get how many integers to add."""
+    ask_string = 'Enter a value for how many integers to add: '
+    user_cnt = enter_int(ask_string, 0, 0, False)
+    return user_cnt
+
+
+def ask_for_some_ints(no_of_int):
     """Use to request user to input integers."""
     # Version 1 (ask for "three" integers).
-    loop_count = 3
+    loop_count = no_of_int
     loop_nos = []
     base_string = 'Please input integer number '
     print('\nYou will be asked to input an integer', loop_count, 'times.\n')
@@ -90,10 +97,11 @@ def check_same(int_list_same):
     # Version 3
     loop_cnt = len(int_list_same)
     i = 0
-    j = 0
     duplicates = 0
     dup_list = []
+    orig_list = int_list_same[:]
     while i < loop_cnt:
+        j = i
         while j < loop_cnt:
             if i == j:
                 j += 1
@@ -102,20 +110,25 @@ def check_same(int_list_same):
                 duplicates += 1
                 if not int_list_same[i] in dup_list:
                     dup_list.append(int_list_same[i])
+                int_list_same[j] = 'd' + str(j)
             j += 1
         i += 1
     if duplicates > 0:
-        print('\nYes,', str(duplicates), 'duplicates.')
+        if len(dup_list) == 1:
+            print('\nYes,', str(duplicates), 'duplicates.')
+        else:
+            print('\nThere are different duplicate numbers.')
         print('The duplicate number(s):', dup_list)
     else:
         print('\nNo duplicates found.')
-    print('The list of numbers:', int_list_same)
+    print('The list of numbers:', orig_list)
 
 
 
 def run_calculator():
     """Run the program."""
-    numbers_list = ask_for_some_ints()
+    int_cnt = get_int_cnt()
+    numbers_list = ask_for_some_ints(int_cnt)
     #print(numbers_list)
     your_sum = sum_ints(numbers_list)
     big_int = largest_int(numbers_list)
