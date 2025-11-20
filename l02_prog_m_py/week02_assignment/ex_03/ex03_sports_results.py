@@ -26,10 +26,6 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_int)
 
 
-print('\nWeek 02, Exercise 03, Sports results.\n')
-press_continue()
-
-
 def soccer():
     """Use to enter input for the soccer game."""
     # CONSTANT PEP8
@@ -90,9 +86,17 @@ def soccer():
         print('\nRecord broken! Previous:', max_goals)
 
 
-# Call the function
-soccer()
+def main():
+    """Use as main function."""
+    print('\nWeek 02, Exercise 03, Sports results.\n')
+    press_continue()
+
+    # Call the function
+    soccer()
+
+    print('')
+    press_exit()
 
 
-print('')
-press_exit()
+if __name__ == "__main__":
+    main()

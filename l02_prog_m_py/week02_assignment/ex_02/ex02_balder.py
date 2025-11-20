@@ -24,62 +24,72 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-# CONSTANTS
+# CONSTANTS, PEP8
 MIN_LENGTH = 130
 MAX_LENGTH = 272
 WARNING_LENGTH_TALL = 210
 TODDLER_WARNING = 88
 
 
-print('\nWeek 02, Exercise 02, Balder.\n')
-press_continue()
+def balder():
+    """Use to run Balder function."""
+    # Ask user to input length in cm.
+    s_length_cm = ''
+    i_length_cm = 0
+    while True:
+        s_length_cm = input('\nHow tall are you (in cm): ')
+        try:
+            i_length_cm = int(s_length_cm)
+            break
+        except ValueError:
+            print('\nPlease input a valid integer!')
+            press_goback()
+            continue
 
 
-# Ask user to input length in cm.
-s_length_cm = ''
-i_length_cm = 0
-while True:
-    s_length_cm = input('\nHow tall are you (in cm): ')
-    try:
-        i_length_cm = int(s_length_cm)
-        break
-    except ValueError:
-        print('\nPlease input a valid integer!')
-        press_goback()
-        continue
+    # Check if user is allowed to ride Balder.
+    if i_length_cm >= MIN_LENGTH:
+        print('\nYou are allowed to ride!\n')
+        press_continue()
+        if i_length_cm > MAX_LENGTH:
+            print('\nYou are taller than Robert Wadlow!\n'
+                  'Call Guinness, we have a record!\n')
+            press_continue()
+        elif i_length_cm >= WARNING_LENGTH_TALL:
+            print('\nYou are very tall, make sure you feel safe '
+                  'riding!\n')
+            press_continue()
+    else:
+        print('\nYou are not tall enough, you may not ride!\n')
+        press_continue()
+        if i_length_cm <= TODDLER_WARNING:
+            print('\nYou are quite short, you should not ride!\n'
+                  'Safety first.\n')
+            press_continue()
 
 
-# Check if user is allowed to ride Balder.
-if i_length_cm >= MIN_LENGTH:
-    print('\nYou are allowed to ride!\n')
+    # Discuss
+    print('\nQ: Why three values?')
+    print('Check below, exact and above the single limit.\n')
     press_continue()
-    if i_length_cm > MAX_LENGTH:
-        print('\nYou are taller than Robert Wadlow!\n'
-              'Call Guinness, we have a record!\n')
-        press_continue()
-    elif i_length_cm >= WARNING_LENGTH_TALL:
-        print('\nYou are very tall, make sure you feel safe '
-              'riding!\n')
-        press_continue()
-else:
-    print('\nYou are not tall enough, you may not ride!\n')
+
+    print('\nQ: Why these three values?')
+    print('Checks below, exact and above the specified limit.\n')
     press_continue()
-    if i_length_cm <= TODDLER_WARNING:
-        print('\nYou are quite short, you should not ride!\n'
-              'Safety first.\n')
-        press_continue()
+
+    print('\nQ: Would it help to add the test value of 129 cm?')
+    print('No, this would not add value.\n')
 
 
-# Discuss
-print('\nQ: Why three values?')
-print('Check below, exact and above the single limit.\n')
-press_continue()
+def main():
+    """Use as main function."""
+    print('\nWeek 02, Exercise 02, Balder.\n')
+    press_continue()
 
-print('\nQ: Why these three values?')
-print('Checks below, exact and above the specified limit.\n')
-press_continue()
+    balder()
 
-print('\nQ: Would it help to add the test value of 129 cm?')
-print('No, this would not add value.\n')
+    press_exit()
 
-press_exit()
+
+if __name__ == "__main__":
+    main()

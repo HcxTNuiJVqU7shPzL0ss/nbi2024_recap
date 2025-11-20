@@ -24,10 +24,6 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_float)
 
 
-print('\nWeek 02, Exercise 04, Temperature Conversion.\n')
-press_continue()
-
-
 def c_to_f(celsius):
     """Use to convert Celsius to Fahrenheit, version 1."""
     # F = (C * 9 / 5) + 32
@@ -111,12 +107,20 @@ def check_temperature(celsius_now):
               'hot out there today!\n')
 
 
-# Perform most actions, and get actual degrees in Celsius.
-actual_c = do_conversion()
+def main():
+    """Use as main function."""
+    print('\nWeek 02, Exercise 04, Temperature Conversion.\n')
+    press_continue()
 
-# Check if to print a message based or current temperature.
-check_temperature(actual_c)
+    # Perform most actions, and get actual degrees in Celsius.
+    actual_c = do_conversion()
+
+    # Check if to print a message based on current temperature.
+    check_temperature(actual_c)
+
+    print('')
+    press_exit()
 
 
-print('')
-press_exit()
+if __name__ == "__main__":
+    main()

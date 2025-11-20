@@ -25,10 +25,6 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit, enter_int)
 
 
-print('\nWeek 02, Exercise 05, Calculator.\n')
-press_continue()
-
-
 # CONSTANT PEP8
 CRASH_INFO = '\nSomething crashed, check your code!'
 
@@ -188,8 +184,16 @@ def run_calculator():
               'to check for middle.\n')
 
 
-run_calculator()
+def main():
+    """Use as main function."""
+    print('\nWeek 02, Exercise 05, Calculator.\n')
+    press_continue()
+
+    run_calculator()
+
+    print('')
+    press_exit()
 
 
-print('')
-press_exit()
+if __name__ == "__main__":
+    main()
