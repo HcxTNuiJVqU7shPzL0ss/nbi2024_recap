@@ -1,4 +1,4 @@
-"""Module for week 2, ex03."""
+"""Module for Lesson 02, Week 02, Exercise 03, Sports results."""
 
 
 #####################################################################
@@ -26,7 +26,7 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_int)
 
 
-print('\nWeek 02, Exercise 03.\n')
+print('\nWeek 02, Exercise 03, Sports results.\n')
 press_continue()
 
 

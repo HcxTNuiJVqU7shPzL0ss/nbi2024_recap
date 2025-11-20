@@ -21,7 +21,6 @@ Fråga först användaren om man vill ange temperaturen
 i Celsius eller Fahrenheit.\
 Sedan räknar programmet om till den andra temperaturen.
 
-
 ---
 
 Version 3: \
@@ -33,13 +32,13 @@ man packar badkläder.
 
 ---
 
- Formel för konvertering mellan temperaturenheter:\
- C = (F- 32) / 1.8\
- F = 1.8 * C + 32
+Formel för konvertering mellan temperaturenheter:\
+C = (F- 32) / 1.8\
+F = 1.8 * C + 32
 
 ---
 
- Förslag på värden att testa med:
+Förslag på värden att testa med:
 
 | ° Celsius | ° Fahrenheit |
 | :-------- | :----------- |

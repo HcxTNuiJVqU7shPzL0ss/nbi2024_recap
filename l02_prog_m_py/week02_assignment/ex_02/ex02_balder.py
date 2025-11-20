@@ -1,4 +1,4 @@
-"""Module for week 2, ex02."""
+"""Module for Lesson 02, Week 02, Exercise 02, Balder."""
 
 
 #####################################################################
@@ -31,7 +31,7 @@ WARNING_LENGTH_TALL = 210
 TODDLER_WARNING = 88
 
 
-print('\nWeek 02, Exercise 02.\n')
+print('\nWeek 02, Exercise 02, Balder.\n')
 press_continue()
 
 
