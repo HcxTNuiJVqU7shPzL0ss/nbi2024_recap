@@ -19,8 +19,6 @@
 #####################################################################
 
 
-#import sys
-
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit, press_goback,
                                             enter_float)
@@ -32,13 +30,13 @@ press_continue()
 
 def c_to_f(celsius):
     """Use to convert Celsius to Fahrenheit, version 1."""
-    # (F = (C * 9 / 5) + 32)
+    # F = (C * 9 / 5) + 32
     fahrenheit = (celsius * 9 / 5) + 32
     return fahrenheit
 
 
 def f_to_c(fahrenheit):
-    """Use to convert Fahrenheit to Celsius."""
+    """Use to convert Fahrenheit to Celsius, version 2."""
     # C = 5/9(F-32)
     celsius = (5 / 9) * (fahrenheit - 32)
     return celsius
@@ -62,7 +60,7 @@ def user_float_in(use_temp_internal):
 
 
 def ask_c_or_f():
-    """Use to ask of to input C or F value, version 2."""
+    """Use to ask if to input C or F value, version 2."""
     while True:
         use_temperature = input('\nDo you want to assign '
                                 'temperature in (c) celsius '
@@ -87,8 +85,8 @@ def ask_c_or_f():
 
 def do_conversion():
     """Perform the act of conversion."""
-    c = 'Celsius'
-    f = 'Fahrenheit'
+    c = 'Celsius.'
+    f = 'Fahrenheit.'
     output_string = 'The converted temperature is: '
     use_temp = ask_c_or_f()
     temperature = user_float_in(use_temp)
