@@ -37,14 +37,21 @@ def c_to_f(celcius):
     return fahrenheit
 
 
-# Version 1, simple, no guard.
-temp_v1 = input('\nEnter degree Celsius: ')
-temp_v1 = float(temp_v1)
+def f_to_c(fahrenheit):
+    """Use to convert Fahrenheit to Celcius."""
+    # C = 5/9(F-32)
+    celsius = (5 / 9) * (fahrenheit - 32)
+    return celsius
+
+
+# Version 2, temp, simple, no guard.
+temp_v2 = input('\nEnter degree Fahrenheit: ')
+temp_v2 = float(temp_v2)
 
 print('')
 press_continue()
 
-print(c_to_f(temp_v1))
+print(f_to_c(temp_v2))
 
 print('')
 press_exit()
