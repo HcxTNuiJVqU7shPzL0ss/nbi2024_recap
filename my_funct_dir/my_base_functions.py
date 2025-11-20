@@ -79,3 +79,17 @@ def enter_string(input_string):
             print('\nPlease try again\n')
             press_goback()
             continue
+
+
+# Use to get a float input
+def enter_float(input_string):
+    """Use to prompt user for a float input."""
+    while True:
+        float_s = input(input_string)
+        try:
+            float_f = float(float_s)
+            return float_f
+        except ValueError:
+            print('\nPlease use a float!')
+            press_goback()
+            continue

@@ -22,7 +22,7 @@
 #import sys
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)#, enter_string,
+                                            press_exit, enter_float)#, enter_string,
                                             #enter_int)
 
 
@@ -38,15 +38,20 @@ def c_to_f(celcius):
 
 
 def f_to_c(fahrenheit):
-    """Use to convert Fahrenheit to Celcius."""
+    """Use to convert Fahrenheit to Celsius."""
     # C = 5/9(F-32)
     celsius = (5 / 9) * (fahrenheit - 32)
     return celsius
 
 
-# Version 2, temp, simple, no guard.
-temp_v2 = input('\nEnter degree Fahrenheit: ')
-temp_v2 = float(temp_v2)
+def user_interaction():
+    in_str_value = 'Please enter a numeric value: '
+    unknown_temp = enter_float(in_str_value)
+    return unknown_temp
+
+# Version 2, temp, simple, not done.
+temp_v2 = user_interaction()
+
 
 print('')
 press_continue()
