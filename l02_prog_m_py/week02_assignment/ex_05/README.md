@@ -60,7 +60,7 @@ Förslag på värden att testa med: \
 | 3  | 2  | 1  |   6   |   3    |    nej    |    nej    |     2     |
 | -1 | -3 | -1 |  -5   |   -1   |    ja     |    nej    |    nej    |
 | 9  | 9  | 9  |  27   |   9    |    nej    |    ja     |     9     |
-| 32 | 32 | 16 |  80   |   3    |    ja     |    nej    |    nej    |
+| 32 | 32 | 16 |  80   |   32   |    ja     |    nej    |    nej    |
 
 ---
 

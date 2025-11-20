@@ -122,7 +122,44 @@ def check_same(int_list_same):
     else:
         print('\nNo duplicates found.')
     print('The list of numbers:', orig_list)
+    return orig_list
 
+
+def check_dupl_if3(nr_list):
+    """Use only if three values, check middle value."""
+    # All are the same
+    if (nr_list[0] == nr_list[1]) and (nr_list[0] == nr_list[2]):
+        middle = nr_list[0]
+        mid_check = True
+    # Two are the same, index 0 and: 1 or 2
+    elif (nr_list[0] == nr_list[1]) or nr_list[0] == nr_list[2]:
+        middle = nr_list[0] # As to not have assigned
+        mid_check = False
+    # Two are the same, index 1 and 2
+    elif nr_list[1] == nr_list[2]:
+        middle = nr_list[0] # As to not have assigned
+        mid_check = False
+    # Check which number is middle
+    else:
+        # Index 0 is middle
+        if ((nr_list[0] > nr_list[1]) and (nr_list[0] < nr_list[2])) \
+                or ((nr_list[0] < nr_list[1]) and (nr_list[0] > nr_list[2])):
+            middle = nr_list[0]
+            mid_check = True
+        # Index 1 is middle
+        elif ((nr_list[1] > nr_list[0]) and (nr_list[1] < nr_list[2])) \
+                or ((nr_list[1] < nr_list[0]) and (nr_list[1] > nr_list[2])):
+            middle = nr_list[1]
+            mid_check = True
+        # Index2 is middle
+        else:
+            middle = nr_list[2]
+            mid_check = True
+    if mid_check:
+        print('\nThe middle value is:', middle)
+    else:
+        print('\nThere are 2 (not 3) values that are the same.')
+    print('')
 
 
 def run_calculator():
@@ -139,10 +176,18 @@ def run_calculator():
     press_continue()
     print('\nThe largest integer entered was:', big_int)
 
-    check_same(numbers_list)
+    keep_list = check_same(numbers_list)
+
+    # Only run if 3 has been selected
+    if int_cnt == 3:
+        check_dupl_if3(keep_list)
+    else:
+        print('\nOnly handle if 3 int was selected '
+              'to check for middle.\n')
 
 
 run_calculator()
+
 
 print('')
 press_exit()
