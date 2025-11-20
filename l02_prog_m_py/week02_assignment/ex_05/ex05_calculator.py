@@ -85,6 +85,34 @@ def largest_int(int_list_largest):
     sys.exit()
 
 
+def check_same(int_list_same):
+    """Use to check for duplicates in the list."""
+    # Version 3
+    loop_cnt = len(int_list_same)
+    i = 0
+    j = 0
+    duplicates = 0
+    dup_list = []
+    while i < loop_cnt:
+        while j < loop_cnt:
+            if i == j:
+                j += 1
+                continue
+            if int_list_same[i] == int_list_same[j]:
+                duplicates += 1
+                if not int_list_same[i] in dup_list:
+                    dup_list.append(int_list_same[i])
+            j += 1
+        i += 1
+    if duplicates > 0:
+        print('\nYes,', str(duplicates), 'duplicates.')
+        print('The duplicate number(s):', dup_list)
+    else:
+        print('\nNo duplicates found.')
+    print('The list of numbers:', int_list_same)
+
+
+
 def run_calculator():
     """Run the program."""
     numbers_list = ask_for_some_ints()
@@ -92,11 +120,13 @@ def run_calculator():
     your_sum = sum_ints(numbers_list)
     big_int = largest_int(numbers_list)
 
-    print('\nYour integers were:', numbers_list)
+    print('\nYour integers were:', numbers_list, '\n')
     press_continue()
-    print('\nYour sum of input integers is:', your_sum)
+    print('\nYour sum of input integers is:', your_sum, '\n')
     press_continue()
     print('\nThe largest integer entered was:', big_int)
+
+    check_same(numbers_list)
 
 
 run_calculator()
