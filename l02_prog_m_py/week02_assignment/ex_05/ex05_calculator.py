@@ -127,6 +127,7 @@ def check_same(int_list_same):
 
 def check_dupl_if3(nr_list):
     """Use only if three values, check middle value."""
+    # Version 4
     # All are the same
     if (nr_list[0] == nr_list[1]) and (nr_list[0] == nr_list[2]):
         middle = nr_list[0]
@@ -176,6 +177,7 @@ def run_calculator():
     press_continue()
     print('\nThe largest integer entered was:', big_int)
 
+    # Needed to avoid aliasing issue of list in "check same"
     keep_list = check_same(numbers_list)
 
     # Only run if 3 has been selected
