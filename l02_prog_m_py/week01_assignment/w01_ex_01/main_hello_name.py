@@ -22,14 +22,19 @@
 from my_funct_dir.my_base_functions import press_exit
 
 
-MY_NAME = 'Jan (gnoff)'
+def main():
+    """Use as module for Main."""
+    my_name = 'Jan (gnoff)'
 
 
-# Print "Hello world"
-print('\nHello world')
+    # Print "Hello world"
+    print('\nHello world')
 
-# Print a welcome message
-print('This program was made by', MY_NAME, '\n')
+    # Print a welcome message
+    print('This program was made by', my_name, '\n')
+
+    press_exit()
 
 
-press_exit()
+if __name__ == "__main__":
+    main()
