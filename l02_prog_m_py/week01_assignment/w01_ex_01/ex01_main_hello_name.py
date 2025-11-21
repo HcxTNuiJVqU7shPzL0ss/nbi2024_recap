@@ -1,5 +1,7 @@
-"""Module for 'Hello World'."""
+"""Module for 'Hello World'.
 
+Lesson 02, Week 01, Exercise 01.
+"""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -25,7 +27,6 @@ from my_funct_dir.my_base_functions import press_exit
 def main():
     """Use as module for Main."""
     my_name = 'Jan (gnoff)'
-
 
     # Print "Hello world"
     print('\nHello world')

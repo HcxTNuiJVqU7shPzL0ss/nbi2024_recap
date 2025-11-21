@@ -1,5 +1,7 @@
-"""Module for 'Hello World'."""
+"""Module for 'Hello World', version 2.
 
+Lesson 02, Week 01, Exercise 01.
+"""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -20,7 +22,7 @@
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+                                            press_exit, press_goback)
 
 
 def hello_world():
@@ -31,11 +33,12 @@ def hello_world():
         try:
             if clean_string.lower() == 'hello world':
                 break
-            #else:
             print('\nTry again!')
+            press_goback()
             continue
         except ValueError:
             print('\nDid not work')
+            press_goback()
             continue
     return first_string
 
@@ -47,11 +50,12 @@ def user_name_input():
         try:
             if len(name) <= 0:
                 print('\nTry again!')
+                press_goback()
                 continue
-            #else:
             break
         except ValueError:
             print('\nDid not work')
+            press_goback()
             continue
     return name
 
@@ -63,15 +67,16 @@ def check_hello(first_string):
         print('\nYour input was: ' + first_string)
         # Print expected
         print('Expected was: Hello world')
-        #press_continue()
         if '\"' in first_string:
-            print('You should not use " in your input.\n')
+            print('You should not use " in your input.')
             press_continue()
         else:
-            print('Please mind the Capitalization.\n')
+            # Does not handle the case if using " and incorrect
+            # capitalization on "Hello".
+            print('Please mind the Capitalization.')
             press_continue()
     else:
-        # If all correct, print what was expected
+        # If all correct, print what was expected.
         print('\nHello world')
 
 
@@ -82,7 +87,7 @@ def main():
     name = user_name_input()
 
     # Print a welcome message
-    print('This program was made by', name, '\n')
+    print('\nThis program was made by', name, '\n')
 
     press_exit()
 
