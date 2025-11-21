@@ -1,6 +1,5 @@
 """Module for Lesson 02, Week 01, Exercise 02, Discuss, Version 2."""
 
-
 #####################################################################
 # Copyright 2025 gnoff
 #
@@ -19,7 +18,7 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import press_exit
+from my_funct_dir.my_base_functions import press_exit, press_goback
 
 
 def calc_funds_left(ticket_price, available_funds):
@@ -41,15 +40,18 @@ def enter_ticket_price():
     """Prompt user to input the ticket price."""
     i_ticket_price = 0
     while True:
-        s_ticket_price = input('\nPlease enter the ticket price (SEK): ')
+        s_ticket_price = input('\nPlease enter the ticket '
+                               'price (SEK): ')
         try:
             i_ticket_price = int(s_ticket_price)
             if i_ticket_price > 0:
                 break
             print('\nNot a positive integer!')
+            press_goback()
             continue
         except ValueError:
             print('\nNot valid integer!')
+            press_goback()
             continue
     return i_ticket_price
 
@@ -58,13 +60,18 @@ def enter_available_funds():
     """Prompt user to input the available funds."""
     i_av_funds = 0
     while True:
-        s_av_funds = input('\nPlease enter the available funds (SEK): ')
+        s_av_funds = input('\nPlease enter the available '
+                           'funds (SEK): ')
         try:
             i_av_funds = int(s_av_funds)
             if i_av_funds > 0:
                 break
+            print('\nNot a positive integer!')
+            press_goback()
+            continue
         except ValueError:
             print('\nNot valid integer!')
+            press_goback()
             continue
     return i_av_funds
 
@@ -74,14 +81,14 @@ def run_w1_ex2(i_ticket_price, i_av_funds):
     i_funds_left = calc_funds_left(i_ticket_price, i_av_funds)
 
     if i_funds_left < 0:
-        print('\nYou cannot afford the ticket!\n')
+        print('\nYou cannot afford the ticket!')
     elif i_funds_left == 0:
         print('\nYou have no money left!')
     else:
         i_half_left = calc_half_left(i_funds_left)
         print('\nThere is', i_funds_left, "SEK over.")
-        print('Half of what is left over is:', i_half_left , 'SEK.\n')
-
+        print('Half of what is left over is:', i_half_left,
+              'SEK.')
 
     press_exit()
 

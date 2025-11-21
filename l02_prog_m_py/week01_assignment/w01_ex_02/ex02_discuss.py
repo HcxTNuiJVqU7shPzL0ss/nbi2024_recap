@@ -34,8 +34,8 @@ def calculate_w1_ex2():
 
 
     print('\nThere is', money_left, "SEK over.")
-    print('Half of what is left over is:', half_left, '\n')
-
+    print('Half of what is left over is: ', half_left,
+          '.', sep = '')
 
     press_exit()
 
@@ -43,6 +43,7 @@ def calculate_w1_ex2():
 def main():
     """Use as module for Main."""
     calculate_w1_ex2()
+
 
 if __name__ == "__main__":
     main()
