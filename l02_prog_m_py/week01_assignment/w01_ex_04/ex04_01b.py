@@ -1,5 +1,4 @@
-"""Module for ex04, part 1b."""
-
+"""Module for Lesson 02, Week 01, Exercise 04, Part 01b."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -19,27 +18,31 @@
 #####################################################################
 
 
+# pylint: disable=import-error
+# For some reason pylint will not see it is available to import here
+#from ex04_01a import stockholm_gbg_main
+import ex04_01a
+# pylint: enable=import-error
+
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit,
-                                            enter_int_range)
+                                            press_exit)
 
 
-print('\nExercise 4, part 1b.\n')
-# pylint: disable=duplicate-code
-press_continue()
+def main():
+    """Use as Main for ex 04, part 01b."""
+    print('\nExercise 4, part 1b.')
+    press_continue()
+
+    #nr_of_sec = stockholm_gbg_main()
+    nr_of_sec = ex04_01a.stockholm_gbg_main()
+
+    nr_of_min = int(nr_of_sec / 60)
+
+    press_continue()
+
+    print('\nIt will take you ~', nr_of_min, 'minutes to drive.')
+    press_exit()
 
 
-DISTANCE = 470 # Nr of km between sthlm and gbg
-IN_STRING = 'How fast, in km/h, do you want to drive: '
-
-speed_kmh = enter_int_range(IN_STRING, 50, 120, True)
-
-speed_mps = (speed_kmh * 1000) / 3600
-# pylint: enable=duplicate-code
-
-nr_of_sec = (DISTANCE * 1000) / speed_mps
-
-nr_of_min = int(nr_of_sec / 60)
-
-print('\nIt will take you ~', nr_of_min, 'minutes to drive.')
-press_exit()
+if __name__ == '__main__':
+    main()

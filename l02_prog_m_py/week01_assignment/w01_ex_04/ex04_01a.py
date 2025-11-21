@@ -1,5 +1,4 @@
-"""Module for ex04, part 1a."""
-
+"""Module for Lesson 02, Week 01, Exercise 04, Part 01a."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -24,18 +23,34 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_int_range)
 
 
-print('\nExercise 4, part 1a.\n')
-press_continue()
+def stockholm_gbg_main():
+    """Use as main function for Stockholm to Göteborg."""
+    distance = 470 # Nr of km between Stockholm and Göteborg
+    in_string = 'How fast, in km/h, do you want to drive: '
+
+    # Velocity in km/h
+    speed_kmh = enter_int_range(in_string, 50, 120, True)
+
+    # Velocity in m/s
+    speed_mps = (speed_kmh * 1000) / 3600
+
+    no_of_sec = (distance * 1000) / speed_mps
+    return no_of_sec
 
 
-DISTANCE = 470 # Nr of km between sthlm and gbg
-IN_STRING = 'How fast, in km/h, do you want to drive: '
+def main():
+    """Use as Main for part 01a."""
+    print('\nExercise 4, part 1a.')
+    press_continue()
 
-speed_kmh = enter_int_range(IN_STRING, 50, 120, True)
+    nr_of_sec = stockholm_gbg_main()
 
-speed_mps = (speed_kmh * 1000) / 3600
+    press_continue()
 
-nr_of_sec = (DISTANCE * 1000) / speed_mps
+    print('\nIt will take you', f'{nr_of_sec:.2f}',
+          'seconds to drive.')
+    press_exit()
 
-print('\nIt will take you', nr_of_sec, 'seconds to drive.')
-press_exit()
+
+if __name__ == '__main__':
+    main()
