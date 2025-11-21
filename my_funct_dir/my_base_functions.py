@@ -21,28 +21,24 @@
 #####################################################################
 
 
-# Use to prompt user to hit enter to continue
 def press_continue():
     """Use to hit enter to continue."""
     input('Press Return (Enter) to continue.\n')
 
 
-# Use to prompt user to hit enter to exit
 def press_exit():
     """Use to hit enter to exit."""
     input('Press Return (Enter) to exit.\n')
 
 
-# Use to prompt user to "go back" and try again
 def press_goback():
     """Use to hit enter to go back."""
     input('Press Return (Enter) to go back.\n')
 
 
-# Use to get user input as integer
-# If range is used, checks this as well, else skips it
-def enter_int(input_string, low, high, any_range):
-    """Use to get integer input."""
+# If range is used, checks this, else skips it
+def enter_int_range(input_string, low, high, any_range):
+    """Use to get integer input (with range)."""
     while True:
         if any_range:
             print('\nRange is between:', low, 'and', high)
@@ -57,6 +53,19 @@ def enter_int(input_string, low, high, any_range):
                 press_goback()
                 continue
             #else:
+            return int_i
+        except ValueError:
+            print('\nPlease use an integer!')
+            press_goback()
+            continue
+
+
+def enter_int(input_string):
+    """Use to get integer input (no range)."""
+    while True:
+        int_s = input(input_string)
+        try:
+            int_i = int(int_s)
             return int_i
         except ValueError:
             print('\nPlease use an integer!')

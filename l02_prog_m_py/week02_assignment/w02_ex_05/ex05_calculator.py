@@ -32,7 +32,7 @@ CRASH_INFO = '\nSomething crashed, check your code!'
 def get_int_cnt():
     """Use to get how many integers to add."""
     ask_string = 'Enter a value for how many integers to add: '
-    user_cnt = enter_int(ask_string, 0, 0, False)
+    user_cnt = enter_int(ask_string)
     return user_cnt
 
 
@@ -47,7 +47,7 @@ def ask_for_some_ints(no_of_int):
     i = 0
     while i < loop_count:
         send_string = base_string + str(i+1) + ': '
-        loop_nos.append(enter_int(send_string, 0, 0, False))
+        loop_nos.append(enter_int(send_string))
         i += 1
         #print('i:', i)
         #print('loop_nos:', loop_nos)

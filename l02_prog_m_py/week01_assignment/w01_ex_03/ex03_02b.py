@@ -21,17 +21,17 @@
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit,
-                                            enter_int)
+                                            enter_int_range)
 
 
 print('\nExercise 3, part 2b.\n')
 press_continue()
 
 ORIG_PRICE = 2000
-INPUT_STRING = 'Enter a discount as integer: '
+INPUT_STRING = 'Enter a discount as integer (in %): '
 
 
-discount = enter_int(INPUT_STRING, 0, 100, True)
+discount = enter_int_range(INPUT_STRING, 0, 100, True)
 
 disc_price = ORIG_PRICE - (ORIG_PRICE * (discount / 100))
 
@@ -41,6 +41,10 @@ print('Your discounted price is:', disc_price, '\n')
 
 if discount == 0:
     print('\nNo discount!\n')
+elif discount > 100: # Should not be possible
+    print('\nWell, that is not how it works! '
+          'Typically you do not make money by '
+          'buying stuff!\n')
 elif discount == 100:
     print('\nWow! Free stuff!\n')
 

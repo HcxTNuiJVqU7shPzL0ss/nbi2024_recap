@@ -21,7 +21,7 @@
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit,
-                                            enter_int)
+                                            enter_int_range)
 
 
 print('\nExercise 4, part 2.\n')
@@ -36,9 +36,9 @@ HIGH = 99
 USE_RANGE = True
 
 
-side1_i = enter_int(INTEXT_SIDE1, LOW, HIGH, USE_RANGE)
+side1_i = enter_int_range(INTEXT_SIDE1, LOW, HIGH, USE_RANGE)
 
-side2_i = enter_int(INTEXT_SIDE2, LOW, HIGH, USE_RANGE)
+side2_i = enter_int_range(INTEXT_SIDE2, LOW, HIGH, USE_RANGE)
 
 hypo_sq = (side1_i * side1_i) + (side2_i * side2_i)
 

@@ -21,7 +21,7 @@
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit,
-                                            enter_int)
+                                            enter_int_range)
 
 
 print('\nExercise 4, part 1a.\n')
@@ -31,7 +31,7 @@ press_continue()
 DISTANCE = 470 # Nr of km between sthlm and gbg
 IN_STRING = 'How fast, in km/h, do you want to drive: '
 
-speed_kmh = enter_int(IN_STRING, 50, 120, True)
+speed_kmh = enter_int_range(IN_STRING, 50, 120, True)
 
 speed_mps = (speed_kmh * 1000) / 3600
 

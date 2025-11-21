@@ -58,9 +58,9 @@ def soccer():
     s_in_goals_2 = 'How many goals did ' + team_2 + ' score: '
 
     # User shall enter the number of goals scored of the home team
-    goals_1 = enter_int(s_in_goals_1, 0, 0, False)
+    goals_1 = enter_int(s_in_goals_1)
     # User shall enter the number of goals scored of the away team
-    goals_2 = enter_int(s_in_goals_2, 0, 0, False)
+    goals_2 = enter_int(s_in_goals_2)
 
     # Not allowed negative number of goals.
     if (goals_1 < 0) or (goals_2 < 0):

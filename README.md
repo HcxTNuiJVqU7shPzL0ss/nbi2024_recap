@@ -1,5 +1,5 @@
 
-# Recap of previous course
+# Recap of previous course NBI 2024
 
 ---
 
