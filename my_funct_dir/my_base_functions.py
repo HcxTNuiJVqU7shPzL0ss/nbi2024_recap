@@ -1,6 +1,5 @@
 """My base user defined functions."""
 
-
 #####################################################################
 #
 # Copyright 2025 gnoff
@@ -23,36 +22,34 @@
 
 def press_continue():
     """Use to hit enter to continue."""
-    input('Press Return (Enter) to continue.\n')
+    input('\nPress Return (Enter) to continue.\n')
 
 
 def press_exit():
     """Use to hit enter to exit."""
-    input('Press Return (Enter) to exit.\n')
+    input('\nPress Return (Enter) to exit.\n')
 
 
 def press_goback():
     """Use to hit enter to go back."""
-    input('Press Return (Enter) to go back.\n')
+    input('\nPress Return (Enter) to go back.\n')
 
 
-# If range is used, checks this, else skips it
 def enter_int_range(input_string, low, high, any_range):
     """Use to get integer input (with range)."""
     while True:
         if any_range:
-            print('\nRange is between:', low, 'and', high)
+            print('\nRange is between: ', low, ' and ', high,
+                  '.', sep='')
         int_s = input(input_string)
         try:
             int_i = int(int_s)
             if any_range:
                 if low <= int_i <= high:
                     return int_i
-                #else:
                 print('\nIncorrect range, try again.')
                 press_goback()
                 continue
-            #else:
             return int_i
         except ValueError:
             print('\nPlease use an integer!')
@@ -73,7 +70,6 @@ def enter_int(input_string):
             continue
 
 
-# Use to get a string input
 def enter_string(input_string):
     """Use to prompt user for an input string."""
     while True:
@@ -81,16 +77,14 @@ def enter_string(input_string):
         try:
             if len(user_string) > 0:
                 return user_string
-            #else:
-            print('\nNot enough characters, try again!\n')
+            print('\nNot enough characters, try again!')
             press_goback()
         except ValueError:
-            print('\nPlease try again\n')
+            print('\nPlease try again.')
             press_goback()
             continue
 
 
-# Use to get a float input
 def enter_float(input_string):
     """Use to prompt user for a float input."""
     while True:
