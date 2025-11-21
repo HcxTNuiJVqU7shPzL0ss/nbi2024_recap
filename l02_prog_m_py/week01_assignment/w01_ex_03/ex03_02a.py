@@ -1,5 +1,4 @@
-"""Module for 2a."""
-
+"""Module for Lesson 02, Week 01, Exercise 03, Part 02a."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -23,15 +22,22 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-print('\nExercise 3, part 2a.\n')
-press_continue()
+def main():
+    """Use as main in ex 03 part 02a."""
+    print('\nExercise 3, part 2a.')
+    press_continue()
 
-ORIG_PRICE = 2000
-DISCOUNT = 50
+    orig_price = 2000
+    discount = 50
 
-DISC_PRICE = ORIG_PRICE - (ORIG_PRICE * (DISCOUNT / 100))
+    disc_price = orig_price - (orig_price * (discount / 100))
 
-print('\nThe original price was:', ORIG_PRICE)
-print('The discount was:', str(DISCOUNT) + '%')
-print('Your discounted price is:', DISC_PRICE, '\n')
-press_exit()
+    print('\nThe original price was:', orig_price, 'SEK.')
+    print('The discount was:', str(discount) + '%')
+    print('Your discounted price is: ', f'{disc_price:.2f}',
+          ' SEK.', sep = '')
+    press_exit()
+
+
+if __name__ == "__main__":
+    main()

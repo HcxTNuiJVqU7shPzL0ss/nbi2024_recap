@@ -1,5 +1,4 @@
-"""Module for 2b."""
-
+"""Module for Lesson 02, Week 01, Exercise 03, Part 02b."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -24,28 +23,34 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_int_range)
 
 
-print('\nExercise 3, part 2b.\n')
-press_continue()
+def main():
+    """Use as main module for ex 03, part 02b."""
+    print('\nExercise 3, part 2b.')
+    press_continue()
 
-ORIG_PRICE = 2000
-INPUT_STRING = 'Enter a discount as integer (in %): '
+    orig_price = 2000
+    input_string = 'Enter a discount as integer (in %): '
 
 
-discount = enter_int_range(INPUT_STRING, 0, 100, True)
+    discount = enter_int_range(input_string, 0, 100, True)
 
-disc_price = ORIG_PRICE - (ORIG_PRICE * (discount / 100))
+    disc_price = orig_price - (orig_price * (discount / 100))
 
-print('\nThe original price was:', ORIG_PRICE)
-print('The discount was:', str(discount) + '%')
-print('Your discounted price is:', disc_price, '\n')
+    print('\nThe original price was:', orig_price, 'SEK.')
+    print('The discount was:', str(discount) + '%')
+    print('Your discounted price is:', f'{disc_price:.2f}', 'SEK.')
 
-if discount == 0:
-    print('\nNo discount!\n')
-elif discount > 100: # Should not be possible
-    print('\nWell, that is not how it works! '
-          'Typically you do not make money by '
-          'buying stuff!\n')
-elif discount == 100:
-    print('\nWow! Free stuff!\n')
+    if discount == 0:
+        print('\nNo discount!')
+    elif discount > 100: # Should not be possible
+        print('\nWell, that is not how it works! '
+              'Typically you do not make money by '
+              'buying stuff!')
+    elif discount == 100:
+        print('\nWow! Free stuff!')
 
-press_exit()
+    press_exit()
+
+
+if __name__ == '__main__':
+    main()

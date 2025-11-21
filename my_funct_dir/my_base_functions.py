@@ -40,7 +40,7 @@ def enter_int_range(input_string, low, high, any_range):
     while True:
         if any_range:
             print('\nRange is between: ', low, ' and ', high,
-                  '.', sep='')
+                  '.\n', sep='')
         int_s = input(input_string)
         try:
             int_i = int(int_s)

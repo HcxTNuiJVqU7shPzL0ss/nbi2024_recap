@@ -1,5 +1,4 @@
-"""Module for 1a."""
-
+"""Module for Lesson 02, Week 01, Exercise 03, Part 01a."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -24,19 +23,25 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-print('\nExercise 3, part 1a.\n')
-press_continue()
+def main():
+    """Use to run the code."""
+    print('\nExercise 3, part 1a.')
+    press_continue()
 
-i_input = 0
-while True:
-    s_input = input('\nEnter an integer: ')
-    try:
-        i_input = int(s_input)
-        break
-    except ValueError:
-        print('\nNot a valid integer, try again!')
-        press_goback()
-        continue
+    i_input = 0
+    while True:
+        s_input = input('\nEnter an integer: ')
+        try:
+            i_input = int(s_input)
+            break
+        except ValueError:
+            print('\nNot a valid integer, try again!')
+            press_goback()
+            continue
 
-print('\nYour integer is:', i_input, '\n')
-press_exit()
+    print('\nYour integer is: ', i_input, '.', sep='')
+    press_exit()
+
+
+if __name__ == "__main__":
+    main()
