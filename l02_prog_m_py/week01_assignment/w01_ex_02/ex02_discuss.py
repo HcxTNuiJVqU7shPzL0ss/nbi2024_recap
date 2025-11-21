@@ -1,5 +1,4 @@
-"""Module for 'Discuss'."""
-
+"""Module for Lesson 02, Week 01, Exercise 02, Discuss."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -22,19 +21,28 @@
 from my_funct_dir.my_base_functions import press_exit
 
 
-TICKET_PRICE = 100 # Ticket price
-FUNDS = 200 # Available funds
+def calculate_w1_ex2():
+    """Use to calculate week 1, exercise 2."""
+    ticket_price = 100 # Ticket price
+    funds = 200 # Available funds
+
+    # Calculate how much you will have left
+    money_left = funds - ticket_price
+
+    # Calculate half of what is left
+    half_left = money_left / 2
 
 
-# Calculate how much you will have left
-MONEY_LEFT = FUNDS - TICKET_PRICE
-
-# Calculate half of what is left
-HALF_LEFT = MONEY_LEFT / 2
+    print('\nThere is', money_left, "SEK over.")
+    print('Half of what is left over is:', half_left, '\n')
 
 
-print('\nThere is', MONEY_LEFT, "SEK over.")
-print('Half of what is left over is:', HALF_LEFT, '\n')
+    press_exit()
 
 
-press_exit()
+def main():
+    """Use as module for Main."""
+    calculate_w1_ex2()
+
+if __name__ == "__main__":
+    main()
