@@ -1,6 +1,5 @@
 """Module for ex04, part 1c."""
 
-
 #####################################################################
 # Copyright 2025 gnoff
 #
@@ -19,9 +18,15 @@
 #####################################################################
 
 
+# pylint: disable=import-error
+# For some reason pylint will not see it is available to import here
+#from ex04_01a import stockholm_gbg_main
+import ex04_01a
+# pylint: enable=import-error
+
+
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit,
-                                            enter_int_range)
+                                            press_exit)
 
 
 def conv_sec(nr_of_seconds):
@@ -40,35 +45,31 @@ def conv_sec(nr_of_seconds):
     # pylint: enable=consider-using-f-string
 
 
-print('\nExercise 4, part 1c.\n')
-# pylint: disable=duplicate-code
-press_continue()
+def main():
+    """Use as Main for ex 04, part 01c."""
+    print('\nExercise 4, part 1c.\n')
+    press_continue()
+
+    # nr_of_sec = stockholm_gbg_main()
+    nr_of_sec = ex04_01a.stockholm_gbg_main()
+
+    result = conv_sec(nr_of_sec)
+
+    split_result = result.split(':')
+
+    formatted = ''
+    for i, split_result in enumerate(split_result):
+        if i == 0:
+            add_this = ' h, '
+        elif i == 1:
+            add_this = ' min, '
+        else:
+            add_this = ' sec'
+        formatted = formatted + split_result + add_this
+
+    print('\nIt will take you:', formatted, 'to drive.')
+    press_exit()
 
 
-DISTANCE = 470 # Nr of km between sthlm and gbg
-IN_STRING = 'How fast, in km/h, do you want to drive: '
-
-speed_kmh = enter_int_range(IN_STRING, 50, 120, True)
-
-speed_mps = (speed_kmh * 1000) / 3600
-# pylint: enable=duplicate-code
-
-nr_of_sec = (DISTANCE * 1000) / speed_mps
-
-result = conv_sec(nr_of_sec)
-
-split_result = result.split(':')
-
-formatted = ''
-add_this = ''
-for i, split_result in enumerate(split_result):
-    if i == 0:
-        add_this = ' h, '
-    elif i == 1:
-        add_this = ' min, '
-    else:
-        add_this = ' sec'
-    formatted = formatted + split_result + add_this
-
-print('\nIt will take you:', formatted, 'to drive.')
-press_exit()
+if __name__ == '__main__':
+    main()

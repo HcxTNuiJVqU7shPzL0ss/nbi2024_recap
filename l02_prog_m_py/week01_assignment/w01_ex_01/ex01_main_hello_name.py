@@ -35,6 +35,7 @@ from my_funct_dir.my_base_functions import (press_exit)
 # # pylint: enable=import-error
 # #pylint: enable=line-too-long
 
+
 def main():
     """Use as module for Main."""
     my_name = 'Jan (gnoff)'
