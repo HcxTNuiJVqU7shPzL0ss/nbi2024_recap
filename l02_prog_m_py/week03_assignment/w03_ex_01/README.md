@@ -23,6 +23,18 @@ och kör den.
 
 ---
 
+### 1.2 - Vad skrivs ut?
+
+    for i in range (10):
+        if i == 5:
+            print('')
+        else:
+            print(i)
+        i = i + 1
+
+
+---
+
 Student == gnoff
 
 ---
