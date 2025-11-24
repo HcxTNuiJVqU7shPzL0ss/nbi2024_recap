@@ -63,6 +63,30 @@ Skriv ner din bästa gissning innan du kör koden.
 
 ---
 
+### 1.5 - Vad skrivs ut? 
+Kan du göra om koden så att den skriver ut "time" i stället? 
+
+    message = 'its_time_to_get_coding'
+    print(message[3:7])
+
+
+---
+
+### 1.6 - Vad skrivs ut? 
+Kan du flytta linjen ett steg åt höger?
+
+    for y in range(1, 7):
+        s = ''
+        for x in range(1, 9):
+            if x == y:
+                s += '#'
+            else:
+                s += '.'
+        print(s)
+
+
+---
+
 Student == gnoff
 
 ---
