@@ -1,6 +1,5 @@
 """Module for Lesson 02, Week 03, Exercise 01, Discuss."""
 
-
 #####################################################################
 # Copyright 2025 gnoff
 #
@@ -29,15 +28,15 @@ from my_funct_dir.my_base_functions import (press_continue,
 def ask_y_or_n():
     """Use to ask if yes or no."""
     while True:
-        check_01 = input('Did it match (y) yes or (n) no: ')
+        check_01 = input('Did it match/work, (y) yes or (n) no: ')
         a_yes = ('y', '(y)', '(y) yes', 'yes')
         a_no = ('n', '(n)', '(n) no', 'no')
         try:
             if check_01.lower() in a_yes:
-                print('Awesome!')
+                print('\nAwesome!')
                 break
             if check_01.lower() in a_no:
-                print('Darn, must rethink and try again, exit')
+                print('\nDarn, must rethink and try again, exit')
                 press_exit()
                 sys.exit()
         except ValueError:
@@ -93,13 +92,77 @@ def w03_ex01_part02():
     ask_y_or_n()
 
 
+def w03_ex01_part03():
+    """Use to run part 03."""
+    print('This is part 03 "what will print", or '
+          '"what is the sum"?')
+    press_continue()
+    print('Should be: 0 + 0 + 1 + 2 + 3 + 4 + 5 = 15')
+    print('\ni.e.:\n15')
+    press_continue()
+
+    # Code Start
+    counter = 0
+    for i in range (6):
+        counter += i
+    print(counter)
+    # Code End
+
+    print('\nEnd of part 03, did it match?')
+    press_continue()
+
+    ask_y_or_n()
+
+
+def w03_ex01_part04():
+    """Use to run part 04."""
+    print('This is part 04 "what will print"?')
+    press_continue()
+    print('As of original, nothing will print!')
+    print('\nHowever, x should be:\n145')
+    x_check = 145
+    print('\n... and y should be:\n10')
+    y_check = 10
+    press_continue()
+
+    # Code Start
+    x = 0
+    y = 1
+    while y < 10:
+        if y % 2 == 0:
+            x -= y # Tips: sätt en brytpunkt här
+        else:
+            x += y * y # och här
+        y += 1
+    # Code End
+
+    # Need this to check
+    # x == 0, 1, -1, 8, 4, 29, 23, 72, 64, 145
+    print('\nx is:', x)
+    # y == 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    print('\ny is:', y)
+    # Done
+
+    print('\nEnd of part 04, did it match?')
+    press_continue()
+
+    if x == x_check and y == y_check:
+        ask_y_or_n()
+    else:
+        print('\nSomething has gone horribly wrong, '
+              'check code, exit!')
+        sys.exit()
+
+
 def main():
     """Use as main function."""
     print('\nWeek 03, Exercise 01, Discuss.')
     press_continue()
 
     #w03_ex01_part01()
-    w03_ex01_part02()
+    #w03_ex01_part02()
+    #w03_ex01_part03()
+    w03_ex01_part04()
 
     press_exit()
 

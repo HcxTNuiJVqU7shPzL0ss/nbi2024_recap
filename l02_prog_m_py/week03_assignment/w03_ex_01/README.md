@@ -35,6 +35,34 @@ och kör den.
 
 ---
 
+### 1.3 - Vad blir summan?
+Skriv ner din bästa gissning innan du kör koden.
+
+    counter = 0
+    for i in range (6):
+        counter += i
+    print(counter)
+
+
+---
+
+### 1.4 - Vad skrivs ut? 
+För att förstå koden kan du sätta ut brytpunkter och köra med debugging.\
+Det kan också underlätta att skriva samtidigt med papper och penna.\
+Skriv ner din bästa gissning innan du kör koden.
+
+    x = 0
+    y = 1
+    while y < 10:
+        if y % 2 == 0:
+            x -= y # Tips: sätt en brytpunkt här
+        else:
+            x += y * y # och här
+        y += 1
+
+
+---
+
 Student == gnoff
 
 ---
