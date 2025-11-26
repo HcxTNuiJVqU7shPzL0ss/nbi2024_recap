@@ -1,7 +1,7 @@
-"""Check python version and executable."""
+"""Module for ex04, part 3b."""
+
 
 #####################################################################
-#
 # Copyright 2025 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,17 +16,22 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 #####################################################################
 
 
-import sys
+from datetime import date, timedelta
 
-from my_funct_dir.my_base_functions import press_exit
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit)
 
 
-print('')
-print('Version: ', sys.version)
-print('Executable: ', sys.executable)
+print('\nExercise 4, part 3b.\n')
+press_continue()
+
+
+date_now = date.today()
+date_later = date_now + timedelta(days=7)
+
+print('\nThe date is 7 days is:', date_later, '\n')
 
 press_exit()

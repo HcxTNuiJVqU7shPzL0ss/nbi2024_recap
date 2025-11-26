@@ -1,4 +1,4 @@
-"""Check python version and executable."""
+"""Module for init, lesson 02, week 02, exercise 03 directory."""
 
 #####################################################################
 #
@@ -18,15 +18,3 @@
 # limitations under the License.
 #
 #####################################################################
-
-
-import sys
-
-from my_funct_dir.my_base_functions import press_exit
-
-
-print('')
-print('Version: ', sys.version)
-print('Executable: ', sys.executable)
-
-press_exit()
