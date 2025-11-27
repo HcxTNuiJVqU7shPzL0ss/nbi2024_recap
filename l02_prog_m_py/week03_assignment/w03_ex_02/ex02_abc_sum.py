@@ -34,12 +34,16 @@ def w03_ex02_part1a(s_error, check_this):
           w03_ex02_part1a.__name__, sep = '')
     press_continue()
     answer = 0
+    int_list = []
     for i in range(11):
         answer += i
-    print('The sum of the numbers 1 through 10 is:\n' + str(answer))
+        int_list.append(i)
+    print('The sum of the numbers 1 through 10 is:\n'
+          + str(answer))
     # Answer shall be 55
+    overtime_sum = sum(int_list)
     try:
-        if answer == check_this:
+        if answer == check_this and answer == overtime_sum:
             print('You did it for 1a!')
             press_continue()
         else:
@@ -54,19 +58,55 @@ def w03_ex02_part1b(s_error, check_this):
     """Use to solve part 1b.
 
     Calculate the sum of the integers 1 through 100.
+    Use a for loop.
     """
     print('Part 1b.\nFunction: ',
           w03_ex02_part1b.__name__, sep = '')
     press_continue()
     answer = 0
+    int_list = []
     for i in range(101):
         answer += i
-    print('The sum of the numbers 1 through 100 is:\n' + str(answer))
+        int_list.append(i)
+    print('The sum of the numbers 1 through 100 is:\n'
+          + str(answer))
     # Answer shall be 5050
+    overtime_sum = sum(int_list)
     try:
-        if answer == check_this:
+        if answer == check_this and answer == overtime_sum:
             print('You did it for 1b!')
             press_continue()
+        else:
+            print(s_error)
+            sys.exit()
+    except ValueError:
+        print(s_error)
+        sys.exit()
+
+
+def w03_ex02_part1c(s_error, check_this):
+    """Use to solve part 1c.
+
+    Calculate the sum of the integers 1 through 100.
+    Use a while loop (rewrite 1b).
+    """
+    print('Part 1c.\nFunction: ',
+          w03_ex02_part1c.__name__, sep = '')
+    press_continue()
+    answer = 0
+    int_list = []
+    i = 1
+    while i < 101:
+        answer += i
+        int_list.append(i)
+        i += 1
+    print('The sum of the numbers 1 through 100 is:\n'
+          + str(answer))
+    # Answer shall be 5050
+    overtime_sum = sum(int_list)
+    try:
+        if answer == check_this and answer == overtime_sum:
+            print('You did it for 1c!')
         else:
             print(s_error)
             sys.exit()
@@ -84,10 +124,15 @@ def main():
     s_ohno = 'Oh no, check your code!'
 
     check_this_1a = 55
+    # Part 1a, for, 1 - 10
     w03_ex02_part1a(s_ohno, check_this_1a)
 
-    check_this_1b = 5050
-    w03_ex02_part1b(s_ohno, check_this_1b)
+    check_this_1bc = 5050
+    # Part 1b, for, 1 - 100
+    w03_ex02_part1b(s_ohno, check_this_1bc)
+
+    # Part 1 c, while, 1 - 100
+    w03_ex02_part1c(s_ohno, check_this_1bc)
 
     press_exit()
 
