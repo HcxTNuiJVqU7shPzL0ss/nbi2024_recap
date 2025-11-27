@@ -25,29 +25,53 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-def w03_ex02_part1a():
+def w03_ex02_part1a(s_error, check_this):
     """Use to solve part 1a.
 
     Calculate the sum of the integers 1 through 10.
     """
-    print('Part 1a.')
+    print('Part 1a.\nFunction: ',
+          w03_ex02_part1a.__name__, sep = '')
     press_continue()
     answer = 0
     for i in range(11):
         answer += i
-    print('The sum of the numbers 1 through 10 is: ' + str(answer))
+    print('The sum of the numbers 1 through 10 is:\n' + str(answer))
     # Answer shall be 55
-    check_this = 55
-    ohno = 'Oh no, check your code!'
     try:
-        if answer is check_this:
+        if answer == check_this:
             print('You did it for 1a!')
             press_continue()
         else:
-            print(ohno)
+            print(s_error)
             sys.exit()
     except ValueError:
-        print(ohno)
+        print(s_error)
+        sys.exit()
+
+
+def w03_ex02_part1b(s_error, check_this):
+    """Use to solve part 1b.
+
+    Calculate the sum of the integers 1 through 100.
+    """
+    print('Part 1b.\nFunction: ',
+          w03_ex02_part1b.__name__, sep = '')
+    press_continue()
+    answer = 0
+    for i in range(101):
+        answer += i
+    print('The sum of the numbers 1 through 100 is:\n' + str(answer))
+    # Answer shall be 5050
+    try:
+        if answer == check_this:
+            print('You did it for 1b!')
+            press_continue()
+        else:
+            print(s_error)
+            sys.exit()
+    except ValueError:
+        print(s_error)
         sys.exit()
 
 
@@ -57,7 +81,13 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    w03_ex02_part1a()
+    s_ohno = 'Oh no, check your code!'
+
+    check_this_1a = 55
+    w03_ex02_part1a(s_ohno, check_this_1a)
+
+    check_this_1b = 5050
+    w03_ex02_part1b(s_ohno, check_this_1b)
 
     press_exit()
 
