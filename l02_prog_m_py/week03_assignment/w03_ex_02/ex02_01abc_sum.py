@@ -1,4 +1,7 @@
-"""Module for Lesson 02, Week 03, Exercise 02, a, b, c, Sum."""
+"""Module for Lesson 02, Week 03, Exercise 02.
+
+Part 1: a, b, c, Sum.
+"""
 
 #####################################################################
 # Copyright 2025 gnoff
