@@ -201,40 +201,61 @@ def w3_ex4_fig_i(des):
         print(s)
 
 
+def w3_ex4_fig_j(des):
+    """Use to draw figure 'j'."""
+    print('Ex 04 Figure ' + des, '.\nFunction: ',
+          w3_ex4_fig_j.__name__, sep='')
+    print('\nThis is figure ' + des + ' from example.\n')
+    print('Fig', des + ':')
+    for y in range(1, 7):
+        s = ""
+        for x in range(1, 9):
+            if ((1 <= y <= 3) and (x in (3, 6))) or \
+                ((y == 5) and (x % 2 == 0)) or \
+                    ((y == 6) and (x % 2 != 0)):
+                s += "#"
+            else:
+                s += "."
+        print(s)
+
+
 def main():
     """Use as main function."""
     print('\nWeek 03, Exercise 04, Draw Figures.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    # w3_ex4_fig_base('base')
-    # press_continue()
-    #
-    # w3_ex4_fig_a('a')
-    # press_continue()
-    #
-    # w3_ex4_fig_b('b')
-    # press_continue()
-    #
-    # w3_ex4_fig_c('c')
-    # press_continue()
-    #
-    # w3_ex4_fig_d('d')
-    # press_continue()
-    #
-    # w3_ex4_fig_e('e')
-    # press_continue()
-    #
-    # w3_ex4_fig_f('f')
-    # press_continue()
-    #
-    # w3_ex4_fig_g('g')
-    # press_continue()
-    #
-    # w3_ex4_fig_h('h')
-    # press_continue()
-    #
+    w3_ex4_fig_base('base')
+    press_continue()
+
+    w3_ex4_fig_a('a')
+    press_continue()
+
+    w3_ex4_fig_b('b')
+    press_continue()
+
+    w3_ex4_fig_c('c')
+    press_continue()
+
+    w3_ex4_fig_d('d')
+    press_continue()
+
+    w3_ex4_fig_e('e')
+    press_continue()
+
+    w3_ex4_fig_f('f')
+    press_continue()
+
+    w3_ex4_fig_g('g')
+    press_continue()
+
+    w3_ex4_fig_h('h')
+    press_continue()
+
     w3_ex4_fig_i('i')
+    press_continue()
+
+    w3_ex4_fig_j('j')
 
     press_exit()
 
