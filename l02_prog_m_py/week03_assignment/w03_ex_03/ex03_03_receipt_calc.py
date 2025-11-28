@@ -48,7 +48,8 @@ def w3_ex3_user_input():
 
     while True:
         str_in = input('Enter a value:\n')
-        if (str_in in end_it_clean) or (str_in in end_it_parens):
+        clean_string = str_in.replace('\"', '')
+        if (clean_string in end_it_clean) or (clean_string in end_it_parens):
             if sum(int_list) == 0:
                 print('\nNo values entered, exit hard.')
                 sys.exit()
