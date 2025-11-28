@@ -221,43 +221,53 @@ def w3_ex4_fig_j(des):
         print(s)
 
 
+def print_all():
+    func_list = (w3_ex4_fig_a, w3_ex4_fig_b)
+    des_list = ('a', 'b')
+    for index, f in enumerate(func_list):
+        f(des_list[index])
+        press_continue()
+
+
 def main():
     """Use as main function."""
     print('\nWeek 03, Exercise 04, Draw Figures.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    w3_ex4_fig_base('base')
-    press_continue()
+    # w3_ex4_fig_base('base')
+    # press_continue()
+    #
+    # w3_ex4_fig_a('a')
+    # press_continue()
+    #
+    # w3_ex4_fig_b('b')
+    # press_continue()
+    #
+    # w3_ex4_fig_c('c')
+    # press_continue()
+    #
+    # w3_ex4_fig_d('d')
+    # press_continue()
+    #
+    # w3_ex4_fig_e('e')
+    # press_continue()
+    #
+    # w3_ex4_fig_f('f')
+    # press_continue()
+    #
+    # w3_ex4_fig_g('g')
+    # press_continue()
+    #
+    # w3_ex4_fig_h('h')
+    # press_continue()
+    #
+    # w3_ex4_fig_i('i')
+    # press_continue()
+    #
+    # w3_ex4_fig_j('j')
 
-    w3_ex4_fig_a('a')
-    press_continue()
-
-    w3_ex4_fig_b('b')
-    press_continue()
-
-    w3_ex4_fig_c('c')
-    press_continue()
-
-    w3_ex4_fig_d('d')
-    press_continue()
-
-    w3_ex4_fig_e('e')
-    press_continue()
-
-    w3_ex4_fig_f('f')
-    press_continue()
-
-    w3_ex4_fig_g('g')
-    press_continue()
-
-    w3_ex4_fig_h('h')
-    press_continue()
-
-    w3_ex4_fig_i('i')
-    press_continue()
-
-    w3_ex4_fig_j('j')
+    print_all()
 
 
     press_exit()
