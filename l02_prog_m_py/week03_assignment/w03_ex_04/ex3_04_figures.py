@@ -210,10 +210,12 @@ def w3_ex4_fig_j(des):
     for y in range(1, 7):
         s = ""
         for x in range(1, 9):
+            # pylint: disable=too-many-boolean-expressions
             if ((1 <= y <= 3) and (x in (3, 6))) or \
                 ((y == 5) and (x % 2 == 0)) or \
                     ((y == 6) and (x % 2 != 0)):
                 s += "#"
+            # pylint: enable=too-many-boolean-expressions
             else:
                 s += "."
         print(s)
@@ -256,6 +258,7 @@ def main():
     press_continue()
 
     w3_ex4_fig_j('j')
+
 
     press_exit()
 
