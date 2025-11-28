@@ -37,7 +37,8 @@ def w3_ex3_user_input():
     int_list = []
     print('Ex 03 User Input.\nFunction: ',
           w3_ex3_user_input.__name__, sep='')
-    print('\nYou will be asked to input integers.\n'
+    print('\nYou will be asked to input integers, representing '
+          'what you have purchased.\n'
           'Keep doing this until you want to stop, '
           'then instead type "quit".')
     press_continue()
@@ -56,8 +57,7 @@ def w3_ex3_user_input():
             int_in = int(str_in)
             if int_in > 0:
                 int_list.append(int_in)
-                print('\nValue ' + str(int_in) + ' added.')
-                press_continue()
+                print('\nValue ' + str(int_in) + ' added.\n')
             else:
                 print('\nPlease use a positive integer!')
                 press_goback()
@@ -95,6 +95,7 @@ def main():
     ppl_v2 = w3_ex3_no_ppl()
     if ppl_v2 < 1:
         print('\nNeed to protect from div by 0!\n'
+              '(Also if no of ppl is negative, booo!\n'
               'Hard Exit!')
         sys.exit()
     else:
@@ -105,7 +106,7 @@ def main():
     print('\nVersion 1:\n'
           'The total is: ' + str(res_v1) + ' SEK. Please come back!')
     print('\nVersion 2:\n'
-          '\nYou should pay ~' + f'{shared:.2f}' +
+          'You should pay ~' + f'{shared:.2f}' +
           ' SEK per person.')
 
     press_exit()
