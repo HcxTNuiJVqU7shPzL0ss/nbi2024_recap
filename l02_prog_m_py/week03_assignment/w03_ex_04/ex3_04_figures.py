@@ -222,11 +222,17 @@ def w3_ex4_fig_j(des):
 
 
 def print_all():
-    func_list = (w3_ex4_fig_a, w3_ex4_fig_b)
-    des_list = ('a', 'b')
+    """Use to print all figures in a loop."""
+    func_list = (w3_ex4_fig_a, w3_ex4_fig_b, w3_ex4_fig_c,
+                 w3_ex4_fig_d, w3_ex4_fig_e, w3_ex4_fig_f,
+                 w3_ex4_fig_g, w3_ex4_fig_h, w3_ex4_fig_i,
+                 w3_ex4_fig_j)
+    des_list = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+                'i', 'j')
     for index, f in enumerate(func_list):
         f(des_list[index])
-        press_continue()
+        if des_list[index] != 'j':
+            press_continue()
 
 
 def main():
