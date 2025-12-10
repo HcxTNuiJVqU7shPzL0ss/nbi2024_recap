@@ -22,9 +22,21 @@ List of things to do.
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+                                            press_exit,
+                                            enter_string)
 
 
+def list_menu():
+    """Use to display the menu of the list."""
+    menu_options = ['a. See the contents of your list',
+                    'b. Add new item to your list',
+                    'c. Quit']
+    option_string = 'Please enter which option you want to use: '
+    while True:
+        selected_option = enter_string(option_string)
+        if selected_option == 'a':
+            print(menu_options[0])
+            break
 
 
 
@@ -33,6 +45,8 @@ def main():
     print('\nWeek 03, Exercise 06, To Do list.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
+
+    list_menu()
 
 
     press_exit()
