@@ -23,7 +23,8 @@ List of things to do.
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit,
-                                            enter_string)
+                                            enter_string,
+                                            enter_int_range)
 
 
 def print_list(in_list):
@@ -36,7 +37,7 @@ def print_list(in_list):
         #for i in range(len(in_list)):
         for i, item in enumerate(in_list):
             # print('* ' + in_list[i])
-            print('* ' + item)
+            print('Index:', i, '= ' + item)
         press_continue()
 
 
@@ -50,10 +51,25 @@ def add_to_list():
     return add_item
 
 
+def remove_from_list(in_list):
+    """Use to remove an item from the list."""
+    print_list(in_list)
+    remove_string = ('Enter the index from the list you '
+                     'want to remove: ')
+    remove_index = enter_int_range(remove_string, 0,
+                                   len(in_list) - 1, True)
+    selected_item = in_list[remove_index]
+    print('\nOK, removed "' + selected_item +
+          '" from the list.')
+    press_continue()
+    return remove_index
+
+
 def list_menu():
     """Use to display the menu of the list."""
     menu_options = ['a. See the contents of your list',
                     'b. Add new item to your list',
+                    'c. Mark as done (remove from list)',
                     'q. Quit']
     option_string = 'Please enter which option you want to use: '
     current_list = []
@@ -71,6 +87,9 @@ def list_menu():
         if selected_option == 'b':
             current_list.append(add_to_list())
             continue
+        if selected_option == 'c':
+            current_list.pop(remove_from_list(current_list))
+            continue
         if selected_option == 'q':
             print('\nThank you, bye!')
             break
@@ -85,7 +104,6 @@ def main():
     press_continue()
 
     list_menu()
-
 
     press_exit()
 
