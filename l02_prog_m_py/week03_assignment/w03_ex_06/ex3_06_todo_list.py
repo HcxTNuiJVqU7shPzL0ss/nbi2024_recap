@@ -26,18 +26,51 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_string)
 
 
+def print_list(in_list):
+    """Use to print the list."""
+    if len(in_list) == 0:
+        print('\nYour list is empty!')
+        press_continue()
+    else:
+        print('Your list:')
+        for i in range(len(in_list)):
+            print('* ' + in_list[i])
+        press_continue()
+
+
+def add_to_list():
+    """Use to add an item to the list."""
+    ask_item = 'Enter an item you want to add to the list: '
+    print('')
+    add_item = enter_string(ask_item)
+    print('\nOK, added "' + add_item + '" to the list.')
+    press_continue()
+    return add_item
+
+
 def list_menu():
     """Use to display the menu of the list."""
     menu_options = ['a. See the contents of your list',
                     'b. Add new item to your list',
-                    'c. Quit']
+                    'q. Quit']
     option_string = 'Please enter which option you want to use: '
+    current_list = []
     while True:
+        print('** Your list of options **')
+        for index in range(len(menu_options)):
+            print(menu_options[index])
+        print('')
         selected_option = enter_string(option_string)
         if selected_option == 'a':
-            print(menu_options[0])
+            print_list(current_list)
+            continue
+        elif selected_option == 'b':
+            current_list.append(add_to_list())
+        elif selected_option == 'q':
+            print('\nThank you, bye!')
             break
-
+        print('\nUnknown option, please try again!')
+        press_continue()
 
 
 def main():
