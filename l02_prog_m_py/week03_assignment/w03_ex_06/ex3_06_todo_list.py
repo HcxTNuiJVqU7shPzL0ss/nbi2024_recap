@@ -32,9 +32,11 @@ def print_list(in_list):
         print('\nYour list is empty!')
         press_continue()
     else:
-        print('Your list:')
-        for i in range(len(in_list)):
-            print('* ' + in_list[i])
+        print('\nYour list:')
+        #for i in range(len(in_list)):
+        for i, item in enumerate(in_list):
+            # print('* ' + in_list[i])
+            print('* ' + item)
         press_continue()
 
 
@@ -57,16 +59,19 @@ def list_menu():
     current_list = []
     while True:
         print('** Your list of options **')
-        for index in range(len(menu_options)):
-            print(menu_options[index])
+        #for index in range(len(menu_options)):
+        for index, option in enumerate(menu_options):
+            #print(menu_options[index])
+            print(option)
         print('')
         selected_option = enter_string(option_string)
         if selected_option == 'a':
             print_list(current_list)
             continue
-        elif selected_option == 'b':
+        if selected_option == 'b':
             current_list.append(add_to_list())
-        elif selected_option == 'q':
+            continue
+        if selected_option == 'q':
             print('\nThank you, bye!')
             break
         print('\nUnknown option, please try again!')
