@@ -89,7 +89,7 @@ def add_back(in_list):
 
 def list_menu():
     """Use to display the menu of the list."""
-    menu_options = ['a. See the contents of your list',
+    menu_options = ['a. See the contents of your active list',
                     'b. Add new item to your list',
                     'c. Mark as done (remove from list)',
                     'd. View removed items',
