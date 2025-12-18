@@ -18,8 +18,31 @@
 #####################################################################
 
 
+import sys
+
+
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit, ask_y_or_n)
+                                            press_exit, press_goback, ask_y_or_n)
+
+
+# def ask_y_or_n_01():
+#     """Use to ask if yes or no."""
+#     while True:
+#         check_ans = input('Did it match/work, (y) yes or (n) no: ')
+#         yes_01 = ('y', '(y)', '(y) yes', 'yes')
+#         no_01 = ('n', '(n)', '(n) no', 'no')
+#         try:
+#             if check_ans.lower() in yes_01:
+#                 print('\nAwesome!\n')
+#                 break
+#             if check_ans.lower() in no_01:
+#                 print('\nNope, exit')
+#                 press_exit()
+#                 sys.exit()
+#         except ValueError:
+#             print('\nPlease retry.\n')
+#             press_goback()
+#             continue
 
 
 def w04_ex01_a():
