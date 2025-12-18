@@ -19,13 +19,14 @@
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+                                            press_exit, ask_y_or_n)
 
 
 def w04_ex01_a():
     """Use for 1a."""
     print('This is part 1a.\nFunction: ',
           w04_ex01_a.__name__, sep='')
+    print('\nShould print out: test')
     press_continue()
     # # Defines the function foo which takes an argument t.
     # # However, t is never used, function prints test, always.
@@ -44,6 +45,8 @@ def w04_ex01_a():
         print('test')
 
     foo_1a()
+    print()
+    ask_y_or_n()
     press_continue()
     # Yes, I got the result I expected from 1a
 
@@ -52,6 +55,7 @@ def w04_ex01_b():
     """Use for 1b."""
     print('This is part 1b.\nFunction: ',
           w04_ex01_b.__name__, sep='')
+    print('\nShould print out: 3 5')
     press_continue()
     # # Defines a function that takes two arguments
     # # Returns the two arguments multiplied
@@ -64,6 +68,8 @@ def w04_ex01_b():
 
     # Fixed as to not have warnings, etc.
     print(3, 5)
+    print()
+    ask_y_or_n()
     press_continue()
     # Yes, I got the result I expected from 1b
 
@@ -74,7 +80,7 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    #w04_ex01_a() # Will print: test
+    w04_ex01_a() # Will print: test
     w04_ex01_b()  # Will print: 3 5
 
 
