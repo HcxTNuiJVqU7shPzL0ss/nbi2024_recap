@@ -45,6 +45,27 @@ def w04_ex01_a():
 
     foo_1a()
     press_continue()
+    # Yes, I got the result I expected from 1a
+
+
+def w04_ex01_b():
+    """Use for 1b."""
+    print('This is part 1b.\nFunction: ',
+          w04_ex01_b.__name__, sep='')
+    press_continue()
+    # # Defines a function that takes two arguments
+    # # Returns the two arguments multiplied
+    # def fun1(x, y):
+    #     return x * y
+    #
+    # # Prints 3 and 5
+    # # Function is never called, only defined
+    # print(3, 5)
+
+    # Fixed as to not have warnings, etc.
+    print(3, 5)
+    press_continue()
+    # Yes, I got the result I expected from 1b
 
 
 def main():
@@ -53,7 +74,8 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    w04_ex01_a() # Will print: test
+    #w04_ex01_a() # Will print: test
+    w04_ex01_b()  # Will print: 3 5
 
 
     press_exit()
