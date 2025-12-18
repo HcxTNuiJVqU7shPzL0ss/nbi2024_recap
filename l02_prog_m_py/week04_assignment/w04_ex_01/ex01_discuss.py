@@ -94,6 +94,33 @@ def w04_ex01_c():
     # Yes, I got the result I expected from 1c
 
 
+def w04_ex01_d():
+    """Use for 1d."""
+    print('This is part 1d.\nFunction: ',
+          w04_ex01_d.__name__, sep='')
+    print('\nShould print out: 125')
+    press_continue()
+    # Defines a function that takes one argument
+    # Returns the argument multiplied with 5
+    def fun2(i):
+        return 5 * i
+
+    x = 2
+    y = 3
+    # First with x returns 2 * 5 = 10
+    # Second with y returns 3 * 5 = 15
+    # The two are added: 10 + 15 = 25
+    # 25 is sent in to be multiplied by 5 = 125
+    a = fun2(fun2(x) + fun2(y))
+    # 125 to be printed
+    print(a)
+
+    print()
+    ask_y_or_n()
+    press_continue()
+    # Yes, I got the result I expected from 1d
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
@@ -102,7 +129,8 @@ def main():
 
     #w04_ex01_a() # Will print: test
     #w04_ex01_b() # Will print: 3 5
-    w04_ex01_c() # "ill print: 15
+    #w04_ex01_c() # Will print: 15
+    w04_ex01_d() # Will prin: 125
 
 
     press_exit()
