@@ -22,11 +22,38 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
+def w04_ex01_a():
+    """Use for 1a."""
+    print('This is part 1a.\nFunction: ',
+          w04_ex01_a.__name__, sep='')
+    press_continue()
+    # # Defines the function foo which takes an argument t.
+    # # However, t is never used, function prints test, always.
+    # # Will need to change to pass pylint.
+    # def foo(t):
+    #     print('test')
+    #
+    # # Calls function foo with hej as t, though not actually used.
+    # # Will need to change to pass pylint.
+    # foo('hej')
+
+    # Pylint fixes
+    # 1) "foo" is a disallowed name
+    # 2) t is an unused argument
+    def foo_1a():
+        print('test')
+
+    foo_1a()
+    press_continue()
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
+
+    w04_ex01_a() # Will print: test
 
 
     press_exit()
