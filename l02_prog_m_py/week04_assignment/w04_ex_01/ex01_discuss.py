@@ -121,6 +121,39 @@ def w04_ex01_d():
     # Yes, I got the result I expected from 1d
 
 
+def w04_ex01_e():
+    """Use for 1e."""
+    print('This is part 1e.\nFunction: ',
+          w04_ex01_e.__name__, sep='')
+    print('\nShould print out: 7')
+    press_continue()
+
+    # # "a" is assigned to 5
+    # a = 5
+    # # fun3 is defined with one argument
+    # # The argument has 1 added to it
+    # # Nothing is returned or printed
+    # # The function is never called = dead code
+    # # Also, "a" is shadowed from outer, likely to confuse
+    # # Will need to fix to actually use
+    # def fun3(a):
+    #     a += 1
+    #
+    # # 2 is added to , so now 7
+    # a += 2
+    # # Should print out 7
+    # print(a)
+
+    # Code to print out 7
+    a = 5
+    a += 2
+    print(a)
+    print()
+    ask_y_or_n()
+    press_continue()
+    # Yes, I got the result I expected from 1e
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
@@ -130,7 +163,8 @@ def main():
     #w04_ex01_a() # Will print: test
     #w04_ex01_b() # Will print: 3 5
     #w04_ex01_c() # Will print: 15
-    w04_ex01_d() # Will prin: 125
+    #w04_ex01_d() # Will prin: 125
+    w04_ex01_e() # Will print: 7
 
 
     press_exit()
