@@ -97,14 +97,35 @@ def w04_ex01_b():
     # Yes, I got the result I expected from 1b
 
 
+def w04_ex01_c():
+    """Use for 1c."""
+    print('This is part 1c.\nFunction: ',
+          w04_ex01_c.__name__, sep='')
+    print('\nShould print out: 15')
+    press_continue()
+    # Defines a function that takes two arguments
+    # Returns the two arguments multiplied
+    def fun1(x, y):
+        return x * y
+
+    # Prints 15
+    print(fun1(3, 5))
+
+    print()
+    ask_y_or_n_01()
+    press_continue()
+    # Yes, I got the result I expected from 1c
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    w04_ex01_a() # Will print: test
-    w04_ex01_b()  # Will print: 3 5
+    #w04_ex01_a() # Will print: test
+    #w04_ex01_b() # Will print: 3 5
+    w04_ex01_c() # "ill print: 15
 
 
     press_exit()
