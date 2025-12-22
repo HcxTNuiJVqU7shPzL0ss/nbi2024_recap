@@ -32,6 +32,7 @@ def w04_ex01_a():
     # # However, t is never used, function prints test, always.
     # # Will need to change to pass pylint.
     # def foo(t):
+    #     """Use for 1a exercise to print."""
     #     print('test')
     #
     # # Calls function foo with hej as t, though not actually used.
@@ -42,6 +43,7 @@ def w04_ex01_a():
     # 1) "foo" is a disallowed name
     # 2) t is an unused argument
     def foo_1a():
+        """Use for foo_1a, print only."""
         print('test')
 
     foo_1a()
@@ -83,6 +85,7 @@ def w04_ex01_c():
     # Defines a function that takes two arguments
     # Returns the two arguments multiplied
     def fun1(x, y):
+        """Use for fun1 function, return multiplied."""
         return x * y
 
     # Prints 15
@@ -103,6 +106,7 @@ def w04_ex01_d():
     # Defines a function that takes one argument
     # Returns the argument multiplied with 5
     def fun2(i):
+        """Use for fun2 function, return multiplied by 5."""
         return 5 * i
 
     x = 2
@@ -165,12 +169,14 @@ def w04_ex01_f():
     # # Defines a function foo, which takes an argument named "i"
     # # Returns 2 multiplied with i squared
     # def foo(i):
+    #     """Use for foo, return 2 multiplied with i^2."""
     #     return 2 * i * i
     #
     # # Defines a function goo, which takes two arguments, "x" and "y"
     # # x is a function name, y an argument
     # # Returns the value from the function call
     # def goo(x, y):
+    #     """Use for goo function."""
     #     return x(y)
     #
     # #a = goo(foo, 3); # Should not have a semicolon
@@ -185,9 +191,11 @@ def w04_ex01_f():
     # Code to print out 18
 
     def foo_1f(i):
+        """Use for foo_1f, return 2 multiplied with i^2."""
         return 2 * i * i
 
     def goo_1f(x, y):
+        """Use for goo_1f, return function call result."""
         return x(y)
 
     a = goo_1f(foo_1f, 3)
@@ -227,6 +235,7 @@ def w04_ex01_g():
     # # Original code end
 
     def is_number(x):
+        """Use to check if int or float, or not."""
         if isinstance(x, int):
             #print('An integer was sent in.')
             return True
@@ -259,6 +268,7 @@ def w04_ex01_h():
     # Original code start
     # Function average_words, takes an argument "strings"
     def average_words(strings):
+        """Use to check some word lengths, return selection."""
         # Empty list
         found = []
         # For loop over the input argument
@@ -271,8 +281,9 @@ def w04_ex01_h():
         # Return the list
         return found
 
-    # Call to function with some words, but does not store the result
-    # Nothing will print, nor be stored, dummy feature
+    # Call to function with some words in a list,
+    # but does not store the result.
+    # Nothing will print, nor be stored, dummy feature.
     average_words(["sup", "how's", "it", "going", "reflecting", "on",
                    "programs", "and", "coding"])
     # Original code end
@@ -285,6 +296,48 @@ def w04_ex01_h():
     print('End of 1h.')
     press_continue()
     # Yes, I got the result I expected from 1h
+
+
+def w04_ex01_i_1_and_2():
+    """Use for 1i."""
+    print('This is part 1i.\nFunction: ',
+          w04_ex01_i_1_and_2.__name__, sep='')
+    print('\nWill print:\n-11\n0\n0')
+    press_continue()
+
+    # Original code start
+    # Function that based on name finds the smallest number
+    # from the input argument "numbers".
+    def find_min(numbers):
+        """Use to find the smallest number."""
+        # Start with a counter at 0 (bad name, does not count).
+        counter = 0
+        # Loop over the input argument
+        for item in numbers:
+            # Check if the number is smaller than counter,
+            # which starts at 0 (positive numbers will not work).
+            if item < counter:
+                # If smaller (negative number) found, assign counter
+                # to number found.
+                counter = item
+        # Prints what is found to be the smallest (negative) item.
+        # Else will print default 0, even if not input.
+        print(f"The smallest item is: {counter}")
+        # Return the found value
+        return counter
+
+    # Input list, -11 should be the smallest
+    find_min([10, 3, -4, -11])
+    # Empty list, 0 will be reported.
+    find_min([])
+    # Only contains 100, 0 will be reported.
+    find_min([100])
+    # Original code end
+
+    print()
+    ask_y_or_n()
+    press_continue()
+    # Yes, I got the result I expected from 1i
 
 
 def main():
@@ -300,7 +353,8 @@ def main():
     #w04_ex01_e() # Will print: 7
     #w04_ex01_f() # Will print: 18
     #w04_ex01_g() # Will print: True (newline) True
-    w04_ex01_h() # Will not really do anything
+    #w04_ex01_h() # Will not really do anything
+    w04_ex01_i_1_and_2()
 
 
     press_exit()
