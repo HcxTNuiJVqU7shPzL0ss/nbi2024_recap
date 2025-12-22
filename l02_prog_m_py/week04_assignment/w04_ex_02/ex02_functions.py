@@ -1,7 +1,4 @@
-"""Module for Lesson 02, Week 04, Exercise 02.
-
-Practice using functions and modules.
-"""
+"""Functions for Lesson 02, Week 04, Exercise 02."""
 
 #####################################################################
 # Copyright 2025 gnoff
@@ -21,30 +18,13 @@ Practice using functions and modules.
 #####################################################################
 
 
-# pylint: disable=import-error
-from ex02_functions import *
-# pylint: disable=enable
+from my_funct_dir.my_base_functions import (press_continue)
 
 
-from my_funct_dir.my_base_functions import (press_exit,
-                                            press_continue,
-                                            enter_string)
-
-
-def main():
-    """Use as main function."""
-    print('\nWeek 04, Exercise 02, Functions and Modules.'
-          '\nFunction: ',
-          main.__name__, sep = '')
+def my_function_2_1(in_name):
+    """Use for exercise 02, part 01."""
+    print('\nThis is exercise 01.\n')
+    add_string = ' is a real hacker'
+    print(in_name + add_string)
+    print('\nEnd of part 01.')
     press_continue()
-
-    # Part 01
-    name_02_01 = 'What is your name: '
-    use_name_02_01 = enter_string(name_02_01)
-    my_function_2_1(use_name_02_01)
-
-    press_exit()
-
-
-if __name__ == "__main__":
-    main()
