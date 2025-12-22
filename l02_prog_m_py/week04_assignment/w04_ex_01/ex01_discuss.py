@@ -154,6 +154,40 @@ def w04_ex01_e():
     # Yes, I got the result I expected from 1e
 
 
+def w04_ex01_f():
+    """Use for 1f."""
+    print('This is part 1f.\nFunction: ',
+          w04_ex01_f.__name__, sep='')
+    print('\nShould print out: 18')
+    press_continue()
+
+    # Original code start
+    # Defines a function foo, which takes an argument named "i"
+    # Returns 2 multiplied with i squared
+    def foo(i):
+        return 2 * i * i
+
+    # Defines a function goo, which takes two arguments, "x" and "y"
+    # x is a function name, y an argument
+    # Returns the value from the function call
+    def goo(x, y):
+        return x(y)
+
+    #a = goo(foo, 3); # Should not have a semicolon
+    # "a" is assigned goo function call, using foo as x and 3 as y
+    # foo is called with 3, resulting in 2 * 3 * 3 = 18
+    # "a" gets the value of 18
+    a = goo(foo, 3)  # Removed semicolon
+    # Will print 18
+    print(a)
+    # Original code end
+
+    print()
+    ask_y_or_n()
+    press_continue()
+    # Yes, I got the result I expected from 1f
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
@@ -164,7 +198,8 @@ def main():
     #w04_ex01_b() # Will print: 3 5
     #w04_ex01_c() # Will print: 15
     #w04_ex01_d() # Will prin: 125
-    w04_ex01_e() # Will print: 7
+    #w04_ex01_e() # Will print: 7
+    w04_ex01_f()
 
 
     press_exit()
