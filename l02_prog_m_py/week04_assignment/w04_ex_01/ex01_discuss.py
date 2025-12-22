@@ -161,26 +161,37 @@ def w04_ex01_f():
     print('\nShould print out: 18')
     press_continue()
 
-    # Original code start
-    # Defines a function foo, which takes an argument named "i"
-    # Returns 2 multiplied with i squared
-    def foo(i):
+    # # Original code start
+    # # Defines a function foo, which takes an argument named "i"
+    # # Returns 2 multiplied with i squared
+    # def foo(i):
+    #     return 2 * i * i
+    #
+    # # Defines a function goo, which takes two arguments, "x" and "y"
+    # # x is a function name, y an argument
+    # # Returns the value from the function call
+    # def goo(x, y):
+    #     return x(y)
+    #
+    # #a = goo(foo, 3); # Should not have a semicolon
+    # # "a" is assigned goo function call, using foo as x and 3 as y
+    # # foo is called with 3, resulting in 2 * 3 * 3 = 18
+    # # "a" gets the value of 18
+    # a = goo(foo, 3)  # Removed semicolon
+    # # Will print 18
+    # print(a)
+    # # Original code end
+
+    # Code to print out 18
+
+    def foo_1f(i):
         return 2 * i * i
 
-    # Defines a function goo, which takes two arguments, "x" and "y"
-    # x is a function name, y an argument
-    # Returns the value from the function call
-    def goo(x, y):
+    def goo_1f(x, y):
         return x(y)
 
-    #a = goo(foo, 3); # Should not have a semicolon
-    # "a" is assigned goo function call, using foo as x and 3 as y
-    # foo is called with 3, resulting in 2 * 3 * 3 = 18
-    # "a" gets the value of 18
-    a = goo(foo, 3)  # Removed semicolon
-    # Will print 18
+    a = goo_1f(foo_1f, 3)
     print(a)
-    # Original code end
 
     print()
     ask_y_or_n()
