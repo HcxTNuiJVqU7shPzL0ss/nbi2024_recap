@@ -26,7 +26,7 @@ def w04_ex01_a():
     """Use for 1a part."""
     print('This is part 1a.\nFunction: ',
           w04_ex01_a.__name__, sep='')
-    print('\nShould print out: test')
+    print('\nShould print out:\ntest')
     press_continue()
     # # Defines the function foo which takes an argument t.
     # # However, t is never used, function prints test, always.
@@ -55,7 +55,7 @@ def w04_ex01_b():
     """Use for 1b."""
     print('This is part 1b.\nFunction: ',
           w04_ex01_b.__name__, sep='')
-    print('\nShould print out: 3 5')
+    print('\nShould print out:\n3 5')
     press_continue()
     # # Defines a function that takes two arguments
     # # Returns the two arguments multiplied
@@ -78,7 +78,7 @@ def w04_ex01_c():
     """Use for 1c."""
     print('This is part 1c.\nFunction: ',
           w04_ex01_c.__name__, sep='')
-    print('\nShould print out: 15')
+    print('\nShould print out:\n15')
     press_continue()
     # Defines a function that takes two arguments
     # Returns the two arguments multiplied
@@ -98,7 +98,7 @@ def w04_ex01_d():
     """Use for 1d."""
     print('This is part 1d.\nFunction: ',
           w04_ex01_d.__name__, sep='')
-    print('\nShould print out: 125')
+    print('\nShould print out:\n125')
     press_continue()
     # Defines a function that takes one argument
     # Returns the argument multiplied with 5
@@ -125,7 +125,7 @@ def w04_ex01_e():
     """Use for 1e."""
     print('This is part 1e.\nFunction: ',
           w04_ex01_e.__name__, sep='')
-    print('\nShould print out: 7')
+    print('\nShould print out:\n7')
     press_continue()
 
     # # "a" is assigned to 5
@@ -158,7 +158,7 @@ def w04_ex01_f():
     """Use for 1f."""
     print('This is part 1f.\nFunction: ',
           w04_ex01_f.__name__, sep='')
-    print('\nShould print out: 18')
+    print('\nShould print out:\n18')
     press_continue()
 
     # # Original code start
@@ -199,6 +199,56 @@ def w04_ex01_f():
     # Yes, I got the result I expected from 1f
 
 
+def w04_ex01_g():
+    """Use for 1g."""
+    print('This is part 1g.\nFunction: ',
+          w04_ex01_g.__name__, sep='')
+    print('\nShould print out:\nTrue\nTrue')
+    press_continue()
+
+    # # Original code start
+    # # Function is_number returns True if either an int or a float
+    # # is used as an argument during the function call
+    # # Yes, it can be improved!
+    # # The elif is not needed, since the above line returns something
+    # # Also, you do not know if it was an int or float, this can be
+    # # Added as a printout, if wanted.
+    # def is_number(x):
+    #     if isinstance(x, int):
+    #         return True
+    #     elif isinstance(x, float):
+    #         return True
+    #     return False
+    #
+    # # Prints: True
+    # print(is_number(5.5))
+    # # Prints: True
+    # print(is_number(42))
+    # # Original code end
+
+    def is_number(x):
+        if isinstance(x, int):
+            #print('An integer was sent in.')
+            return True
+        if isinstance(x, float):
+            #print('A floating point number was sent in.')
+            return True
+        print('Neither int, nor float, was passed to the function.')
+        return False
+
+    # Prints: True
+    print(is_number(5.5))
+    # Prints: True
+    print(is_number(42))
+    # # Test use
+    # print(is_number('a'))
+
+    print()
+    ask_y_or_n()
+    press_continue()
+    # Yes, I got the result I expected from 1g
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
@@ -210,7 +260,8 @@ def main():
     #w04_ex01_c() # Will print: 15
     #w04_ex01_d() # Will prin: 125
     #w04_ex01_e() # Will print: 7
-    w04_ex01_f()
+    #w04_ex01_f() # Will print: 18
+    w04_ex01_g() # Will print: True (newline) True
 
 
     press_exit()
