@@ -249,6 +249,44 @@ def w04_ex01_g():
     # Yes, I got the result I expected from 1g
 
 
+def w04_ex01_h():
+    """Use for 1h."""
+    print('This is part 1h.\nFunction: ',
+          w04_ex01_h.__name__, sep='')
+    print('\nShould not really do anything.')
+    press_continue()
+
+    # Original code start
+    # Function average_words, takes an argument "strings"
+    def average_words(strings):
+        # Empty list
+        found = []
+        # For loop over the input argument
+        for item in strings:
+            # If the "item" has more than 4, but less than 8 length
+            # ["how's", 'going', 'coding']
+            if 4 < len(item) < 8:
+                # Append "item" to list
+                found.append(item)
+        # Return the list
+        return found
+
+    # Call to function with some words, but does not store the result
+    # Nothing will print, nor be stored, dummy feature
+    average_words(["sup", "how's", "it", "going", "reflecting", "on",
+                   "programs", "and", "coding"])
+    # Original code end
+
+    # # Attempt to do something
+    # words_1h = average_words(["sup", "how's", "it", "going", "reflecting", "on",
+    #                "programs", "and", "coding"])
+    # print(words_1h)
+
+    print('End of 1h.')
+    press_continue()
+    # Yes, I got the result I expected from 1h
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 01, Discuss.\nFunction: ',
@@ -261,7 +299,8 @@ def main():
     #w04_ex01_d() # Will prin: 125
     #w04_ex01_e() # Will print: 7
     #w04_ex01_f() # Will print: 18
-    w04_ex01_g() # Will print: True (newline) True
+    #w04_ex01_g() # Will print: True (newline) True
+    w04_ex01_h() # Will not really do anything
 
 
     press_exit()
