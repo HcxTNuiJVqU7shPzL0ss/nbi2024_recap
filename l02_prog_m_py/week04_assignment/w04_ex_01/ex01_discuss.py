@@ -299,27 +299,29 @@ def w04_ex01_h():
 
 
 def w04_ex01_i_1_and_2():
-    """Use for 1i."""
-    print('This is part 1i.\nFunction: ',
+    """Use for 1i, part 1 and 2."""
+    print('This is part 1i, part 1 and 2.\nFunction: ',
           w04_ex01_i_1_and_2.__name__, sep='')
     print('\nWill print:\n-11\n0\n0')
     press_continue()
 
     # Original code start
     # Function that based on name finds the smallest number
-    # from the input argument "numbers".
-    def find_min(numbers):
+    # from the input argument "numbers_1_2".
+    def find_min_1_2(numbers_1_2):
         """Use to find the smallest number."""
         # Start with a counter at 0 (bad name, does not count).
         counter = 0
         # Loop over the input argument
-        for item in numbers:
+        for item in numbers_1_2:
             # Check if the number is smaller than counter,
             # which starts at 0 (positive numbers will not work).
+            # pylint: disable=consider-using-min-builtin
             if item < counter:
                 # If smaller (negative number) found, assign counter
                 # to number found.
                 counter = item
+            # pylint: enable=consider-using-min-builtin
         # Prints what is found to be the smallest (negative) item.
         # Else will print default 0, even if not input.
         print(f"The smallest item is: {counter}")
@@ -327,17 +329,44 @@ def w04_ex01_i_1_and_2():
         return counter
 
     # Input list, -11 should be the smallest
-    find_min([10, 3, -4, -11])
+    find_min_1_2([10, 3, -4, -11])
     # Empty list, 0 will be reported.
-    find_min([])
+    find_min_1_2([])
     # Only contains 100, 0 will be reported.
-    find_min([100])
+    find_min_1_2([100])
     # Original code end
 
     print()
     ask_y_or_n()
     press_continue()
-    # Yes, I got the result I expected from 1i
+    # Yes, I got the result I expected from 1i (1 and 2)
+
+
+def w04_ex01_i_3():
+    """Use for 1i, part 3."""
+    print('This is part 1i, part 3.\nFunction: ',
+          w04_ex01_i_3.__name__, sep='')
+    print('\nWill print:\n-11\nEmpty list\n100')
+    press_continue()
+
+    def find_min_3(numbers_3):
+        """Use to find the smallest number."""
+        min_val = float('inf')
+        # if len(numbers_3) == 0:
+        #     print('\nEmpty list!')
+        for item in numbers_3:
+            min_val = min(min_val, item)
+        if len(numbers_3) == 0:
+            min_val = 'Empty list'
+        print(f"The smallest item is: {min_val}")
+        return min_val
+
+    find_min_3([10, 3, -4, -11])
+    find_min_3([])
+    find_min_3([100])
+
+    print()
+    ask_y_or_n()
 
 
 def main():
@@ -346,15 +375,16 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    #w04_ex01_a() # Will print: test
-    #w04_ex01_b() # Will print: 3 5
-    #w04_ex01_c() # Will print: 15
-    #w04_ex01_d() # Will prin: 125
-    #w04_ex01_e() # Will print: 7
-    #w04_ex01_f() # Will print: 18
-    #w04_ex01_g() # Will print: True (newline) True
-    #w04_ex01_h() # Will not really do anything
-    w04_ex01_i_1_and_2()
+    w04_ex01_a() # Will print: test
+    w04_ex01_b() # Will print: 3 5
+    w04_ex01_c() # Will print: 15
+    w04_ex01_d() # Will prin: 125
+    w04_ex01_e() # Will print: 7
+    w04_ex01_f() # Will print: 18
+    w04_ex01_g() # Will print: True (newline) True
+    w04_ex01_h() # Will not really do anything
+    w04_ex01_i_1_and_2() # Will print -11, 0, 0
+    w04_ex01_i_3() # Will print -11, Empty list, 100
 
 
     press_exit()
