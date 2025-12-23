@@ -26,7 +26,7 @@ Exempel:
 ### 2
 
 #### 2a
-Skriv en funktion med namnet "eko".\
+Skriv en funktion med namnet "_**eko**_".\
 När den anropas med en sträng ska den upprepa strängen, 
 och skriva ut resultatet.
 
@@ -35,7 +35,7 @@ Exempel:
     eko("hej") → skriver ut "hejhej" 
 
 #### 2b
-Lägg till en parameter "count", som avgör hur många 
+Lägg till en parameter "_**count**_", som avgör hur många 
 ekon som ska skapas.
 
 Exempel:

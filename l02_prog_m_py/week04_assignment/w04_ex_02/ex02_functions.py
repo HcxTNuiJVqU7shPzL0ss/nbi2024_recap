@@ -28,3 +28,25 @@ def my_function_2_1(in_name):
     print(in_name + add_string)
     print('\nEnd of part 01.')
     press_continue()
+
+
+def eko_2a(in_string):
+    """Use to echo incoming string."""
+    print('\nThis is exercise 02a.\n')
+    print(in_string + in_string)
+    print('\nEnd of part 02a.')
+    press_continue()
+
+
+def eko_2b(in_string, count):
+    """Use to echo incoming string count number of times."""
+    print('\nThis is exercise 02b.\n')
+    int_cnt = count
+    int_string = in_string
+    # print(in_string * count)
+    while int_cnt > 0:
+        int_string += in_string
+        int_cnt -= 1
+    print(int_string)
+    print('\nEnd of part 02b.')
+
