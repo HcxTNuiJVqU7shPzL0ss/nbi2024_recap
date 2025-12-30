@@ -68,3 +68,18 @@ def my_function_2_3():
 
     print('\nEnd of part 03.')
     press_continue()
+
+
+def last(in_list_04):
+    """Use to return the last element of the list parameter."""
+    print('\nThis is exercise 04.\n')
+    return in_list_04[-1]
+
+
+def cut_edges(in_list_05):
+    """Use to return the list without the first and last element."""
+    print('\nThis is exercise 05.\n')
+    internal_list = in_list_05
+    internal_list.remove(0)
+    internal_list.pop(-1)
+    return internal_list

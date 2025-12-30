@@ -25,7 +25,9 @@ Practice using functions and modules.
 # from ex02_functions import my_function_2_1
 # from ex02_functions import eko_2a
 # from ex02_functions import eko_2b
-from ex02_functions import my_function_2_3
+# from ex02_functions import my_function_2_3
+# from ex02_functions import last
+from ex02_functions import cut_edges
 # pylint: disable=enable
 
 
@@ -57,8 +59,20 @@ def main():
     # echo_cnt_2b = enter_int_range(cnt_string, 3, 10, True)
     # eko_2b(echo_string_2b, echo_cnt_2b)
 
-    # Part 03
-    my_function_2_3()
+    # # Part 03
+    # my_function_2_3()
+
+    # # Part 04
+    # return_04 = last([1, 2, 3])
+    # print(return_04)
+    # print('\nEnd of part 04.')
+    # press_continue()
+
+    # Part 05
+    return_05 = cut_edges([0, 1, 2, 3])
+    print(return_05)
+    print('\nEnd of part 05.')
+    press_continue()
 
 
     press_exit()
