@@ -119,3 +119,20 @@ def ask_y_or_n():
             print('\nPlease retry.\n')
             press_goback()
             continue
+
+
+def y_or_n(in_string):
+    """Use to ask if yes or no."""
+    while True:
+        check_ans = input(in_string)
+        yes_check = ('y', '(y)', '(y) yes', 'yes')
+        no_check = ('n', '(n)', '(n) no', 'no')
+        try:
+            if check_ans.lower() in yes_check:
+                return 'y'
+            if check_ans.lower() in no_check:
+                return 'n'
+        except ValueError:
+            print('\nPlease retry.\n')
+            press_goback()
+            continue
