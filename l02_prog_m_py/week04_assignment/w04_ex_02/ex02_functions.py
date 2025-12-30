@@ -83,3 +83,10 @@ def cut_edges(in_list_05):
     internal_list.remove(0)
     internal_list.pop(-1)
     return internal_list
+
+
+def increase(x):
+    """Use to increase x by 1 and return the result."""
+    print('\nThis is exercise 06.\n')
+    x += 1
+    return x
