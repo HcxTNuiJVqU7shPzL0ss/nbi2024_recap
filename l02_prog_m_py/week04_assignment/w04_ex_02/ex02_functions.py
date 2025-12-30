@@ -90,3 +90,10 @@ def increase(x):
     print('\nThis is exercise 06.\n')
     x += 1
     return x
+
+
+def average(x, y):
+    """Use to return the average value of the two parameters."""
+    print('\nThis is exercise 07.\n')
+    aver_value_07 = (x + y) / 2
+    return aver_value_07
