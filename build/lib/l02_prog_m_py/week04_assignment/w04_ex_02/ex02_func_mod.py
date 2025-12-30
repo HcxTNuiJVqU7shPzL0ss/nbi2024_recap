@@ -21,24 +21,11 @@ Practice using functions and modules.
 #####################################################################
 
 
-# pylint: disable=import-error
-# from ex02_functions import my_function_2_1
-# from ex02_functions import eko_2a
-# from ex02_functions import eko_2b
-# from ex02_functions import my_function_2_3
-# from ex02_functions import last
-# from ex02_functions import cut_edges
-# from ex02_functions import increase
-# from ex02_functions import average
-# from ex02_functions import pretty_list
-from ex02_functions import *
-# pylint: disable=enable
+from l02_prog_m_py.week04_assignment.w04_ex_02.w04ex02_functions.\
+    ex02_functions import run_w04_ex02
 
 
-from my_funct_dir.my_base_functions import (press_exit,
-                                            press_continue,
-                                            enter_string,
-                                            enter_int_range)
+from my_funct_dir.my_base_functions import (press_continue)
 
 
 def main():
@@ -48,52 +35,8 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    # Part 01
-    name_02_01 = 'What is your name: '
-    use_name_02_01 = enter_string(name_02_01)
-    my_function_2_1(use_name_02_01)
-
-    # Part 02a
-    echo_string_2a = enter_string('Please enter what to echo: ')
-    eko_2a(echo_string_2a)
-
-    # Part 02b
-    echo_string_2b = enter_string('Please enter what to echo: ')
-    cnt_string = 'Please enter how many times to echo: '
-    echo_cnt_2b = enter_int_range(cnt_string, 3, 10, True)
-    eko_2b(echo_string_2b, echo_cnt_2b)
-
-    # Part 03
-    my_function_2_3()
-
-    # Part 04
-    return_04 = last([1, 2, 3])
-    print(return_04)
-    print('\nEnd of part 04.')
-    press_continue()
-
-    # Part 05
-    return_05 = cut_edges([0, 1, 2, 3])
-    print(return_05)
-    print('\nEnd of part 05.')
-    press_continue()
-
-    # Part 06
-    print(increase(1))
-    print('\nEnd of part 06.')
-    press_continue()
-
-    # Part 07
-    result_07 = average(4, 8)
-    print(result_07)
-    print('\nEnd of part 07.')
-    press_continue()
-
-    # Part 08
-    pretty_list(['a', 'b', 3.14])
-
-
-    press_exit()
+    # Run exercises
+    run_w04_ex02()
 
 
 if __name__ == "__main__":

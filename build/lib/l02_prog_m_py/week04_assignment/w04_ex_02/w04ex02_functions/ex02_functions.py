@@ -19,10 +19,8 @@
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_goback,
                                             press_exit,
                                             enter_string,
-                                            enter_int,
                                             enter_int_range)
 
 
@@ -167,68 +165,26 @@ def ex08():
     print('This is exercise 08.\n')
     pretty_list(['a', 'b', 3.14])
     print('\nEnd of part 08.')
-    press_continue()
+    press_exit()
 
 
-# pylint: disable=too-many-branches
 def run_w04_ex02():
     """Use to run week 04 exercise 02."""
-    exercises = ['ex01', 'ex02a', 'ex02b', 'ex03', 'ex04', 'ex05',
-                'ex06', 'ex07', 'ex08', 'all', 'quit']
-    ex_numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    exc = [ex01, ex02a, ex02b, ex03, ex04, ex05, ex06, ex07, ex08]
-    while True:
-        print('Available exercises to run are:\n')
-        for i, ex in enumerate(exercises):
-            print(f'{i}: {ex}')
-        print('')
-        run_one = enter_int('Select which exercise to run: ')
-        print('')
-        if run_one not in ex_numbers:
-            print('\nNot valid!')
-            press_goback()
-            continue
-        # if run_one == 0:
-        #     # Part 01
-        #     ex01()
-        # elif run_one == 1:
-        #     # Part 02a
-        #     ex02a()
-        # elif run_one == 2:
-        #     # Part 02b
-        #     ex02b()
-        # elif run_one == 3:
-        #     # Part 03
-        #     ex03()
-        # elif run_one == 4:
-        #     # Part 04
-        #     ex04()
-        # elif run_one == 5:
-        #     # Part 05
-        #     ex05()
-        # elif run_one == 6:
-        #     # Part 06
-        #     ex06()
-        # elif run_one == 7:
-        #     # Part 07
-        #     ex07()
-        # elif run_one == 8:
-        #     # Part 08
-        #     ex08()
-        # elif run_one == 9:
-        #     # pylint: disable=expression-not-assigned
-        #     ex01(), ex02a(), ex02b(), ex03(), ex04(), ex05(), \
-        #     ex06(), ex07(), ex08()
-        #     # pylint: enable=expression-not-assigned
-        if run_one == 10:
-            print('Goodbye!')
-            press_exit()
-            break
-        if run_one == 9:
-            # pylint: disable=expression-not-assigned
-            ex01(), ex02a(), ex02b(), ex03(), ex04(), ex05(), \
-                ex06(), ex07(), ex08()
-            # pylint: enable=expression-not-assigned
-        else:
-            exc[run_one]()
-# pylint: enable=too-many-branches
+    # Part 01
+    ex01()
+    # Part 02a
+    ex02a()
+    # Part 02b
+    ex02b()
+    # Part 03
+    ex03()
+    # Part 04
+    ex04()
+    # Part 05
+    ex05()
+    # Part 06
+    ex06()
+    # Part 07
+    ex07()
+    # Part 08
+    ex08()

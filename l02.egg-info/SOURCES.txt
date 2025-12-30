@@ -58,6 +58,7 @@ l02_prog_m_py/week04_assignment/w04_ex_01/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_01/ex01_discuss.py
 l02_prog_m_py/week04_assignment/w04_ex_02/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_02/ex02_func_mod.py
-l02_prog_m_py/week04_assignment/w04_ex_02/ex02_functions.py
+l02_prog_m_py/week04_assignment/w04_ex_02/w04ex02_functions/__init__.py
+l02_prog_m_py/week04_assignment/w04_ex_02/w04ex02_functions/ex02_functions.py
 my_funct_dir/__init__.py
 my_funct_dir/my_base_functions.py
