@@ -22,18 +22,16 @@ Practice using functions and modules.
 
 
 # pylint: disable=import-error
-from ex02_functions import my_function_2_1
-from ex02_functions import eko_2a
-from ex02_functions import eko_2b
-from ex02_functions import my_function_2_3
-from ex02_functions import last
-from ex02_functions import cut_edges
-from ex02_functions import increase
-from ex02_functions import average
-from ex02_functions import pretty_list
-# To get pylint to be happy, need to import one by one,
-# not use wildcard.
-# from ex02_functions import *
+# from ex02_functions import my_function_2_1
+# from ex02_functions import eko_2a
+# from ex02_functions import eko_2b
+# from ex02_functions import my_function_2_3
+# from ex02_functions import last
+# from ex02_functions import cut_edges
+# from ex02_functions import increase
+# from ex02_functions import average
+# from ex02_functions import pretty_list
+from ex02_functions import *
 # pylint: disable=enable
 
 

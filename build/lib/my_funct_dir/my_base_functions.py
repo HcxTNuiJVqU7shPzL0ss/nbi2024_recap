@@ -101,17 +101,17 @@ def enter_float(input_string):
             continue
 
 
-def ask_y_or_n_01():
+def ask_y_or_n():
     """Use to ask if yes or no."""
     while True:
         check_ans = input('Did it match/work, (y) yes or (n) no: ')
-        yes_01 = ('y', '(y)', '(y) yes', 'yes')
-        no_01 = ('n', '(n)', '(n) no', 'no')
+        yes_check = ('y', '(y)', '(y) yes', 'yes')
+        no_check = ('n', '(n)', '(n) no', 'no')
         try:
-            if check_ans.lower() in yes_01:
+            if check_ans.lower() in yes_check:
                 print('\nAwesome!\n')
                 break
-            if check_ans.lower() in no_01:
+            if check_ans.lower() in no_check:
                 print('\nNope, exit')
                 press_exit()
                 sys.exit()
