@@ -170,7 +170,6 @@ def ex08():
     press_continue()
 
 
-# pylint: disable=too-many-branches
 def run_w04_ex02():
     """Use to run week 04 exercise 02."""
     exercises = ['ex01', 'ex02a', 'ex02b', 'ex03', 'ex04', 'ex05',
@@ -188,47 +187,12 @@ def run_w04_ex02():
             print('\nNot valid!')
             press_goback()
             continue
-        # if run_one == 0:
-        #     # Part 01
-        #     ex01()
-        # elif run_one == 1:
-        #     # Part 02a
-        #     ex02a()
-        # elif run_one == 2:
-        #     # Part 02b
-        #     ex02b()
-        # elif run_one == 3:
-        #     # Part 03
-        #     ex03()
-        # elif run_one == 4:
-        #     # Part 04
-        #     ex04()
-        # elif run_one == 5:
-        #     # Part 05
-        #     ex05()
-        # elif run_one == 6:
-        #     # Part 06
-        #     ex06()
-        # elif run_one == 7:
-        #     # Part 07
-        #     ex07()
-        # elif run_one == 8:
-        #     # Part 08
-        #     ex08()
-        # elif run_one == 9:
-        #     # pylint: disable=expression-not-assigned
-        #     ex01(), ex02a(), ex02b(), ex03(), ex04(), ex05(), \
-        #     ex06(), ex07(), ex08()
-        #     # pylint: enable=expression-not-assigned
         if run_one == 10:
             print('Goodbye!')
             press_exit()
             break
         if run_one == 9:
-            # pylint: disable=expression-not-assigned
-            ex01(), ex02a(), ex02b(), ex03(), ex04(), ex05(), \
-                ex06(), ex07(), ex08()
-            # pylint: enable=expression-not-assigned
+            for i, func in enumerate(exc):
+                func()
         else:
             exc[run_one]()
-# pylint: enable=too-many-branches
