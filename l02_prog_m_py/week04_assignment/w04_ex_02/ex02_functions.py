@@ -190,3 +190,25 @@ def ex08():
     pretty_list(['a', 'b', 3.14])
     print('\nEnd of part 08.')
     press_exit()
+
+
+def run_w04_ex02():
+    """Use to run week 04 exercise 02."""
+    # Part 01
+    ex01()
+    # Part 02a
+    ex02a()
+    # Part 02b
+    ex02b()
+    # Part 03
+    ex03()
+    # Part 04
+    ex04()
+    # Part 05
+    ex05()
+    # Part 06
+    ex06()
+    # Part 07
+    ex07()
+    # Part 08
+    ex08()
