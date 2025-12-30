@@ -41,12 +41,30 @@ def eko_2a(in_string):
 def eko_2b(in_string, count):
     """Use to echo incoming string count number of times."""
     print('\nThis is exercise 02b.\n')
-    int_cnt = count
-    int_string = in_string
-    # print(in_string * count)
-    while int_cnt > 0:
-        int_string += in_string
-        int_cnt -= 1
-    print(int_string)
+    # int_cnt = count
+    # int_string = in_string
+    print(in_string * count)
+    # int_cnt -= 1
+    # while int_cnt > 0:
+    #     int_string += in_string
+    #     int_cnt -= 1
+    # print(int_string)
     print('\nEnd of part 02b.')
 
+
+def my_function_2_3():
+    """Use for exercise 02, part 03."""
+    # Loop 5 times, should print out: 32.
+    print('\nThis is exercise 03.\n')
+
+    end = 5
+    y = 1
+    for x in range(1, 100):
+        y *= 2
+        # avsluta loopen med en if-sats här
+        if x == end:
+            break
+    print(y)
+
+    print('\nEnd of part 03.')
+    press_continue()
