@@ -97,3 +97,15 @@ def average(x, y):
     print('\nThis is exercise 07.\n')
     aver_value_07 = (x + y) / 2
     return aver_value_07
+
+
+def pretty_list(in_list_08):
+    """Use for exercise 08."""
+    print('\nThis is exercise 08.\n')
+    if len(in_list_08) == 0:
+        print('\nYour list is empty.')
+    else:
+        for i, index in enumerate(in_list_08):
+            print(f'{i + 1}. {index}')
+    print('\nEnd of part 08.')
+    press_continue()

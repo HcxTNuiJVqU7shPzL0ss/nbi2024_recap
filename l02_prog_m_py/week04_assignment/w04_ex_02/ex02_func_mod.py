@@ -29,7 +29,8 @@ Practice using functions and modules.
 # from ex02_functions import last
 # from ex02_functions import cut_edges
 # from ex02_functions import increase
-from ex02_functions import average
+# from ex02_functions import average
+from ex02_functions import pretty_list
 # pylint: disable=enable
 
 
@@ -81,11 +82,14 @@ def main():
     # print('\nEnd of part 06.')
     # press_continue()
 
-    # Part 07
-    result_07 = average(4, 8)
-    print(result_07)
-    print('\nEnd of part 07.')
-    press_continue()
+    # # Part 07
+    # result_07 = average(4, 8)
+    # print(result_07)
+    # print('\nEnd of part 07.')
+    # press_continue()
+
+    # Part 08
+    pretty_list(['a', 'b', 3.14])
 
 
     press_exit()
