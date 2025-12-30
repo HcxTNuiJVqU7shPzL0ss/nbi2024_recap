@@ -24,7 +24,9 @@ The game 21.
 from random import randint
 
 
-from my_funct_dir.my_base_functions import (press_continue)
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit,
+                                            y_or_n)
 
 
 def ex03_v1():
@@ -58,6 +60,44 @@ def ex03_v2():
     press_continue()
 
 
+def ex3_v3():
+    """Use to attempt to beat the computer."""
+    print('This is exercise 3, The Game 21, third version.')
+    press_continue()
+    tot_u = 0
+    tot_c = 0
+    while True:
+        card_u = randint(1, 13)
+        tot_u += card_u
+        print(f'Card is: {card_u}')
+        print(f'Total is: {tot_u}')
+        card_c = randint(1, 13)
+        tot_c += card_c
+        press_continue()
+        if tot_u > 21 > tot_c:
+            print('Sorry, computer won.')
+            print(f'You had: {tot_u}, computer had: {tot_c}')
+            break
+        if tot_c > 21 > tot_u:
+            print('Yay, you won!')
+            print(f'You had: {tot_u}, computer had: {tot_c}')
+            break
+        continue_y_n = y_or_n('Do you want to continue '
+                              'y(yes) or n(no): ')
+        print('')
+        if continue_y_n == 'y':
+            continue
+        if tot_u > tot_c:
+            print('Yay, you won!')
+            print(f'You had: {tot_u}, computer had: {tot_c}')
+            break
+        print('Sorry, computer won.')
+        print(f'You had: {tot_u}, computer had: {tot_c}')
+
+        press_exit()
+        break
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 03, The Game 21.'
@@ -68,6 +108,8 @@ def main():
     ex03_v1()
 
     ex03_v2()
+
+    ex3_v3()
 
 
 if __name__ == "__main__":
