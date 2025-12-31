@@ -30,7 +30,7 @@ from collections import defaultdict
 
 from my_funct_dir.my_base_functions import (press_continue)
 
-color = ['hearts', 'diamonds', 'clubs', 'spades']
+color = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
@@ -148,34 +148,21 @@ def prettify_print_card(hand_in):
     """Use to make a pretty print out of the hand."""
     print('Your cards are:')
     for face, value_card in hand_in:
-        if value_card == 2:
-            print_value = 'Two of'
-        elif value_card == 3:
-            print_value = 'Three of'
-        elif value_card == 4:
-            print_value = 'Four of'
-        elif value_card == 5:
-            print_value = 'Five of'
-        elif value_card == 6:
-            print_value = 'Six of'
-        elif value_card == 7:
-            print_value = 'Seven of'
-        elif value_card == 8:
-            print_value = 'Eight of'
-        elif value_card == 9:
-            print_value = 'Nine of'
-        elif value_card == 10:
-            print_value = 'Ten of'
-        elif value_card == 11:
-            print_value = 'Jack of'
-        elif value_card == 12:
-            print_value = 'Queen of'
-        elif value_card == 13:
-            print_value = 'King of'
-        elif value_card == 14:
-            print_value = 'Ace of'
-        else:
-            print_value = 'Oh my, bug!'
+        print_value = {
+        2: 'Two of',
+        3: 'Three of',
+        4: 'Four of',
+        5: 'Five of',
+        6: 'Six of',
+        7: 'Seven of',
+        8: 'Eight of',
+        9: 'Nine of',
+        10: 'Ten of',
+        11: 'Jack of',
+        12: 'Queen of',
+        13: 'King of',
+        14: 'Ace of',
+        }.get(value_card)
         print(print_value, face)
 
 
