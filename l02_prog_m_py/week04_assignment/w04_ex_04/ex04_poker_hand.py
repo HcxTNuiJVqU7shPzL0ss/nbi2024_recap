@@ -144,13 +144,49 @@ def check_pairs(hand_pairs):
     return 0
 
 
+def prettify_print_card(hand_in):
+    """Use to make a pretty print out of the hand."""
+    print('Your cards are:')
+    for face, value_card in hand_in:
+        if value_card == 2:
+            print_value = 'Two of'
+        elif value_card == 3:
+            print_value = 'Three of'
+        elif value_card == 4:
+            print_value = 'Four of'
+        elif value_card == 5:
+            print_value = 'Five of'
+        elif value_card == 6:
+            print_value = 'Six of'
+        elif value_card == 7:
+            print_value = 'Seven of'
+        elif value_card == 8:
+            print_value = 'Eight of'
+        elif value_card == 9:
+            print_value = 'Nine of'
+        elif value_card == 10:
+            print_value = 'Ten of'
+        elif value_card == 11:
+            print_value = 'Jack of'
+        elif value_card == 12:
+            print_value = 'Queen of'
+        elif value_card == 13:
+            print_value = 'King of'
+        elif value_card == 14:
+            print_value = 'Ace of'
+        else:
+            print_value = 'Oh my, bug!'
+        print(print_value, face)
+
+
 def poker_hand(cards):
     """Use to check the poker hand."""
+    prettify_print_card(cards)
     flush = check_flush(cards)
     straight = check_straight(cards)
     three_four = check_four_or_three_of_a_kind(cards)
     pairs = check_pairs(cards)
-    print('')
+    print('\nYour hand resulted in:')
     if flush and straight:
         print('You got a Straight Flush!')
     elif three_four == 4:
@@ -182,7 +218,7 @@ def main():
     # do_straight = True # Force a Straight for test
     set_hand = build_hand(do_straight)
 
-    print(f'\nHand is:\n{set_hand}')
+    print(f'\nHand is:\n{set_hand}\n')
 
     # set_hand = set_three() # Force Three of a kind for test
     # set_hand = set_four()  # Force Four of a kind for test
