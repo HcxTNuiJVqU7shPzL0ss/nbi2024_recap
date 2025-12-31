@@ -34,6 +34,20 @@ color = ['hearts', 'diamonds', 'clubs', 'spades']
 value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
+def set_one():
+    """Use to force One pair for test."""
+    one_hand = [('hearts', 5), ('clubs', 5), ('diamonds', 8),
+                ('hearts', 9), ('diamonds', 6)]
+    return one_hand
+
+
+def set_two():
+    """Use to force Two pairs for test."""
+    two_hand = [('hearts', 5), ('clubs', 5), ('diamonds', 8),
+                ('hearts', 6), ('diamonds', 6)]
+    return two_hand
+
+
 def set_three():
     """Use to force Three of a kind for test."""
     three_hand = [('hearts', 5), ('clubs', 5), ('diamonds', 5),
@@ -48,14 +62,16 @@ def set_four():
     return four_hand
 
 
-def return_card(in_list):
+def return_card(in_list, force_flush):
     """Use to return a random card."""
     # color = ['hearts', 'diamonds', 'clubs', 'spades']
     # value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
     while True:
-        test_color = random.choice(color)
-        #test_color = color[0] # Use to test "flush"
+        if force_flush:
+            test_color = color[0] # Use to test "flush"
+        else:
+            test_color = random.choice(color)
         test_value = random.choice(value)
         card = (test_color, test_value)
         if card not in in_list:
@@ -65,24 +81,25 @@ def return_card(in_list):
         continue
 
 
-def build_hand():
+def build_hand(force_straight):
     """Use to build a poker hand."""
     hand = []
     cnt = 0
+    do_flush = False
+    # do_flush = True # Force Flush for test
     while cnt < 5:
-        new_card = return_card(hand)
-        hand.append(new_card)
-        # print(cnt)
-        # print(new_card)
-        # print(hand)
         cnt += 1
-        # straight_check = (new_card[0], cnt + 1) # 2 through 6
-        # hand.append(straight_check)
-        # press_continue()
+        new_card = return_card(hand, do_flush)
+        if force_straight:
+            straight_check = (new_card[0], cnt + 1)  # 2 through 6
+            hand.append(straight_check)
+        else:
+            hand.append(new_card)
     return hand
 
 
 def check_four_or_three_of_a_kind(hand):
+    """Use to check if Four or Three of a kind."""
     values = [i[1] for i in hand]
     value_counts = defaultdict(lambda:0)
     for v in values:
@@ -114,14 +131,44 @@ def check_straight(hand_straight):
     return False
 
 
+def check_pairs(hand_pairs):
+    """Use to check of Two pairs or One pair, or not."""
+    values = [i[1] for i in hand_pairs]
+    value_counts = defaultdict(lambda:0)
+    for v in values:
+        value_counts[v]+=1
+    if sorted(value_counts.values())==[1,2,2]:
+        return 2
+    if 2 in value_counts.values():
+        return 1
+    return 0
+
+
 def poker_hand(cards):
     """Use to check the poker hand."""
     flush = check_flush(cards)
-    print(flush)
     straight = check_straight(cards)
-    print(straight)
     three_four = check_four_or_three_of_a_kind(cards)
-    print(three_four)
+    pairs = check_pairs(cards)
+    print('')
+    if flush and straight:
+        print('You got a Straight Flush!')
+    elif three_four == 4:
+        print('You got Four of a kind!')
+    elif three_four == 3 and pairs == 1:
+        print('You got a full house!')
+    elif flush:
+        print('You got a Flush!')
+    elif straight:
+        print('You got a straight!')
+    elif three_four == 3:
+        print('You got Three of a kind!')
+    elif pairs == 2:
+        print('You got Two pairs!')
+    elif pairs == 1:
+        print('You got one pair!')
+    else:
+        print('Sadly, you are unlucky.')
 
 
 def main():
@@ -131,12 +178,17 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    set_hand = build_hand()
+    do_straight = False
+    # do_straight = True # Force a Straight for test
+    set_hand = build_hand(do_straight)
 
     print(f'\nHand is:\n{set_hand}')
 
     # set_hand = set_three() # Force Three of a kind for test
     # set_hand = set_four()  # Force Four of a kind for test
+
+    # set_hand = set_one()  # Force One pair for test
+    # set_hand = set_two() # Force Two pairs for test
     poker_hand(set_hand)
 
 
