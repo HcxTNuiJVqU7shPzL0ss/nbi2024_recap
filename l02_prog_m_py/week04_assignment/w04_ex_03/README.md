@@ -8,6 +8,7 @@
 ---
 
 ### 1
+
 Om man lägger ihop talen 1 + 2 + 3 + 4 + … så kommer talens summa 
 att bli större och större.\
 Förr eller senare kommer man förbi 21.\
@@ -34,6 +35,7 @@ Exempel:
 ---
 
 ### 3
+
 Möjlig vidareutveckling:\
 Bygg ett spel som frågar användaren om man vill ta ett nytt kort 
 eller stanna (slumpa ett tal).\
