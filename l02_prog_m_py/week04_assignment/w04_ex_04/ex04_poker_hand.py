@@ -23,22 +23,77 @@ Poker hand.
 
 import random
 
+from collections import defaultdict
+
+# from my_funct_dir.my_base_functions import (press_continue,
+#                                             press_goback)
 
 from my_funct_dir.my_base_functions import (press_continue)
+
+color = ['hearts', 'diamonds', 'clubs', 'spades']
+value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
 def return_card(in_list):
     """Use to return a random card."""
-    color = ['hearts', 'diamonds', 'clubs', 'spades']
-    value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    # color = ['hearts', 'diamonds', 'clubs', 'spades']
+    # value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
     while True:
         test_color = random.choice(color)
+        #test_color = color[0] # Use to test "flush"
         test_value = random.choice(value)
         card = (test_color, test_value)
         if card not in in_list:
             return card
+        # print('Duplicate')
+        # press_goback()
         continue
+
+
+def build_hand():
+    """Use to build a poker hand."""
+    hand = []
+    cnt = 0
+    while cnt < 5:
+        new_card = return_card(hand)
+        hand.append(new_card)
+        # print(cnt)
+        # print(new_card)
+        # print(hand)
+        cnt += 1
+        # straight_check = (new_card[0], cnt + 1) # 2 through 6
+        # hand.append(straight_check)
+        # press_continue()
+    return hand
+
+
+def check_flush(hand):
+    """Use to check if Flush or not."""
+    suits = [i[0] for i in hand]
+    if len(set(suits))==1:
+        return True
+    return False
+
+
+def check_straight(hand):
+    """Use to check if Straight or not."""
+    values = [i[1] for i in hand]
+    value_counts = defaultdict(lambda:0)
+    for v in values:
+        value_counts[v] += 1
+    value_range = max(values) - min(values)
+    if len(set(value_counts.values())) == 1 and (value_range==4):
+        return True
+    return False
+
+
+def poker_hand(cards):
+    """Use to check the poker hand."""
+    flush = check_flush(cards)
+    print(flush)
+    straight = check_straight(cards)
+    print(straight)
 
 
 def main():
@@ -48,14 +103,11 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    hand = []
+    set_hand = build_hand()
 
-    new_card = return_card(hand)
+    print(f'\nHand is:\n{set_hand}')
 
-    hand.append(new_card)
-
-    print(new_card)
-    print(hand)
+    poker_hand(set_hand)
 
 
 if __name__ == "__main__":
