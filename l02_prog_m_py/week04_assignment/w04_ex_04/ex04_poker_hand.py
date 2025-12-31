@@ -34,6 +34,20 @@ color = ['hearts', 'diamonds', 'clubs', 'spades']
 value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
+def set_three():
+    """Use to force Three of a kind for test."""
+    three_hand = [('hearts', 5), ('clubs', 5), ('diamonds', 5),
+                ('hearts', 7), ('diamonds', 6)]
+    return three_hand
+
+
+def set_four():
+    """Use to force Four of a kind for test."""
+    four_hand = [('hearts', 5), ('clubs', 5), ('diamonds', 5),
+                ('spades', 5), ('diamonds', 6)]
+    return four_hand
+
+
 def return_card(in_list):
     """Use to return a random card."""
     # color = ['hearts', 'diamonds', 'clubs', 'spades']
@@ -68,22 +82,34 @@ def build_hand():
     return hand
 
 
-def check_flush(hand):
+def check_four_or_three_of_a_kind(hand):
+    values = [i[1] for i in hand]
+    value_counts = defaultdict(lambda:0)
+    for v in values:
+        value_counts[v]+=1
+    if sorted(value_counts.values()) == [1, 4]:
+        return 4 # Four if a kind
+    if set(value_counts.values()) == {1, 3}:
+        return 3 # Three of a kind
+    return 0
+
+
+def check_flush(hand_flush):
     """Use to check if Flush or not."""
-    suits = [i[0] for i in hand]
-    if len(set(suits))==1:
+    suits = [i[0] for i in hand_flush]
+    if len(set(suits)) == 1:
         return True
     return False
 
 
-def check_straight(hand):
+def check_straight(hand_straight):
     """Use to check if Straight or not."""
-    values = [i[1] for i in hand]
+    values = [i[1] for i in hand_straight]
     value_counts = defaultdict(lambda:0)
     for v in values:
         value_counts[v] += 1
     value_range = max(values) - min(values)
-    if len(set(value_counts.values())) == 1 and (value_range==4):
+    if len(set(value_counts.values())) == 1 and (value_range == 4):
         return True
     return False
 
@@ -94,6 +120,8 @@ def poker_hand(cards):
     print(flush)
     straight = check_straight(cards)
     print(straight)
+    three_four = check_four_or_three_of_a_kind(cards)
+    print(three_four)
 
 
 def main():
@@ -107,6 +135,8 @@ def main():
 
     print(f'\nHand is:\n{set_hand}')
 
+    # set_hand = set_three() # Force Three of a kind for test
+    # set_hand = set_four()  # Force Four of a kind for test
     poker_hand(set_hand)
 
 
