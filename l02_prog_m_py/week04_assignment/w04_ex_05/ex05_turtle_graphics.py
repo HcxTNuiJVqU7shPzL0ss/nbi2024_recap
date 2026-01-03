@@ -75,8 +75,14 @@ def draw_p(p_height, p_range, p_steps, p_angle):
     # Draw the main leftmost line of P
     turtle.forward(p_height)
     # Draw the half circle of P
-    turtle.right(90)
-    alternate_part03(p_range, p_steps, p_angle)
+    turtle.penup()
+    turtle.right(180)
+    turtle.forward(int(p_height / 2))
+    turtle.left(90)
+    # alternate_part03(p_range, p_steps, p_angle)
+    turtle.pendown()
+    turtle.circle(90, 90)
+    turtle.circle(90, 90)
 
 
 def main():
