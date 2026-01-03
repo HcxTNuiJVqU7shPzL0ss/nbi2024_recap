@@ -21,18 +21,21 @@ Turtle graphics.
 #####################################################################
 
 
-import turtle as t
+from turtle import Screen, Turtle
 
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
+turtle = Turtle()
+
+
 def draw_square(side_pixels):
     """Use to draw a square using Turtle graphics."""
     for side in range (4):
-        t.forward(side_pixels) # Draw a side with length "side_pixels"
-        t.left(90) # Turn 90 degrees
+        turtle.forward(side_pixels) # Draw a side with length "side_pixels"
+        turtle.left(90) # Turn 90 degrees
 
 
 def main():
@@ -40,6 +43,7 @@ def main():
     print('\nWeek 04, Exercise 05, Turtle graphics.'
           '\nFunction: ',
           main.__name__, sep = '')
+    screen = Screen()
     press_continue()
 
     # Exercise 1: Function that draws a square with length of side
@@ -48,7 +52,7 @@ def main():
 
 
     # Allow the window to stay until user close it
-    t.mainloop()
+    screen.mainloop()
     press_exit()
 
 
