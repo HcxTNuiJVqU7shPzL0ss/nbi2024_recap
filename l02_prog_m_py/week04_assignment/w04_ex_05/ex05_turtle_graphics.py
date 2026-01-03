@@ -33,9 +33,21 @@ turtle = Turtle()
 
 def draw_square(side_pixels):
     """Use to draw a square using Turtle graphics."""
+    # Ensure pen is down
+    turtle.pendown()
     for side in range (4):
         turtle.forward(side_pixels) # Draw a side with length "side_pixels"
         turtle.left(90) # Turn 90 degrees
+    # Move cursor to end "right" position of square
+    turtle.penup()
+    turtle.forward(side_pixels)
+
+
+def move_next(space):
+    """Use to move the cursor."""
+    # Ensure pen is up
+    turtle.penup()
+    turtle.forward(space)
 
 
 def main():
@@ -44,11 +56,17 @@ def main():
           '\nFunction: ',
           main.__name__, sep = '')
     screen = Screen()
-    press_continue()
+    # press_continue()
 
     # Exercise 1: Function that draws a square with length of side
     # as parameter.
-    draw_square(200)
+    side_square = 200
+    draw_square(side_square)
+
+    # Exercise 2: Move cursor, then draw one more square
+    new_space = side_square / 2
+    move_next(new_space)
+    draw_square(side_square)
 
 
     # Allow the window to stay until user close it
