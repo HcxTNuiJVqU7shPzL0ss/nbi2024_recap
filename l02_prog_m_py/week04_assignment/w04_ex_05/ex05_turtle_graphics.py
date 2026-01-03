@@ -66,7 +66,7 @@ def alternate_part03(no_steps, draw_pix, angle):
         turtle.right(angle)
 
 
-def draw_p(p_height, p_range, p_steps, p_angle):
+def draw_p(p_height):
     """Use to draw the capital P in python."""
     # Ensure pen is down
     turtle.pendown()
@@ -94,35 +94,35 @@ def main():
     press_continue()
 
     turtle.speed(3)
-    #
-    # # Part 1: Function that draws a square with length of side
-    # # as parameter.
-    # side_square = 200
-    # draw_square(side_square)
-    # press_continue()
-    #
-    # # Part 2: Move cursor, then draw one more square.
-    # new_space = side_square / 2
-    # move_next(new_space)
-    # draw_square(side_square)
-    # press_continue()
-    #
-    # # Part 3: Draw a circle.
-    # c_radius = side_square / 2
-    # move_next(new_space * 2)
-    # draw_circle(c_radius)
-    # press_continue()
-    #
-    # # Alternate part 3
-    # # Ensure pen is up
-    # turtle.penup()
-    # turtle.clear()
-    # turtle.home()
-    # range_3 = 360
-    # forward_3 = 1
-    # right_3 = 1
-    # alternate_part03(range_3, forward_3, right_3)
-    # press_continue()
+
+    # Part 1: Function that draws a square with length of side
+    # as parameter.
+    side_square = 200
+    draw_square(side_square)
+    press_continue()
+
+    # Part 2: Move cursor, then draw one more square.
+    new_space = side_square / 2
+    move_next(new_space)
+    draw_square(side_square)
+    press_continue()
+
+    # Part 3: Draw a circle.
+    c_radius = side_square / 2
+    move_next(new_space * 2)
+    draw_circle(c_radius)
+    press_continue()
+
+    # Alternate part 3
+    # Ensure pen is up
+    turtle.penup()
+    turtle.clear()
+    turtle.home()
+    range_3 = 360
+    forward_3 = 1
+    right_3 = 1
+    alternate_part03(range_3, forward_3, right_3)
+    press_continue()
 
 
     # Draw PYTHON
@@ -133,10 +133,7 @@ def main():
     turtle.clear()
     turtle.home()
     height_p = 360
-    range_p = int(height_p / 2)
-    forward_p = 1.5
-    right_p = 1
-    draw_p(height_p, range_p, forward_p, right_p)
+    draw_p(height_p)
 
 
     # Allow the window to stay until user close it
