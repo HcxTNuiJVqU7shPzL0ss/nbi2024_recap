@@ -75,7 +75,7 @@ def w05_ex01_1d(z, unit):
 
 
 def w05_ex01_1e(v, unit):
-    """Use for 1e."""
+    """Use for a.1e part."""
     if not unit:
         print('This is part 1e.\nFunction: ',
               w05_ex01_1e.__name__, sep='')
@@ -86,11 +86,16 @@ def w05_ex01_1e(v, unit):
     return False
 
 
-def w05_ex01_1f():
-    """Use for 1f."""
-    print('This is part 1f.\nFunction: ',
-          w05_ex01_1f.__name__, sep='')
-    press_continue()
+def w05_ex01_1f(w, unit):
+    """Use for 1.1f part."""
+    if not unit:
+        print('This is part 1f.\nFunction: ',
+              w05_ex01_1f.__name__, sep='')
+        press_continue()
+    # w == 32 or w == 64 or w == 128 # EX== 32, 64 or 128
+    if w == 32 or w == 64 or w == 128:
+        return True
+    return False
 
 
 def w05_ex01_1g():
@@ -149,19 +154,40 @@ def main():
     # ask_y_or_n()
     # press_continue()
 
-    check_1_1_e = w05_ex01_1e(8, False)
-    print(check_1_1_e)  # False
+    # check_1_1_e = w05_ex01_1e(8, False)
+    # print(check_1_1_e)  # False
+    # print('\nShould have been False.\n')
+    # ask_y_or_n()
+    # check_1_1_e = w05_ex01_1e(16, False)
+    # print(check_1_1_e)  # False
+    # print('\nShould have been False.\n')
+    # ask_y_or_n()
+    # check_1_1_e = w05_ex01_1e(12, False)
+    # print(check_1_1_e)  # True
+    # print('\nShould have been True.\n')
+    # ask_y_or_n()
+    # press_continue()
+
+    check_1_1_f_8 = w05_ex01_1f(8, False)
+    check_1_1_f_42 = w05_ex01_1f(42, False)
+    check_1_1_f_100 = w05_ex01_1f(100, False)
+    check_1_1_f_129 = w05_ex01_1f(129, False)
+    check_1_1_f_final = check_1_1_f_8 or check_1_1_f_42 or \
+                        check_1_1_f_100 or check_1_1_f_129
+    print(check_1_1_f_final)  # False
     print('\nShould have been False.\n')
     ask_y_or_n()
-    check_1_1_e = w05_ex01_1e(16, False)
-    print(check_1_1_e)  # False
-    print('\nShould have been False.\n')
-    ask_y_or_n()
-    check_1_1_e = w05_ex01_1e(12, False)
-    print(check_1_1_e)  # True
+    check_1_1_f_32 = w05_ex01_1f(32, False)
+    check_1_1_f_64 = w05_ex01_1f(64, False)
+    check_1_1_f_128 = w05_ex01_1f(128, False)
+    check_1_1_f_final = check_1_1_f_32 and check_1_1_f_64 and \
+                        check_1_1_f_128
+    print(check_1_1_f_final)  # True
     print('\nShould have been True.\n')
     ask_y_or_n()
-    press_continue()
+
+
+
 
     press_exit()
 

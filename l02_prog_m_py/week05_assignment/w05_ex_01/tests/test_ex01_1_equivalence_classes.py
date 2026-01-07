@@ -23,7 +23,7 @@
 
 from ..ex01_1_equivalence_classes import (w05_ex01_1a, w05_ex01_1b,
                                           w05_ex01_1c, w05_ex01_1d,
-                                          w05_ex01_1e)
+                                          w05_ex01_1e, w05_ex01_1f)
 
 
 def test_w05_ex01_1a__true():
@@ -169,4 +169,25 @@ def test_w05_ex01_1e__false():
     x = w05_ex01_1e(8, True)
     y = w05_ex01_1e(16, True)
     z = x or y
+    assert z == False
+
+
+def test_w05_ex01_1f__true():
+    """Used for unit test of function w05_ex01_1f, check True."""
+
+    a = w05_ex01_1f(32, True)
+    b = w05_ex01_1f(64, True)
+    c = w05_ex01_1f(128, True)
+    d = a and b and c
+    assert d == True
+
+
+def test_w05_ex01_1f__false():
+    """Used for unit test of function w05_ex01_1f, check False."""
+
+    m = w05_ex01_1f(8, True)
+    n = w05_ex01_1f(42, True)
+    o = w05_ex01_1f(100, True)
+    p = w05_ex01_1f(129, True)
+    z = m or n or o or p
     assert z == False
