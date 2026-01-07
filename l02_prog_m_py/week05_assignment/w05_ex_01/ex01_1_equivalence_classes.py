@@ -61,12 +61,16 @@ def w05_ex01_1c(text, unit):
     return False
 
 
-def w05_ex01_1d():
-    """Use for 1d."""
-    print('This is part 1d.\nFunction: ',
-          w05_ex01_1d.__name__, sep='')
-    print('\nShould print out:\n125')
-    press_continue()
+def w05_ex01_1d(z, unit):
+    """Use for 1.1d part."""
+    if not unit:
+        print('This is part 1d.\nFunction: ',
+              w05_ex01_1d.__name__, sep='')
+        print('\nShould print out:\n125')
+        press_continue()
+    if z is True:
+        return True
+    return False
 
 
 def w05_ex01_1e():
@@ -122,15 +126,26 @@ def main():
     # press_continue()
 
 
-    check_1_1_c = w05_ex01_1c('1234', False)
-    print(check_1_1_c)  # False
+    # check_1_1_c = w05_ex01_1c('1234', False)
+    # print(check_1_1_c)  # False
+    # print('\nShould have been False.\n')
+    # ask_y_or_n()
+    # check_1_1_c = w05_ex01_1c('12345', False)
+    # print(check_1_1_c)  # True
+    # print('\nShould have been True.\n')
+    # ask_y_or_n()
+    # press_continue()
+
+    check_1_1_d = w05_ex01_1d('1234', False)
+    print(check_1_1_d)  # False
     print('\nShould have been False.\n')
     ask_y_or_n()
-    check_1_1_c = w05_ex01_1c('12345', False)
-    print(check_1_1_c)  # True
+    check_1_1_d = w05_ex01_1d(True, False)
+    print(check_1_1_d)  # True
     print('\nShould have been True.\n')
     ask_y_or_n()
     press_continue()
+
 
 
 

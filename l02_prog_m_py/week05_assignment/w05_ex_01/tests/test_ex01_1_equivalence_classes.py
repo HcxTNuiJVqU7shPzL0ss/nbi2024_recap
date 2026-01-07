@@ -1,4 +1,4 @@
-"""Module for tests, L02, W05, Ex01."""
+"""Module for tests, L02, W05, Ex01.1."""
 
 
 #####################################################################
@@ -22,25 +22,49 @@
 #from l02_prog_m_py.week05_assignment.w05_ex_01.ex01_1_equivalence_classes import w05_ex01_1a
 
 from ..ex01_1_equivalence_classes import (w05_ex01_1a, w05_ex01_1b,
-                                          w05_ex01_1c)
+                                          w05_ex01_1c, w05_ex01_1d)
 
 
 def test_w05_ex01_1a__true():
     """Used for unit test of function w05_ex01_1a, check True."""
+
+    # Version 1
     expected = True
     actual = w05_ex01_1a(101, True)
     assert actual == expected
     actual = w05_ex01_1a(1010, True)
     assert actual == expected
 
+    # Version 2
+    assert w05_ex01_1a(101, True) == True
+    assert w05_ex01_1a(1010, True) == True
+
+    # Version 3
+    a = w05_ex01_1a(101, True)
+    b = w05_ex01_1a(1010, True)
+    c = a and b
+    assert c == expected
+
 
 def test_w05_ex01_1a__false():
     """Used for unit test of function w05_ex01_1a, check False."""
+
+    # Version 1
     expected = False
     actual = w05_ex01_1a(100, True)
     assert actual == expected
     actual = w05_ex01_1a(-1, True)
     assert actual == expected
+
+    # Version 2
+    assert w05_ex01_1a(100, True) == False
+    assert w05_ex01_1a(-1, True) == False
+
+    # Version 3
+    a = w05_ex01_1a(100, True)
+    b = w05_ex01_1a(-1, True)
+    c = a or b
+    assert c == expected
 
 
 def test_w05_ex01_1b__true():
@@ -80,4 +104,24 @@ def test_w05_ex01_1c__false():
     actual = w05_ex01_1c('1234', True)
     assert actual == expected
     actual = w05_ex01_1c(['1', 2], True)
+    assert actual == expected
+
+
+def test_w05_ex01_1d__true():
+    """Used for unit test of function w05_ex01_1d, check True."""
+    expected = True
+    actual = w05_ex01_1d(True, True)
+    assert actual == expected
+
+
+def test_w05_ex01_1d__false():
+    """Used for unit test of function w05_ex01_1d, check False."""
+    expected = False
+    actual = w05_ex01_1d(41, True)
+    assert actual == expected
+    actual = w05_ex01_1d('1234', True)
+    assert actual == expected
+    actual = w05_ex01_1d(['1', 2], True)
+    assert actual == expected
+    actual = w05_ex01_1d(False, True)
     assert actual == expected
