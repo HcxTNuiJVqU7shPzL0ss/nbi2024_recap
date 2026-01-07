@@ -68,24 +68,28 @@ def w05_ex01_1d(z, unit):
               w05_ex01_1d.__name__, sep='')
         print('\nShould print out:\n125')
         press_continue()
+    # z == True # EC == True (Boolean)
     if z is True:
         return True
     return False
 
 
-def w05_ex01_1e():
+def w05_ex01_1e(v, unit):
     """Use for 1e."""
-    print('This is part 1e.\nFunction: ',
-          w05_ex01_1e.__name__, sep='')
-    print('\nShould print out:\n7')
-    press_continue()
+    if not unit:
+        print('This is part 1e.\nFunction: ',
+              w05_ex01_1e.__name__, sep='')
+        press_continue()
+    # 8 < v < 16 # EC == 9 through 15
+    if 8 < v < 16:
+        return True
+    return False
 
 
 def w05_ex01_1f():
     """Use for 1f."""
     print('This is part 1f.\nFunction: ',
           w05_ex01_1f.__name__, sep='')
-    print('\nShould print out:\n18')
     press_continue()
 
 
@@ -93,7 +97,6 @@ def w05_ex01_1g():
     """Use for 1g."""
     print('This is part 1g.\nFunction: ',
           w05_ex01_1g.__name__, sep='')
-    print('\nShould print out:\nTrue\nTrue')
     press_continue()
 
 
@@ -136,18 +139,29 @@ def main():
     # ask_y_or_n()
     # press_continue()
 
-    check_1_1_d = w05_ex01_1d('1234', False)
-    print(check_1_1_d)  # False
+    # check_1_1_d = w05_ex01_1d('1234', False)
+    # print(check_1_1_d)  # False
+    # print('\nShould have been False.\n')
+    # ask_y_or_n()
+    # check_1_1_d = w05_ex01_1d(True, False)
+    # print(check_1_1_d)  # True
+    # print('\nShould have been True.\n')
+    # ask_y_or_n()
+    # press_continue()
+
+    check_1_1_e = w05_ex01_1e(8, False)
+    print(check_1_1_e)  # False
     print('\nShould have been False.\n')
     ask_y_or_n()
-    check_1_1_d = w05_ex01_1d(True, False)
-    print(check_1_1_d)  # True
+    check_1_1_e = w05_ex01_1e(16, False)
+    print(check_1_1_e)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_e = w05_ex01_1e(12, False)
+    print(check_1_1_e)  # True
     print('\nShould have been True.\n')
     ask_y_or_n()
     press_continue()
-
-
-
 
     press_exit()
 
