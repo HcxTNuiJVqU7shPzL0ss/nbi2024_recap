@@ -1,6 +1,5 @@
 """Module for tests, L02, W05, Ex01.1."""
 
-
 #####################################################################
 # Copyright 2026 gnoff
 #
@@ -23,7 +22,8 @@
 
 from ..ex01_1_equivalence_classes import (w05_ex01_1a, w05_ex01_1b,
                                           w05_ex01_1c, w05_ex01_1d,
-                                          w05_ex01_1e, w05_ex01_1f)
+                                          w05_ex01_1e, w05_ex01_1f,
+                                          w05_ex01_1g)
 
 
 def test_w05_ex01_1a__true():
@@ -37,8 +37,8 @@ def test_w05_ex01_1a__true():
     assert actual == expected
 
     # Version 2
-    assert w05_ex01_1a(101, True) == True
-    assert w05_ex01_1a(1010, True) == True
+    assert w05_ex01_1a(101, True) is True
+    assert w05_ex01_1a(1010, True) is True
 
     # Version 3
     a = w05_ex01_1a(101, True)
@@ -58,8 +58,8 @@ def test_w05_ex01_1a__false():
     assert actual == expected
 
     # Version 2
-    assert w05_ex01_1a(100, True) == False
-    assert w05_ex01_1a(-1, True) == False
+    assert w05_ex01_1a(100, True) is False
+    assert w05_ex01_1a(-1, True) is False
 
     # Version 3
     a = w05_ex01_1a(100, True)
@@ -79,8 +79,8 @@ def test_w05_ex01_1b__true():
     assert actual == expected
 
     # Version 2
-    assert w05_ex01_1b(42, True) == True
-    assert w05_ex01_1b(42.0, True) == True
+    assert w05_ex01_1b(42, True) is True
+    assert w05_ex01_1b(42.0, True) is True
 
     # Version 3
     a = w05_ex01_1b(42, True)
@@ -102,9 +102,9 @@ def test_w05_ex01_1b__false():
     assert actual == expected
 
     # Version 2
-    assert w05_ex01_1b(41, True) == False
-    assert w05_ex01_1b(43, True) == False
-    assert w05_ex01_1b(42.001, True) == False
+    assert w05_ex01_1b(41, True) is False
+    assert w05_ex01_1b(43, True) is False
+    assert w05_ex01_1b(42.001, True) is False
 
     # Version 3
     a = w05_ex01_1b(41, True)
@@ -160,7 +160,7 @@ def test_w05_ex01_1e__true():
     a = w05_ex01_1e(9, True)
     b = w05_ex01_1e(15, True)
     c = a and b
-    assert c == True
+    assert c is True
 
 
 def test_w05_ex01_1e__false():
@@ -169,7 +169,7 @@ def test_w05_ex01_1e__false():
     x = w05_ex01_1e(8, True)
     y = w05_ex01_1e(16, True)
     z = x or y
-    assert z == False
+    assert z is False
 
 
 def test_w05_ex01_1f__true():
@@ -179,7 +179,7 @@ def test_w05_ex01_1f__true():
     b = w05_ex01_1f(64, True)
     c = w05_ex01_1f(128, True)
     d = a and b and c
-    assert d == True
+    assert d is True
 
 
 def test_w05_ex01_1f__false():
@@ -190,4 +190,24 @@ def test_w05_ex01_1f__false():
     o = w05_ex01_1f(100, True)
     p = w05_ex01_1f(129, True)
     z = m or n or o or p
-    assert z == False
+    assert z is False
+
+
+def test_w05_ex01_1g__check_values():
+    """Used for unit test of function w05_ex01_1g, check values."""
+
+    expected_less5 = 'less_5'
+    a = w05_ex01_1g(-100, True)
+    assert a == expected_less5
+
+    expected_less10_more5 = 'less10_more5'
+    b = w05_ex01_1g(5, True)
+    assert b == expected_less10_more5
+
+    expected_less15_more10 = 'less15_more10'
+    c = w05_ex01_1g(10, True)
+    assert c == expected_less15_more10
+
+    expected_more15 = 'more15'
+    d = w05_ex01_1g(15, True)
+    assert d == expected_more15

@@ -22,7 +22,8 @@ Which equivalence classes does the expressions have?
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit, ask_y_or_n)
+                                            press_exit, ask_y_or_n,
+                                            y_or_n)
 
 
 def w05_ex01_1a(x, unit):
@@ -66,7 +67,6 @@ def w05_ex01_1d(z, unit):
     if not unit:
         print('This is part 1d.\nFunction: ',
               w05_ex01_1d.__name__, sep='')
-        print('\nShould print out:\n125')
         press_continue()
     # z == True # EC == True (Boolean)
     if z is True:
@@ -93,81 +93,99 @@ def w05_ex01_1f(w, unit):
               w05_ex01_1f.__name__, sep='')
         press_continue()
     # w == 32 or w == 64 or w == 128 # EX== 32, 64 or 128
-    if w == 32 or w == 64 or w == 128:
+    if w in (32, 64, 128):
         return True
     return False
 
 
-def w05_ex01_1g():
-    """Use for 1g."""
-    print('This is part 1g.\nFunction: ',
-          w05_ex01_1g.__name__, sep='')
+def w05_ex01_1g(x, unit):
+    """Use for 1.1g part."""
+    if not unit:
+        print('This is part 1g.\nFunction: ',
+              w05_ex01_1g.__name__, sep='')
+        press_continue()
+    if x < 5:
+        check_value = 'less_5'
+    elif x < 10:
+        check_value = 'less10_more5'
+    elif x < 15:
+        check_value = 'less15_more10'
+    else:
+        check_value = 'more15'
+    return check_value
+
+
+def run_1_1_a():
+    """Use to run separate test of 1.1a."""
+    check_1_1_a = w05_ex01_1a(100, False)
+    print(check_1_1_a)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_a = w05_ex01_1a(101, False)
+    print(check_1_1_a)  # True
+    print('\nShould have been True.\n')
+    ask_y_or_n()
     press_continue()
 
 
-def main():
-    """Use as main function."""
-    print('\nWeek 05, Exercise 01, Discuss.\nFunction: ',
-          main.__name__, sep = '')
+def run_1_1_b():
+    """Use to run separate test of 1.1b."""
+    check_1_1_b = w05_ex01_1b(41, False)
+    print(check_1_1_b)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_b = w05_ex01_1b(42, False)
+    print(check_1_1_b)  # True
+    print('\nShould have been True.\n')
+    ask_y_or_n()
     press_continue()
 
 
-    # check_1_1_a = w05_ex01_1a(100, False)
-    # print(check_1_1_a) # False
-    # print('\nShould have been False.\n')
-    # ask_y_or_n()
-    # check_1_1_a = w05_ex01_1a(101, False)
-    # print(check_1_1_a)  # True
-    # print('\nShould have been True.\n')
-    # ask_y_or_n()
-    # press_continue()
-    #
-    #
-    # check_1_1_b = w05_ex01_1b(41, False)
-    # print(check_1_1_b)  # False
-    # print('\nShould have been False.\n')
-    # ask_y_or_n()
-    # check_1_1_b = w05_ex01_1b(42, False)
-    # print(check_1_1_b)  # True
-    # print('\nShould have been True.\n')
-    # ask_y_or_n()
-    # press_continue()
+def run_1_1_c():
+    """Use to run separate test of 1.1c."""
+    check_1_1_c = w05_ex01_1c('1234', False)
+    print(check_1_1_c)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_c = w05_ex01_1c('12345', False)
+    print(check_1_1_c)  # True
+    print('\nShould have been True.\n')
+    ask_y_or_n()
+    press_continue()
 
 
-    # check_1_1_c = w05_ex01_1c('1234', False)
-    # print(check_1_1_c)  # False
-    # print('\nShould have been False.\n')
-    # ask_y_or_n()
-    # check_1_1_c = w05_ex01_1c('12345', False)
-    # print(check_1_1_c)  # True
-    # print('\nShould have been True.\n')
-    # ask_y_or_n()
-    # press_continue()
+def run_1_1_d():
+    """Use to run separate test of 1.1d."""
+    check_1_1_d = w05_ex01_1d('1234', False)
+    print(check_1_1_d)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_d = w05_ex01_1d(True, False)
+    print(check_1_1_d)  # True
+    print('\nShould have been True.\n')
+    ask_y_or_n()
+    press_continue()
 
-    # check_1_1_d = w05_ex01_1d('1234', False)
-    # print(check_1_1_d)  # False
-    # print('\nShould have been False.\n')
-    # ask_y_or_n()
-    # check_1_1_d = w05_ex01_1d(True, False)
-    # print(check_1_1_d)  # True
-    # print('\nShould have been True.\n')
-    # ask_y_or_n()
-    # press_continue()
 
-    # check_1_1_e = w05_ex01_1e(8, False)
-    # print(check_1_1_e)  # False
-    # print('\nShould have been False.\n')
-    # ask_y_or_n()
-    # check_1_1_e = w05_ex01_1e(16, False)
-    # print(check_1_1_e)  # False
-    # print('\nShould have been False.\n')
-    # ask_y_or_n()
-    # check_1_1_e = w05_ex01_1e(12, False)
-    # print(check_1_1_e)  # True
-    # print('\nShould have been True.\n')
-    # ask_y_or_n()
-    # press_continue()
+def run_1_1_e():
+    """Use to run separate test of 1.1e."""
+    check_1_1_e = w05_ex01_1e(8, False)
+    print(check_1_1_e)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_e = w05_ex01_1e(16, False)
+    print(check_1_1_e)  # False
+    print('\nShould have been False.\n')
+    ask_y_or_n()
+    check_1_1_e = w05_ex01_1e(12, False)
+    print(check_1_1_e)  # True
+    print('\nShould have been True.\n')
+    ask_y_or_n()
+    press_continue()
 
+
+def run_1_1_f():
+    """Use to run separate test of 1.1f."""
     check_1_1_f_8 = w05_ex01_1f(8, False)
     check_1_1_f_42 = w05_ex01_1f(42, False)
     check_1_1_f_100 = w05_ex01_1f(100, False)
@@ -187,7 +205,31 @@ def main():
     ask_y_or_n()
 
 
+def run_1_1_g():
+    """Use to run separate test of 1.1g."""
+    print(w05_ex01_1g(4.99, False))
+    y_or_n('Did you get less than 5, y or n: ')
+    print(w05_ex01_1g(5, False))
+    y_or_n('Did you get more than 5 and less than 10, y or n: ')
+    print(w05_ex01_1g(10, False))
+    y_or_n('Did you get more than 10 and less than 15, y or n: ')
+    print(w05_ex01_1g(15, False))
+    y_or_n('Did you get more than 15, y or n: ')
 
+
+def main():
+    """Use as main function."""
+    print('\nWeek 05, Exercise 01, Discuss.\nFunction: ',
+          main.__name__, sep = '')
+    press_continue()
+
+    run_1_1_a()
+    run_1_1_b()
+    run_1_1_c()
+    run_1_1_d()
+    run_1_1_e()
+    run_1_1_f()
+    run_1_1_g()
 
     press_exit()
 
