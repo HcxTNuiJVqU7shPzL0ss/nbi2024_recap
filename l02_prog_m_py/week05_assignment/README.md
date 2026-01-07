@@ -1,17 +1,28 @@
 
-# Recap of previous course NBI 2024
+# Veckouppgift 5
 
 ---
 
-## Student == Jan Berglund
+## Vecka 5, 3/2
 
 ---
 
-### Programmering med Python, 20yhp
+1. Du ska lösa uppgiften självständigt eller tillsammans 
+med en annan student. Men vid minst ett tillfälle ska du 
+göra code review i en grupp.
+
+2. Du får ta hjälp av AI för att förklara koncept och 
+lösa fel. Du får inte be AI lösa uppgiften åt dig direkt. 
+Om du gör det, kommer du inte att lära dig grunderna, 
+och inte kunna lösa svårare problem.
 
 ---
 
-Copyright 2025-2026 gnoff
+Student == gnoff
+
+---
+
+Copyright 2026 gnoff
 
 Licensed under the Apache License, Version 2.0 (the "License");\
 you may not use this file except in compliance with the License.\
