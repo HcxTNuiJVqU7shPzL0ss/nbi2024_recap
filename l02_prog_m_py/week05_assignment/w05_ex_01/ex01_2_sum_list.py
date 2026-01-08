@@ -26,11 +26,16 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def sum_list(list_in):
+    """Sum up incoming numbered list.
+
+    If empty list, return None.
+    If any non numbered items, return 'incorrect' string.
+    """
     tot = 0
     if not list_in: # List is empty
         return None
     for item in list_in:
-        if (isinstance(item, int)) or (isinstance(item, float)):
+        if isinstance(item, (int, float)):
             tot += item
         else:
             tot = 'incorrect'
