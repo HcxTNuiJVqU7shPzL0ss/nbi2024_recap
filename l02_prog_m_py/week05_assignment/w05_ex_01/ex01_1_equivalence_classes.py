@@ -1,4 +1,4 @@
-"""Module for Lesson 02, Week 05, Exercise 01, Discuss.
+"""Module for Lesson 02, Week 05, Exercise 01.1, Discuss.
 
 Which equivalence classes does the expressions have?
 """
@@ -219,7 +219,7 @@ def run_1_1_g():
 
 def main():
     """Use as main function."""
-    print('\nWeek 05, Exercise 01, Discuss.\nFunction: ',
+    print('\nWeek 05, Exercise 01.1, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
