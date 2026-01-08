@@ -4,7 +4,7 @@ Lesson 02, Week 01, Exercise 01.
 """
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,32 +21,23 @@ Lesson 02, Week 01, Exercise 01.
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import (press_exit)
-
-
-# #pylint: disable=line-too-long
-# # pylint: disable=import-error
-# # For some reason pylint will not see it is available to import here
-# import sys
-# sys.path.insert(0, 'C:\\Users\\rock_\\OneDrive - Acumis Minds AB\\Python-kurs\\PycharmProjects\\nbi2024_recap\\my_funct_dir')
-#
-# import my_funct_dir.my_base_functions
-# from my_funct_dir.my_base_functions import press_exit
-# # pylint: enable=import-error
-# #pylint: enable=line-too-long
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit)
 
 
 def main():
     """Use as module for Main."""
+    print('\nLesson 02, Week 01, Exercise 01.')
+    press_continue()
+
     my_name = 'Jan (gnoff)'
 
     # Print "Hello world"
-    print('\nHello world')
+    print('Hello world')
 
     # Print a welcome message
-    print('This program was made by', my_name, '\n')
+    print(f'This program was made by {my_name}.')
 
-    #my_base_functions.press_exit()
     press_exit()
 
 
