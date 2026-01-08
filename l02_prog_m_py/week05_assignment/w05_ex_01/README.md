@@ -26,6 +26,7 @@ Om inte, varför?
 ---
 
 ### 1.2
+
 Det har smugit sig in kommentarer i stället för kod på några ställen.\
 Skriv färdigt testfallen test_empty_list och test_number_list. 
 
@@ -47,6 +48,7 @@ Skriv färdigt testfallen test_empty_list och test_number_list.
 ---
 
 ### 1.3a
+
 Diskutera följande kod. Räcker det med ett testfall för att 
 testa funktionen? 
 
@@ -89,7 +91,7 @@ ge lite heder åt alla andrapristagare.\
 Formulera testfall för en funktion som hittar näst största 
 talet i en lista!
 
-    # Returnerar det nästa största talet i lista
+    # Returnerar det nästa största talet i listan
     # Returnerar None om det inte finns något
     # Om det är delad förstaplats så returneras det talet
     def find_2nd_max(list):
@@ -104,7 +106,7 @@ Copyright 2026 gnoff
 
 Licensed under the Apache License, Version 2.0 (the "License");\
 you may not use this file except in compliance with the License.\
-You may obtain a copy of the License at\
+You may obtain a copy of the License at
 
      http://www.apache.org/licenses/LICENSE-2.0
 
@@ -113,6 +115,6 @@ distributed under the License is distributed on an "AS IS" BASIS,\
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\
 implied.\
 See the License for the specific language governing permissions and\
-limitations under the License.\
+limitations under the License.
 
 ---

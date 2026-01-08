@@ -19,7 +19,6 @@ och kör den.
     while index <= limit:
         print(index)
         index = index + 2
-    
 
 ---
 
@@ -32,7 +31,6 @@ och kör den.
             print(i)
         i = i + 1
 
-
 ---
 
 ### 1.3 - Vad blir summan?
@@ -42,7 +40,6 @@ Skriv ner din bästa gissning innan du kör koden.
     for i in range (6):
         counter += i
     print(counter)
-
 
 ---
 
@@ -60,7 +57,6 @@ Skriv ner din bästa gissning innan du kör koden.
             x += y * y # och här
         y += 1
 
-
 ---
 
 ### 1.5 - Vad skrivs ut? 
@@ -68,7 +64,6 @@ Kan du göra om koden så att den skriver ut "time" i stället?
 
     message = 'its_time_to_get_coding'
     print(message[3:7])
-
 
 ---
 
@@ -84,18 +79,17 @@ Kan du flytta linjen ett steg åt höger?
                 s += '.'
         print(s)
 
-
 ---
 
 Student == gnoff
 
 ---
 
-Copyright 2025 gnoff
+Copyright 2025-2026 gnoff
 
 Licensed under the Apache License, Version 2.0 (the "License");\
 you may not use this file except in compliance with the License.\
-You may obtain a copy of the License at\
+You may obtain a copy of the License at
 
      http://www.apache.org/licenses/LICENSE-2.0
 
@@ -104,6 +98,6 @@ distributed under the License is distributed on an "AS IS" BASIS,\
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\
 implied.\
 See the License for the specific language governing permissions and\
-limitations under the License.\
+limitations under the License.
 
 ---

@@ -13,6 +13,7 @@ innehåller funktionsanrop.
 ---
 
 ### 1
+
 Skriv en funktion som tar en sträng som parameter.\
 När den anropas ska den skriva ut strängen och 
 "är en fena på programmering".
@@ -26,6 +27,7 @@ Exempel:
 ### 2
 
 #### 2a
+
 Skriv en funktion med namnet "_**eko**_".\
 När den anropas med en sträng ska den upprepa strängen, 
 och skriva ut resultatet.
@@ -35,6 +37,7 @@ Exempel:
     eko("hej") → skriver ut "hejhej" 
 
 #### 2b
+
 Lägg till en parameter "_**count**_", som avgör hur många 
 ekon som ska skapas.
 
@@ -45,6 +48,7 @@ Exempel:
 ---
 
 ### 3
+
 Följande kod ska sluta loopa efter 5 varv.\
 Flytta den in i en funktion och justera den enligt 
 kommentaren.
@@ -59,6 +63,7 @@ kommentaren.
 ---
 
 ### 4
+
 Skriv en funktion med namnet _**last**_.\
 Den ska ta en lista som parameter och returnera 
 det sista elementet i listan. 
@@ -68,6 +73,7 @@ det sista elementet i listan.
 ---
 
 ### 5
+
 Skriv en funktion med namnet _**cut_edges**_.\
 Den ska ta en lista som parameter.\
 När den anropas ska den returnera en ny lista, 
@@ -78,6 +84,7 @@ där den har tagit bort första och sista elementet.
 ---
 
 ### 6
+
 Lös felen i koden.
 
     def increase(x):
@@ -88,6 +95,7 @@ Lös felen i koden.
 ---
 
 ### 7
+
 Bygg en funktion med namnet _**average**_.\
 Den ska ta parametrar: x och y.\
 Båda ska vara tal.\
@@ -100,6 +108,7 @@ Tips: det kan vara enklare att använda fler variabler.
 ---
 
 ### 8
+
 Gör en funktion som kan skriva ut innehållet i en lista 
 lite snyggare.\
 Först ska funktionen tala om ifall listan är tom, 
@@ -123,11 +132,11 @@ Student == gnoff
 
 ---
 
-Copyright 2025 gnoff
+Copyright 2025-2026 gnoff
 
 Licensed under the Apache License, Version 2.0 (the "License");\
 you may not use this file except in compliance with the License.\
-You may obtain a copy of the License at\
+You may obtain a copy of the License at
 
      http://www.apache.org/licenses/LICENSE-2.0
 
@@ -136,6 +145,6 @@ distributed under the License is distributed on an "AS IS" BASIS,\
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\
 implied.\
 See the License for the specific language governing permissions and\
-limitations under the License.\
+limitations under the License.
 
 ---
