@@ -53,6 +53,9 @@ def test_with_vowels():
     assert count_vowels('WWWRRRRRFFFFFFFFadddddwww') == 1
     assert count_vowels('AEIOUY') == 6
 
+    assert count_vowels("aArreE") == 4
+    assert count_vowels("PPllOouui") == 5
+
 
 def test_non_string():
     """Used for unit test of function count_vowels.

@@ -36,10 +36,15 @@ def test_number_list():
 
     Check numbered list.
     """
-    assert sum_list([5]) == 5 # 5
-    assert sum_list([1, 2, 3, 4, 5]) # 15
-    assert sum_list([98.5, 1.5]) # 100
-    assert sum_list([-30, 15]) # -15
+    assert sum_list([5]) == 5
+    assert sum_list([1, 2, 3, 4, 5]) == 15
+    assert sum_list([98.5, 1.5]) == 100
+    assert sum_list([-30, 15]) == -15
+
+    assert sum_list([1, 2]) == 3
+    assert sum_list([15, 5]) == 20
+    assert sum_list([-1, 1]) == 0
+    assert sum_list([1.2, 1.8]) == 3
 
 
 def test_non_numbered_list():
