@@ -21,7 +21,7 @@
 from ..ex01_3_count_vowels import (count_vowels)
 
 
-def test_empty_word():
+def test_count_vowels__empty_word():
     """Used for unit test of function count_vowels.
 
     Check empty word.
@@ -31,7 +31,7 @@ def test_empty_word():
     assert actual == expected
 
 
-def test_no_vowels():
+def test_count_vowels__no_vowels():
     """Used for unit test of function count_vowels.
 
     Check empty word.
@@ -44,7 +44,7 @@ def test_no_vowels():
     assert count_vowels('åäö') == 0
 
 
-def test_with_vowels():
+def test_count_vowels__with_vowels():
     """Used for unit test of function count_vowels.
 
     Check word(s) that has vowels.
@@ -57,7 +57,7 @@ def test_with_vowels():
     assert count_vowels("PPllOouui") == 5
 
 
-def test_non_string():
+def test_count_vowels__non_string():
     """Used for unit test of function count_vowels.
 
     Check incorrect strings.

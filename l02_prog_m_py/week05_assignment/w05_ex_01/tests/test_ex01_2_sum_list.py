@@ -21,7 +21,7 @@
 from ..ex01_2_sum_list import (sum_list)
 
 
-def test_empty_list():
+def test_sum_list__empty_list():
     """Used for unit test of function sum_list.
 
     Check empty list.
@@ -31,7 +31,7 @@ def test_empty_list():
     assert actual == expected
 
 
-def test_number_list():
+def test_sum_list__number_list():
     """Used for unit test of function sum_list.
 
     Check numbered list.
@@ -47,7 +47,7 @@ def test_number_list():
     assert sum_list([1.2, 1.8]) == 3
 
 
-def test_non_numbered_list():
+def test_sum_list__non_numbered_list():
     """Used for unit test of function sum_list.
 
     Check list including non numbers.
