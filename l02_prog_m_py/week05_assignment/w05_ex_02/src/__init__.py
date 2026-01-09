@@ -1,10 +1,11 @@
-"""Module for 'Hello World'.
+"""Module for init, lesson 02, week 05, exercise 02.
 
-Lesson 02, Week 01, Exercise 01.
+Directory: src.
 """
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+#
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,28 +19,5 @@ Lesson 02, Week 01, Exercise 01.
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 #####################################################################
-
-
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
-
-
-def main():
-    """Use as module for Main."""
-    print('\nLesson 02, Week 01, Exercise 01.')
-    press_continue()
-
-    my_name = 'Jan (gnoff)'
-
-    # Print "Hello world"
-    print('Hello world')
-
-    # Print a welcome message
-    print(f'This program was made by {my_name}.')
-
-    press_exit()
-
-
-if __name__ == "__main__":
-    main()

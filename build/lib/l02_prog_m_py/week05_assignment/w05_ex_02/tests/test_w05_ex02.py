@@ -1,10 +1,7 @@
-"""Module for 'Hello World'.
-
-Lesson 02, Week 01, Exercise 01.
-"""
+"""Module for tests, L02, W05, Ex02."""
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,25 +18,29 @@ Lesson 02, Week 01, Exercise 01.
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+from ..src.w05_ex02_functions import c_to_f
 
 
-def main():
-    """Use as module for Main."""
-    print('\nLesson 02, Week 01, Exercise 01.')
-    press_continue()
+def test_c_to_f__too_cold():
+    """Used for unit test of function c_to_f.
 
-    my_name = 'Jan (gnoff)'
+    Check if below absolute zero, result shall be None.
+    """
 
-    # Print "Hello world"
-    print('Hello world')
-
-    # Print a welcome message
-    print(f'This program was made by {my_name}.')
-
-    press_exit()
+    expected = None
+    actual = c_to_f(-300)
+    assert actual == expected
+    actual = c_to_f(-273.16)
+    assert actual == expected
 
 
-if __name__ == "__main__":
-    main()
+def test_c_to_f__check_temps():
+    """Used for unit test of function c_to_f.
+
+    Check if at absolute zero or higher.
+    """
+
+    assert round(c_to_f(-273.15), 2) == -459.67
+    assert c_to_f(0) == 32
+    assert c_to_f(-40) == -40
+    assert c_to_f(1000) == 1832

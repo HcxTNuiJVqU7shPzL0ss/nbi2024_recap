@@ -1,10 +1,10 @@
-"""Module for 'Hello World'.
+"""Module for Lesson 02, Week 05, Exercise 02.
 
-Lesson 02, Week 01, Exercise 01.
+Parts 2.1 through 2.4, functions.
 """
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,25 +21,15 @@ Lesson 02, Week 01, Exercise 01.
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+def c_to_f(degree):
+    """Use to convert degree Celsius to Fahrenheit.
 
-
-def main():
-    """Use as module for Main."""
-    print('\nLesson 02, Week 01, Exercise 01.')
-    press_continue()
-
-    my_name = 'Jan (gnoff)'
-
-    # Print "Hello world"
-    print('Hello world')
-
-    # Print a welcome message
-    print(f'This program was made by {my_name}.')
-
-    press_exit()
-
-
-if __name__ == "__main__":
-    main()
+    Will return None if input is less than
+    the absolute zero.
+    Note this will not handle input that differ from int or float.
+    Going by exercise for this, will not add difficulty or
+    functionality at this time.
+    """
+    if degree < -273.15:
+        return None
+    return degree * 9 / 5 + 32

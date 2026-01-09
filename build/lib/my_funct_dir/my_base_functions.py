@@ -2,7 +2,7 @@
 
 #####################################################################
 #
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -102,7 +102,10 @@ def enter_float(input_string):
 
 
 def ask_y_or_n():
-    """Use to ask if yes or no."""
+    """Use to ask if yes or no.
+
+    Specifically with a pre-decided question.
+    """
     while True:
         check_ans = input('Did it match/work, (y) yes or (n) no: ')
         yes_check = ('y', '(y)', '(y) yes', 'yes')
@@ -122,7 +125,10 @@ def ask_y_or_n():
 
 
 def y_or_n(in_string):
-    """Use to ask if yes or no."""
+    """Use to ask if yes or no.
+
+    Depends on incoming string what is asked.
+    """
     while True:
         check_ans = input(in_string)
         yes_check = ('y', '(y)', '(y) yes', 'yes')

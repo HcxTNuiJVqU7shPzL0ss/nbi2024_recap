@@ -4,7 +4,7 @@ Lesson 02, Week 01, Exercise 01.
 """
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ from my_funct_dir.my_base_functions import (press_continue,
 def hello_world():
     """Prompt user to input "Hello world"."""
     while True:
-        first_string = input('\nPlease type "Hello world": ')
+        first_string = input('Please type "Hello world": ')
         clean_string = first_string.replace('\"', '')
         try:
             if clean_string.lower() == 'hello world':
@@ -71,8 +71,8 @@ def check_hello(first_string):
             print('You should not use " in your input.')
             press_continue()
         else:
-            # Does not handle the case if using " and incorrect
-            # capitalization on "Hello".
+            # Does not handle the case if both using " and
+            # incorrect capitalization on "Hello".
             print('Please mind the Capitalization.')
             press_continue()
     else:
@@ -82,12 +82,15 @@ def check_hello(first_string):
 
 def main():
     """Use as module for Main."""
+    print('\nLesson 02, Week 01, Exercise 01 (version 2).')
+    press_continue()
+
     first_string = hello_world()
     check_hello(first_string)
     name = user_name_input()
 
     # Print a welcome message
-    print('\nThis program was made by', name, '\n')
+    print(f'\nThis program was made by {name}.')
 
     press_exit()
 

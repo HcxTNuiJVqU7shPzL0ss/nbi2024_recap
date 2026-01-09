@@ -1,7 +1,7 @@
 """Module for Lesson 02, Week 01, Exercise 02, Discuss, Version 2."""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import press_exit, press_goback
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit, press_goback)
 
 
 def calc_funds_left(ticket_price, available_funds):
@@ -40,7 +41,7 @@ def enter_ticket_price():
     """Prompt user to input the ticket price."""
     i_ticket_price = 0
     while True:
-        s_ticket_price = input('\nPlease enter the ticket '
+        s_ticket_price = input('Please enter the ticket '
                                'price (SEK): ')
         try:
             i_ticket_price = int(s_ticket_price)
@@ -95,6 +96,9 @@ def run_w1_ex2(i_ticket_price, i_av_funds):
 
 def main():
     """Use as module for Main."""
+    print('\nLesson 02, Week 01, Exercise 02 (version 2).')
+    press_continue()
+
     i_ticket_price = enter_ticket_price()
     i_av_funds = enter_available_funds()
     run_w1_ex2(i_ticket_price, i_av_funds)

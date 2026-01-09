@@ -1,7 +1,7 @@
 """Module for Lesson 02, Week 01, Exercise 02, Discuss."""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,8 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import press_exit
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit)
 
 
 def calculate_w1_ex2():
@@ -33,7 +34,7 @@ def calculate_w1_ex2():
     half_left = money_left / 2
 
 
-    print('\nThere is', money_left, "SEK over.")
+    print('There is', money_left, "SEK over.")
     print('Half of what is left over is: ', half_left,
           '.', sep = '')
 
@@ -42,6 +43,9 @@ def calculate_w1_ex2():
 
 def main():
     """Use as module for Main."""
+    print('\nLesson 02, Week 01, Exercise 02.')
+    press_continue()
+
     calculate_w1_ex2()
 
 

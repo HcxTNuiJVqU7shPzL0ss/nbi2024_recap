@@ -1,10 +1,10 @@
-"""Module for 'Hello World'.
+"""Module for Lesson 02, Week 05, Exercise 01.2, Count vowels.
 
-Lesson 02, Week 01, Exercise 01.
+Update the code and fix it, including tests in separate file.
 """
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,21 +22,34 @@ Lesson 02, Week 01, Exercise 01.
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+                                            press_exit, enter_string)
+
+
+def count_vowels(word_in):
+    """Count vowels in incoming word."""
+    check_vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+    vowel = 0
+    if not word_in:
+        return None
+    if isinstance(word_in, str):
+        for char in word_in:
+            if char.lower() in check_vowels:
+                vowel += 1
+    else:
+        vowel = 'incorrect'
+    return vowel
 
 
 def main():
-    """Use as module for Main."""
-    print('\nLesson 02, Week 01, Exercise 01.')
+    """Use as main function."""
+    print('\nWeek 05, Exercise 01.3, Count vowels.\nFunction: ',
+          main.__name__, sep = '')
     press_continue()
 
-    my_name = 'Jan (gnoff)'
+    use_string = enter_string('What to count: ')
 
-    # Print "Hello world"
-    print('Hello world')
-
-    # Print a welcome message
-    print(f'This program was made by {my_name}.')
+    vowels = count_vowels(use_string)
+    print(f'\nYou had: {vowels} vowels.')
 
     press_exit()
 

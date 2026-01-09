@@ -1,10 +1,10 @@
-"""Module for 'Hello World'.
+"""Module for Lesson 02, Week 05, Exercise 02.
 
-Lesson 02, Week 01, Exercise 01.
+Parts 2.1 through 2.4, file for main.py.
 """
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,22 +21,23 @@ Lesson 02, Week 01, Exercise 01.
 #####################################################################
 
 
+# pylint: disable=import-error
+from w05_ex02_functions import c_to_f
+# pylint: enable=import-error
+
+
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
 def main():
-    """Use as module for Main."""
-    print('\nLesson 02, Week 01, Exercise 01.')
+    """Use as main function."""
+    print('\nWeek 05, Exercise 02, Function calls.\nFunction: ',
+          main.__name__, sep = '')
     press_continue()
 
-    my_name = 'Jan (gnoff)'
-
-    # Print "Hello world"
-    print('Hello world')
-
-    # Print a welcome message
-    print(f'This program was made by {my_name}.')
+    check32 = c_to_f(0)
+    print(check32)
 
     press_exit()
 
