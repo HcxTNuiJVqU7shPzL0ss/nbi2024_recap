@@ -67,3 +67,34 @@ def count_words(sentence):
 
     cnt_space = reduced_sentence.count(' ')
     return cnt_space + 1
+
+
+def find_median(numbers):
+    """Use to find the median from a list of numbers.
+
+    Will return None if empty list.
+    Will return False if non-list or non-number (in list) input.
+    """
+
+    if not isinstance(numbers, list):
+        return False # Not a list used as input
+    if not all(isinstance(item, (int, float)) for item in numbers):
+        return False # List, but includes item(s) not int nor float
+    if not numbers:
+        return None # Empty list
+    # Find the length of the list
+    list_length = len(numbers)
+    if list_length < 2:
+        return None  # List too short, not enough numbers
+    # Sort the list from smallest to highest value (ascending)
+    numbers.sort()
+    # Handle if odd number of list elements
+    if list_length % 2 != 0:
+        median_index = list_length // 2
+        return numbers[median_index]
+    # Handle if even number of list elements
+    first_mid_index = list_length // 2 - 1
+    second_mid_index = list_length // 2
+    median_odd_value = (numbers[first_mid_index] +
+                        numbers[second_mid_index]) / 2
+    return median_odd_value
