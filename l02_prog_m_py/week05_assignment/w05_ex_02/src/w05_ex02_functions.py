@@ -75,7 +75,6 @@ def find_median(numbers):
     Will return None if empty list.
     Will return False if non-list or non-number (in list) input.
     """
-
     if not isinstance(numbers, list):
         return False # Not a list used as input
     if not all(isinstance(item, (int, float)) for item in numbers):
