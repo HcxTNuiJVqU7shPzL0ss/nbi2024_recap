@@ -21,7 +21,9 @@ Parts 2.1 through 2.4, file for main.py.
 #####################################################################
 
 
-from w05_ex02_functions import c_to_f
+# pylint: disable=import-error
+from w05_ex02_functions import c_to_f, count_words, find_median
+# pylint: enable=import-error
 
 
 from my_funct_dir.my_base_functions import (press_continue,
@@ -36,6 +38,14 @@ def main():
 
     check32 = c_to_f(0)
     print(check32)
+    press_continue()
+
+    check_three = count_words('  1  2   3  ')
+    print(check_three)
+    press_continue()
+
+    check_median = find_median([-100.23, 2, 42.71, 100, -200])
+    print(check_median)
 
     press_exit()
 

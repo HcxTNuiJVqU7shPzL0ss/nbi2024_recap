@@ -33,3 +33,67 @@ def c_to_f(degree):
     if degree < -273.15:
         return None
     return degree * 9 / 5 + 32
+
+
+def count_words(sentence):
+    """Use to count the number of words in a sentence (string).
+
+    Will return None if empty string.
+    Will return False if non-string input.
+    Space is used to indicate new word.
+    Several consecutive spaces is only counted ones.
+    Leading or trailing space not to be counted.
+    An input of only space(s) is handles the same as an empty string.
+    """
+    latest_char = ''
+    reduced_sentence = ''
+    if not isinstance(sentence, str):
+        return False # Not a sentence used as input
+    if not sentence:
+        return None # Empty sentence used as input
+    for char in sentence:
+        if char == ' ' and latest_char == ' ':
+            continue # Skips any repeated space(s)
+        reduced_sentence += char
+        latest_char = char
+    if reduced_sentence[0] == ' ':
+        # Skips any leading space (more than one handled previously)
+        reduced_sentence = reduced_sentence[1:]
+    if not reduced_sentence:
+        return None # Only leading space(s) used as input
+    if reduced_sentence[-1] == ' ':
+        # Skips any trailing space (more than one handled previously)
+        reduced_sentence = reduced_sentence[:-2]
+
+    cnt_space = reduced_sentence.count(' ')
+    return cnt_space + 1
+
+
+def find_median(numbers):
+    """Use to find the median from a list of numbers.
+
+    Will return None if empty list.
+    Will return False if non-list or non-number (in list) input.
+    """
+    if not isinstance(numbers, list):
+        return False # Not a list used as input
+    if not all(isinstance(item, (int, float)) for item in numbers):
+        return False # List, but includes item(s) not int nor float
+    if not numbers:
+        return None # Empty list
+    # Find the length of the list
+    list_length = len(numbers)
+    if list_length < 2:
+        return None  # List too short, not enough numbers
+    # Sort the list from smallest to highest value (ascending)
+    numbers.sort()
+    # Handle if odd number of list elements
+    if list_length % 2 != 0:
+        median_index = list_length // 2
+        return numbers[median_index]
+    # Handle if even number of list elements
+    first_mid_index = list_length // 2 - 1
+    second_mid_index = list_length // 2
+    median_odd_value = (numbers[first_mid_index] +
+                        numbers[second_mid_index]) / 2
+    return median_odd_value
