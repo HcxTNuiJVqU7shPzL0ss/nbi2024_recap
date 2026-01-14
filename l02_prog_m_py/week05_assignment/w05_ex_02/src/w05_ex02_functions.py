@@ -97,3 +97,24 @@ def find_median(numbers):
     median_odd_value = (numbers[first_mid_index] +
                         numbers[second_mid_index]) / 2
     return median_odd_value
+
+
+def is_sorted_ascending(numbers):
+    """Use to check if list is sorted as ascending or not.
+
+    If the list "numbers" is sorted ascending, returns
+    True, else False.
+    Will return None if empty list, or if non-list or
+    non-number (in list) input.
+    """
+    if not isinstance(numbers, list):
+        return None # Not a list used as input
+    if not all(isinstance(item, (int, float)) for item in numbers):
+        return None # List, but includes item(s) not int nor float
+    if not numbers:
+        return None # Empty list
+    list_copy = numbers[:]
+    list_copy.sort()
+    if list_copy == numbers:
+        return True
+    return False

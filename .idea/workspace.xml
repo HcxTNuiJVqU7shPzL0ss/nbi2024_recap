@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nbi2024_recap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nbi2024_recap.iml" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Worked with pycharm&#10;&#10;Check to see if connection &#10;to git and github &#10;is back&#10;Problems with update of &#10;pycharm and plugins">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_4.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/w05_ex02_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/w05_ex02_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +26,20 @@
     &quot;assignee&quot;: &quot;HcxTNuiJVqU7shPzL0ss&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git",
-    "accountId": "70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git&quot;,
+    &quot;accountId&quot;: &quot;70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="38EtworzRri4EVy5FHaq0MF6mA0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,6 +49,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
     "settings.editor.selected.configurable": "advanced.settings"
   }
@@ -89,6 +95,30 @@
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
     </task>
+    <task id="LOCAL-00001" summary="Worked with pycharm&#10;&#10;Check to see if connection &#10;to git and github &#10;is back&#10;Problems with update of &#10;pycharm and plugins">
+      <option name="closed" value="true" />
+      <created>1768377936706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768377936706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Worked with pycharm&#10;&#10;Check to see if connection &#10;to git and github &#10;is back&#10;Problems with update of &#10;pycharm and plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked with pycharm&#10;&#10;Check to see if connection &#10;to git and github &#10;is back&#10;Problems with update of &#10;pycharm and plugins" />
   </component>
 </project>

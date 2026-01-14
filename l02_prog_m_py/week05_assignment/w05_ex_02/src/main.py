@@ -22,7 +22,9 @@ Parts 2.1 through 2.4, file for main.py.
 
 
 # pylint: disable=import-error
-from w05_ex02_functions import c_to_f, count_words, find_median
+from w05_ex02_functions import (c_to_f, count_words,
+                                find_median,
+                                is_sorted_ascending)
 # pylint: enable=import-error
 
 
@@ -46,6 +48,13 @@ def main():
 
     check_median = find_median([-100.23, 2, 42.71, 100, -200])
     print(check_median)
+    press_continue()
+
+    check_sorted_y = is_sorted_ascending([1, 2, 42])
+    print(check_sorted_y)
+    press_continue()
+    check_sorted_n = is_sorted_ascending([42, 3])
+    print(check_sorted_n)
 
     press_exit()
 
