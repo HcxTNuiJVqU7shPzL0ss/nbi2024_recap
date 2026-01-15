@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="All also OG w01, Ex02&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 02.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="All also OG w01, Ex03&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 03.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,8 @@
     "Python.ex02_discuss.executor": "Run",
     "Python.ex02_discuss_v2.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.more_4.1.executor": "Run",
+    "Python.more_4.2.executor": "Run",
     "Python.variables_datatypes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -159,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768494045795</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All also OG w01, Ex03&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 03.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
+      <option name="closed" value="true" />
+      <created>1768495132150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768495132150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +192,7 @@
     <MESSAGE value="Merge with new course, part 2&#10;&#10;Adding also exercise 2 &#10;from week 1" />
     <MESSAGE value="All also OG w01, Ex01&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 01.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
     <MESSAGE value="All also OG w01, Ex02&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 02.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="All also OG w01, Ex02&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 02.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
+    <MESSAGE value="All also OG w01, Ex03&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 03.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="All also OG w01, Ex03&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 03.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
   </component>
 </project>
