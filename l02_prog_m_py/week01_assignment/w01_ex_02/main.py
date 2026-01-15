@@ -1,7 +1,7 @@
 """Module for Lesson 02, Week 01, Exercise 02, Discuss."""
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,35 +18,31 @@
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+def calculate_money_left():
+    """Use to calculate week 1, exercise 2.
 
-
-def calculate_w1_ex2():
-    """Use to calculate week 1, exercise 2."""
+    This version made for 2025 (and 2026).
+    Start money (funds), ticket price, then divide
+    money left over to share with a friend.
+    """
     ticket_price = 100 # Ticket price
     funds = 200 # Available funds
 
     # Calculate how much you will have left
     money_left = funds - ticket_price
 
-    # Calculate half of what is left
+    # Calculate half of what is left, to share
     half_left = money_left / 2
 
 
-    print('There is', money_left, "SEK left over.")
-    print('Half of what is left over is: ', half_left,
-          '.', sep = '')
-
-    press_exit()
+    print(f'\nThere is {money_left} SEK left after '
+          f'purchase of the ticket.')
+    print(f'Each person will get {half_left} SEK.')
 
 
 def main():
     """Use as module for Main."""
-    print('\nLesson 02, Week 01, Exercise 02.')
-    press_continue()
-
-    calculate_w1_ex2()
+    calculate_money_left()
 
 
 if __name__ == "__main__":

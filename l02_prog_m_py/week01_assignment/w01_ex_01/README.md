@@ -3,7 +3,7 @@
 
 ---
 
-### 1 Skapa projekt och synka med GitHub
+## 1 Skapa projekt och synka med GitHub
 
 ---
 

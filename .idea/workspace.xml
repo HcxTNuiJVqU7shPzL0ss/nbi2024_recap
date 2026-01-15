@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_01/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,16 +44,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.ex01_main_hello_name.executor": "Run",
+    "Python.ex01_main_hello_name_v2.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="nbi2024_recap" />
@@ -124,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768486791138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files">
+      <option name="closed" value="true" />
+      <created>1768491603394</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768491603394</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +148,7 @@
     <MESSAGE value="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme" />
     <MESSAGE value="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all" />
     <MESSAGE value="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;" />
+    <MESSAGE value="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files" />
   </component>
 </project>
