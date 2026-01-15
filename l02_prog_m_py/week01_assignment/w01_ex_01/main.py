@@ -4,7 +4,7 @@ Lesson 02, Week 01, Exercise 01.
 """
 
 #####################################################################
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,27 +21,20 @@ Lesson 02, Week 01, Exercise 01.
 #####################################################################
 
 
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
-
-
 def main():
     """Use as module for Main.
 
-    This version made for the recap of 2024.
+    This version made for 2025 (and 2026).
+    Requested output from running:
+    Hello world
+    This program was made by "your name"
+    Where "your name" has been correctly replaced.
     """
-    print('\nLesson 02, Week 01, Exercise 01.')
-    press_continue()
-
     my_name = 'Jan (gnoff)'
-
     # Print "Hello world"
-    print('Hello world')
-
+    print('\nHello world')
     # Print a welcome message
-    print(f'This program was made by {my_name}.')
-
-    press_exit()
+    print(f'This program was made by {my_name}')
 
 
 if __name__ == "__main__":

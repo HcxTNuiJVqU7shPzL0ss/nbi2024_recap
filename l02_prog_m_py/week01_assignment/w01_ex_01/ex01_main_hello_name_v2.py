@@ -26,7 +26,10 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def hello_world():
-    """Prompt user to input "Hello world"."""
+    """Prompt user to input "Hello world".
+
+    This version made for the recap of 2024.
+    """
     while True:
         first_string = input('Please type "Hello world": ')
         clean_string = first_string.replace('\"', '')

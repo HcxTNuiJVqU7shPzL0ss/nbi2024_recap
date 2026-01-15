@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/w05_ex03_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/w05_ex03_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/tests/test_w05_ex03.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/tests/test_w05_ex03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_01/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768383731024</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;">
+      <option name="closed" value="true" />
+      <created>1768486791138</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768486791138</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +142,7 @@
     <MESSAGE value="Worked with pycharm&#10;&#10;Check to see if connection &#10;to git and github &#10;is back&#10;Problems with update of &#10;pycharm and plugins" />
     <MESSAGE value="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme" />
     <MESSAGE value="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all" />
+    <MESSAGE value="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;" />
   </component>
 </project>
