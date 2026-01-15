@@ -47,5 +47,15 @@ def auto_complete(input_str, master_list):
     # Empty master_list
     if not master_list:
         return [None, 'master_list is empty']
-
-    return 'this is not implemented'
+    # Not a str used for input_str
+    if not isinstance(input_str, str):
+        return []
+    # A str of len less than 1 used for input_str
+    if len(input_str) < 1:
+        return []
+    # Use list comprehension to find and list any matches
+    # Ensure also that case does not matter when comparing,
+    # though keep any original case from master_list in result.
+    result_list = [item for item in master_list
+                   if input_str.casefold() in item.casefold()]
+    return result_list

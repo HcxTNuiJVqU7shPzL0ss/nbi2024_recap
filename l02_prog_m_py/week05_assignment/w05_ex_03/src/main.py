@@ -52,7 +52,6 @@ def main():
 
     print(f'\nYou matched against: {result}')
 
-
     press_exit()
 
 

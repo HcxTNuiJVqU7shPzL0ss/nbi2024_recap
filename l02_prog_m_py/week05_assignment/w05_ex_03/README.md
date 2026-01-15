@@ -45,7 +45,7 @@ has entered text and pressed enter, to check against a list.
 > 
 >> ac_001  
 >> If other than a string of minimum one character is input, 
->> no match shall be done.
+>> no match shall be done. Empty list returned.
 >> 1. `int`
 >> 2. `float`
 >> 3. `str < len 1`
@@ -71,7 +71,7 @@ has entered text and pressed enter, to check against a list.
 > An input shall be possible to match against all items in 
 > master_list.
 > 
->> ac_002  
+>> ac_003  
 >> If user input string is x, all items matching x  
 >> in master_list shall be returned.
 >> 1. If input matches nothing in master_list, return empty list

@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/w05_ex03_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/tests/test_w05_ex03.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/w05_ex03_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/src/w05_ex03_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/tests/test_w05_ex03.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/tests/test_w05_ex03.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="nbi2024_recap" />
@@ -137,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Worked with pycharm&#10;&#10;Check to see if connection &#10;to git and github &#10;is back&#10;Problems with update of &#10;pycharm and plugins" />
     <MESSAGE value="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme" />
+    <MESSAGE value="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all" />
   </component>
 </project>

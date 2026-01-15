@@ -24,8 +24,9 @@ from ..src.w05_ex03_functions import auto_complete, global_list
 def test_auto_complete__master_not_list():
     """Used for unit test of function auto_complete.
 
-    Ensure master_list is an actual list.
-    Handles ac_006, parts 1 through 4.
+    Test when master_list is not an actual list.
+    Checks that None is returned.
+    Handles ac_006, parts 1 through 4 (all).
     """
     expected = None
     dummy_input = 'dummy'
@@ -74,3 +75,80 @@ def test_auto_complete__empty_master_list():
     a = auto_complete(dummy_input, a_empty_check)
 
     assert a[0] == expected
+
+
+def test_auto_complete__input_not_str():
+    """Used for unit test of function auto_complete.
+
+    Test when input_str is not a string (of at least length 1).
+    Checks that an empty result (list) is returned.
+    Handles ac_001, parts 1 through 5 (all).
+    """
+    expected = []
+
+    a_int = auto_complete(1, global_list)
+    b_float = auto_complete(3.14, global_list)
+    c_empty_str = auto_complete('', global_list)
+    d_tuple = auto_complete((1, 42), global_list)
+    e_list = auto_complete(['ab'], global_list)
+
+    assert a_int == b_float
+    assert c_empty_str == d_tuple
+    assert a_int == d_tuple
+    assert b_float == e_list
+
+    assert b_float == expected
+
+
+def test_auto_complete__input_not_found():
+    """Used for unit test of function auto_complete.
+
+    Test when input_str is not found in master_list.
+    Returns empty list.
+    Handles ac_003, part 1, also ac_002.
+    """
+    expected = []
+
+    a_not_part_of_list = 'Oscar'
+    b_not_part_of_list = 'orange'
+
+    a_check = auto_complete(a_not_part_of_list, global_list)
+    b_check = auto_complete(b_not_part_of_list, global_list)
+
+    assert a_check == b_check
+    assert a_check == expected
+
+
+def test_auto_complete__input_found():
+    """Used for unit test of function auto_complete.
+
+    Test when input_str is found in master_list.
+    Returns list of found item(s).
+    Handles ac_003, part 2, also ac_002.
+    """
+    a_expected = ['Maria Bylund', 'Marie Hson-Larson']
+    a_str_search = 'Mar'
+    a_check = auto_complete(a_str_search, global_list)
+    assert a_check == a_expected
+
+    b_expected = ['banana']
+    b_str_search = 'an'
+    b_check = auto_complete(b_str_search, global_list)
+    assert b_check == b_expected
+
+
+def test_auto_complete__case_insensitive():
+    """Used for unit test of function auto_complete.
+
+    Ensure case does not matter.
+    Handles ac_005.
+    """
+    a_expected = ['Maria Bylund', 'Marie Hson-Larson']
+    a_str_search = 'mar'
+    a_check = auto_complete(a_str_search, global_list)
+    assert a_check == a_expected
+
+    b_expected = ['banana']
+    b_str_search = 'An'
+    b_check = auto_complete(b_str_search, global_list)
+    assert b_check == b_expected
