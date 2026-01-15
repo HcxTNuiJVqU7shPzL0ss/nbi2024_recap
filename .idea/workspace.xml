@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Merge with new course, part 2&#10;&#10;Adding also exercise 2 &#10;from week 1" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="All also OG w01, Ex01&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 01.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768492508277</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="All also OG w01, Ex01&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 01.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
+      <option name="closed" value="true" />
+      <created>1768493673195</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1768493673195</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +168,7 @@
     <MESSAGE value="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;" />
     <MESSAGE value="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files" />
     <MESSAGE value="Merge with new course, part 2&#10;&#10;Adding also exercise 2 &#10;from week 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge with new course, part 2&#10;&#10;Adding also exercise 2 &#10;from week 1" />
+    <MESSAGE value="All also OG w01, Ex01&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 01.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="All also OG w01, Ex01&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 01.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
   </component>
 </project>
