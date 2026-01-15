@@ -1,6 +1,6 @@
-"""Module for Lesson 02, Week 05, Exercise 02.
+"""Module for Lesson 02, Week 05, Exercise 03.
 
-Parts 2.1 through 2.4, file for main.py.
+Search for user --> attempt to match user input against master list.
 """
 
 #####################################################################
@@ -22,39 +22,35 @@ Parts 2.1 through 2.4, file for main.py.
 
 
 # pylint: disable=import-error
-from w05_ex02_functions import (c_to_f, count_words,
-                                find_median,
-                                is_sorted_ascending)
+from w05_ex03_functions import auto_complete, global_list
 # pylint: enable=import-error
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+                                            press_exit,
+                                            enter_string)
 
 
 def main():
     """Use as main function."""
-    print('\nWeek 05, Exercise 02, Function calls.\nFunction: ',
+    print('\nWeek 05, Exercise 03, Function calls.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    check32 = c_to_f(0)
-    print(check32)
-    press_continue()
+    # master_list = [
+    #     'Peter Svensson',
+    #     'Petra Karlsson',
+    #     'Maria Bylund',
+    #     'Marie Hson-Larson',
+    #     'banana',
+    #     'apple',
+    #     'carrot'
+    # ]
 
-    check_three = count_words('  1  2   3  ')
-    print(check_three)
-    press_continue()
+    check_str = enter_string('What do you want to search for: ')
+    result = auto_complete(check_str, global_list)
 
-    check_median = find_median([-100.23, 2, 42.71, 100, -200])
-    print(check_median)
-    press_continue()
-
-    check_sorted_y = is_sorted_ascending([1, 2, 42])
-    print(check_sorted_y)
-    press_continue()
-    check_sorted_n = is_sorted_ascending([42, 3])
-    print(check_sorted_n)
+    print(f'\nYou matched against: {result}')
 
     press_exit()
 
