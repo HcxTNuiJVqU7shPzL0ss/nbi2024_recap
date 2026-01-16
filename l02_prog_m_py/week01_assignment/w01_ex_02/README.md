@@ -7,6 +7,21 @@
 
 ---
 
+### File Explanations
+
+See [main.py](main.py) in this folder for TAP HT 25D week 1, 
+exercise 2, assignment.  
+
+Reference to [discuss.py](./og_2024/discuss.py) in "og_2024" folder for 
+OG 2024 (TAP HT 24D) work.  
+
+Other files are for when working "in between the two courses" on my 
+own to get back into it and learn things.  
+
+---
+
+### Assignment Information
+
 Denna kod ska räkna ut hur mycket som blir kvar, efter att man 
 betalat en biljett.  
 Pengarna som blir över ska du dela med en vän.   
@@ -24,11 +39,13 @@ Hitta på bättre namn, i stället för x, y och z.
 
 ---
 
-Correct any errors.
+### English Summary
 
-What does the code do?
+* Correct any errors.
 
-Come up with better names than x, y and z.
+* What does the code do?
+
+* Come up with better names than x, y and z.
 
 ---
 
@@ -46,7 +63,7 @@ _Previous course:_
 
 ---
 
-Student == gnoff
+Student == **_gnoff_**
 
 ---
 
