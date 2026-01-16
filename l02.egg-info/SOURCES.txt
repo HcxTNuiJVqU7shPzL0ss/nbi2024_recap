@@ -26,6 +26,7 @@ l02_prog_m_py/week01_assignment/w01_ex_03/ex03_01a.py
 l02_prog_m_py/week01_assignment/w01_ex_03/ex03_01b.py
 l02_prog_m_py/week01_assignment/w01_ex_03/ex03_02a.py
 l02_prog_m_py/week01_assignment/w01_ex_03/ex03_02b.py
+l02_prog_m_py/week01_assignment/w01_ex_03/main.py
 l02_prog_m_py/week01_assignment/w01_ex_03/og_2024/__init__.py
 l02_prog_m_py/week01_assignment/w01_ex_03/og_2024/exc3_1a.py
 l02_prog_m_py/week01_assignment/w01_ex_03/og_2024/exc3_1b.py
@@ -41,6 +42,7 @@ l02_prog_m_py/week01_assignment/w01_ex_04/ex04_01c.py
 l02_prog_m_py/week01_assignment/w01_ex_04/ex04_02.py
 l02_prog_m_py/week01_assignment/w01_ex_04/ex04_03a.py
 l02_prog_m_py/week01_assignment/w01_ex_04/ex04_03b.py
+l02_prog_m_py/week01_assignment/w01_ex_04/main.py
 l02_prog_m_py/week01_assignment/w01_ex_04/og_2024/__init__.py
 l02_prog_m_py/week01_assignment/w01_ex_04/og_2024/more_4.1.py
 l02_prog_m_py/week01_assignment/w01_ex_04/og_2024/more_4.2.py

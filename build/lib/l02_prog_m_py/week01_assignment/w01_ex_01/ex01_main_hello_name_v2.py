@@ -1,6 +1,8 @@
 """Module for 'Hello World', version 2.
 
 Lesson 02, Week 01, Exercise 01.
+Done "off course".
+More advanced, playing around, learning things.
 """
 
 #####################################################################
@@ -47,7 +49,10 @@ def hello_world():
 
 
 def user_name_input():
-    """Prompt user to input their name."""
+    """Prompt user to input their name.
+
+    This version made for the recap of 2024.
+    """
     while True:
         name = input('\nPlease enter your name: ')
         try:
@@ -64,7 +69,10 @@ def user_name_input():
 
 
 def check_hello(first_string):
-    """Use to check input string for Hello world."""
+    """Use to check input string for Hello world.
+
+    This version made for the recap of 2024.
+    """
     if not first_string == 'Hello world':
         # Print user input
         print('\nYour input was: ' + first_string)
@@ -84,7 +92,10 @@ def check_hello(first_string):
 
 
 def main():
-    """Use as module for Main."""
+    """Use as module for Main.
+
+    This version made for the recap of 2024.
+    """
     print('\nLesson 02, Week 01, Exercise 01 (version 2).')
     press_continue()
 

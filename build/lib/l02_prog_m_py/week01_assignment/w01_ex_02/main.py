@@ -1,4 +1,8 @@
-"""Module for Lesson 02, Week 01, Exercise 02, Discuss."""
+"""Module for 'Discuss'.
+
+Lesson 02, Week 01, Exercise 02.
+TAP HT 25D.
+"""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -21,9 +25,9 @@
 def calculate_money_left():
     """Use to calculate week 1, exercise 2.
 
-    This version made for 2025 (and 2026).
-    Start money (funds), ticket price, then divide
-    money left over to share with a friend.
+    This version made for 2025 (and 2026), TAP HT 25D.
+    Start money (funds), subtract ticket price, then divide
+    money left over to share equally with a friend.
     """
     ticket_price = 100 # Ticket price
     funds = 200 # Available funds
@@ -35,13 +39,16 @@ def calculate_money_left():
     half_left = money_left / 2
 
 
-    print(f'\nThere is {money_left} SEK left after '
+    print(f'\nThere is {money_left:.2f} SEK left after '
           f'purchase of the ticket.')
-    print(f'Each person will get {half_left} SEK.')
+    print(f'Each person will get {half_left:.2f} SEK.')
 
 
 def main():
-    """Use as module for Main."""
+    """Use as module for Main.
+
+    This version made for 2025 (and 2026), TAP HT 25D.
+    """
     calculate_money_left()
 
 

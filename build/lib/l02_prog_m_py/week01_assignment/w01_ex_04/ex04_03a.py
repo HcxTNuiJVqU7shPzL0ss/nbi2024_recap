@@ -1,8 +1,11 @@
-"""Module for ex04, part 3a."""
+"""Module for 'Date today'.
 
+Lesson 02, Week 01, Exercise 04, Part 03a.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,9 +28,9 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-print('\nExercise 4, part 3a.\n')
+print('\nExercise 4, part 3a.')
 press_continue()
 
-print('\nThe date today is:', date.today(), '\n')
+print('The date today is:', date.today())
 
 press_exit()

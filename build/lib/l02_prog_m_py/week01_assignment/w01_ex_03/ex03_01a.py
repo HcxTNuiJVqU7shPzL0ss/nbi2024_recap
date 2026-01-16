@@ -1,7 +1,11 @@
-"""Module for Lesson 02, Week 01, Exercise 03, Part 01a."""
+"""Module for 'One integer'.
+
+Lesson 02, Week 01, Exercise 03, Part 01a.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,13 +28,16 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def main():
-    """Use to run the code."""
+    """Use to run the code.
+
+    This version made for the recap of 2024.
+    """
     print('\nExercise 3, part 1a.')
     press_continue()
 
     i_input = 0
     while True:
-        s_input = input('\nEnter an integer: ')
+        s_input = input('Enter an integer: ')
         try:
             i_input = int(s_input)
             break

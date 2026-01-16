@@ -1,4 +1,8 @@
-"""Module for Lesson 02, Week 01, Exercise 02, Discuss, Version 2."""
+"""Module for 'Discuss', Version 2.
+
+Lesson 02, Week 01, Exercise 02, Version 2.
+Done "off course".
+"""
 
 #####################################################################
 # Copyright 2025-2026 gnoff
@@ -25,6 +29,7 @@ from my_funct_dir.my_base_functions import (press_continue,
 def calc_funds_left(ticket_price, available_funds):
     """Calculate funds vs ticket price.
 
+    This version made for the recap of 2024.
     Subtract ticket price from available funds.
     """
     funds_left = available_funds - ticket_price
@@ -32,13 +37,19 @@ def calc_funds_left(ticket_price, available_funds):
 
 
 def calc_half_left(funds_left):
-    """Calculate half of what is left."""
+    """Calculate half of what is left.
+
+    This version made for the recap of 2024.
+    """
     half_left = funds_left / 2
     return half_left
 
 
 def enter_ticket_price():
-    """Prompt user to input the ticket price."""
+    """Prompt user to input the ticket price.
+
+    This version made for the recap of 2024.
+    """
     i_ticket_price = 0
     while True:
         s_ticket_price = input('Please enter the ticket '
@@ -58,7 +69,10 @@ def enter_ticket_price():
 
 
 def enter_available_funds():
-    """Prompt user to input the available funds."""
+    """Prompt user to input the available funds.
+
+    This version made for the recap of 2024.
+    """
     i_av_funds = 0
     while True:
         s_av_funds = input('\nPlease enter the available '
@@ -78,7 +92,10 @@ def enter_available_funds():
 
 
 def run_w1_ex2(i_ticket_price, i_av_funds):
-    """Use to print out the exercise results."""
+    """Use to print out the exercise results.
+
+    This version made for the recap of 2024.
+    """
     i_funds_left = calc_funds_left(i_ticket_price, i_av_funds)
 
     if i_funds_left < 0:
@@ -87,15 +104,18 @@ def run_w1_ex2(i_ticket_price, i_av_funds):
         print('\nYou have no money left!')
     else:
         i_half_left = calc_half_left(i_funds_left)
-        print('\nThere is', i_funds_left, "SEK over.")
-        print('Half of what is left over is:', i_half_left,
-              'SEK.')
+        print(f'\nThere is {i_funds_left:.2f} SEK left over.')
+        print(f'Half of what is left over is: {i_half_left:.2f} '
+              f'SEK.')
 
     press_exit()
 
 
 def main():
-    """Use as module for Main."""
+    """Use as module for Main.
+
+    This version made for the recap of 2024.
+    """
     print('\nLesson 02, Week 01, Exercise 02 (version 2).')
     press_continue()
 

@@ -1,6 +1,7 @@
 """Module for 'Hello World'.
 
 Lesson 02, Week 01, Exercise 01.
+TAP HT 25D.
 """
 
 #####################################################################
@@ -24,7 +25,7 @@ Lesson 02, Week 01, Exercise 01.
 def main():
     """Use as module for Main.
 
-    This version made for 2025 (and 2026).
+    This version made for 2025 (and 2026), TAP HT 25D.
     Requested output from running:
     Hello world
     This program was made by "your name"

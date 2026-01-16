@@ -1,4 +1,8 @@
-"""Module for Lesson 02, Week 01, Exercise 02, Discuss."""
+"""Module for 'Discuss'.
+
+Lesson 02, Week 01, Exercise 02.
+Done "off course".
+"""
 
 #####################################################################
 # Copyright 2025-2026 gnoff
@@ -23,7 +27,13 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def calculate_w1_ex2():
-    """Use to calculate week 1, exercise 2."""
+    """Use to calculate week 1, exercise 2.
+
+    This version made for the recap of 2024.
+    Subtract ticket price from available funds,
+    divide the remainder with two, display what
+    the result is.
+    """
     ticket_price = 100 # Ticket price
     funds = 200 # Available funds
 
@@ -34,15 +44,17 @@ def calculate_w1_ex2():
     half_left = money_left / 2
 
 
-    print('There is', money_left, "SEK left over.")
-    print('Half of what is left over is: ', half_left,
-          '.', sep = '')
+    print(f'There is {money_left:.2f} SEK left over.')
+    print(f'Half of what is left over is: {half_left:.2f} SEK.')
 
     press_exit()
 
 
 def main():
-    """Use as module for Main."""
+    """Use as module for Main.
+
+    This version made for the recap of 2024.
+    """
     print('\nLesson 02, Week 01, Exercise 02.')
     press_continue()
 

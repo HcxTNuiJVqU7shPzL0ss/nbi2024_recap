@@ -1,8 +1,11 @@
-"""Module for ex04, part 2."""
+"""Module for 'Calculate the hypotenuse'.
 
+Lesson 02, Week 01, Exercise 04, Part 02.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +27,7 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             enter_int_range)
 
 
-print('\nExercise 4, part 2.\n')
+print('\nExercise 4, part 2.')
 press_continue()
 
 

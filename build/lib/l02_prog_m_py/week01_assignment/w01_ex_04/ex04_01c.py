@@ -1,7 +1,11 @@
-"""Module for ex04, part 1c."""
+"""Module for 'Time in h, min and sec'.
+
+Lesson 02, Week 01, Exercise 04, Part 01c.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -46,8 +50,11 @@ def conv_sec(nr_of_seconds):
 
 
 def main():
-    """Use as Main for ex 04, part 01c."""
-    print('\nExercise 4, part 1c.\n')
+    """Use as Main for ex 04, part 01c.
+
+    This version made for the recap of 2024.
+    """
+    print('\nExercise 4, part 1c.')
     press_continue()
 
     # nr_of_sec = stockholm_gbg_main()

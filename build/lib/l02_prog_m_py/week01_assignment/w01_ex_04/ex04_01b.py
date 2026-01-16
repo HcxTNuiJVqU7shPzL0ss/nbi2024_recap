@@ -1,7 +1,11 @@
-"""Module for Lesson 02, Week 01, Exercise 04, Part 01b."""
+"""Module for 'Time in minutes'.
+
+Lesson 02, Week 01, Exercise 04, Part 01b.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,7 +33,10 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def main():
-    """Use as Main for ex 04, part 01b."""
+    """Use as Main for ex 04, part 01b.
+
+    This version made for the recap of 2024.
+    """
     print('\nExercise 4, part 1b.')
     press_continue()
 
@@ -37,8 +44,6 @@ def main():
     nr_of_sec = ex04_01a.stockholm_gbg_main()
 
     nr_of_min = int(nr_of_sec / 60)
-
-    press_continue()
 
     print('\nIt will take you ~', nr_of_min, 'minutes to drive.')
     press_exit()
