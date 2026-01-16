@@ -1,7 +1,11 @@
-"""Module for Lesson 02, Week 01, Exercise 04, Part 01a."""
+"""Module for 'Time in seconds'.
+
+Lesson 02, Week 01, Exercise 04, Part 01a.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -39,13 +43,14 @@ def stockholm_gbg_main():
 
 
 def main():
-    """Use as Main for part 01a."""
+    """Use as Main for part 01a.
+
+    This version made for the recap of 2024.
+    """
     print('\nExercise 4, part 1a.')
     press_continue()
 
     nr_of_sec = stockholm_gbg_main()
-
-    press_continue()
 
     print('\nIt will take you', f'{nr_of_sec:.2f}',
           'seconds to drive.')

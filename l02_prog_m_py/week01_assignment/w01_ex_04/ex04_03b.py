@@ -1,8 +1,11 @@
-"""Module for ex04, part 3b."""
+"""Module for 'Date in 7 days'.
 
+Lesson 02, Week 01, Exercise 04, Part 03b.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,13 +28,13 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-print('\nExercise 4, part 3b.\n')
+print('\nExercise 4, part 3b.')
 press_continue()
 
 
 date_now = date.today()
 date_later = date_now + timedelta(days=7)
 
-print('\nThe date is 7 days is:', date_later, '\n')
+print('The date in 7 days is:', date_later)
 
 press_exit()
