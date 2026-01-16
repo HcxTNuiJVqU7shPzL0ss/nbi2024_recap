@@ -7,7 +7,12 @@
 
 (_2024 == Vecka 2, 8/1_)
 
+Main bulk of the files are from when I've been working on a recap 
+of the OG course on my own.  
+
 ---
+
+### Summary
 
 1. Du ska lösa uppgiften självständigt eller tillsammans 
 med en annan student. Men vid minst ett tillfälle ska du 
@@ -27,7 +32,33 @@ och inte kunna lösa svårare problem.
 
 ---
 
-Student == gnoff
+### Vad är code review?
+
+Alla i gruppen visar i tur och ordning upp vad man jobbar med 
+just nu.  
+När man inte visar, har man som uppgift att ge konstruktiv 
+feedback.  
+Observera att man inte behöver vara färdig!  
+Det är viktigt att du har hunnit angripa problemet och fundera 
+över det.  
+Om du inte skrivit någon kod, kan du berätta om vad du tänker 
+och få feedback från andra på det.   
+Code review kan vara ett mycket bra stöd för att komma vidare 
+när man har kört fast.  
+
+Den som visar upp sin kod:  
+
+1. Kör programmet (oavsett om det blir fel eller inte)  
+2. Visar upp kodfilerna  
+
+De som ger feedback:  
+
+1. Frågar om det är något man inte förstår  
+2. Ger förslag på hur koden kan förbättras  
+
+---
+
+Student == **_gnoff_**
 
 ---
 

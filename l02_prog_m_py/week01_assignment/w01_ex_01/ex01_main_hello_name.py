@@ -1,6 +1,7 @@
 """Module for 'Hello World'.
 
 Lesson 02, Week 01, Exercise 01.
+Done "off course".
 """
 
 #####################################################################

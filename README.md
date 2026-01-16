@@ -13,6 +13,28 @@
 
 ---
 
+#### Summary and Explanation
+
+Originally took this course starting in 2024, did not finish all.  
+Taking this course once more starting in 2025.
+
+Between the first and the new course redid most of the exercises to 
+get back into it.  
+Due to this, there are some various versions of files available.  
+
+Mainly have been working a lot on my own "between the courses".  
+However, started also to perform some work for the "new course", 
+as well as at times copying files from the "OG course in."  
+
+When applicable, will attempt to ensure each readme file will have 
+some information explaining what is what.
+
+---
+
+Student == **_gnoff_**
+
+---
+
 Copyright 2025-2026 gnoff
 
 Licensed under the Apache License, Version 2.0 (the "License");  

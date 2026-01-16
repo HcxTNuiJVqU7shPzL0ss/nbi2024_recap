@@ -7,16 +7,33 @@
 
 ---
 
+### File Explanations
+
+See [main.py](main.py) in this folder for TAP HT 25D week 1, 
+exercise 1, assignment.  
+
+Reference to [main.py](./og_2024/main.py) in "og_2024" folder for 
+OG 2024 (TAP HT 24D) work.  
+
+Other files are for when working "in between the two courses" on my 
+own to get back into it and learn things.  
+
+---
+
+### Assignment Information
+
 1  
 Skapa ett nytt Python-projekt, med ett git-repository.  
 Skapa en fil med namnet "main.py".   
 När man kör filen ska programmet skriva ut följande på terminalen, 
 fast byt ut "Ditt Namn" mot ditt namn:  
-"Hello world"  
-"This program was made by Ditt Namn"  
+
+    Hello world  
+    This program was made by Ditt Namn  
 
 2  
-Lägg till alla ändringar till en commit. (ändringar = changes)  
+Lägg till alla ändringar till en commit.  
+(ändringar = changes)  
 
 3  
 Öppna inställningarna:  
@@ -38,31 +55,37 @@ fältet "Define remote".
 Nu kan du synka ditt lokala projekt med remote som är GitHub.  
 Det gör det lätt att dela din kod mellan olika datorer.  
 
-_Om detta strular:  
-öppna terminalen från din editor och skriv:  
-"git push"  
-för att använda git direkt, utan editorn som mellanhand.  
+_Om detta strular,  
+öppna terminalen från din editor och skriv:_  
+
+    git push  
+
+_för att använda git direkt, utan editorn som mellanhand.  
 Om något går fel kommer git tipsa dig om vad du ska göra._  
 
 ---
 
-Create a new Python project.
+### English Summary
 
-Create a file called "main.py"
+* Create a new Python project.
 
-When running a file it shall produce:  
-Hello world  
-This program was made by "your name"  
+* Create a file called "main.py"
 
-Add all changes to a commit  
+* When running a file it shall produce:
 
-Add your GitHub account  
 
-Sync to your repo on GitHub  
+    Hello world  
+    This program was made by "your name"  
+
+* Add all changes to a commit.  
+
+* Add your GitHub account.  
+
+* Sync to your repo on GitHub.  
 
 ---
 
-Student == gnoff
+Student == **_gnoff_**  
 
 ---
 
