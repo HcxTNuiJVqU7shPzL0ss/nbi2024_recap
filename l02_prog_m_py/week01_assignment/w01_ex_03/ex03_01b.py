@@ -1,7 +1,11 @@
-"""Module for Lesson 02, Week 01, Exercise 03, Part 01b."""
+"""Module for 'Two integer sum'.
+
+Lesson 02, Week 01, Exercise 03, Part 01b.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +28,10 @@ from my_funct_dir.my_base_functions import (press_goback,
 
 
 def int_input_01b(in_string):
-    """Use to enter an integer."""
+    """Use to enter an integer.
+
+    This version made for the recap of 2024.
+    """
     while True:
         s_input = input('\n' + in_string)
         try:
@@ -37,7 +44,10 @@ def int_input_01b(in_string):
 
 
 def main():
-    """Use for main in part 01b."""
+    """Use for main in part 01b.
+
+    This version made for the recap of 2024.
+    """
     print('\nExercise 3, part 1b.')
     press_continue()
 

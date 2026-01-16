@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Updates for L02 W01 Ex01&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still.">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Updates for L02 W01 Ex03&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still.">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_02/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_02/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_02/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_01a.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_01a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_01b.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_01b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_02a.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_02a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_02b.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_03/ex03_02b.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +53,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.variables_datatypes.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.discuss.executor": "Run",
+    "Python.ex01_main_hello_name.executor": "Run",
+    "Python.ex01_main_hello_name_v2.executor": "Run",
+    "Python.ex02_discuss.executor": "Run",
+    "Python.ex02_discuss_v2.executor": "Run",
+    "Python.ex03_01a.executor": "Run",
+    "Python.ex03_01b.executor": "Run",
+    "Python.ex03_02a.executor": "Run",
+    "Python.ex03_02b.executor": "Run",
+    "Python.exc3_1a.executor": "Run",
+    "Python.exc3_1b.executor": "Run",
+    "Python.exc3_2a.executor": "Run",
+    "Python.exc3_2b.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.more_4.1.executor": "Run",
+    "Python.more_4.2.executor": "Run",
+    "Python.variables_datatypes.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="nbi2024_recap" />
@@ -195,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768560887545</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updates for L02 W01 Ex02&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still.">
+      <option name="closed" value="true" />
+      <created>1768562805979</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1768562805979</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +243,8 @@
     <MESSAGE value="All also OG w01, Ex04&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 04.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK" />
     <MESSAGE value="Adding and updating builds&#10;&#10;Ensure it should be &#10;possible to run the code &#10;in PyCharm as well as in &#10;a local CLI" />
     <MESSAGE value="Updates for L02 W01 Ex01&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates for L02 W01 Ex01&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
+    <MESSAGE value="Updates for L02 W01 Ex02&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
+    <MESSAGE value="Updates for L02 W01 Ex03&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates for L02 W01 Ex03&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
   </component>
 </project>

@@ -1,7 +1,11 @@
-"""Module for Lesson 02, Week 01, Exercise 03, Part 02a."""
+"""Module for 'Jacket with fixed discount'.
+
+Lesson 02, Week 01, Exercise 03, Part 02a.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +27,10 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def main():
-    """Use as main in ex 03 part 02a."""
+    """Use as main in ex 03 part 02a.
+
+    This version made for the recap of 2024.
+    """
     print('\nExercise 3, part 2a.')
     press_continue()
 
@@ -32,7 +39,7 @@ def main():
 
     disc_price = orig_price - (orig_price * (discount / 100))
 
-    print('\nThe original price was:', orig_price, 'SEK.')
+    print('The original price was:', orig_price, 'SEK.')
     print('The discount was:', str(discount) + '%')
     print('Your discounted price is: ', f'{disc_price:.2f}',
           ' SEK.', sep = '')
