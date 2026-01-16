@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Updates for L02 W01 Ex03&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still.">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/ex04_01a.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/ex04_01a.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/ex04_01b.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week01_assignment/w01_ex_04/ex04_01b.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Updates for L02 W01 Ex04&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +57,10 @@
     "Python.ex03_02b.executor": "Run",
     "Python.ex04_01a.executor": "Run",
     "Python.ex04_01b.executor": "Run",
+    "Python.ex04_01c.executor": "Run",
+    "Python.ex04_02.executor": "Run",
+    "Python.ex04_03a.executor": "Run",
+    "Python.ex04_03b.executor": "Run",
     "Python.exc3_1a.executor": "Run",
     "Python.exc3_1b.executor": "Run",
     "Python.exc3_2a.executor": "Run",
@@ -71,6 +68,7 @@
     "Python.main.executor": "Run",
     "Python.more_4.1.executor": "Run",
     "Python.more_4.2.executor": "Run",
+    "Python.more_4.3.executor": "Run",
     "Python.variables_datatypes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -224,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768572646532</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Updates for L02 W01 Ex04&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still.">
+      <option name="closed" value="true" />
+      <created>1768581502805</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1768581502805</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +259,7 @@
     <MESSAGE value="Updates for L02 W01 Ex01&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
     <MESSAGE value="Updates for L02 W01 Ex02&#10;&#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
     <MESSAGE value="Updates for L02 W01 Ex03&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates for L02 W01 Ex03&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
+    <MESSAGE value="Updates for L02 W01 Ex04&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates for L02 W01 Ex04&#10;&#10;Add new main for -25 course. &#10;Tweaks here and there. &#10;Updates to some md files. &#10;Some comments. &#10;Attempts to clarify what all &#10;the different files are for. &#10;Keeping all work done in one &#10;repo, but separate still." />
   </component>
 </project>
