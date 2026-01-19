@@ -29,7 +29,6 @@ Kör sedan red-green-refactor för varje acceptanskriterium.
 
 ### Requirements and Acceptance Criteria
 
-
 >  
 > req_001  
 > Non integers shall not be accepted, but also not generate 

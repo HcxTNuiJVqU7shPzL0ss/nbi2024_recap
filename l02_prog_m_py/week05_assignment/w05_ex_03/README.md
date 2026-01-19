@@ -38,7 +38,6 @@ has entered text and pressed enter, to check against a list.
 
 #### Requirements and Acceptance Criteria
 
-
 >  
 > req_001  
 > User input shall be a string of at least one character.
