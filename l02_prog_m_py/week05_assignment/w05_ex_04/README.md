@@ -33,7 +33,7 @@ Kör sedan red-green-refactor för varje acceptanskriterium.
 > req_001  
 > Non integers shall not be accepted, but also not generate 
 > TraceBack.   
-> 
+>  
 >> ac_001  
 >> If other than an integer is input as either n or limit, 
 >> nothing shall be done. Empty list returned.
@@ -41,27 +41,41 @@ Kör sedan red-green-refactor för varje acceptanskriterium.
 >> 2. `str`
 >> 3. `tuple`
 >> 4. `list`
+>>  
 >  
 
 >  
 > req_002  
 > Input for n and limit shall be a positive integer.
-> 
+>  
 >> ac_002  
 >> Both n and limit shall be positive integers.
 >> 1. Positive integer accepted
 >> 2. If 0 is used, return empty list
+>>  
 >  
 
 >  
 > req_003  
 > For practical purposes, range for n and limit shall be from 
 > 1 to 10.
-> 
+>  
 >> ac_003  
 >> For the exercise, limit the positive integers from 1 to 10.
 >> 1. 1 to 10 accepted and give result
 >> 2. Any value larger than 10 return an empty list
+>>  
+>  
+
+>  
+> req_004  
+> A list shall be returned, as [n*1, n*2, ..., n*x], 
+> where x == limit.
+>  
+>> ac_004  
+>> Any valid input for n and limit shall contain correct number 
+>> of integers in the resulting list.
+>>  
 >  
 
 ---

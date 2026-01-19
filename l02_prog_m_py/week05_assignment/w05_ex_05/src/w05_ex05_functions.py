@@ -28,4 +28,4 @@ def balance_lists(first_list, second_list):
     If the two lists differ more than 1 in length,
     return two balanced lists.
     """
-    return None
+    return first_list + second_list

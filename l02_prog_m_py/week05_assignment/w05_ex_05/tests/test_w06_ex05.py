@@ -22,10 +22,11 @@ from ..src.w05_ex05_functions import balance_lists
 
 
 def test_balance_lists__not_list():
-    def test_auto_complete__master_not_list():
-        """Used for unit test of function balance_lists.
+    """Used for unit test of function balance_lists.
 
-        Test when either input is not an actual list.
-        Checks that None is returned.
-        Handles ac_001, parts 1 through 4 (all).
-        """
+    Test when either input is not an actual list.
+    Checks that None is returned.
+    Handles ac_001, parts 1 through 4 (all).
+    """
+    expected = []
+    assert balance_lists(['a'], ['b']) == expected

@@ -56,7 +56,7 @@ def test_multiplication_table__pos_int():
 
     Test that both n and limit are positive integers.
     Checks that empty list is returned if 0 is used.
-    Handles ac_002, parts 1 through 2 (all).
+    Handles ac_002, parts 1 through 2 (all), plus ac_004.
     """
     n_zero = 0
     limit_zero = 0
@@ -66,6 +66,10 @@ def test_multiplication_table__pos_int():
     assert multiplication_table(n_zero, limit_ok) == expected_zero
     assert multiplication_table(n_ok, limit_zero) == expected_zero
     expected_ok = [3, 6]
+    assert multiplication_table(n_ok, limit_ok) == expected_ok
+    n_ok = 5
+    limit_ok = 10
+    expected_ok = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
     assert multiplication_table(n_ok, limit_ok) == expected_ok
 
 
@@ -85,3 +89,13 @@ def test_multiplication_table__above_limit():
     assert multiplication_table(n_ok, limit_high) == expected_high
     expected_ok = [3, 6]
     assert multiplication_table(n_ok, limit_ok) == expected_ok
+
+
+def test_multiplication_table__result_is_list():
+    """Used for unit test of function multiplication_table.
+
+    Test that the result is a list.
+    Handles ac_004.
+    """
+    result = multiplication_table(n = 3, limit = 5)
+    assert isinstance(result, list)

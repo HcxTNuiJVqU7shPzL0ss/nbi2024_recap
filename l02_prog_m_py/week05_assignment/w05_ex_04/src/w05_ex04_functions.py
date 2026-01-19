@@ -41,7 +41,11 @@ def select_integers():
 def multiplication_table(n, limit):
     """Use to generate the resulting multiplication table.
 
-    Here n is the base, while limit is how far to go.
+    Here n is the "base" multiplicand, while limit is how far to
+    go, the multiplier.
+    The result shall be the multiplication different results as
+    a list, e.g.,
+    multiplication_table(3, 4) → [3, 6, 9, 12]
     """
     return_list = []
     # Not an int used for either n, limit, or both
@@ -55,8 +59,18 @@ def multiplication_table(n, limit):
     # Either n, limit or both are greater than 10
     if n > 10 or limit > 10:
         return return_list
+    ### Calculations below ###
+    # Use a simple while loop (version 1)
     cnt = 0
     while cnt < limit:
         cnt += 1
         return_list.append(n * cnt)
-    return return_list
+    # Use list comprehension (version 2)
+    return_list_v2 = [n * value for value in range (1, limit + 1)]
+    # Use another type of list comprehension (version 3)
+    return_list_v3 = [n * (value + 1) for value in range(limit)]
+    if return_list == return_list_v2:
+        if return_list_v2 == return_list_v3:
+            return return_list
+    # This should not be possible
+    return None

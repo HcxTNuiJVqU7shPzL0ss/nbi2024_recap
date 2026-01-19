@@ -48,7 +48,7 @@ def main():
     # User controlled
     user_ints = select_integers()
     user_result = multiplication_table(user_ints[0],user_ints[1])
-    print(f'Result: {user_result}')
+    print(f'\nResult: {user_result}')
 
     press_exit()
 
