@@ -28,6 +28,7 @@ def balance_lists(first_list, second_list, version):
     If the two lists differ more than 1 in length,
     return two balanced lists (order and content not important).
     """
+    # pylint: disable=too-many-return-statements
     diff_len_too_long = 2
     # Not a list used for first_list
     if not isinstance(first_list, list):
@@ -63,3 +64,5 @@ def balance_lists(first_list, second_list, version):
     if version == 2:
         return first_list, second_list
     ### Version 2 - End ###
+    return None
+    # pylint: enable=too-many-return-statements

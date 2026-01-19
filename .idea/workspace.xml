@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="More work on Ex5&#10;&#10;Added test and functionality &#10;also for ex 05">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/main.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both">
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/w05_ex05_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/w05_ex05_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/tests/test_w05_ex05.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/tests/test_w05_ex05.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768843377871</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both">
+      <option name="closed" value="true" />
+      <created>1768848507488</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1768848507488</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,6 +335,7 @@
     <MESSAGE value="First base for L02, W05, Ex05&#10;&#10;First base files for exercise 05 &#10;balance lists&#10;No functionality or test just yet" />
     <MESSAGE value="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still" />
     <MESSAGE value="More work on Ex5&#10;&#10;Added test and functionality &#10;also for ex 05" />
-    <option name="LAST_COMMIT_MESSAGE" value="More work on Ex5&#10;&#10;Added test and functionality &#10;also for ex 05" />
+    <MESSAGE value="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both" />
+    <option name="LAST_COMMIT_MESSAGE" value="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both" />
   </component>
 </project>
