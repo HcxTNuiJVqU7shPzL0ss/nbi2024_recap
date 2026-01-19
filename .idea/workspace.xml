@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="First base for L02, W05, Ex05&#10;&#10;First base files for exercise 05 &#10;balance lists&#10;No functionality or test just yet">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/src/w05_ex04_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/src/w05_ex04_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/tests/test_w05_ex04.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/tests/test_w05_ex04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/w05_ex05_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/w05_ex05_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/tests/test_w06_ex05.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/tests/test_w06_ex05.py" afterDir="false" />
     </list>
@@ -52,40 +49,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_01a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_01b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_02a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_02b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01c.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_03a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_03b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_1a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_1b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_2a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_2b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.variables_datatypes.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_w06_ex05.py.executor": "Run",
+    "Python.discuss.executor": "Run",
+    "Python.ex01_main_hello_name.executor": "Run",
+    "Python.ex01_main_hello_name_v2.executor": "Run",
+    "Python.ex02_discuss.executor": "Run",
+    "Python.ex02_discuss_v2.executor": "Run",
+    "Python.ex03_01a.executor": "Run",
+    "Python.ex03_01b.executor": "Run",
+    "Python.ex03_02a.executor": "Run",
+    "Python.ex03_02b.executor": "Run",
+    "Python.ex04_01a.executor": "Run",
+    "Python.ex04_01b.executor": "Run",
+    "Python.ex04_01c.executor": "Run",
+    "Python.ex04_02.executor": "Run",
+    "Python.ex04_03a.executor": "Run",
+    "Python.ex04_03b.executor": "Run",
+    "Python.exc3_1a.executor": "Run",
+    "Python.exc3_1b.executor": "Run",
+    "Python.exc3_2a.executor": "Run",
+    "Python.exc3_2b.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.more_4.1.executor": "Run",
+    "Python.more_4.2.executor": "Run",
+    "Python.more_4.3.executor": "Run",
+    "Python.variables_datatypes.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
+    "settings.editor.selected.configurable": "proofread"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="nbi2024_recap" />
@@ -279,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768830283826</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still">
+      <option name="closed" value="true" />
+      <created>1768838840275</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1768838840275</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +320,7 @@
     <MESSAGE value="Add builds week 1&#10;&#10;Adding builds for L02 &#10;W01 as to be able also &#10;to run the files from &#10;CLI and not just in &#10;PyCharm" />
     <MESSAGE value="Add L02, W05, Ex04&#10;&#10;Code and test for exercise 04 &#10;Multiplication Table" />
     <MESSAGE value="First base for L02, W05, Ex05&#10;&#10;First base files for exercise 05 &#10;balance lists&#10;No functionality or test just yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="First base for L02, W05, Ex05&#10;&#10;First base files for exercise 05 &#10;balance lists&#10;No functionality or test just yet" />
+    <MESSAGE value="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still" />
   </component>
 </project>

@@ -64,6 +64,20 @@ Kör sedan red-green-refactor för varje acceptanskriterium.
 >> by no more than 1.
 >  
 
+>  
+> req_005  
+> List elements should support all types.
+> 
+>> ac_005  
+>> No matter the type of the element in the two lists, 
+>> the function shall support it.
+>> 1. `int`
+>> 2. `float`
+>> 3. `str`
+>> 4. `tuple`
+>> 5. `list`
+>  
+
 ---
 
 Student == **_gnoff_**  
