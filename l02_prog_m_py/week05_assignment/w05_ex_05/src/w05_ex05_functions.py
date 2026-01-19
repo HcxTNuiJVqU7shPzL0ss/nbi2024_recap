@@ -21,7 +21,7 @@ Functions.
 #####################################################################
 
 
-def balance_lists(first_list, second_list):
+def balance_lists(first_list, second_list, version):
     """Use to check two lists.
 
     Both inputs shall be lists.
@@ -37,6 +37,7 @@ def balance_lists(first_list, second_list):
         return [None, 'second_list is not a list']
     if abs(len(first_list) - len(second_list)) < diff_len_too_long:
         return first_list, second_list
+    ### Version 1 - Start ###
     # Concatenate the two lists into a temporary list
     temp_list = first_list + second_list
     result_first = []
@@ -48,4 +49,17 @@ def balance_lists(first_list, second_list):
             result_first.append(element)
         else:
             result_second.append(element)
-    return result_first, result_second
+    if version == 1:
+        return result_first, result_second
+    ### Version 1 - End ###
+    #
+    ### Version 2 - Start ###
+    if (abs(len(first_list) - len(second_list))) < 2:
+        return first_list, second_list
+    while len(first_list) > len(second_list):
+        second_list.append(first_list.pop())
+    while len(second_list) > len(first_list):
+        first_list.append(second_list.pop())
+    if version == 2:
+        return first_list, second_list
+    ### Version 2 - End ###

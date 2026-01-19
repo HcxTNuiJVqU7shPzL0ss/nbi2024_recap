@@ -36,11 +36,18 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
+    version = 1
     list_first = [1, 2, 3]
     list_second = [1, 2, 3, 4, 5]
+    balanced = balance_lists(list_first, list_second, version)
+    print(f'Version 1: {balanced}')
+    press_continue()
 
-    balanced = balance_lists(list_first, list_second)
-    print(balanced)
+    version = 2
+    list_first = [1, 2, 3]
+    list_second = ['a', 'b', 'c', 'd', 'e']
+    balanced = balance_lists(list_first, list_second, version)
+    print(f'Version 2: {balanced}')
 
     press_exit()
 

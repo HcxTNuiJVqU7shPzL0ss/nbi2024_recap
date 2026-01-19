@@ -28,30 +28,33 @@ def test_balance_lists__not_list():
     Checks that None is returned.
     Handles ac_001, parts 1 through 4 (all).
     """
-    expected = None
-    check_list = ['check']
+    version = 1
+    while version < 3:
+        expected = None
+        check_list = ['check']
 
-    # Check "list1" if not a list, while "list2" is a list
-    a_int = balance_lists(1, check_list)
-    b_float = balance_lists(1.14, check_list)
-    c_str = balance_lists('142', check_list)
-    d_tuple = balance_lists((1, 42), check_list)
+        # Check "list1" if not a list, while "list2" is a list
+        a_int = balance_lists(1, check_list, version)
+        b_float = balance_lists(1.14, check_list, version)
+        c_str = balance_lists('142', check_list, version)
+        d_tuple = balance_lists((1, 42), check_list, version)
 
-    assert a_int == b_float
-    assert c_str == d_tuple
-    assert a_int == d_tuple
+        assert a_int == b_float
+        assert c_str == d_tuple
+        assert a_int == d_tuple
 
-    # Check "list2" if not a list, while "list1" is a list
-    a_int = balance_lists(check_list, 1)
-    b_float = balance_lists(check_list, 1.14)
-    c_str = balance_lists(check_list, '142')
-    d_tuple = balance_lists(check_list, (1, 42))
+        # Check "list2" if not a list, while "list1" is a list
+        a_int = balance_lists(check_list, 1, version)
+        b_float = balance_lists(check_list, 1.14, version)
+        c_str = balance_lists(check_list, '142', version)
+        d_tuple = balance_lists(check_list, (1, 42), version)
 
-    assert a_int == b_float
-    assert c_str == d_tuple
-    assert a_int == d_tuple
+        assert a_int == b_float
+        assert c_str == d_tuple
+        assert a_int == d_tuple
 
-    assert b_float[0] == expected
+        assert b_float[0] == expected
+        version += 1
 
 
 def test_balance_lists__empty_list():
@@ -61,16 +64,19 @@ def test_balance_lists__empty_list():
     Checks that two lists are returned.
     Handles ac_002.
     """
-    empty_list = []
-    non_empty_list = ['not empty']
-    # Check first list == empty
-    result_1 = balance_lists(empty_list, non_empty_list)
-    assert isinstance(result_1[0], list)
-    assert isinstance(result_1[1], list)
-    # Check second list == empty
-    result_2 = balance_lists(non_empty_list, empty_list)
-    assert isinstance(result_2[0], list)
-    assert isinstance(result_2[1], list)
+    version = 1
+    while version < 3:
+        empty_list = []
+        non_empty_list = ['not empty']
+        # Check first list == empty
+        result_1 = balance_lists(empty_list, non_empty_list, version)
+        assert isinstance(result_1[0], list)
+        assert isinstance(result_1[1], list)
+        # Check second list == empty
+        result_2 = balance_lists(non_empty_list, empty_list, version)
+        assert isinstance(result_2[0], list)
+        assert isinstance(result_2[1], list)
+        version += 1
 
 
 def test_balance_lists__list_length():
@@ -79,20 +85,23 @@ def test_balance_lists__list_length():
     Test that the two input lists works with different length.
     Handles ac_003.
     """
-    list_len2 = ['1', '2']
-    list_len6 = ['1', '2', '3', '4', '5', '6']
-    # Check lists == same len
-    result_1 = balance_lists(list_len2, list_len2)
-    assert isinstance(result_1[0], list)
-    assert isinstance(result_1[1], list)
-    # Check first list == longer len than second list
-    result_2 = balance_lists(list_len6, list_len2)
-    assert isinstance(result_2[0], list)
-    assert isinstance(result_2[1], list)
-    # Check second list == longer len than first list
-    result_3 = balance_lists(list_len2, list_len6)
-    assert isinstance(result_3[0], list)
-    assert isinstance(result_3[1], list)
+    version = 1
+    while version < 3:
+        list_len2 = ['1', '2']
+        list_len6 = ['1', '2', '3', '4', '5', '6']
+        # Check lists == same len
+        result_1 = balance_lists(list_len2, list_len2, version)
+        assert isinstance(result_1[0], list)
+        assert isinstance(result_1[1], list)
+        # Check first list == longer len than second list
+        result_2 = balance_lists(list_len6, list_len2, version)
+        assert isinstance(result_2[0], list)
+        assert isinstance(result_2[1], list)
+        # Check second list == longer len than first list
+        result_3 = balance_lists(list_len2, list_len6, version)
+        assert isinstance(result_3[0], list)
+        assert isinstance(result_3[1], list)
+        version += 1
 
 
 def test_balance_lists__balance():
@@ -102,22 +111,25 @@ def test_balance_lists__balance():
     two balanced lists with max 1 in len difference is returned.
     Handles ac_004.
     """
-    list_len2 = ['1', '2']
-    list_len3 = ['1', '2', '3']
-    list_len6 = ['1', '2', '3', '4', '5', '6']
-    diff_len_too_long = 2
-    # Check lists == same len
-    result_1 = balance_lists(list_len2, list_len2)
-    assert abs(len(result_1[0]) - len(result_1[1])) < diff_len_too_long
-    # Check first list == longer len than second list
-    result_2 = balance_lists(list_len6, list_len2)
-    assert abs(len(result_2[0]) - len(result_2[1])) < diff_len_too_long
-    # Check second list == longer len than first list
-    result_3 = balance_lists(list_len2, list_len6)
-    assert abs(len(result_3[0]) - len(result_3[1])) < diff_len_too_long
-    # Check also with an odd len
-    result_4 = balance_lists(list_len3, list_len6)
-    assert abs(len(result_4[0]) - len(result_4[1])) < diff_len_too_long
+    version = 1
+    while version < 3:
+        list_len2 = ['1', '2']
+        list_len3 = ['1', '2', '3']
+        list_len6 = ['1', '2', '3', '4', '5', '6']
+        diff_len_too_long = 2
+        # Check lists == same len
+        result_1 = balance_lists(list_len2, list_len2, version)
+        assert abs(len(result_1[0]) - len(result_1[1])) < diff_len_too_long
+        # Check first list == longer len than second list
+        result_2 = balance_lists(list_len6, list_len2, version)
+        assert abs(len(result_2[0]) - len(result_2[1])) < diff_len_too_long
+        # Check second list == longer len than first list
+        result_3 = balance_lists(list_len2, list_len6, version)
+        assert abs(len(result_3[0]) - len(result_3[1])) < diff_len_too_long
+        # Check also with an odd len
+        result_4 = balance_lists(list_len3, list_len6, version)
+        assert abs(len(result_4[0]) - len(result_4[1])) < diff_len_too_long
+        version += 1
 
 
 def test_balance_lists__types_in_list():
@@ -126,8 +138,11 @@ def test_balance_lists__types_in_list():
     Test that the elements in the list can be of different types.
     Handles ac_005.
     """
-    list_1 = [1, 2.23, 'hej', (1, 's'), [1, 'r']]
-    list_2 = ['p', 'e', 3.14]
-    diff_len_too_long = 2
-    result = balance_lists(list_1, list_2)
-    assert abs(len(result[0]) - len(result[1])) < diff_len_too_long
+    version = 1
+    while version < 3:
+        list_1 = [1, 2.23, 'hej', (1, 's'), [1, 'r']]
+        list_2 = ['p', 'e', 3.14]
+        diff_len_too_long = 2
+        result = balance_lists(list_1, list_2, version)
+        assert abs(len(result[0]) - len(result[1])) < diff_len_too_long
+        version += 1
