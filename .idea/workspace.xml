@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both">
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/w05_ex05_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/src/w05_ex05_functions.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_01/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_01/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_funct_dir/my_base_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_funct_dir/my_base_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +33,12 @@
     &quot;assignee&quot;: &quot;HcxTNuiJVqU7shPzL0ss&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git",
-    "accountId": "70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git&quot;,
+    &quot;accountId&quot;: &quot;55d36338-accb-4aaf-846a-e7cf55611cfe&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -72,6 +77,7 @@
     "Python.more_4.1.executor": "Run",
     "Python.more_4.2.executor": "Run",
     "Python.more_4.3.executor": "Run",
+    "Python.my_base_functions.executor": "Run",
     "Python.variables_datatypes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -109,7 +115,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f78a9d071105-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26574.90" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -298,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768848507488</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning">
+      <option name="closed" value="true" />
+      <created>1768849223981</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1768849223981</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,6 +350,7 @@
     <MESSAGE value="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still" />
     <MESSAGE value="More work on Ex5&#10;&#10;Added test and functionality &#10;also for ex 05" />
     <MESSAGE value="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both" />
-    <option name="LAST_COMMIT_MESSAGE" value="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both" />
+    <MESSAGE value="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning" />
   </component>
 </project>
