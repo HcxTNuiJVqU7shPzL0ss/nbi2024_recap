@@ -1,8 +1,11 @@
-"""Module for Lesson 02, Week 02, Exercise 03, Sports results."""
+"""Module for Sports results.
 
+Lesson 02, Week 02, Exercise 03.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -87,8 +90,11 @@ def soccer():
 
 
 def main():
-    """Use as main function."""
-    print('\nWeek 02, Exercise 03, Sports results.\n')
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
+    print('\nLesson 02, Week 02, Exercise 03, Sports results.')
     press_continue()
 
     # Call the function

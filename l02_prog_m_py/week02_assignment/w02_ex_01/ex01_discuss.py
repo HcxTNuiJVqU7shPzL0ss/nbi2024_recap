@@ -1,8 +1,11 @@
-"""Module for Lesson 02, Week 02, Exercise 01, Discuss."""
+"""Module for 'Discuss'.
 
+Lesson 02, Week 02, Exercise 01.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -181,6 +184,7 @@ def discuss():
     print('4.5: Checks level 1 before checking level 2.')
     print('4.6: For pylint and pydocstyle, changed CONSTANTS.')
     print('4.7: Differs between level 1 and 2, missing a =')
+    print('4.8: If above level, stacks the discounts.')
 
     # 5. Discuss possible solutions to bugs.
 
@@ -191,8 +195,11 @@ def discuss():
 
 
 def main():
-    """Use as main function."""
-    print('\nWeek 02, Exercise 01, Discuss.\n')
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
+    print('\nLesson 02, Week 02, Exercise 01, Discuss.')
     press_continue()
 
     discuss()

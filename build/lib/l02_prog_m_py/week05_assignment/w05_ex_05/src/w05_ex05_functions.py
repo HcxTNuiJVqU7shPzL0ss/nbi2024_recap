@@ -1,0 +1,68 @@
+"""Module for Lesson 02, Week 05, Exercise 05.
+
+Functions.
+"""
+
+#####################################################################
+# Copyright 2026 gnoff
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+# implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#####################################################################
+
+
+def balance_lists(first_list, second_list, version):
+    """Use to check two lists.
+
+    Both inputs shall be lists.
+    If the two lists differ more than 1 in length,
+    return two balanced lists (order and content not important).
+    """
+    # pylint: disable=too-many-return-statements
+    diff_len_too_long = 2
+    # Not a list used for first_list
+    if not isinstance(first_list, list):
+        return [None, 'first_list is not a list']
+    # Not a list used for second_list
+    if not isinstance(second_list, list):
+        return [None, 'second_list is not a list']
+    if abs(len(first_list) - len(second_list)) < diff_len_too_long:
+        return first_list, second_list
+    ### Version 1 - Start ###
+    # Concatenate the two lists into a temporary list
+    temp_list = first_list + second_list
+    result_first = []
+    result_second = []
+    # Create two new lists, with even index in one, odd in the other
+    # Should never differ with more than 1 in len after this
+    for index, element in enumerate(temp_list):
+        if index % 2 == 0:
+            result_first.append(element)
+        else:
+            result_second.append(element)
+    if version == 1:
+        return result_first, result_second
+    ### Version 1 - End ###
+    #
+    ### Version 2 - Start ###
+    if (abs(len(first_list) - len(second_list))) < 2:
+        return first_list, second_list
+    while len(first_list) > len(second_list):
+        second_list.append(first_list.pop())
+    while len(second_list) > len(first_list):
+        first_list.append(second_list.pop())
+    if version == 2:
+        return first_list, second_list
+    ### Version 2 - End ###
+    return None
+    # pylint: enable=too-many-return-statements

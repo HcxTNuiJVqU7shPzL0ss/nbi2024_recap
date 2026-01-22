@@ -1,8 +1,11 @@
-"""Module for Lesson 02, Week 02, Exercise 02, Balder."""
+"""Module for 'Balder'.
 
+Lesson 02, Week 02, Exercise 02.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -34,7 +37,7 @@ TODDLER_WARNING = 88
 def balder():
     """Use to run Balder function."""
     # Ask user to input length in cm.
-    s_length_cm = ''
+    #s_length_cm = ''
     i_length_cm = 0
     while True:
         s_length_cm = input('\nHow tall are you (in cm): ')
@@ -82,8 +85,11 @@ def balder():
 
 
 def main():
-    """Use as main function."""
-    print('\nWeek 02, Exercise 02, Balder.\n')
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
+    print('\nLesson 02, Week 02, Exercise 02, Balder.')
     press_continue()
 
     balder()

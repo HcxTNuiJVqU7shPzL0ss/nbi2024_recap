@@ -1,8 +1,11 @@
-"""Module for Lesson 02, Week 02, Exercise 05, Calculator."""
+"""Module for Calculator.
 
+Lesson 02, Week 02, Exercise 05.
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -185,8 +188,11 @@ def run_calculator():
 
 
 def main():
-    """Use as main function."""
-    print('\nWeek 02, Exercise 05, Calculator.\n')
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
+    print('\nLesson 02, Week 02, Exercise 05, Calculator.')
     press_continue()
 
     run_calculator()
