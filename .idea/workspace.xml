@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W02 Ex02 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_03/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_04/main.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W02 Ex03 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_03/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week02_assignment/w02_ex_04/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769079110674</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="L02 W02 Ex03 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme">
+      <option name="closed" value="true" />
+      <created>1769082204575</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1769082204575</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,7 +348,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme" />
     <MESSAGE value="Add L02 W05 Ex03, init&#10;&#10;Adding files for exc 3&#10;Only an initial start for now, &#10;not done at all" />
     <MESSAGE value="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;" />
     <MESSAGE value="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files" />
@@ -367,6 +372,7 @@
     <MESSAGE value="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning" />
     <MESSAGE value="L02 W02 Ex01&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files" />
     <MESSAGE value="L02 W02 Ex02 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W02 Ex02 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
+    <MESSAGE value="L02 W02 Ex03 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W02 Ex03 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
   </component>
 </project>
