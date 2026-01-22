@@ -12,8 +12,8 @@
 See [main.py](main.py) in this folder for TAP HT 25D week 2, 
 exercise 1, assignment.  
 
-Reference to [discuss_1.py](./og_2024/discuss_1.py) in "og_2024" folder for 
-OG 2024 (TAP HT 24D) work.  
+Reference to [discuss_1.py](./og_2024/discuss_1.py) in 
+"og_2024" folder for OG 2024 (TAP HT 24D) work.  
 
 Other files are for when working "in between the two courses" on my 
 own to get back into it and learn things.  
