@@ -131,8 +131,8 @@ def y_or_n(in_string):
     """
     while True:
         check_ans = input(in_string)
-        yes_check = ('y', '(y)', '(y) yes', 'yes', 'y(es)')
-        no_check = ('n', '(n)', '(n) no', 'no', 'n(o)')
+        yes_check = ('y', '(y)', '(y) yes', 'yes', 'y(es)', '(y)es')
+        no_check = ('n', '(n)', '(n) no', 'no', 'n(o)', '(n)o')
         try:
             if check_ans.lower() in yes_check:
                 return 'y'
