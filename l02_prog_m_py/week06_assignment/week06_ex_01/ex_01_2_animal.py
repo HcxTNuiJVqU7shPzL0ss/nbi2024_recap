@@ -1,6 +1,6 @@
 """Module for this exercise.
 
-Use for exercise 6.
+Use for exercise 1, parts 2a and b.
 """
 
 
