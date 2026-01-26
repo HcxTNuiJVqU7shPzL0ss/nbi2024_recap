@@ -30,15 +30,22 @@ from my_funct_dir.my_base_functions import (press_continue,
 class SafeStorage:
     """Class used for storing and retrieving data."""
 
-    __data = None # Non-public variable ("private")
+    def __init__(self):
+        """Use when constructing an object and initializing data."""
+        self.__data = None # Non-public variable ("private")
 
     def get(self):
-        """Use to get data stored in variable."""
+        """Use as method to get data that is stored in variable."""
         return self.__data
 
     def put(self, data):
-        """Use to store data in variable."""
+        """Use as method to store data in variable."""
         self.__data = data
+
+    def __del__(self):
+        """Use to highlight if an object gets destroyed."""
+        print(f'The following data just got destroyed:\n'
+              f'{self.__data}')
 
 
 def main():
@@ -53,7 +60,7 @@ def main():
           'Anakonda Boarom')
     press_continue()
 
-    safe = SafeStorage()  # New instance of class
+    safe = SafeStorage()  # New instance / object of the class
     safe.put("Anakonda")  # Put Anakonda in data for safe
     x = safe.get()  # Grab data (Anakonda) and place in variable x
     safe.put("Boaorm")  # Overwrite earlier data with Boaorm
