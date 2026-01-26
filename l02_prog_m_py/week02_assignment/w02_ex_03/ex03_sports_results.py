@@ -97,7 +97,10 @@ def main():
     print('\nLesson 02, Week 02, Exercise 03, Sports results.')
     press_continue()
 
-    # Call the function
+    print('The game is over, time to calculate the result"')
+    press_continue()
+
+    # Call the function for enter info and calculate
     soccer()
 
     print('')
