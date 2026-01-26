@@ -65,6 +65,9 @@ def main():
     print('\nThis is exercise 3, "Sports Results", from week 2.')
     press_continue()
 
+    print('The game is over, time to calculate the result"')
+    press_continue()
+
     check_game_result()
 
     press_exit()
