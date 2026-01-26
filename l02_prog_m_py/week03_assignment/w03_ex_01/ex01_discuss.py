@@ -1,7 +1,11 @@
-"""Module for Lesson 02, Week 03, Exercise 01, Discuss."""
+"""Module for Discuss.
+
+Lesson 02, Week 03, Exercise 01,
+Done "off course".
+"""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,6 +30,7 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             ask_y_or_n)
 
 
+# pylint: disable=duplicate-code
 def w03_ex01_part01():
     """Use to run part 01."""
     print('This is part 01 "what will print"?\nFunction: ',
@@ -210,10 +215,14 @@ def w03_ex01_part06():
     print('Do not really follow what is meant by this description.')
     print('If the idea is to start with a space, then the same as '
           'before, init s to a space.')
+# pylint: enable=duplicate-code
 
 
 def main():
-    """Use as main function."""
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
     print('\nWeek 03, Exercise 01, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
