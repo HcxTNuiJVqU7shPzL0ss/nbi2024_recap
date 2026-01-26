@@ -1,11 +1,11 @@
 
-# Veckouppgift 2
+# Veckouppgift 2  
 
 ---
 
-## Vecka 4, 19/1
+## Vecka 4, 19/1  
 
-(_2024 == Vecka 3, 13/1_)
+(_2024 == Vecka 3, 13/1_)  
 
 Main bulk of the files are from when I've been working on a recap 
 of the OG course on my own.  

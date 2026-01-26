@@ -59,7 +59,7 @@ med code review.
     
 <BR>
 
-![Code example](ex2_1_code_example.png 
+![Code example](ex2_1_code_example.png
 "Code example")
 
 ---
