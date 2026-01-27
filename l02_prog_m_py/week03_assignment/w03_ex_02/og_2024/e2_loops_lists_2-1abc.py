@@ -105,6 +105,7 @@ elif user_sel == 'b':
 
     # Define the gaussian sum using a for loop
     def gaussian_sum_for(r_start,r_stop,r_step):
+        # noqa
         sum_step = 0
         for i in range(r_start,r_stop,r_step):
             sum_step += i
@@ -136,6 +137,7 @@ elif user_sel == 'c':
 
     # Define the gaussian sum using a while loop
     def gaussian_sum_while(r_start,r_stop,r_step):
+        # noqa
         sum_step = 0
         i = r_start
         while i < r_stop:
