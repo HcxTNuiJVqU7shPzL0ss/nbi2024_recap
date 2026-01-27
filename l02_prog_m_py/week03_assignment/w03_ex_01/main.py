@@ -154,12 +154,72 @@ def ex1_part5():
     press_continue()
     print('This is still part 5 of exercise 1.\n\n'
           'Now, with changes, should be:\ntime\n')
-    message = 'its_time_to_get_coding'
+    press_continue()
+
     print(message[4:8])
 
     print('\nThat was it, part 5 now done.')
     # Yes, it did what I thought it would do
     press_continue()
+
+
+def ex1_part6():
+    """Use to handle the code example from part 1.6."""
+    print('This is part 6 of exercise 1.\n\n'
+          'Should be first:\n'
+          '#.......\n'
+          '.#......\n'
+          '..#.....\n'
+          '...#....\n'
+          '....#...\n'
+          '.....#..\n')
+    press_continue()
+
+    # Outer for loop, y will go through: 1, 2, 3, 4, 5, 6
+    for y in range(1, 7):
+        # Initial value for s is an empty string (outer loop)
+        # Resets for each y iteration
+        s = ''
+        # Nested (inner) for loop, x will go through:
+        # 1, 2, 3, 4, 5, 6, 7, 8
+        # Builds upp a string for each y iteration
+        for x in range(1, 9):
+            # When x and y are equal, s will have # added to it
+            if x == y:
+                s += '#'
+            # All other cases, s will have . added to it
+            else:
+                s += '.'
+        # Prints each "line" of completed s, for every y iteration
+        # Will be printed 6 times, each line 8 characters
+        print(s)
+
+    # The following lines should have been printed:
+    # y == 1 --> #.......
+    # y == 2 --> .#......
+    # y == 3 --> ..#.....
+    # y == 4 --> ...#....
+    # y == 5 --> ....#...
+    # y == 6 --> .....#..
+
+    press_continue()
+    print('Next move the hash/pound one step to the right.')
+    press_continue()
+
+    # Now to "move the line one step to the right"
+    # Not sure what is intended, but guessing the hash/pound should
+    # be printed one step further to the right
+    for i in range(1, 7):
+        p = ''
+        for n in range(1, 9):
+            if n == i + 1:
+                p += '#'
+            else:
+                p += '.'
+        print(p)
+
+    print('\nThat was it, part 6 now done.')
+    # Yes, it did what I thought it would do
 
 
 def main():
@@ -174,11 +234,12 @@ def main():
     print('\nThis is exercise 1, "Discuss", from week 3.')
     press_continue()
 
-    # ex1_part1()
-    # ex1_part2()
-    # ex1_part3()
-    # ex1_part4()
+    ex1_part1()
+    ex1_part2()
+    ex1_part3()
+    ex1_part4()
     ex1_part5()
+    ex1_part6()
 
     press_exit()
 
