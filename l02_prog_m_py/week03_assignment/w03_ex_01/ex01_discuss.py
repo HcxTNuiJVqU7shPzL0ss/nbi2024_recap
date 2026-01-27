@@ -1,6 +1,6 @@
 """Module for Discuss.
 
-Lesson 02, Week 03, Exercise 01,
+Lesson 02, Week 03, Exercise 01.
 Done "off course".
 """
 

@@ -1,0 +1,7 @@
+The three files all started with 'E' originally
+
+I.e. with Capital E, changed now into lower case 'e'
+
+Else, only additions and changes are added
+to avoid issues with pylint and pydocstyle,
+without doing larger changes to the code

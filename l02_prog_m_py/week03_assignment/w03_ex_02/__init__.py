@@ -1,4 +1,8 @@
-"""Module for init, lesson 02, week 03, exercise 02 directory."""
+"""Module for init, lesson 02, week 03, exercise 02 directory.
+
+This directory contains off course work, as well as the work
+done for 2025/2026 course.
+"""
 
 #####################################################################
 #
