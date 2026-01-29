@@ -1,10 +1,11 @@
 """Module for Lesson 02, Week 03, Exercise 03.
 
 Receipt Calculator.
+Done "off course".
 """
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -131,7 +132,10 @@ def w3_ex3_new_calc(the_sum, the_ppl, the_tips):
 
 
 def main():
-    """Use as main function."""
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
     print('\nWeek 03, Exercise 03, Receipt Calculator.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
