@@ -54,7 +54,7 @@ def enter_values():
         cleaned_input = in_string.translate(if_need_to_replace)
 
         if cleaned_input in terminate:
-            print(f'\nThank you, on to the next part...')
+            print('\nThank you, on to the next part...')
             return list_of_values
 
         try:
