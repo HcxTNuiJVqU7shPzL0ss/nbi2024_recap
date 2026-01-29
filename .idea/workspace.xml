@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W03 Ex2&#10;&#10;Added all code to finish &#10;exercise 2">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_03/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_03/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769524838660</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="L02 W03 Ex2&#10;&#10;Added all code to finish &#10;exercise 2">
+      <option name="closed" value="true" />
+      <created>1769682423113</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1769682423113</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add L02, W05, Ex04&#10;&#10;Code and test for exercise 04 &#10;Multiplication Table" />
     <MESSAGE value="First base for L02, W05, Ex05&#10;&#10;First base files for exercise 05 &#10;balance lists&#10;No functionality or test just yet" />
     <MESSAGE value="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still" />
     <MESSAGE value="More work on Ex5&#10;&#10;Added test and functionality &#10;also for ex 05" />
@@ -489,6 +497,7 @@
     <MESSAGE value="Final L02 W03 Ex01&#10;&#10;Finalized exercise 01 &#10;for week 03 &#10;Part 6 now done" />
     <MESSAGE value="Initial L02 W03 Ex02&#10;&#10;First basic files for exercise &#10;2 &#10;Part 1a done so far in new &#10;main" />
     <MESSAGE value="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy" />
+    <MESSAGE value="L02 W03 Ex2&#10;&#10;Added all code to finish &#10;exercise 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex2&#10;&#10;Added all code to finish &#10;exercise 2" />
   </component>
 </project>
