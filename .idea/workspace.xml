@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Final L02 W03 Ex01&#10;&#10;Finalized exercise 01 &#10;for week 03 &#10;Part 6 now done">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/og_2024/note.txt" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_01/ex01_discuss.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_01/ex01_discuss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/ex02_01abc_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/ex02_01abc_sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/ex02_02_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/ex02_02_sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/ex02_03_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/ex02_03_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_02/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,7 +433,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769522197965</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Initial L02 W03 Ex02&#10;&#10;First basic files for exercise &#10;2 &#10;Part 1a done so far in new &#10;main">
+      <option name="closed" value="true" />
+      <created>1769524661065</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1769524661065</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy">
+      <option name="closed" value="true" />
+      <created>1769524838660</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1769524838660</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -455,8 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tweak md file&#10;&#10;Fix to copyright" />
-    <MESSAGE value="Add builds week 1&#10;&#10;Adding builds for L02 &#10;W01 as to be able also &#10;to run the files from &#10;CLI and not just in &#10;PyCharm" />
     <MESSAGE value="Add L02, W05, Ex04&#10;&#10;Code and test for exercise 04 &#10;Multiplication Table" />
     <MESSAGE value="First base for L02, W05, Ex05&#10;&#10;First base files for exercise 05 &#10;balance lists&#10;No functionality or test just yet" />
     <MESSAGE value="Minor refactor and addition&#10;&#10;Some refactoring of ex 04 &#10;Minor additions to ex 05 &#10;Ex 04 should be done &#10;Ex 05 most to do still" />
@@ -480,6 +487,8 @@
     <MESSAGE value="L02, W03, Ex01 some more&#10;&#10;Added parts 1.1 through &#10;1.5&#10;Still left: 1.6" />
     <MESSAGE value="Minor edits w03 ex1&#10;&#10;Due to having to type in code &#10;exactly, got duplicate code &#10;warnings from pylint, disabled &#10;in the parts I did between &#10;courses&#10;Also minor edit to init file &#10;to clarify" />
     <MESSAGE value="Final L02 W03 Ex01&#10;&#10;Finalized exercise 01 &#10;for week 03 &#10;Part 6 now done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final L02 W03 Ex01&#10;&#10;Finalized exercise 01 &#10;for week 03 &#10;Part 6 now done" />
+    <MESSAGE value="Initial L02 W03 Ex02&#10;&#10;First basic files for exercise &#10;2 &#10;Part 1a done so far in new &#10;main" />
+    <MESSAGE value="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy" />
   </component>
 </project>
