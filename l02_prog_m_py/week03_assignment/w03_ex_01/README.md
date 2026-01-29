@@ -38,8 +38,7 @@ och kör den.
 
 <BR>
 
-![Code example 1](ex1_1_code_example.png
-"Code example 1")
+![Code example 1](ex1_1_code_example.png "Code example 1")
 
 ---
 
@@ -54,8 +53,7 @@ och kör den.
 
 <BR>
 
-![Code example 2](ex1_2_code_example.png
-"Code example 2")
+![Code example 2](ex1_2_code_example.png "Code example 2")
 
 ---
 
@@ -70,8 +68,7 @@ Skriv ner din bästa gissning _innan_ du kör koden.
 
 <BR>
 
-![Code example 3](ex1_3_code_example.png
-"Code example 3")
+![Code example 3](ex1_3_code_example.png "Code example 3")
 
 ---
 
@@ -93,8 +90,7 @@ och penna.
 
 <BR>
 
-![Code example 4](ex1_4_code_example.png
-"Code example 4")
+![Code example 4](ex1_4_code_example.png "Code example 4")
 
 ---
 
@@ -107,8 +103,7 @@ Kan du göra om koden så att den skriver ut "time" i stället?
 
 <BR>
 
-![Code example 5](ex1_5_code_example.png
-"Code example 5")
+![Code example 5](ex1_5_code_example.png "Code example 5")
 
 ---
 
