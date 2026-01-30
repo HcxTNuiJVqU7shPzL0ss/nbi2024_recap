@@ -53,7 +53,7 @@ def enter_values():
         # Use translate to replace any characters needed
         cleaned_input = in_string.translate(if_need_to_replace)
 
-        if cleaned_input in terminate:
+        if cleaned_input.casefold() in terminate:
             print('\nThank you, on to the next part...')
             return list_of_values
 

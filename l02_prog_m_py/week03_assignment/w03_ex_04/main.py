@@ -129,6 +129,19 @@ def print_figures():
         for y in range (1, 7, 1):
             s = ''
             for x in range(1, 9, 1):
+                # This will give too-many-branches in pylint
+                # match i:
+                #     case 'a': s+= ex4_figure_a(x)
+                #     case 'b': s+= ex4_figure_b(x, y)
+                #     case 'c': s+= ex4_figure_c(x)
+                #     case 'd': s+= ex4_figure_d(x, y)
+                #     case 'e': s+= ex4_figure_e(x, y)
+                #     case 'f': s+= ex4_figure_f(x, y)
+                #     case 'g': s+= ex4_figure_g(x)
+                #     case 'h': s+= ex4_figure_h(x, y)
+                #     case 'i': s+= ex4_figure_i(x, y)
+                #     case 'j': s+= ex4_figure_j(x, y)
+
                 dispatch = {
                     'a': ex4_figure_a,
                     'b': ex4_figure_b,
@@ -147,9 +160,9 @@ def print_figures():
                 s += func(x) if func.__code__.co_argcount == 1 \
                     else func(x, y)
 
-                # Below code may be easier to understand when
-                # reading, but generates too-many-branches
-                # in pylint
+                # # Below code may be easier to understand when
+                # # reading, but generates too-many-branches
+                # # in pylint
                 # if i == 'a':
                 #     s += ex4_figure_a(x)
                 # elif i == 'b':
