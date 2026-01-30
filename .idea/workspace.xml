@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W03 Ex4 added&#10;&#10;Adding files for week 3, &#10;exercise 4&#10;Also a folder name change">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_05/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_05/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769703486490</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme">
+      <option name="closed" value="true" />
+      <created>1769768844553</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1769768844553</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning" />
     <MESSAGE value="L02 W02 Ex01&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files" />
     <MESSAGE value="L02 W02 Ex02 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
     <MESSAGE value="L02 W02 Ex03 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
@@ -531,6 +539,7 @@
     <MESSAGE value="L02 W03 Ex3 Added&#10;&#10;Added code for all the &#10;parts mentioned in exercise &#10;3, considered done&#10;OG, version 2, version 3, &#10;and nice to have" />
     <MESSAGE value="L02 W03 Ex3 fix&#10;&#10;Used an f string without &#10;actual values, pylint found it &#10;Fixed" />
     <MESSAGE value="L02 W03 Ex4 added&#10;&#10;Adding files for week 3, &#10;exercise 4&#10;Also a folder name change" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex4 added&#10;&#10;Adding files for week 3, &#10;exercise 4&#10;Also a folder name change" />
+    <MESSAGE value="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme" />
   </component>
 </project>
