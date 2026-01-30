@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_03/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_03/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_04/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_04/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_06/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_06/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,14 +115,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add L02 W05 Ex02 part 04&#10;&#10;Adding files for part 04 of &#10;exercise 2, week 5&#10;Code, tests, readme">
-      <option name="closed" value="true" />
-      <created>1768383731024</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1768383731024</updated>
     </task>
     <task id="LOCAL-00003" summary="Add L02 W05 Ex03, finished&#10;&#10;Finished all planned work &#10;for exercise 03, search &#10;for user &quot;autocomplete&quot;">
       <option name="closed" value="true" />
@@ -510,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769773366458</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files">
+      <option name="closed" value="true" />
+      <created>1769784569697</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1769784569697</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W02 Ex03 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
     <MESSAGE value="L02 W02 Ex04 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
     <MESSAGE value="L02 W02 Ex05 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
     <MESSAGE value="Minor edits to w02 ex05&#10;&#10;Only minor edits" />
@@ -550,6 +547,7 @@
     <MESSAGE value="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme" />
     <MESSAGE value="L02 W03 Ex5 done&#10;&#10;Coded added for exercise 5" />
     <MESSAGE value="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6" />
+    <MESSAGE value="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files" />
   </component>
 </project>

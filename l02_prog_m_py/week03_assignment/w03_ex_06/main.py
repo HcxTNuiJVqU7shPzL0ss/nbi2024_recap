@@ -24,7 +24,8 @@ TAP HT 25D.
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit,
-                                            enter_string)
+                                            enter_string,
+                                            enter_int_range)
 
 
 def create_base_list():
@@ -37,12 +38,10 @@ def print_list(list_to_print):
     """Use to print the list."""
     if not list_to_print:
         print('\nYour list is empty')
-        press_continue()
     else:
         print('\nYour list contains:')
-        for list_item in list_to_print:
-            print(list_item)
-        press_continue()
+        for i, list_item in enumerate(list_to_print):
+            print(f'  {i}: {list_item}')
 
 
 def add_to_list():
@@ -50,8 +49,27 @@ def add_to_list():
     ask_str = 'Please enter the new item: '
     print('')
     add_item = enter_string(ask_str)
-    add_item = '  + ' + add_item
+    print(f'\nOK, added "{add_item}" to the list.')
     return add_item
+
+
+def mark_as_done(list_to_edit):
+    """Use to mark an item as done and remove it from the list."""
+    if not list_to_edit:
+        print('\nThe list is empty, nothing to mark as done!')
+        return
+    print_list(list_to_edit)
+    print('')
+    ask_to_edit = 'Please select which index to mark as done: '
+    lowest_item = 0
+    highest_item = len(list_to_edit) - 1
+
+    done_index = enter_int_range(ask_to_edit, lowest_item,
+                                 highest_item, True)
+
+    # More to add here
+    print(done_index)
+
 
 
 def user_interaction(input_list):
@@ -79,9 +97,13 @@ def user_interaction(input_list):
 
         if selected_option == '1':
             print_list(input_list)
+            press_continue()
         elif selected_option == '2':
             new_item = add_to_list()
             input_list.append(new_item)
+            press_continue()
+        elif selected_option == '3':
+            mark_as_done(input_list)
         elif selected_option == 'q':
             print('\nOK, exiting, goodbye!')
             break
