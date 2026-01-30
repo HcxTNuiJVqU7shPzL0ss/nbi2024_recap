@@ -8,7 +8,7 @@
 ---
 
 See [main.py](main.py) in this folder for TAP HT 25D week 3, 
-exercise 2, assignment.  
+exercise 4, assignment.  
 
 Reference to files  
 
