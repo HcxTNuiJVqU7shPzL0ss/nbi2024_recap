@@ -1,10 +1,11 @@
 """Module for Lesson 02, Week 03, Exercise 02.
 
 Part 1: a, b, c, Sum.
+Done "off course".
 """
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -119,7 +120,10 @@ def w03_ex02_part1c(s_error, check_this):
 
 
 def main():
-    """Use as main function."""
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    """
     print('\nWeek 03, Exercise 02, Sum.\nFunction: ',
           main.__name__, sep = '')
     press_continue()

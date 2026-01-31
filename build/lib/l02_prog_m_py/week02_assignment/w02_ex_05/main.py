@@ -51,7 +51,7 @@ def sum_up_numbers(list_of_int):
     for value in list_of_int:
         sum_is += value
     print(f'\nPart 1.\n'
-          f'The sum of your values is: {sum_is}')
+          f'The sum of your values is: {sum_is}.')
     press_continue()
 
 
@@ -64,7 +64,7 @@ def find_largest(input_list):
     sort_list = input_list
     sort_list.sort()
     print(f'Part 2.\n'
-          f'The largest input integer is: {sort_list[-1]}')
+          f'The largest input integer is: {sort_list[-1]}.')
     press_continue()
 
 
@@ -73,6 +73,7 @@ def find_middle(integer_list):
 
     Only use if the number of entered integers is 3,
     and only if all 3 values differ.
+    (If all are the same, handled elsewhere).
     """
     sort_list = integer_list
     sort_list.sort()
@@ -134,7 +135,7 @@ def main():
     print('\nThis is exercise 5, "Calculator", from week 2.')
     press_continue()
 
-    ask_continue = 'Do you want to run again (y)es or (no): '
+    ask_continue = 'Do you want to run again (y)es or (n)o: '
 
     while True:
         run_calculator()

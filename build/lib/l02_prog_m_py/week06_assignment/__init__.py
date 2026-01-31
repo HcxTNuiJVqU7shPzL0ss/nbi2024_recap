@@ -1,12 +1,8 @@
-"""Module for init, lesson 02, week 03, exercise 05 directory.
-
-This directory contains off course work, as well as the work
-done for 2025/2026 course.
-"""
+"""Module for init, lesson 02, week 06 directory."""
 
 #####################################################################
 #
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
