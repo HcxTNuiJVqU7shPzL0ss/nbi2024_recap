@@ -1,8 +1,12 @@
-"""Module for init, base lesson 02 directory."""
+"""Module for init, base lesson 02.
+
+This directory contains off course work, as well as the work
+done for 2025/2026 course.
+"""
 
 #####################################################################
 #
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
