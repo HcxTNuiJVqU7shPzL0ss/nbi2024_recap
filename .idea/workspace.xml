@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Minor edits w03 ex1&#10;&#10;Due to having to type in code &#10;exactly, got duplicate code &#10;warnings from pylint, disabled &#10;in the parts I did between &#10;courses&#10;Also minor edit to init file &#10;to clarify">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W03 Ex06 done&#10;&#10;Added final code for &#10;exercise 6&#10;Also added builds to &#10;enable running code from &#10;CLI">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_06/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/w03_ex_06/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_03/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_04/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_05/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +131,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Merge with new course&#10;&#10;Recap now slowly to get &#10;merged as the new course &#10;starts.&#10;Adding/editing L02 W01, &#10;so far ex 01 + base files">
-      <option name="closed" value="true" />
-      <created>1768491603394</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1768491603394</updated>
     </task>
     <task id="LOCAL-00005" summary="Merge with new course, part 2&#10;&#10;Adding also exercise 2 &#10;from week 1">
       <option name="closed" value="true" />
@@ -508,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769785854654</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="L02 W03 Ex06 done&#10;&#10;Added final code for &#10;exercise 6&#10;Also added builds to &#10;enable running code from &#10;CLI">
+      <option name="closed" value="true" />
+      <created>1769861238536</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1769861238536</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W02 Ex05 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme" />
     <MESSAGE value="Minor edits to w02 ex05&#10;&#10;Only minor edits" />
     <MESSAGE value="First files for L02 W06 Ex01&#10;&#10;Base files only at this time" />
     <MESSAGE value="Files for L02 W06 Ex01&#10;&#10;Quick play around&#10;Nothing real so far" />
@@ -548,6 +563,7 @@
     <MESSAGE value="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6" />
     <MESSAGE value="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files" />
     <MESSAGE value="L02 W03 Ex6 wip more&#10;&#10;Exercise 6 work in progress&#10;Some work added, still wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex6 wip more&#10;&#10;Exercise 6 work in progress&#10;Some work added, still wip" />
+    <MESSAGE value="L02 W03 Ex06 done&#10;&#10;Added final code for &#10;exercise 6&#10;Also added builds to &#10;enable running code from &#10;CLI" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W03 Ex06 done&#10;&#10;Added final code for &#10;exercise 6&#10;Also added builds to &#10;enable running code from &#10;CLI" />
   </component>
 </project>
