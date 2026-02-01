@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding builds new files&#10;&#10;Also adding the &#10;previously unversioned &#10;files for builds">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/ex_03_bank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +116,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00008" summary="All also OG w01, Ex03&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 03.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
-      <option name="closed" value="true" />
-      <created>1768495132150</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1768495132150</updated>
     </task>
     <task id="LOCAL-00009" summary="All also OG w01, Ex04&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 04.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
       <option name="closed" value="true" />
@@ -511,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769864955537</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work">
+      <option name="closed" value="true" />
+      <created>1769963618465</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1769963618465</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Files for L02 W06 Ex01&#10;&#10;Finished code for part 1&#10;Still work to do for parts &#10;2a and 2b" />
     <MESSAGE value="Updates for L02 W06 Ex01&#10;&#10;Finished code for parts &#10;2a and 2b" />
     <MESSAGE value="Minor update w02, Ex03&#10;&#10;Update one printout &#10;to meet the &quot;example&quot; &#10;of output" />
     <MESSAGE value="L02, W06, Ex02 first&#10;&#10;First parts for ex 02 &#10;Handle parts 1 a and 1b &#10;so far" />
@@ -551,6 +548,7 @@
     <MESSAGE value="Refactoring and adding og&#10;&#10;Adding more files from og 2024&#10;Refactoring some init files&#10;Preparing" />
     <MESSAGE value="Adding builds&#10;&#10;Updated version to 0.0.2&#10;Adding builds" />
     <MESSAGE value="Adding builds new files&#10;&#10;Also adding the &#10;previously unversioned &#10;files for builds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding builds new files&#10;&#10;Also adding the &#10;previously unversioned &#10;files for builds" />
+    <MESSAGE value="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work" />
   </component>
 </project>

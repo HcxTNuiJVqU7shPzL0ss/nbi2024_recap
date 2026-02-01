@@ -21,27 +21,43 @@
 from .ex_03_bank import Bank
 
 
+# pylint: disable=too-few-public-methods
+class MyValues:
+    """Use to handle values."""
+
+    def __init__(self):
+        """Use when constructing and initializing an object."""
+        self.deposit_money = 1000
+        self.withdraw_money = 500
+        self.diff_money = self.deposit_money - self.withdraw_money
+        self.interest_percent = 0.1
+        self.with_interest = (self.diff_money *
+                              (1 + self.interest_percent))
+        self.bill_ok = 100
+        self.bill_no = 1500
+
+    def __str__(self):
+        """Use when wanting to print out the parent class name."""
+        return self.__class__.__name__
+# pylint: enable=too-few-public-methods
+
+
 my_account = Bank()
-deposit_money = 1000
-withdraw_money = 500
-diff_money = deposit_money - withdraw_money
-interest_percent = 0.1
-with_interest = diff_money * (1 + interest_percent)
-bill_ok = 100
-bill_no = 1500
+the_values = MyValues()
 
 
 def test_deposit():
     """Use to test function deposit."""
     assert my_account.balance() == 0
-    my_account.deposit(deposit_money)
-    assert my_account.balance() == deposit_money
+    my_account.deposit(the_values.deposit_money)
+    assert my_account.balance() == the_values.deposit_money
 
 
 def test_withdraw():
     """Use to test function withdraw."""
-    my_account.withdraw(withdraw_money)
-    assert my_account.balance() == deposit_money - withdraw_money
+    my_account.withdraw(the_values.withdraw_money)
+    assert (my_account.balance() ==
+            the_values.deposit_money - the_values.withdraw_money)
 
 
 def test_balance():
@@ -52,11 +68,12 @@ def test_balance():
 
 
 def test_apply_interest():
-    my_account.apply_interest(interest_percent)
-    assert my_account.balance() == with_interest
+    """Use to test function apply_interest."""
+    my_account.apply_interest(the_values.interest_percent)
+    assert my_account.balance() == the_values.with_interest
 
 
 def test_bill_check():
     """Use to test function bill_check."""
-    assert my_account.bill_check(bill_ok) == True
-    assert my_account.bill_check(bill_no) == False
+    assert my_account.bill_check(the_values.bill_ok) is True
+    assert my_account.bill_check(the_values.bill_no) is False
