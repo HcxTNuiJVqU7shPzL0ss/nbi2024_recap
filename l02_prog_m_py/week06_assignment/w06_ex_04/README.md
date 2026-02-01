@@ -29,6 +29,23 @@ Varje produkt ska ha namn, pris och ett unikt id."
 
 ---
 
+List from AI:  
+
+| ID  |         Name         | Price (SEK) | 
+|:---:|:--------------------:|:-----------:| 
+|  1  |  Hammer Drill 750W   |     899     | 
+|  2  |  Cordless Drill 18V  |    1299     | 
+|  3  |  Circular Saw 1600W  |    1499     | 
+|  4  |   Multi‑Tool 300W    |     749     | 
+|  5  | Laser Distance Meter |     999     | 
+|  6  |    Toolbox  50cm     |     399     | 
+|  7  |    Hammer ProLine    |     199     | 
+|  8  |  Bit Set 32 Pieces   |     149     | 
+|  9  |    LED Work Light    |     349     | 
+| 10  |  Spirit Level 60cm   |     129     |
+
+---
+
 Student == **_gnoff_**
 
 ---

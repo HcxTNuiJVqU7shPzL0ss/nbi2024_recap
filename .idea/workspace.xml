@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex04 base&#10;&#10;Adding initial base files &#10;to be able to get started &#10;with exercise 04">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex04 features&#10;&#10;Added code and features&#10;have not added any unit tests">
       <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/og_2024/note.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/README.md" afterDir="false" />
@@ -82,6 +82,7 @@
     "Python.ex_01_2_animal.executor": "Run",
     "Python.ex_02_countries.executor": "Run",
     "Python.ex_03_bank.executor": "Run",
+    "Python.ex_04_webshop.executor": "Debug",
     "Python.exc3_1a.executor": "Run",
     "Python.exc3_1b.executor": "Run",
     "Python.exc3_2a.executor": "Run",
@@ -526,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02, W03, Ex01 base&#10;&#10;First base files to get &#10;started with exercises for &#10;week 3 &#10;TAP HT 25D" />
     <MESSAGE value="L02, W03, Ex01 some more&#10;&#10;Added parts 1.1 through &#10;1.5&#10;Still left: 1.6" />
     <MESSAGE value="Minor edits w03 ex1&#10;&#10;Due to having to type in code &#10;exactly, got duplicate code &#10;warnings from pylint, disabled &#10;in the parts I did between &#10;courses&#10;Also minor edit to init file &#10;to clarify" />
     <MESSAGE value="Final L02 W03 Ex01&#10;&#10;Finalized exercise 01 &#10;for week 03 &#10;Part 6 now done" />
@@ -551,6 +551,7 @@
     <MESSAGE value="W06 Ex03 addons&#10;&#10;Adding some more features &#10;and tests to exercise 3" />
     <MESSAGE value="Refactor file names&#10;&#10;Edits to file names to &#10;follow the same style &#10;over different weeks" />
     <MESSAGE value="L02 W05 Ex04 base&#10;&#10;Adding initial base files &#10;to be able to get started &#10;with exercise 04" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex04 base&#10;&#10;Adding initial base files &#10;to be able to get started &#10;with exercise 04" />
+    <MESSAGE value="L02 W05 Ex04 features&#10;&#10;Added code and features&#10;have not added any unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex04 features&#10;&#10;Added code and features&#10;have not added any unit tests" />
   </component>
 </project>
