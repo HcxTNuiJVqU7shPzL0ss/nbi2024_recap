@@ -36,20 +36,32 @@ class Bank:
 
     def deposit(self, plus_money):
         """Use to deposit money."""
-        self.balance_now += plus_money
+        if plus_money > 0:
+            self.balance_now += plus_money
+        else:
+            raise ValueError('Not allowed to deposit negative!')
 
     def withdraw(self, minus_money):
         """Use to withdraw money."""
-        self.balance_now -= minus_money
+        if self.balance_now >= minus_money:
+            self.balance_now -= minus_money
+        else:
+            raise ValueError('Not allowed to withdraw too much!')
+
 
     def balance(self):
         """Use to display the current balance."""
         return self.balance_now
 
+
     def apply_interest(self, interest):
         """Use to apply interest."""
-        self.balance_now = (
-            round((self.balance_now * (1 + interest)), 2))
+        if interest >= 0:
+            self.balance_now = (
+                round((self.balance_now * (1 + interest)), 2))
+        else:
+            raise ValueError('Negative interest not allowed!')
+
 
     def bill_check(self, bill):
         """Use to check if there is money for the bill."""
@@ -83,6 +95,8 @@ def main():
     handle_account.deposit(50)
     check = handle_account.bill_check(100)
     print(check)
+    # check_neg = handle_account.deposit(-100)
+    # print(check_neg)
 
     press_exit()
 

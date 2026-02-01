@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="W06 Ex03 pylint fixes&#10;&#10;pylint fixes for &#10;exercise 3&#10;Off course work">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/ex_03_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/ex_03_bank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,14 +118,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00009" summary="All also OG w01, Ex04&#10;&#10;Adding in, pretty much, &#10;the OG files from 2024 for &#10;exercise 04.&#10;Have to add some minor things &#10;as to allow pylint and &#10;pydocstyle to still run OK">
-      <option name="closed" value="true" />
-      <created>1768495676925</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1768495676925</updated>
     </task>
     <task id="LOCAL-00010" summary="Adding and updating builds&#10;&#10;Ensure it should be &#10;possible to run the code &#10;in PyCharm as well as in &#10;a local CLI">
       <option name="closed" value="true" />
@@ -509,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769963618465</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="W06 Ex03 pylint fixes&#10;&#10;pylint fixes for &#10;exercise 3&#10;Off course work">
+      <option name="closed" value="true" />
+      <created>1769964879603</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1769964879603</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updates for L02 W06 Ex01&#10;&#10;Finished code for parts &#10;2a and 2b" />
     <MESSAGE value="Minor update w02, Ex03&#10;&#10;Update one printout &#10;to meet the &quot;example&quot; &#10;of output" />
     <MESSAGE value="L02, W06, Ex02 first&#10;&#10;First parts for ex 02 &#10;Handle parts 1 a and 1b &#10;so far" />
     <MESSAGE value="L02, W06, Ex02 done&#10;&#10;Code added for all parts &#10;of this assignment" />
@@ -549,6 +550,7 @@
     <MESSAGE value="Adding builds&#10;&#10;Updated version to 0.0.2&#10;Adding builds" />
     <MESSAGE value="Adding builds new files&#10;&#10;Also adding the &#10;previously unversioned &#10;files for builds" />
     <MESSAGE value="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work" />
+    <MESSAGE value="W06 Ex03 pylint fixes&#10;&#10;pylint fixes for &#10;exercise 3&#10;Off course work" />
+    <option name="LAST_COMMIT_MESSAGE" value="W06 Ex03 pylint fixes&#10;&#10;pylint fixes for &#10;exercise 3&#10;Off course work" />
   </component>
 </project>
