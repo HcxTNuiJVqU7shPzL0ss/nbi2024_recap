@@ -44,7 +44,8 @@ def ex01():
 
 def eko_2a(in_string):
     """Use to echo incoming string."""
-    print(in_string + in_string)
+    # print(in_string + in_string)
+    print(in_string*2)
 
 
 def ex02a():
