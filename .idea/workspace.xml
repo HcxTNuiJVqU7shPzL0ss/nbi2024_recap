@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex04 features again&#10;&#10;Added code and features&#10;have not added any unit tests&#10;and the files too">
-      <change beforePath="$PROJECT_DIR$/l02.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/l02.egg-info/SOURCES.txt" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Refactoring&#10;&#10;Some file name changes">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/other_class/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/other_class/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/other_class/circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git",
-    "accountId": "70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d"
+    "accountId": "55d36338-accb-4aaf-846a-e7cf55611cfe"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -51,6 +54,7 @@
     "Python tests.Python tests in test_w06_ex05.py.executor": "Run",
     "Python.balder_2.executor": "Run",
     "Python.calculator_5.executor": "Run",
+    "Python.circle.executor": "Run",
     "Python.discuss.executor": "Run",
     "Python.discuss_1.executor": "Run",
     "Python.e3_receipt_calculator_3_v1.executor": "Run",
@@ -116,22 +120,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add image&#10;&#10;Forgot the one file for &#10;the md">
-      <option name="closed" value="true" />
-      <created>1768581672434</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1768581672434</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Tweak md file&#10;&#10;Fix to copyright">
-      <option name="closed" value="true" />
-      <created>1768581796141</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1768581796141</updated>
     </task>
     <task id="LOCAL-00017" summary="Add builds week 1&#10;&#10;Adding builds for L02 &#10;W01 as to be able also &#10;to run the files from &#10;CLI and not just in &#10;PyCharm">
       <option name="closed" value="true" />
@@ -509,7 +497,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769979642696</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Adding builds">
+      <option name="closed" value="true" />
+      <created>1769979992699</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1769979992699</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Refactoring&#10;&#10;Some file name changes">
+      <option name="closed" value="true" />
+      <created>1769980296826</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1769980296826</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,8 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor edits w03 ex1&#10;&#10;Due to having to type in code &#10;exactly, got duplicate code &#10;warnings from pylint, disabled &#10;in the parts I did between &#10;courses&#10;Also minor edit to init file &#10;to clarify" />
-    <MESSAGE value="Final L02 W03 Ex01&#10;&#10;Finalized exercise 01 &#10;for week 03 &#10;Part 6 now done" />
     <MESSAGE value="Initial L02 W03 Ex02&#10;&#10;First basic files for exercise &#10;2 &#10;Part 1a done so far in new &#10;main" />
     <MESSAGE value="Minor fix old file&#10;&#10;Missed earlier to put &#10;# noqa for two defines in &#10;og file, fixed so that &#10;pydocstyle gets happy" />
     <MESSAGE value="L02 W03 Ex2&#10;&#10;Added all code to finish &#10;exercise 2" />
@@ -549,6 +551,8 @@
     <MESSAGE value="L02 W05 Ex04 base&#10;&#10;Adding initial base files &#10;to be able to get started &#10;with exercise 04" />
     <MESSAGE value="L02 W05 Ex04 features&#10;&#10;Added code and features&#10;have not added any unit tests" />
     <MESSAGE value="L02 W05 Ex04 features again&#10;&#10;Added code and features&#10;have not added any unit tests&#10;and the files too" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex04 features again&#10;&#10;Added code and features&#10;have not added any unit tests&#10;and the files too" />
+    <MESSAGE value="Adding builds" />
+    <MESSAGE value="Refactoring&#10;&#10;Some file name changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring&#10;&#10;Some file name changes" />
   </component>
 </project>
