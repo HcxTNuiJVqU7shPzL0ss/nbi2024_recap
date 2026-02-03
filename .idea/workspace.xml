@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex01 wip&#10;&#10;Added code for parts 1a &#10;through 1g&#10;Work in progress, parts &#10;mentioned done, need to &#10;fix 1h and ih, as they are now &#10;in the functions files is not &#10;good">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week03_assignment/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/src_tapht25d/ex01_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/src_tapht25d/ex01_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/src_tapht25d/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/src_tapht25d/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex01 tweak&#10;&#10;Some minor changes to make &#10;it less complicated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,63 +44,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test_w06_ex05.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.balder_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.calculator_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.circle.executor&quot;: &quot;Run&quot;,
-    &quot;Python.discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.discuss_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.e3_receipt_calculator_3_v1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.e3_receipt_calculator_3_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_balder.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_func_mod.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_01a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_01b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_02a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_02b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_03_receipt_calc.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_sports_results.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01c.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_03a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_03b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_temp_conv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex05_calculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_01_1_safestorage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_01_2_animal.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_02_countries.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_03_bank.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_04_webshop.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.exc3_1a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_1b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_2a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_2b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.my_base_functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sports_results_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.temp_convert_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.variables_datatypes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.w05_ex04_functions.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_w06_ex05.py.executor": "Run",
+    "Python.01_diskussion.executor": "Run",
+    "Python.balder_2.executor": "Run",
+    "Python.calculator_5.executor": "Run",
+    "Python.circle.executor": "Run",
+    "Python.discuss.executor": "Run",
+    "Python.discuss_1.executor": "Run",
+    "Python.e3_receipt_calculator_3_v1.executor": "Run",
+    "Python.e3_receipt_calculator_3_v2.executor": "Run",
+    "Python.ex01_discuss.executor": "Run",
+    "Python.ex01_main_hello_name.executor": "Run",
+    "Python.ex01_main_hello_name_v2.executor": "Run",
+    "Python.ex02_balder.executor": "Run",
+    "Python.ex02_discuss.executor": "Run",
+    "Python.ex02_discuss_v2.executor": "Run",
+    "Python.ex02_func_mod.executor": "Run",
+    "Python.ex03_01a.executor": "Run",
+    "Python.ex03_01b.executor": "Run",
+    "Python.ex03_02a.executor": "Run",
+    "Python.ex03_02b.executor": "Run",
+    "Python.ex03_03_receipt_calc.executor": "Run",
+    "Python.ex03_sports_results.executor": "Run",
+    "Python.ex04_01a.executor": "Run",
+    "Python.ex04_01b.executor": "Run",
+    "Python.ex04_01c.executor": "Run",
+    "Python.ex04_02.executor": "Run",
+    "Python.ex04_03a.executor": "Run",
+    "Python.ex04_03b.executor": "Run",
+    "Python.ex04_temp_conv.executor": "Run",
+    "Python.ex05_calculator.executor": "Run",
+    "Python.ex_01_1_safestorage.executor": "Run",
+    "Python.ex_01_2_animal.executor": "Run",
+    "Python.ex_02_countries.executor": "Run",
+    "Python.ex_03_bank.executor": "Run",
+    "Python.ex_04_webshop.executor": "Debug",
+    "Python.exc3_1a.executor": "Run",
+    "Python.exc3_1b.executor": "Run",
+    "Python.exc3_2a.executor": "Run",
+    "Python.exc3_2b.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.more_4.1.executor": "Run",
+    "Python.more_4.2.executor": "Run",
+    "Python.more_4.3.executor": "Run",
+    "Python.my_base_functions.executor": "Run",
+    "Python.sports_results_3.executor": "Run",
+    "Python.temp_convert_4.executor": "Run",
+    "Python.variables_datatypes.executor": "Run",
+    "Python.w05_ex04_functions.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
+    "settings.editor.selected.configurable": "preferences.externalTools"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -122,22 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00021" summary="More work on Ex5&#10;&#10;Added test and functionality &#10;also for ex 05">
-      <option name="closed" value="true" />
-      <created>1768843377871</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1768843377871</updated>
-    </task>
-    <task id="LOCAL-00022" summary="More work on Ex5, again&#10;&#10;Added a version 2 as well&#10;For now running both">
-      <option name="closed" value="true" />
-      <created>1768848507488</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1768848507488</updated>
     </task>
     <task id="LOCAL-00023" summary="Minor pylint fix&#10;&#10;Apparently &quot;too many&quot; &#10;return statements&#10;Not up for redoing things &#10;at this stage, simple turn &#10;off the warning">
       <option name="closed" value="true" />
@@ -515,7 +494,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770130039483</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="L02 W04 Ex01 done&#10;&#10;Finished all planned parts &#10;for ex 01&#10;Had to disable some pylint &#10;warnings to be allowed to &#10;run this, despite changing &#10;some things">
+      <option name="closed" value="true" />
+      <created>1770132256426</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1770132256426</updated>
+    </task>
+    <task id="LOCAL-00071" summary="L02 W04 Ex01 tweak&#10;&#10;Some minor changes to make &#10;it less complicated">
+      <option name="closed" value="true" />
+      <created>1770132840799</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1770132840799</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -530,8 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W03 Ex3 Added&#10;&#10;Added code for all the &#10;parts mentioned in exercise &#10;3, considered done&#10;OG, version 2, version 3, &#10;and nice to have" />
-    <MESSAGE value="L02 W03 Ex3 fix&#10;&#10;Used an f string without &#10;actual values, pylint found it &#10;Fixed" />
     <MESSAGE value="L02 W03 Ex4 added&#10;&#10;Adding files for week 3, &#10;exercise 4&#10;Also a folder name change" />
     <MESSAGE value="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme" />
     <MESSAGE value="L02 W03 Ex5 done&#10;&#10;Coded added for exercise 5" />
@@ -555,6 +548,8 @@
     <MESSAGE value="Edit to w04 Ex02&#10;&#10;Minor change to try something &#10;with multiplication of string" />
     <MESSAGE value="L02 W04 Ex01 base&#10;&#10;First edits and base files &#10;to get started with exercise &#10;1 from week 4&#10;No code yet" />
     <MESSAGE value="L02 W04 Ex01 wip&#10;&#10;Added code for parts 1a &#10;through 1g&#10;Work in progress, parts &#10;mentioned done, need to &#10;fix 1h and ih, as they are now &#10;in the functions files is not &#10;good" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex01 wip&#10;&#10;Added code for parts 1a &#10;through 1g&#10;Work in progress, parts &#10;mentioned done, need to &#10;fix 1h and ih, as they are now &#10;in the functions files is not &#10;good" />
+    <MESSAGE value="L02 W04 Ex01 done&#10;&#10;Finished all planned parts &#10;for ex 01&#10;Had to disable some pylint &#10;warnings to be allowed to &#10;run this, despite changing &#10;some things" />
+    <MESSAGE value="L02 W04 Ex01 tweak&#10;&#10;Some minor changes to make &#10;it less complicated" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex01 tweak&#10;&#10;Some minor changes to make &#10;it less complicated" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 # pylint: skip-file
 # noqa
 #####################################################################
-# Jan Berglund - 01_discussion.py
+# Jan Berglund - e01_discussion.py
 #
 # Veckouppgift 4
 # Vecka 5, 27/1

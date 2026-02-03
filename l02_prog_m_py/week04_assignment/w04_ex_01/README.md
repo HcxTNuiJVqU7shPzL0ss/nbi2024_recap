@@ -10,7 +10,7 @@
 See [main.py](./src_tapht25d/main.py) in folder "src_tapht25d" 
 for TAP HT 25D week 4, exercise 1, assignment.  
 
-Reference to file [01_diskussion.py](./og_2024/01_diskussion.py) 
+Reference to file [e01_discussion.py](./og_2024/e01_discussion.py) 
 in "og_2024" folder for OG 2024 (TAP HT 24D) work.  
 
 Other files are for when working "in between the two courses" on my 
