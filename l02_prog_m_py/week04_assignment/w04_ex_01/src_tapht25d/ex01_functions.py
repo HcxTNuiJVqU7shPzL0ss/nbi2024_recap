@@ -23,6 +23,7 @@ TAP HT 25D.
 
 
 # 1a
+# pylint: disable=unused-argument
 def ex01_01a(t_1a):
     """Use for exercise 01, part 1a.
 
@@ -33,6 +34,7 @@ def ex01_01a(t_1a):
     as argument for 't_1a'.
     """
     print('test')
+# pylint: enable=unused-argument
 
 
 # 1b
@@ -129,10 +131,12 @@ def ex01_01g_is_number_og(x_1g_og):
     Yes, it can be improved, will do one more function
     for this below.
     """
+    # pylint: disable=no-else-return
     if isinstance(x_1g_og, int):
         return True
     elif isinstance(x_1g_og, float):
         return True
+    # pylint: enable=no-else-return
     return False
 
 
@@ -149,28 +153,51 @@ def ex01_01g_is_number_new(x_1g_new):
     return False
 
 
-#### 1h
-def average_words(strings):
+# 1h
+def ex01_01h_average_words(strings_1h):
+    """Use for exercise 01, part 1h.
+
+    Will check a list (argument from parameter in function call),
+    if the string in the list is greater than 4, but smaller than
+    8, will append the string to a new list.
+    The new list will be returned.
+    However, in the supplied code, nothing is assigned to the
+    function call, so the return value is not stored.
+    With changes, using the return value and printing it:
+    how's
+    going
+    coding
+    """
     found = []
-    for item in strings:
+    for item in strings_1h:
         if 4 < len(item) < 8:
             found.append(item)
     return found
 
 
-average_words(["sup", "how's", "it", "going", "reflecting", "on",
-               "programs", "and", "coding"])
+# 1i
+def ex01_01i_find_min(numbers_1i):
+    """Use for exercise 01, part 1i."""
+    # # Initialize to 0, disregards empty list and positive numbers
+    # counter_1i = 0
+    # # Go through all items in the parameter argument (list assumed)
+    # for item in numbers_1i:
+    #     # Checks of item is smaller than initialized counter
+    #     if item < counter_1i:
+    #         counter_1i = item
+    # # Prints what is assumed to be the smallest number found
+    # print(f"The smallest item is: {counter_1i}")
+    # # Returns the value
+    # return counter_1i
+    # Would return:
+    # -11
+    # 0 (for the empty list)
+    # 0 (since no negative numbers
 
-#### 1i
-def find_min(numbers):
-    counter = 0
-    for item in numbers:
-        if item < counter:
-            counter = item
-    print(f"The smallest item is: {counter}")
-    return counter
-
-
-find_min([10, 3, -4, -11])
-find_min([])
-find_min([100])
+    min_val = float('inf')
+    for item in numbers_1i:
+        min_val = min(min_val, item)
+    if not numbers_1i:
+        min_val = 'Empty list'
+    print(f"The smallest item is: {min_val}")
+    return min_val

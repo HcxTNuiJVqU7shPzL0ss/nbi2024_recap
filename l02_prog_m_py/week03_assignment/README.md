@@ -6,7 +6,8 @@
 ## Vecka 5, 26/1  
 
 (_2024 == Vecka 3, 20/1_)  
-(*yes, it stated "3"*)  
+
+(**yes, it stated "3" (Jan 20 started in week 4)**)  
 
 Main bulk of the files are from when I've been working on a recap 
 of the OG course on my own.  

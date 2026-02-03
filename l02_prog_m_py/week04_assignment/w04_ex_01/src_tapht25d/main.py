@@ -23,7 +23,13 @@ TAP HT 25D.
 
 
 # Will not import ex01_01b or ex01_01e functions, since never called
-from ex01_functions import (ex01_01a, ex01_01c, ex01_01d, ex01_01f_oof, ex01_01f_oog, ex01_01g_is_number_og, ex01_01g_is_number_new)
+# pylint: disable=import-error
+from ex01_functions import (ex01_01a, ex01_01c, ex01_01d,
+                            ex01_01f_oof, ex01_01f_oog,
+                            ex01_01g_is_number_og,
+                            ex01_01g_is_number_new,
+                            ex01_01h_average_words, ex01_01i_find_min)
+# pylint: enable=import-error
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
@@ -98,6 +104,32 @@ def run_ex01_part1g():
     print(ex01_01g_is_number_new(42))
 
 
+def run_ex01_part1h():
+    """Use to run part 1g of exercise 01."""
+    # Calls the function with a list of strings.
+    # However, the return value is not stored, so will not
+    # use it or print anything.
+    # Adding an assignment and printing the return value,
+    # as to actually use the function and check the
+    # result.
+    match = ex01_01h_average_words(['sup', 'how\'s', 'it', 'going',
+                            'reflecting', 'on', 'programs',
+                            'and', 'coding'])
+    # Changes done will now ensure the following is printed:
+    # how's
+    # going
+    # coding
+    for found_word in match:
+        print(found_word)
+
+
+def run_ex01_part1i():
+    """Use to run part 1i of exercise 01."""
+    ex01_01i_find_min([10, 3, -4, -11])
+    ex01_01i_find_min([])
+    ex01_01i_find_min([100])
+
+
 def main():
     """Use as module for Main.
 
@@ -154,7 +186,19 @@ def main():
     run_ex01_part1g()
     print('\nYes, it did what I believed it would.')
     press_continue()
-
+    # 1h
+    print('Running part 1h "with changes".\n'
+          'Will print:\nhow\'s\ngoing\ncoding\n')
+    print('Prior to addition, nothing was supposed to '
+          'happen.\n')
+    run_ex01_part1h()
+    print('\nYes, it did what I believed it would.')
+    press_continue()
+    # 1i
+    print('Running part 1i "with changes".\n'
+          'Will print:\n-11\nEmpty list\n100\n')
+    run_ex01_part1i()
+    print('\nYes, it did what I believed it would.')
 
     press_exit()
 
