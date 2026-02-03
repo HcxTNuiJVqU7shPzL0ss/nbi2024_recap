@@ -194,10 +194,12 @@ def ex01_01i_find_min(numbers_1i):
     # 0 (for the empty list)
     # 0 (since no negative numbers
 
-    min_val = float('inf')
-    for item in numbers_1i:
-        min_val = min(min_val, item)
+    # min_val = float('inf')
     if not numbers_1i:
         min_val = 'Empty list'
+    else:
+        min_val = numbers_1i[0]
+        for item in numbers_1i:
+            min_val = min(min_val, item)
     print(f"The smallest item is: {min_val}")
     return min_val

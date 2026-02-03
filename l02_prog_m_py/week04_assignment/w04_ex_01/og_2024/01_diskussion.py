@@ -39,11 +39,11 @@ gogo()
 print('\nThis is "1a"\n')
 
 # foo will be called with "hej" as input "t"
-# The foo function will only print what is stated
-# "hej" will be printed
-# Calling foo function will only ever print "hej",
+# The foo function will only print what is stated ("test")
+# "hej" will not be printed
+# Calling foo function will only ever print "test",
 # no matter which input.
-# I.e. no need for an input to foo
+# I.e. no need for an input parameter to foo, which is not used
 
 def foo(t):
     # noqa
@@ -168,20 +168,20 @@ print('\nThis is "1g"\n')
 # Second 42 is checked to be an int, returning and printing
 # 'True'
 # 'False' will never be returned in this case
-# Improvement could be to add an else, including the last
-# return, as well as adding text as to what was true
+# Improvement could be to remove not needed "elif/else"
+# after return,
+# as well as adding text as to what was true
 
 def is_number(x):
     # noqa
     if isinstance(x, int):
         print('Integer found!')
         return True
-    elif isinstance(x, float):
+    if isinstance(x, float):
         print('Float found!')
         return True
-    else:
-        print('Not int or float!')
-        return False
+    print('Not int or float!')
+    return False
 
 print(is_number(5.5))
 print(is_number(42))
