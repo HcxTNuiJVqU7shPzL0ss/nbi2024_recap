@@ -1,15 +1,30 @@
 
-# Week 04, Exercise 01
+# Lesson 02, Week 04, Exercise 01  
 
 ---
 
-## 1 Läsa och förstå kod - diskutera i grupp
+## 1 Läsa och förstå kod - diskutera i grupp  
 
-Skriv ner vad du tror kommer skrivas ut. \
+---
+
+See [main.py](./src_tapht25d/main.py) in folder "src_tapht25d" 
+for TAP HT 25D week 4, exercise 1, assignment.  
+
+Reference to file [01_diskussion.py](./og_2024/01_diskussion.py) 
+in "og_2024" folder for OG 2024 (TAP HT 24D) work.  
+
+Other files are for when working "in between the two courses" on my 
+own to get back into it and learn things.  
+
+---
+
+### Assignment Information  
+
+Skriv ner vad du tror kommer skrivas ut.  
 Skriv sedan in koden i din IDE, exakt som den står, 
-och kör den.\
-Fick du samma resultat som du trodde? \
-Om inte, varför?
+och kör den.  
+Fick du samma resultat som du trodde?  
+Om inte, varför?  
 
 ---
 
@@ -22,7 +37,7 @@ Om inte, varför?
 
 ---
 
-### 1b
+#### 1b
 
     def fun1(x, y):
         return x * y
@@ -31,7 +46,7 @@ Om inte, varför?
 
 ---
 
-### 1c
+#### 1c
 
     def fun1(x, y):
         return x * y
@@ -40,7 +55,7 @@ Om inte, varför?
 
 ---
 
-### 1d
+#### 1d
 
     def fun2(i):
         return 5 * i
@@ -52,7 +67,7 @@ Om inte, varför?
 
 ---
 
-### 1e
+#### 1e
 
     a = 5
     def fun3(a):
@@ -63,7 +78,7 @@ Om inte, varför?
 
 ---
 
-### 1f
+#### 1f
 
     def foo(i):
         return 2*i*i
@@ -76,11 +91,11 @@ Om inte, varför?
 
 ---
 
-### 1g
+#### 1g
 
-Funktionen "isinstance" kan kontrollera en variabels datatyp. \
-Vad gör funktionen is_number? \
-Går det att förbättra koden?
+Funktionen `isinstance` kan kontrollera en variabels datatyp.  
+Vad gör funktionen `is_number`?  
+Går det att förbättra koden?  
 
     def is_number(x):
         if isinstance(x, int):
@@ -94,7 +109,7 @@ Går det att förbättra koden?
 
 ---
 
-### 1h
+#### 1h
 
     def average_words(strings):
         found = []
@@ -108,7 +123,9 @@ Går det att förbättra koden?
 
 ---
 
-### 1i - En uppgift i tre delar:
+#### 1i  
+
+En uppgift i tre delar:  
 
 1. Lista ut vad som är funktionens syfte, baserad på namn och sammanhang. 
 2. Lista ut vad som ska vara det förväntade resultatet för de tre testlistorna. 
@@ -129,23 +146,23 @@ Går det att förbättra koden?
 
 ---
 
-Student == gnoff
+Student == **_gnoff_**  
 
 ---
 
 Copyright 2025-2026 gnoff
 
-Licensed under the Apache License, Version 2.0 (the "License");\
-you may not use this file except in compliance with the License.\
-You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");  
+you may not use this file except in compliance with the License.  
+You may obtain a copy of the License at  
 
      http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software\
-distributed under the License is distributed on an "AS IS" BASIS,\
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\
-implied.\
-See the License for the specific language governing permissions and\
+Unless required by applicable law or agreed to in writing, software  
+distributed under the License is distributed on an "AS IS" BASIS,  
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+implied.  
+See the License for the specific language governing permissions and  
 limitations under the License.
 
 ---
