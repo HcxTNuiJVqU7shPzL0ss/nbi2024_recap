@@ -1,7 +1,7 @@
 
 # NBI 2025
 
---> Also: Recap of previous course NBI 2024
+&rarr; Also: Recap of previous course NBI 2024
 
 ---
 
