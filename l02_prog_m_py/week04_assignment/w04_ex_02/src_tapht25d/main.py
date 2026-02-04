@@ -56,7 +56,7 @@ def main():
     # Part 3
     ex02_part3_print_after_loop()
 
-    press_exit()
+    # press_exit()
 
 
 if __name__ == "__main__":
