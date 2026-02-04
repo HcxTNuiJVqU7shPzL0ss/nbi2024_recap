@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex01 og refactor&#10;&#10;Refactoring a bad og file &#10;name">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_1_hacker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/src_tapht25d/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/src_tapht25d/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/README.md" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex02 base&#10;&#10;Add first base files for &#10;exercise 02&#10;No real usable code yet">
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +119,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00024" summary="L02 W02 Ex01&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files">
-      <option name="closed" value="true" />
-      <created>1769004294754</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1769004294754</updated>
     </task>
     <task id="LOCAL-00025" summary="L02 W02 Ex02 addition&#10;&#10;Adding OG 2024&#10;New main for 2025&#10;Updates to other files to &#10;handle pylint and pydocstyle&#10;Updates to readme">
       <option name="closed" value="true" />
@@ -519,7 +504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770133179634</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="L02 W04 Ex02 base&#10;&#10;Add first base files for &#10;exercise 02&#10;No real usable code yet">
+      <option name="closed" value="true" />
+      <created>1770209181177</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1770209181177</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -534,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W03 Ex5 base&#10;&#10;Adding files for week 3, &#10;exercise 5&#10;Base only for now, to get &#10;started&#10;Also minor fix to previous &#10;exercise readme" />
     <MESSAGE value="L02 W03 Ex5 done&#10;&#10;Coded added for exercise 5" />
     <MESSAGE value="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6" />
     <MESSAGE value="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files" />
@@ -559,6 +551,7 @@
     <MESSAGE value="L02 W04 Ex01 done&#10;&#10;Finished all planned parts &#10;for ex 01&#10;Had to disable some pylint &#10;warnings to be allowed to &#10;run this, despite changing &#10;some things" />
     <MESSAGE value="L02 W04 Ex01 tweak&#10;&#10;Some minor changes to make &#10;it less complicated" />
     <MESSAGE value="L02 W04 Ex01 og refactor&#10;&#10;Refactoring a bad og file &#10;name" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex01 og refactor&#10;&#10;Refactoring a bad og file &#10;name" />
+    <MESSAGE value="L02 W04 Ex02 base&#10;&#10;Add first base files for &#10;exercise 02&#10;No real usable code yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex02 base&#10;&#10;Add first base files for &#10;exercise 02&#10;No real usable code yet" />
   </component>
 </project>

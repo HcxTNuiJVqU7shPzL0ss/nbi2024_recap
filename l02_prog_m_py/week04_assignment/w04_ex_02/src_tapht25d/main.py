@@ -22,6 +22,11 @@ TAP HT 25D.
 #####################################################################
 
 
+# pylint: disable=import-error
+from ex02_extra_calls import ex04_part01_add_name
+# pylint: enable=import-error
+
+
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
@@ -35,6 +40,9 @@ def main():
     print('\nThis is exercise 2, "Functions and Modules", '
           'from week 4.')
     press_continue()
+
+    # Part 1
+    ex04_part01_add_name()
 
     press_exit()
 

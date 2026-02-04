@@ -1,4 +1,8 @@
-"""Module for tests, L02, W04, Ex02.1."""
+"""Module for extra function calls used in exercise 02, week 04.
+
+Lesson 02, Week 04, Exercise 02.
+TAP HT 25D.
+"""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -19,31 +23,22 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_01_hacker)
+from ex02_functions import (ex02_01_hacker)
 # pylint: enable=import-error
 
 
-def test_w04_ex02_1__correct_print():
-    """Used for unit test of function ex02_01_hacker.
-
-    Check for correct printout.
-    """
-    use_name = 'gnoff'
-    fuse_string = ' is a real hacker'
-    expected = use_name + fuse_string
-    assert ex02_01_hacker(use_name) == expected
+from my_funct_dir.my_base_functions import (press_continue,
+                                            enter_string)
 
 
-def test_04_ex02_1__not_string():
-    """Used for unit test of function ex02_01_hacker.
-
-    Check that sending in different argument than
-    str to parameter returns None.
-    """
-    use_int = 42
-    use_float = 42.42
-    use_list = ['42']
-    use_tuple = ('42', '42')
-    check_list = [use_int, use_float, use_list, use_tuple]
-    for check in check_list:
-        assert ex02_01_hacker(check) is None
+def ex04_part01_add_name():
+    """Use to add name for exercise 04 part 01."""
+    print('This is part 01 from exercise 02.\n'
+          'Your entered name will be added to a string that '
+          'will print.')
+    press_continue()
+    ask_str = 'Please enter your name: '
+    entered_name = enter_string(ask_str)
+    final_string = ex02_01_hacker(entered_name)
+    print(f'\n{final_string}')
+    press_continue()

@@ -27,8 +27,12 @@ def ex02_01_hacker(name_str):
 
     Will print:
     "<name_str> is a real hacker!"
+    If a str is not used as argument, will return None.
     Note that assignment calls for the use of Swedish,
     as well as a function name of "my_function".
     Have used different names, and use English.
     """
-    return None
+    add_str = ' is a real hacker'
+    if not isinstance(name_str, str):
+        return None
+    return name_str + add_str
