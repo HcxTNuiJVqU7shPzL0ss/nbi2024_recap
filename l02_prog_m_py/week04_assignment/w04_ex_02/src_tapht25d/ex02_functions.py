@@ -36,3 +36,16 @@ def ex02_01_hacker(name_str):
     if not isinstance(name_str, str):
         return None
     return name_str + add_str
+
+
+def ex02_02a_echo_twice(echo2_str):
+    """Use to echo an incoming string twice.
+
+    E.g., calling with argument 'hi' for parameter 'echo2_Str'
+    will print: 'hihi'.
+    Note that assignment calls for a function name of "eko".
+    Have used a different name.
+    """
+    if not isinstance(echo2_str, str):
+        return None
+    return echo2_str * 2

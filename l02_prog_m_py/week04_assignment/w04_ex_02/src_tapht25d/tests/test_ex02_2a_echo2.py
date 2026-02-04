@@ -1,4 +1,4 @@
-"""Module for tests, L02, W04, Ex02.1."""
+"""Module for tests, L02, W04, Ex02.2, part a."""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -19,23 +19,22 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_01_hacker)
+from ..ex02_functions import (ex02_02a_echo_twice)
 # pylint: enable=import-error
 
 
-def test_ex02_01_hacker__correct_print():
-    """Used for unit test of function ex02_01_hacker.
+def test_ex02_02a_echo_twice__correct_print():
+    """Used for unit test of function ex02_02a_echo_twice.
 
     Check for correct printout.
     """
-    use_name = 'gnoff'
-    fuse_string = ' is a real hacker'
-    expected = use_name + fuse_string
-    assert ex02_01_hacker(use_name) == expected
+    use_for_echo2 = 'echo'
+    expected = use_for_echo2 * 2
+    assert ex02_02a_echo_twice(use_for_echo2) == expected
 
 
-def test_ex02_01_hacker__not_string():
-    """Used for unit test of function ex02_01_hacker.
+def test_ex02_02a_echo_twice__not_string():
+    """Used for unit test of function ex02_02a_echo_twice.
 
     Check that sending in different argument than
     str to parameter returns None.
@@ -46,4 +45,4 @@ def test_ex02_01_hacker__not_string():
     use_tuple = ('42', '42')
     check_list = [use_int, use_float, use_list, use_tuple]
     for check in check_list:
-        assert ex02_01_hacker(check) is None
+        assert ex02_02a_echo_twice(check) is None
