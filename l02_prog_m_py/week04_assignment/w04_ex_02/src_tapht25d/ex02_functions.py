@@ -81,7 +81,7 @@ def ex02_03_end_loop():
     y_03 = 1
     for x_03 in range(1, 100):
         y_03 *= 2
-        # End the loopen with an if statement here
+        # End the loop with an if statement here
         if x_03 == end_loop_03:
             break
     # print(y_03)

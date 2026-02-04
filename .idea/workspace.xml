@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Going back&#10;&#10;Seem to have fixed the &#10;issues&#10;Minor edit back on main">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex04_last_list_element.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add part 04&#10;&#10;Add code and test for &#10;part 4 or ex 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_01/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_extra_calls.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_extra_calls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/ex02_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Files for L02 W06 Ex01&#10;&#10;Quick play around&#10;Nothing real so far">
-      <option name="closed" value="true" />
-      <created>1769374249819</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1769374249819</updated>
     </task>
     <task id="LOCAL-00032" summary="Files for L02 W06 Ex01&#10;&#10;Finished code for part 1&#10;Still work to do for parts &#10;2a and 2b">
       <option name="closed" value="true" />
@@ -524,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770219775971</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Add part 04&#10;&#10;Add code and test for &#10;part 4 or ex 2">
+      <option name="closed" value="true" />
+      <created>1770222175089</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1770222175089</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding builds new files&#10;&#10;Also adding the &#10;previously unversioned &#10;files for builds" />
     <MESSAGE value="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work" />
     <MESSAGE value="W06 Ex03 pylint fixes&#10;&#10;pylint fixes for &#10;exercise 3&#10;Off course work" />
     <MESSAGE value="W06 Ex03 addons&#10;&#10;Adding some more features &#10;and tests to exercise 3" />
@@ -564,6 +558,7 @@
     <MESSAGE value="L02 W04 Ex02 part 02b added&#10;&#10;Adding code and test for&#10;part 02b of exercise 02&#10;Additionally some refactoring&#10;to get rid of pylint warnings" />
     <MESSAGE value="Attempting to solve something&#10;&#10;Minor change&#10;See if I can get to fix &#10;commit and merge issues" />
     <MESSAGE value="Going back&#10;&#10;Seem to have fixed the &#10;issues&#10;Minor edit back on main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Going back&#10;&#10;Seem to have fixed the &#10;issues&#10;Minor edit back on main" />
+    <MESSAGE value="Add part 04&#10;&#10;Add code and test for &#10;part 4 or ex 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add part 04&#10;&#10;Add code and test for &#10;part 4 or ex 2" />
   </component>
 </project>
