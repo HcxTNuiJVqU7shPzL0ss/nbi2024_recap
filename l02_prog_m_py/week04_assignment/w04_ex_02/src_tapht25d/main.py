@@ -23,7 +23,9 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-from ex02_extra_calls import (ex02_part01_add_name, ex02_part02a_add_echo_str)
+from ex02_extra_calls import (ex02_part01_add_name,
+                              ex02_part02a_add_echo_str,
+                              ex02_part02b_echo_str_multiplier)
 # pylint: enable=import-error
 
 
@@ -46,6 +48,9 @@ def main():
 
     # Part 2, a
     ex02_part02a_add_echo_str()
+
+    # Part 2, b
+    ex02_part02b_echo_str_multiplier()
 
     press_exit()
 

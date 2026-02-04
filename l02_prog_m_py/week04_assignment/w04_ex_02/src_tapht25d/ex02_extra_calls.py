@@ -23,12 +23,14 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice)
+from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice,
+                            ex02_02b_echo_multi)
 # pylint: enable=import-error
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            enter_string)
+                                            enter_string,
+                                            enter_int_range)
 
 
 def ex02_part01_add_name():
@@ -56,5 +58,27 @@ def ex02_part02a_add_echo_str():
     ask_str_echo = 'Please enter what to echo: '
     echo_text = enter_string(ask_str_echo)
     echoed_for_print = ex02_02a_echo_twice(echo_text)
+    print(f'\n{echoed_for_print}')
+    press_continue()
+
+
+def ex02_part02b_echo_str_multiplier():
+    """Use to echo incoming string 'multiplier' times.
+
+    To call function and handle printout for exercise 04 part 2b.
+    """
+    print('This is part 02 b, from exercise 02.\n'
+          'Your entered string will be echoed the selected number '
+          'of times, this will then print.')
+    press_continue()
+    ask_str_echo = 'Please enter what to echo: '
+    ask_int_multiplier = 'Please enter how many times to echo: '
+    low_int = 2
+    high_int = 10
+    use_range = True
+    echo_text = enter_string(ask_str_echo)
+    multiplier_int = enter_int_range(ask_int_multiplier, low_int,
+                                     high_int, use_range)
+    echoed_for_print = ex02_02b_echo_multi(echo_text, multiplier_int)
     print(f'\n{echoed_for_print}')
     press_continue()

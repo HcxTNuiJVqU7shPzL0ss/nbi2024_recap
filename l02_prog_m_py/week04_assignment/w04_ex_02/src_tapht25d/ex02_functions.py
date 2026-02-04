@@ -49,3 +49,19 @@ def ex02_02a_echo_twice(echo2_str):
     if not isinstance(echo2_str, str):
         return None
     return echo2_str * 2
+
+
+def ex02_02b_echo_multi(echo_multi_str, multiplier):
+    """Use to echo an incoming string 'multiplier' number of times.
+
+    E.g., calling with argument 'hi' for parameter 'echo_multi_str'
+    and '3' for 'multiplier' will print: 'hihihi'.
+    Note that assignment calls for a function name of "eko", and
+    this to be added to part 02a.
+    Have used a different name, and as separate functions all
+    together.
+    """
+    if ((not isinstance(echo_multi_str, str)) or
+            (not isinstance(multiplier, int))):
+        return None
+    return echo_multi_str * multiplier

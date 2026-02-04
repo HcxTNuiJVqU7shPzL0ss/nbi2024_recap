@@ -29,8 +29,11 @@ def test_ex02_02a_echo_twice__correct_print():
     Check for correct printout.
     """
     use_for_echo2 = 'echo'
-    expected = use_for_echo2 * 2
-    assert ex02_02a_echo_twice(use_for_echo2) == expected
+    expected_1 = use_for_echo2 * 2
+    expected_2 = 'echoecho'
+    expected_list = [expected_1, expected_2]
+    for expected in expected_list:
+        assert ex02_02a_echo_twice(use_for_echo2) == expected
 
 
 def test_ex02_02a_echo_twice__not_string():
@@ -39,10 +42,11 @@ def test_ex02_02a_echo_twice__not_string():
     Check that sending in different argument than
     str to parameter returns None.
     """
-    use_int = 42
-    use_float = 42.42
-    use_list = ['42']
-    use_tuple = ('42', '42')
-    check_list = [use_int, use_float, use_list, use_tuple]
-    for check in check_list:
-        assert ex02_02a_echo_twice(check) is None
+    use_int_02a = 42
+    use_float_02a = 42.42
+    use_list_02a = ['42']
+    use_tuple_02a = ('42', '42')
+    check_list_02a = [use_int_02a, use_float_02a, use_list_02a,
+                      use_tuple_02a]
+    for check_02a in check_list_02a:
+        assert ex02_02a_echo_twice(check_02a) is None
