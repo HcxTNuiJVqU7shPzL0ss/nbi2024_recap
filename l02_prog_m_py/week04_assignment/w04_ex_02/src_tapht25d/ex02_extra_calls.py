@@ -24,13 +24,15 @@ TAP HT 25D.
 
 # pylint: disable=import-error
 from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice,
-                            ex02_02b_echo_multi, ex02_03_end_loop)
+                            ex02_02b_echo_multi, ex02_03_end_loop,
+                            ex02_04_last_element)
 # pylint: enable=import-error
 
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             enter_string,
-                                            enter_int_range)
+                                            enter_int_range,
+                                            y_or_n)
 
 
 def ex02_part01_add_name():
@@ -94,4 +96,33 @@ def ex02_part3_print_after_loop():
           'The function will calculate 32, it will print here.')
     press_continue()
     print(ex02_03_end_loop())
+    press_continue()
+
+
+def ex02_part4_return_last_element():
+    """Use to return the last element in a list.
+
+    Rather than creating a list, will use user input to create
+    the list. After this, print the last entered element.
+    """
+    print('This is part 04, from exercise 02.\n'
+          'Add entries to a list, when done, the last added element '
+          'will be printed.')
+    press_continue()
+    list_for_last = []
+    element_no = 0
+    ask_if_continue = ('Do you want to add one more element to '
+                       'the list, (y)es or (n)o: ')
+    while True:
+        add_element_str = (f'Please enter what to place at '
+                           f'index {element_no}: ')
+        add_this = enter_string(add_element_str)
+        list_for_last.append(add_this)
+        element_no += 1
+        more = y_or_n(ask_if_continue)
+        if more == 'y':
+            continue
+        break
+    the_last_one = ex02_04_last_element(list_for_last)
+    print(f'\nThe last element added was:\n{the_last_one}')
     press_continue()

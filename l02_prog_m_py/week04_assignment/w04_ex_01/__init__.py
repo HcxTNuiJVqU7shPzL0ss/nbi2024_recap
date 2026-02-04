@@ -1,7 +1,7 @@
 """Module for init, lesson 02, week 04, exercise 01 directory.
 
 This directory contains off course work, as well as the work
-done for 2025/2026 course.
+done for 2025/2026 course (src_tapht25d).
 """
 
 #####################################################################

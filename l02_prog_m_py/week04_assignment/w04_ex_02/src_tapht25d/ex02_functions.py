@@ -87,3 +87,19 @@ def ex02_03_end_loop():
     # print(y_03)
     # Shall become 32 (1 = 2, 2 = 4, 3 = 8, 4 = 16, 5 = 32)
     return y_03
+
+
+def ex02_04_last_element(list_04):
+    """Use to display the last element in the supplied list.
+
+    Take the input list parameter (list_04) and return the last
+    element of the list.
+    Note that assignment calls specifically for the function to
+    be named 'last'.
+    Have taken creative decision to change this.
+    If anything but a list, or an empty list, is sent as argument
+    during the function call, will return: None.
+    """
+    if (not isinstance(list_04, list)) or (not list_04):
+        return None
+    return list_04[-1]

@@ -26,7 +26,8 @@ TAP HT 25D.
 from ex02_extra_calls import (ex02_part01_add_name,
                               ex02_part02a_add_echo_str,
                               ex02_part02b_echo_str_multiplier,
-                              ex02_part3_print_after_loop)
+                              ex02_part3_print_after_loop,
+                              ex02_part4_return_last_element)
 # pylint: enable=import-error
 
 
@@ -55,6 +56,9 @@ def main():
 
     # Part 3
     ex02_part3_print_after_loop()
+
+    # Part 4
+    ex02_part4_return_last_element()
 
     press_exit()
 
