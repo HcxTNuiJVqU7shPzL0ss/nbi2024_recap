@@ -1,8 +1,6 @@
-"""Module for init, lesson 02, week 04, exercise 01, 2025.
+"""Module for init, lesson 02, week 04, exercise 02.
 
-This directory, src_tapht25d, contains the files for 2025 course.
-The parent directory contains off course work, as well as the work
-done for 2024 course.
+Tests directory.
 """
 
 #####################################################################

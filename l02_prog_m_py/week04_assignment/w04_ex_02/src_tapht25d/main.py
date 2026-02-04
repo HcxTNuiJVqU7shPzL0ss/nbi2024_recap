@@ -1,12 +1,10 @@
-"""Module for init, lesson 02, week 04, exercise 01, 2025.
+"""Module for 'Functions and Modules'.
 
-This directory, src_tapht25d, contains the files for 2025 course.
-The parent directory contains off course work, as well as the work
-done for 2024 course.
+Lesson 02, Week 04, Exercise 02.
+TAP HT 25D.
 """
 
 #####################################################################
-#
 # Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,5 +19,25 @@ done for 2024 course.
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 #####################################################################
+
+
+from my_funct_dir.my_base_functions import (press_continue,
+                                            press_exit)
+
+
+def main():
+    """Use as module for Main.
+
+    This version made for 2025 (and 2026), TAP HT 25D.
+    Practice functions and modules.
+    """
+    print('\nThis is exercise 2, "Functions and Modules", '
+          'from week 4.')
+    press_continue()
+
+    press_exit()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,12 +1,10 @@
-"""Module for init, lesson 02, week 04, exercise 01, 2025.
+"""Module for functions used in exercise 02, week 04.
 
-This directory, src_tapht25d, contains the files for 2025 course.
-The parent directory contains off course work, as well as the work
-done for 2024 course.
+Lesson 02, Week 04, Exercise 02.
+TAP HT 25D.
 """
 
 #####################################################################
-#
 # Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,5 +19,16 @@ done for 2024 course.
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 #####################################################################
+
+
+def ex02_01_hacker(name_str):
+    """Use to take a name string input.
+
+    Will print:
+    "<name_str> is a real hacker!"
+    Note that assignment calls for the use of Swedish,
+    as well as a function name of "my_function".
+    Have used different names, and use English.
+    """
+    return None
