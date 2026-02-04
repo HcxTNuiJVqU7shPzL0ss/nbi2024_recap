@@ -49,3 +49,41 @@ def ex02_02a_echo_twice(echo2_str):
     if not isinstance(echo2_str, str):
         return None
     return echo2_str * 2
+
+
+def ex02_02b_echo_multi(echo_multi_str, multiplier):
+    """Use to echo an incoming string 'multiplier' number of times.
+
+    E.g., calling with argument 'hi' for parameter 'echo_multi_str'
+    and '3' for 'multiplier' will print: 'hihihi'.
+    Note that assignment calls for a function name of "eko", and
+    this to be added to part 02a.
+    Have used a different name, and as separate functions all
+    together.
+    """
+    if ((not isinstance(echo_multi_str, str)) or
+            (not isinstance(multiplier, int))):
+        return None
+    return echo_multi_str * multiplier
+
+
+def ex02_03_end_loop():
+    """Use to end the loop of code after 5 times.
+
+    Adding code and adjusting according to comment.
+    Note that assignment calls for use of specific names in the
+    code, I have used different names.
+    Also, to be able to use unit test without mocking, moving
+    the print to a different function, replacing here with a
+    return statement instead.
+    """
+    end_loop_03 = 5
+    y_03 = 1
+    for x_03 in range(1, 100):
+        y_03 *= 2
+        # End the loopen with an if statement here
+        if x_03 == end_loop_03:
+            break
+    # print(y_03)
+    # Shall become 32 (1 = 2, 2 = 4, 3 = 8, 4 = 16, 5 = 32)
+    return y_03

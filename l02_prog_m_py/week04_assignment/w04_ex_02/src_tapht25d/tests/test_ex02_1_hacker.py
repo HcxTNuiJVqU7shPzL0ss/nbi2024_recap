@@ -40,10 +40,11 @@ def test_ex02_01_hacker__not_string():
     Check that sending in different argument than
     str to parameter returns None.
     """
-    use_int = 42
-    use_float = 42.42
-    use_list = ['42']
-    use_tuple = ('42', '42')
-    check_list = [use_int, use_float, use_list, use_tuple]
-    for check in check_list:
-        assert ex02_01_hacker(check) is None
+    use_int_01 = 42
+    use_float_01 = 42.42
+    use_list_01 = ['42']
+    use_tuple_01 = ('42', '42')
+    check_list_01 = [use_int_01, use_float_01, use_list_01,
+                     use_tuple_01]
+    for check_01 in check_list_01:
+        assert ex02_01_hacker(check_01) is None
