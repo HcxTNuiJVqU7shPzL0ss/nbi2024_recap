@@ -1,7 +1,7 @@
 # pylint: skip-file
 # noqa
 #####################################################################
-# Jan Berglund - 03_game21.py
+# Jan Berglund - ex03_game21.py
 #
 # Veckouppgift 4
 # Vecka 5, 27/1
