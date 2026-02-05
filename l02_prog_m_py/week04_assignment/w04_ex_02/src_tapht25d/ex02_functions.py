@@ -137,3 +137,22 @@ def ex02_05_cut_edges(list_05):
     if copy_list_05 == sliced_list:
         return copy_list_05
     return False # Safeguard if something went horribly wrong
+
+
+def ex02_06_increase(x_06):
+    """Use to increase input parameter (x_06) by 1.
+
+    Exercise 02, part 06.
+    Takes one parameter as input, increase it by one (1) and
+    then returns the result.
+    Note that assignment calls for the function to be called
+    'increase' and the input parameter as 'x', I have decided
+    to make changes to this.
+    Also, the assignment calls for fixing the code, this has
+    been done.
+    If invalid argument input to parameter, returns None.
+    """
+    if not isinstance(x_06, (int, float)):
+        return None
+    x_06 += 1
+    return x_06

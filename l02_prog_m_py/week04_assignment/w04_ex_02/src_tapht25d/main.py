@@ -28,7 +28,8 @@ from ex02_extra_calls import (ex02_part01_add_name,
                               ex02_part02b_echo_str_multiplier,
                               ex02_part3_print_after_loop,
                               ex02_part4_return_last_element,
-                              ex02_part5_cut_edges_off)
+                              ex02_part5_cut_edges_off,
+                              ex02_part6_increase_number)
 # pylint: enable=import-error
 
 
@@ -63,6 +64,9 @@ def main():
 
     # Part 5
     ex02_part5_cut_edges_off()
+
+    # Part 6
+    ex02_part6_increase_number()
 
     press_exit()
 

@@ -25,14 +25,16 @@ TAP HT 25D.
 # pylint: disable=import-error
 from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice,
                             ex02_02b_echo_multi, ex02_03_end_loop,
-                            ex02_04_last_element, ex02_05_cut_edges)
+                            ex02_04_last_element, ex02_05_cut_edges,
+                            ex02_06_increase)
 # pylint: enable=import-error
 
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             enter_string,
                                             enter_int_range,
-                                            y_or_n)
+                                            y_or_n, enter_int,
+                                            enter_float)
 
 
 def ex02_part01_add_name():
@@ -157,4 +159,45 @@ def ex02_part5_cut_edges_off():
     the_middle_ones = ex02_05_cut_edges(list_for_edges)
     print(f'\nThe middle element(s) added is/are:\n'
           f'{the_middle_ones}')
+    press_continue()
+
+
+def ex02_part6_increase_number():
+    """Use to send an int or a float as parameter to function.
+
+    Takes the return value, which should have increased the
+    input by one (1), then prints it.
+    """
+    print('This is part 06, from exercise 02.\n'
+          'You will be asked to select if to input an '
+          'int (integer) or a float (decimal value).\n'
+          'The entered value will have one (1) added to it, '
+          'this will then be printed.')
+    press_continue()
+    select_str = 'Do you want to enter an (i)nt or a (f)loat: '
+    while True:
+        selected_type = input(select_str)
+        int_check = ('i', '(i)', 'int', '(i)nt')
+        float_check = ('f', '(f)', '(f)loat')
+        try:
+            if selected_type.lower() in int_check:
+                selected_type = 'i'
+                break
+            if selected_type.lower() in float_check:
+                selected_type = 'f'
+                break
+        except ValueError:
+            print('\nPlease retry.\n')
+            continue
+    enter_value_str = 'Please enter your value: '
+    if selected_type == 'i':
+        value_to_use = enter_int(enter_value_str)
+    elif selected_type == 'f':
+        value_to_use = enter_float(enter_value_str)
+    else:
+        value_to_use = None
+        print('Something has gone wrong!')
+    increased_value = ex02_06_increase(value_to_use)
+    print(f'\nYou entered the value {value_to_use}, when '
+          f'it was increased by one became: {increased_value}')
     press_continue()
