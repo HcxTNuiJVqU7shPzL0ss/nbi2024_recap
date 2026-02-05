@@ -67,3 +67,7 @@ def test_ex03_02_find_random__cards_list():
     assert (sum_v3 - cards_list[-1]) <= sum_min_v3
     # A maximum of 13 "cards" shall have been dealt
     assert cards_v3 <= cards_max_v3
+    # Number of cards add upp
+    assert cards_v3 == list_returned[2]
+    # Sum adds up
+    assert sum_v3 == list_returned[1]
