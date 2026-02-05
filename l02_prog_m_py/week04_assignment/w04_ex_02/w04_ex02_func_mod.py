@@ -22,7 +22,7 @@ Practice using functions and modules.
 
 
 from l02_prog_m_py.week04_assignment.w04_ex_02.w04ex02_functions.\
-    ex02_functions import run_w04_ex02
+    w04_ex02_functions import run_w04_ex02
 
 
 from my_funct_dir.my_base_functions import (press_continue)
