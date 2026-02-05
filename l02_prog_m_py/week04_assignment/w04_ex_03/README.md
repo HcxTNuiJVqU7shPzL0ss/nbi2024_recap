@@ -1,32 +1,42 @@
 
-# Week 04, Exercise 03
+# Lesson 02, Week 04, Exercise 03  
 
 ---
 
-## Spelet 21
+## 3 Spelet 21  
 
 ---
 
-### 1
+See [main.py](./src_tapht25d/main.py) in folder "src_tapht25d" 
+for TAP HT 25D week 4, exercise 3, assignment.  
+
+Reference to file [03_game21.py](./og_2024/03_game21.py) 
+in "og_2024" folder for OG 2024 (TAP HT 24D) work.  
+
+Other files are for when working "in between the two courses" on my 
+own to get back into it and learn things.  
+
+---
+
+### Assignment Information  
 
 Om man lägger ihop talen 1 + 2 + 3 + 4 + … så kommer talens summa 
-att bli större och större.\
-Förr eller senare kommer man förbi 21.\
+att bli större och större.  
+Förr eller senare kommer man förbi 21.  
 Skriv en funktion som skriver ut det första talet i talserien som 
-är större än 21.
-
+är större än 21.  
 
 ---
 
-### 2
+#### 3.2  
 
 Version 2:
 
 I stället för att använda talserien, slumpa tal mellan 1 och 13 
-(talen i en vanlig kortlek).
+(talen i en vanlig kortlek).  
 
-Tips: importera modulen random och använd funktionen randint för 
-att slumpa tal.
+Tips: importera modulen `random` och använd funktionen `randint` 
+för att slumpa tal.    
 
 Exempel:
 
@@ -34,33 +44,34 @@ Exempel:
 
 ---
 
-### 3
+#### 3.3
 
-Möjlig vidareutveckling:\
+Möjlig vidareutveckling:  
+
 Bygg ett spel som frågar användaren om man vill ta ett nytt kort 
-eller stanna (slumpa ett tal).\
-Gör så att datorn kan simulera en motståndare.\
-Målet är att vinna över datorn.
+eller stanna (slumpa ett tal).  
+Gör så att datorn kan simulera en motståndare.  
+Målet är att vinna över datorn.  
 
 ---
 
-Student == gnoff
+Student == **_gnoff_**  
 
 ---
 
 Copyright 2025-2026 gnoff
 
-Licensed under the Apache License, Version 2.0 (the "License");\
-you may not use this file except in compliance with the License.\
-You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");  
+you may not use this file except in compliance with the License.  
+You may obtain a copy of the License at  
 
      http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software\
-distributed under the License is distributed on an "AS IS" BASIS,\
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\
-implied.\
-See the License for the specific language governing permissions and\
+Unless required by applicable law or agreed to in writing, software  
+distributed under the License is distributed on an "AS IS" BASIS,  
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+implied.  
+See the License for the specific language governing permissions and  
 limitations under the License.
 
 ---

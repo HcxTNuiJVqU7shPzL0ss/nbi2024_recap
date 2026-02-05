@@ -8,7 +8,7 @@
 ---
 
 See [main.py](./src_tapht25d/main.py) in folder "src_tapht25d" 
-for TAP HT 25D week 4, exercise 1, assignment.  
+for TAP HT 25D week 4, exercise 2, assignment.  
 
 Reference to file [main.py](./og_2024/main.py) 
 in "og_2024" folder for OG 2024 (TAP HT 24D) work.  
@@ -27,7 +27,7 @@ innehåller funktionsanrop.
 
 ---
 
-#### 1  
+#### 2.1  
 
 Skriv en funktion som tar en sträng som parameter.  
 När den anropas ska den skriva ut strängen och 
@@ -39,9 +39,9 @@ Exempel:
 
 ---
 
-#### 2  
+#### 2.2  
 
-##### 2a  
+##### 2.2a  
 
 Skriv en funktion med namnet `eko`.  
 När den anropas med en sträng ska den upprepa strängen, 
@@ -51,7 +51,7 @@ Exempel:
 
     eko("hej") → skriver ut "hejhej" 
 
-##### 2b  
+##### 2.2b  
 
 Lägg till en parameter `count`, som avgör hur många 
 ekon som ska skapas.  
@@ -62,7 +62,7 @@ Exempel:
 
 ---
 
-#### 3  
+#### 2.3  
 
 Följande kod ska sluta loopa efter 5 varv.  
 Flytta den in i en funktion och justera den enligt 
@@ -77,7 +77,7 @@ kommentaren.
 
 ---
 
-#### 4  
+#### 2.4  
 
 Skriv en funktion med namnet `last`.  
 Den ska ta en lista som parameter och returnera 
@@ -87,7 +87,7 @@ det sista elementet i listan.
 
 ---
 
-#### 5  
+#### 2.5  
 
 Skriv en funktion med namnet `cut_edges`.  
 Den ska ta en lista som parameter.  
@@ -98,7 +98,7 @@ där den har tagit bort första och sista elementet.
 
 ---
 
-#### 6  
+#### 2.6  
 
 Lös felen i koden.  
 
@@ -109,7 +109,7 @@ Lös felen i koden.
 
 ---
 
-#### 7  
+#### 2.7  
 
 Bygg en funktion med namnet `average`.  
 Den ska ta parametrar: x och y.  
@@ -124,7 +124,7 @@ Tips: det kan vara enklare att använda fler variabler.
 
 ---
 
-#### 8  
+#### 2.8  
 
 Gör en funktion som kan skriva ut innehållet i en lista 
 lite snyggare.  

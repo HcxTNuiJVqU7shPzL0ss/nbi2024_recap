@@ -30,7 +30,7 @@ def test_ex02_07_average__correct_return_int():
     """Used for unit test of function ex02_07_average.
 
     Check for correct return value.
-    USing integers.
+    Using integers.
     """
     # Test with pos int for x and y
     use_as_start_int_x = 1

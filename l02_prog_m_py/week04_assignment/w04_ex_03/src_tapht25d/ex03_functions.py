@@ -1,12 +1,11 @@
-"""Module for init, lesson 02, week 04, exercise 03 directory.
+"""Module for functions used in exercise 03, week 04.
 
-This directory contains off course work, as well as the work
-done for 2025/2026 course (src_tapht25d).
+Lesson 02, Week 04, Exercise 03.
+TAP HT 25D.
 """
 
 #####################################################################
-#
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,5 +19,14 @@ done for 2025/2026 course (src_tapht25d).
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 #####################################################################
+
+
+def ex03_01_find_number():
+    """Use to find which number brings total above 21.
+
+    Exercise 03, part 01.
+    Adding numbers in the series 1 + 2 + 3, and so on.
+    Returns the number which brings the sum above 21.
+    """
+    return None

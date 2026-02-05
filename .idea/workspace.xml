@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding L02 W04 Ex02 part 07&#10;&#10;Adding part 07 of exercise 02&#10;Code and tests&#10;Also fixing some docstring &#10;comments for clarity" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,14 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00037" summary="L02, W03, Ex01 base&#10;&#10;First base files to get &#10;started with exercises for &#10;week 3 &#10;TAP HT 25D">
-      <option name="closed" value="true" />
-      <created>1769441129590</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1769441129590</updated>
     </task>
     <task id="LOCAL-00038" summary="L02, W03, Ex01 some more&#10;&#10;Added parts 1.1 through &#10;1.5&#10;Still left: 1.6">
       <option name="closed" value="true" />
@@ -517,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770299242341</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02">
+      <option name="closed" value="true" />
+      <created>1770302260407</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1770302260407</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex04 features&#10;&#10;Added code and features&#10;have not added any unit tests" />
     <MESSAGE value="L02 W05 Ex04 features again&#10;&#10;Added code and features&#10;have not added any unit tests&#10;and the files too" />
     <MESSAGE value="Adding builds" />
     <MESSAGE value="Refactoring&#10;&#10;Some file name changes" />
@@ -557,6 +556,7 @@
     <MESSAGE value="Refactoring week 04&#10;&#10;Realized I had the exact same &#10;name of the functions file &#10;for when doing off course work &#10;and 2025 work&#10;renamed the one for off course work, &#10;also changed the main file for the &#10;same" />
     <MESSAGE value="Adding L02 W04 Ex02 part 06&#10;&#10;Adding part 06 of exercise 02&#10;Code and tests" />
     <MESSAGE value="Adding L02 W04 Ex02 part 07&#10;&#10;Adding part 07 of exercise 02&#10;Code and tests&#10;Also fixing some docstring &#10;comments for clarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding L02 W04 Ex02 part 07&#10;&#10;Adding part 07 of exercise 02&#10;Code and tests&#10;Also fixing some docstring &#10;comments for clarity" />
+    <MESSAGE value="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
   </component>
 </project>
