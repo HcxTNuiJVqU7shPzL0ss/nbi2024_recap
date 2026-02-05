@@ -61,8 +61,54 @@ def ex03_02_find_random():
     cnt_of_cards_2 = 0 # Number of cards to bring bust
     cards_2 = [] # List of all the cards dealt for bust
     while sum_so_far_2 <= largest_allowed_2:
-        card_2 = rand_card(1,13)
+        # card_2 = rand_card(1,13)
+        card_2 = ex03_v3_pull_card()
         cnt_of_cards_2 += 1
         cards_2.append(card_2)
-        sum_so_far_2 += card_2
+        # sum_so_far_2 += card_2
+        sum_so_far_2 = ex03_v3_check_sum(sum_so_far_2, card_2)
     return [cards_2, sum_so_far_2, cnt_of_cards_2]
+
+
+def ex03_v3_pull_card():
+    """Use to pull a random card between 1 and 13.
+
+    Exercise 03, version 3.
+    Generating random integers between 1 and 13, symbolizing
+    playing cards in the Game 21.
+    """
+    card_3 = rand_card(1, 13)
+    return card_3
+
+
+def ex03_v3_check_sum(sum_before, card_value):
+    """Use to take a sum and add a new card.
+
+    Exercise 03, version 3.
+    Takes a sum before pulling a card, then adding the pulled
+    card value, then returning the new sum.
+    """
+    if (sum_before < 0) or (sum_before > 21):
+        return None
+    if (card_value < 1) or (card_value > 13):
+        return None
+    new_sum = sum_before + card_value
+    return new_sum
+
+
+def ex03_v3_check_winner(user_score, computer_score):
+    """Use to take check the winner of user and computer.
+
+    Exercise 03, version 3.
+    Takes the score of the user and the computer, checks who
+    won, or if a tie, returns the result.
+    """
+    if (user_score < 0) or (computer_score < 0):
+        return None
+    if (user_score > 21) or (computer_score > 21):
+        return None
+    if user_score == computer_score:
+        return 'tie'
+    if user_score > computer_score:
+        return 'user'
+    return 'computer'
