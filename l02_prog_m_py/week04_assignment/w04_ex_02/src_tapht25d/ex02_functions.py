@@ -174,3 +174,24 @@ def ex02_07_average(x_07, y_07):
             (not isinstance(y_07, (int, float)))):
         return None
     return (x_07 + y_07) / 2
+
+
+def ex02_08_pretty_print(cool_list):
+    """Use to print a list in a pretty way.
+
+    Exercise 02, part 08.
+    Takes a list as input parameter.
+    If it is not a list, will return None.
+    If the list is empty, will print: The list is empty
+    If not empty, will print the list in a pretty way.
+    The actual print part is handled in calling function,
+    as to not have to use mocking in test.
+    Note that assignment calls for the function to be called
+    'pretty_print' and to handle the print part, I have
+    decided to change this.
+    """
+    if not isinstance(cool_list, list):
+        return None
+    if not cool_list:
+        return 'The list is empty'
+    return cool_list

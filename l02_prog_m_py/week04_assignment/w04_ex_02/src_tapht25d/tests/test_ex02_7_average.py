@@ -18,20 +18,19 @@
 #####################################################################
 
 
+import math
+
+
 # pylint: disable=import-error
 from ..ex02_functions import (ex02_07_average)
 # pylint: enable=import-error
 
 
-import math
-
-
-def test_ex02_07_average__correct_return():
+def test_ex02_07_average__correct_return_int():
     """Used for unit test of function ex02_07_average.
 
     Check for correct return value.
-    Since the average that is returned may include rounding
-    errors, this has also been handled.
+    USing integers.
     """
     # Test with pos int for x and y
     use_as_start_int_x = 1
@@ -45,6 +44,15 @@ def test_ex02_07_average__correct_return():
     expected_neg_int = -22
     assert ex02_07_average(use_as_neg_int_x,
                            use_as_neg_int_y) == expected_neg_int
+
+
+def test_ex02_07_average__correct_return_float():
+    """Used for unit test of function ex02_07_average.
+
+    Check for correct return value, using float.
+    Since the average that is returned may include rounding
+    errors, this has also been handled.
+    """
     # Test with pos float for x and y
     use_as_start_float_x = 41.1
     use_as_start_float_y = 0.9
@@ -65,7 +73,7 @@ def test_ex02_07_average__correct_return():
                            use_approx_y))
     check_if_close = math.isclose(get_absolute, expected_approx,
                                   rel_tol=1e-05)
-    assert check_if_close == True
+    assert check_if_close is True
 
 
 def test_ex02_07_average__not_valid():

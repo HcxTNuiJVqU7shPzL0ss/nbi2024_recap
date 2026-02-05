@@ -26,7 +26,8 @@ TAP HT 25D.
 from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice,
                             ex02_02b_echo_multi, ex02_03_end_loop,
                             ex02_04_last_element, ex02_05_cut_edges,
-                            ex02_06_increase, ex02_07_average)
+                            ex02_06_increase, ex02_07_average,
+                            ex02_08_pretty_print)
 # pylint: enable=import-error
 
 
@@ -232,3 +233,62 @@ def ex02_part7_average():
           f'The average of these two was calculated as: '
           f'{the_average}')
     press_continue()
+
+
+def ex02_part8_print_it_pretty():
+    """Use to take a list and print it in a pretty way.
+
+    Rather than creating a list, will use user input to create
+    the list. After this, print the list prettily.
+    If an empty string is used, will print this.
+    """
+    print('This is part 08, from exercise 02.\n'
+          'Add entries to a list, when done, will print it '
+          'in a nice way.')
+    press_continue()
+    list_for_print = []
+    print('First will check that en empty list give this info.')
+    press_continue()
+    print(ex02_08_pretty_print(list_for_print))
+    press_continue()
+    list_for_print = add_elements_to_string(list_for_print)
+    print(f'\nThe list of your inputs looks like this:\n'
+          f'{list_for_print}')
+    press_continue()
+    print('The pretty way looks like this:\n')
+    for i, element in enumerate(list_for_print):
+        print(f'{i + 1}. {element}')
+
+
+def run_all_functions():
+    """Use to run all the functions.
+
+    Rather than cluttering the main file with function calls,
+    will run all functions from here.
+    """
+    # Part 1
+    ex02_part01_add_name()
+
+    # Part 2, a
+    ex02_part02a_add_echo_str()
+
+    # Part 2, b
+    ex02_part02b_echo_str_multiplier()
+
+    # Part 3
+    ex02_part3_print_after_loop()
+
+    # Part 4
+    ex02_part4_return_last_element()
+
+    # Part 5
+    ex02_part5_cut_edges_off()
+
+    # Part 6
+    ex02_part6_increase_number()
+
+    # Part 7
+    ex02_part7_average()
+
+    # Part 8
+    ex02_part8_print_it_pretty()

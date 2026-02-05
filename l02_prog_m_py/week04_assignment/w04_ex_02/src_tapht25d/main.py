@@ -23,14 +23,7 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-from ex02_extra_calls import (ex02_part01_add_name,
-                              ex02_part02a_add_echo_str,
-                              ex02_part02b_echo_str_multiplier,
-                              ex02_part3_print_after_loop,
-                              ex02_part4_return_last_element,
-                              ex02_part5_cut_edges_off,
-                              ex02_part6_increase_number,
-                              ex02_part7_average)
+from ex02_extra_calls import run_all_functions
 # pylint: enable=import-error
 
 
@@ -48,29 +41,8 @@ def main():
           'from week 4.')
     press_continue()
 
-    # Part 1
-    ex02_part01_add_name()
-
-    # Part 2, a
-    ex02_part02a_add_echo_str()
-
-    # Part 2, b
-    ex02_part02b_echo_str_multiplier()
-
-    # Part 3
-    ex02_part3_print_after_loop()
-
-    # Part 4
-    ex02_part4_return_last_element()
-
-    # Part 5
-    ex02_part5_cut_edges_off()
-
-    # Part 6
-    ex02_part6_increase_number()
-
-    # Part 7
-    ex02_part7_average()
+    # Run all functions
+    run_all_functions()
 
     press_exit()
 
