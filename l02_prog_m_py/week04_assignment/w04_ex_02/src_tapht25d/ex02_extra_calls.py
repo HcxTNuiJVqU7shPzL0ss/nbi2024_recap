@@ -25,7 +25,7 @@ TAP HT 25D.
 # pylint: disable=import-error
 from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice,
                             ex02_02b_echo_multi, ex02_03_end_loop,
-                            ex02_04_last_element)
+                            ex02_04_last_element, ex02_05_cut_edges)
 # pylint: enable=import-error
 
 
@@ -99,6 +99,24 @@ def ex02_part3_print_after_loop():
     press_continue()
 
 
+def add_elements_to_string(input_list):
+    """Use to add elements to a list."""
+    element_no = len(input_list)
+    ask_if_continue = ('Do you want to add one more element to '
+                       'the list, (y)es or (n)o: ')
+    while True:
+        add_element_str = (f'Please enter what to place at '
+                           f'index {element_no}: ')
+        add_this = enter_string(add_element_str)
+        input_list.append(add_this)
+        element_no += 1
+        more = y_or_n(ask_if_continue)
+        if more == 'y':
+            continue
+        break
+    return input_list
+
+
 def ex02_part4_return_last_element():
     """Use to return the last element in a list.
 
@@ -110,19 +128,33 @@ def ex02_part4_return_last_element():
           'will be printed.')
     press_continue()
     list_for_last = []
-    element_no = 0
-    ask_if_continue = ('Do you want to add one more element to '
-                       'the list, (y)es or (n)o: ')
-    while True:
-        add_element_str = (f'Please enter what to place at '
-                           f'index {element_no}: ')
-        add_this = enter_string(add_element_str)
-        list_for_last.append(add_this)
-        element_no += 1
-        more = y_or_n(ask_if_continue)
-        if more == 'y':
-            continue
-        break
+    list_for_last = add_elements_to_string(list_for_last)
     the_last_one = ex02_04_last_element(list_for_last)
     print(f'\nThe last element added was:\n{the_last_one}')
+    press_continue()
+
+
+def ex02_part5_cut_edges_off():
+    """Use to return a list with the first and last element removed.
+
+    Rather than creating a list, will use user input to create
+    the list. After this, print the list with specified elements
+    as of assignment removed.
+    """
+    print('This is part 05, from exercise 02.\n'
+          'Add entries to a list, when done, the first and the last '
+          'added element will be removed, finally the remaining '
+          'list will be printed.')
+    press_continue()
+    list_for_edges = []
+    while True:
+        list_for_edges = add_elements_to_string(list_for_edges)
+        if len(list_for_edges) >= 3:
+            break
+        print('\nThe list needs to contain at least three (3) '
+              'elements, please add more.\n')
+        continue
+    the_middle_ones = ex02_05_cut_edges(list_for_edges)
+    print(f'\nThe middle element(s) added is/are:\n'
+          f'{the_middle_ones}')
     press_continue()

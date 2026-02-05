@@ -25,6 +25,7 @@ TAP HT 25D.
 def ex02_01_hacker(name_str):
     """Use to take a name string input.
 
+    Exercise 02, part 01.
     Will print:
     "<name_str> is a real hacker!"
     If a str is not used as argument, will return None.
@@ -41,6 +42,7 @@ def ex02_01_hacker(name_str):
 def ex02_02a_echo_twice(echo2_str):
     """Use to echo an incoming string twice.
 
+    Exercise 02, part 02a.
     E.g., calling with argument 'hi' for parameter 'echo2_Str'
     will print: 'hihi'.
     Note that assignment calls for a function name of "eko".
@@ -54,6 +56,7 @@ def ex02_02a_echo_twice(echo2_str):
 def ex02_02b_echo_multi(echo_multi_str, multiplier):
     """Use to echo an incoming string 'multiplier' number of times.
 
+    Exercise 02, part 02b.
     E.g., calling with argument 'hi' for parameter 'echo_multi_str'
     and '3' for 'multiplier' will print: 'hihihi'.
     Note that assignment calls for a function name of "eko", and
@@ -70,6 +73,7 @@ def ex02_02b_echo_multi(echo_multi_str, multiplier):
 def ex02_03_end_loop():
     """Use to end the loop of code after 5 times.
 
+    Exercise 02, part 03.
     Adding code and adjusting according to comment.
     Note that assignment calls for use of specific names in the
     code, I have used different names.
@@ -92,6 +96,7 @@ def ex02_03_end_loop():
 def ex02_04_last_element(list_04):
     """Use to display the last element in the supplied list.
 
+    Exercise 02, part 04.
     Take the input list parameter (list_04) and return the last
     element of the list.
     Note that assignment calls specifically for the function to
@@ -103,3 +108,32 @@ def ex02_04_last_element(list_04):
     if (not isinstance(list_04, list)) or (not list_04):
         return None
     return list_04[-1]
+
+
+def ex02_05_cut_edges(list_05):
+    """Use to cut the edges of the parameter list.
+
+    Exercise 02, part 05.
+    Take the input list parameter (list_05), remove the first and
+    the last element, return the new list without these removed
+    elements.
+    Note that assignment calls specifically for the function to
+    be named 'cut_edges'.
+    Have done some changes to this name.
+    If anything but a list, an empty list, or a list with less than
+    three (3) is sent as argument during the function call,
+    will return: None.
+    """
+    if ((not isinstance(list_05, list)) or (not list_05) or
+            (len(list_05) < 3)):
+        return None
+    # Use 'copy()' to make a copy of the list, then edit it
+    # Ensure the original list stays unchanged
+    copy_list_05 = list_05.copy()
+    copy_list_05.pop(0) # Remove the first element
+    copy_list_05.pop(-1) # Remove the last element
+    # Use list slicing to make a copy of the list, then edit it
+    sliced_list = list_05[1:-1] # From index 1, not including last
+    if copy_list_05 == sliced_list:
+        return copy_list_05
+    return False # Safeguard if something went horribly wrong

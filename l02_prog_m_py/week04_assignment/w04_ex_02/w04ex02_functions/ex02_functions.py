@@ -1,7 +1,7 @@
 """Functions for Lesson 02, Week 04, Exercise 02."""
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -111,7 +111,7 @@ def ex04():
 def cut_edges(in_list_05):
     """Use to return the list without the first and last element."""
     internal_list = in_list_05
-    internal_list.remove(0)
+    internal_list.pop(0)
     internal_list.pop(-1)
     return internal_list
 
