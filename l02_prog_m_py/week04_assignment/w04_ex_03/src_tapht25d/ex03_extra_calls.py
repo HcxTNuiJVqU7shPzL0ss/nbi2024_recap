@@ -120,17 +120,17 @@ def run_all_functions_03():
     Rather than cluttering the main file with function calls,
     will run all functions from here.
     """
-    # # Version 1
-    # ex03_version1_find_number()
-    #
-    # # Version 2
-    # ex03_version2_find_random()
+    # Version 1
+    ex03_version1_find_number()
+
+    # Version 2
+    ex03_version2_find_random()
 
     # Version 3
     ex03_version3_play_game()
     while True:
         again_str = 'Do you want to play again (y)es or (n)o: '
-        print('')
+        print('\n***   ***   ***\n')
         check_again = y_or_n(again_str)
         if check_again == 'y':
             print('')
