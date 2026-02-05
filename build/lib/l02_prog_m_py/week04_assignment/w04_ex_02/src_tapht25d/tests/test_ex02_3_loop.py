@@ -1,12 +1,7 @@
-"""Module for init, lesson 02, week 04, exercise 03 directory.
-
-This directory contains off course work, as well as the work
-done for 2025/2026 course (src_tapht25d).
-"""
+"""Module for tests, L02, W04, Ex02, part 3."""
 
 #####################################################################
-#
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,5 +15,18 @@ done for 2025/2026 course (src_tapht25d).
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 #####################################################################
+
+
+# pylint: disable=import-error
+from ..ex02_functions import ex02_03_end_loop
+# pylint: enable=import-error
+
+
+def test_ex02_03_end_loop__correct_print():
+    """Used for unit test of function ex02_03_end_loop.
+
+    Check for correct return value, shall be 32.
+    """
+    expected = 32
+    assert ex02_03_end_loop() == expected

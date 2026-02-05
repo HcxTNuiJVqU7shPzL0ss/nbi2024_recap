@@ -1,12 +1,12 @@
-"""Module for init, lesson 02, week 04, exercise 03 directory.
+"""Module for init, directory for working with classes off course.
 
-This directory contains off course work, as well as the work
-done for 2025/2026 course (src_tapht25d).
+This directory contains off course work, specifically for working
+with classes not part of any assignment.
 """
 
 #####################################################################
 #
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

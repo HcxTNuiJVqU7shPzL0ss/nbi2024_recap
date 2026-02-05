@@ -1,12 +1,13 @@
-"""Module for init, lesson 02, week 04, exercise 03 directory.
+"""Module for init, lesson 02, week 04, exercise 02, 2025.
 
-This directory contains off course work, as well as the work
-done for 2025/2026 course (src_tapht25d).
+This directory, src_tapht25d, contains the files for 2025 course.
+The parent directory contains off course work, as well as the work
+done for 2024 course.
 """
 
 #####################################################################
 #
-# Copyright 2025-2026 gnoff
+# Copyright 2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

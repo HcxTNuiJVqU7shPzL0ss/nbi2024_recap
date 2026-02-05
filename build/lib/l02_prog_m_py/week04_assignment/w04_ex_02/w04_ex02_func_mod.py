@@ -1,12 +1,10 @@
-"""Module for init, lesson 02, week 04, exercise 03 directory.
+"""Module for Lesson 02, Week 04, Exercise 02.
 
-This directory contains off course work, as well as the work
-done for 2025/2026 course (src_tapht25d).
+Practice using functions and modules.
 """
 
 #####################################################################
-#
-# Copyright 2025-2026 gnoff
+# Copyright 2025 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,5 +18,26 @@ done for 2025/2026 course (src_tapht25d).
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 #####################################################################
+
+
+from l02_prog_m_py.week04_assignment.w04_ex_02.w04ex02_functions.\
+    w04_ex02_functions import run_w04_ex02
+
+
+from my_funct_dir.my_base_functions import (press_continue)
+
+
+def main():
+    """Use as main function."""
+    print('\nWeek 04, Exercise 02, Functions and Modules.'
+          '\nFunction: ',
+          main.__name__, sep = '')
+    press_continue()
+
+    # Run exercises
+    run_w04_ex02()
+
+
+if __name__ == "__main__":
+    main()
