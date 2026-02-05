@@ -1,4 +1,4 @@
-"""Module for 'Game 21'.
+"""Module for extra function calls used in exercise 03, week 04.
 
 Lesson 02, Week 04, Exercise 03.
 TAP HT 25D.
@@ -23,29 +23,29 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-from ex03_extra_calls import run_all_functions_03
+from ex03_functions import (ex03_01_find_number)
 # pylint: enable=import-error
 
 
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+from my_funct_dir.my_base_functions import (press_continue)
 
 
-def main():
-    """Use as module for Main.
-
-    This version made for 2025 (and 2026), TAP HT 25D.
-    Practice functions and modules.
-    """
-    print('\nThis is exercise 3, "Game 21", '
-          'from week 4.')
+def ex03_version1_find_number():
+    """Use to find the number for exercise 03 version 1."""
+    print('This is version 1 from exercise 03.\n'
+          'It will present which number that brings the sum '
+          'total above 21.')
+    press_continue()
+    the_number_that_breaks = ex03_01_find_number()
+    print(f'The number found to be:\n{the_number_that_breaks}')
     press_continue()
 
-    # Run all functions
-    run_all_functions_03()
 
-    press_exit()
+def run_all_functions_03():
+    """Use to run all the functions.
 
-
-if __name__ == "__main__":
-    main()
+    Rather than cluttering the main file with function calls,
+    will run all functions from here.
+    """
+    # Part 1
+    ex03_version1_find_number()

@@ -19,7 +19,7 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_06_increase)
+from ..ex02_functions import ex02_06_increase
 # pylint: enable=import-error
 
 

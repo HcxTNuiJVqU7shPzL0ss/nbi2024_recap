@@ -1,8 +1,4 @@
-"""Module for 'Game 21'.
-
-Lesson 02, Week 04, Exercise 03.
-TAP HT 25D.
-"""
+"""Module for tests, L02, W04, Ex03, version 1."""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -23,29 +19,17 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-from ex03_extra_calls import run_all_functions_03
+from ..ex03_functions import ex03_01_find_number
 # pylint: enable=import-error
 
 
-from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+def test_ex03_01_find_number__correct_return():
+    """Use for unit test of function ex03_01_find_number.
 
-
-def main():
-    """Use as module for Main.
-
-    This version made for 2025 (and 2026), TAP HT 25D.
-    Practice functions and modules.
+    Checks that the correct number is returned.
+    1 + 2 + 3 + 4 + 5 + 6 = 21
+    Hence, 7 should be the number that brings the sum total
+    above 21, and the number which is returned.
     """
-    print('\nThis is exercise 3, "Game 21", '
-          'from week 4.')
-    press_continue()
-
-    # Run all functions
-    run_all_functions_03()
-
-    press_exit()
-
-
-if __name__ == "__main__":
-    main()
+    correct_bust = 7
+    assert ex03_01_find_number() == correct_bust

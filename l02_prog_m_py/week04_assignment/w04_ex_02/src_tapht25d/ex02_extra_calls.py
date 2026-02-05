@@ -260,7 +260,7 @@ def ex02_part8_print_it_pretty():
         print(f'{i + 1}. {element}')
 
 
-def run_all_functions():
+def run_all_functions_02():
     """Use to run all the functions.
 
     Rather than cluttering the main file with function calls,

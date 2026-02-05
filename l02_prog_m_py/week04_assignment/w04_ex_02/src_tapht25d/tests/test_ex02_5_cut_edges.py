@@ -19,7 +19,7 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_05_cut_edges)
+from ..ex02_functions import ex02_05_cut_edges
 # pylint: enable=import-error
 
 

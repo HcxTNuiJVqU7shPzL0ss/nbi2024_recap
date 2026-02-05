@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/src_tapht25d/ex03_extra_calls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/src_tapht25d/tests/test_ex03_v1_over_21.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_1_hacker.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_1_hacker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_2a_echo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_2a_echo2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_2b_echo_multi.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_2b_echo_multi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_3_loop.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_3_loop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_4_last_list_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_4_last_list_element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_5_cut_edges.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_5_cut_edges.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_6_increase.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_6_increase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_7_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_7_average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_8_pretty_print.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_02/src_tapht25d/tests/test_ex02_8_pretty_print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/src_tapht25d/ex03_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/src_tapht25d/ex03_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/src_tapht25d/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_03/src_tapht25d/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +83,7 @@
     "Python.ex03_02a.executor": "Run",
     "Python.ex03_02b.executor": "Run",
     "Python.ex03_03_receipt_calc.executor": "Run",
+    "Python.ex03_functions.executor": "Debug",
     "Python.ex03_sports_results.executor": "Run",
     "Python.ex04_01a.executor": "Run",
     "Python.ex04_01b.executor": "Run",
@@ -124,14 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00038" summary="L02, W03, Ex01 some more&#10;&#10;Added parts 1.1 through &#10;1.5&#10;Still left: 1.6">
-      <option name="closed" value="true" />
-      <created>1769445173669</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1769445173669</updated>
     </task>
     <task id="LOCAL-00039" summary="Minor edits w03 ex1&#10;&#10;Due to having to type in code &#10;exactly, got duplicate code &#10;warnings from pylint, disabled &#10;in the parts I did between &#10;courses&#10;Also minor edit to init file &#10;to clarify">
       <option name="closed" value="true" />
@@ -517,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770302260407</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet">
+      <option name="closed" value="true" />
+      <created>1770303393051</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1770303393051</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex04 features again&#10;&#10;Added code and features&#10;have not added any unit tests&#10;and the files too" />
     <MESSAGE value="Adding builds" />
     <MESSAGE value="Refactoring&#10;&#10;Some file name changes" />
     <MESSAGE value="Off course files&#10;&#10;Playing around a bit with &#10;classes, not from any course&#10;Adding files for this as well" />
@@ -557,6 +572,7 @@
     <MESSAGE value="Adding L02 W04 Ex02 part 06&#10;&#10;Adding part 06 of exercise 02&#10;Code and tests" />
     <MESSAGE value="Adding L02 W04 Ex02 part 07&#10;&#10;Adding part 07 of exercise 02&#10;Code and tests&#10;Also fixing some docstring &#10;comments for clarity" />
     <MESSAGE value="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
+    <MESSAGE value="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet" />
   </component>
 </project>

@@ -22,7 +22,7 @@ import math
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_07_average)
+from ..ex02_functions import ex02_07_average
 # pylint: enable=import-error
 
 

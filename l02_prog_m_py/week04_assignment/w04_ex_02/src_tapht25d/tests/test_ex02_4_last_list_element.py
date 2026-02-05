@@ -19,7 +19,7 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_04_last_element)
+from ..ex02_functions import ex02_04_last_element
 # pylint: enable=import-error
 
 

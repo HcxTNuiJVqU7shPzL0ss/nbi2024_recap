@@ -19,7 +19,7 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_02a_echo_twice)
+from ..ex02_functions import ex02_02a_echo_twice
 # pylint: enable=import-error
 
 

@@ -19,7 +19,7 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_01_hacker)
+from ..ex02_functions import ex02_01_hacker
 # pylint: enable=import-error
 
 

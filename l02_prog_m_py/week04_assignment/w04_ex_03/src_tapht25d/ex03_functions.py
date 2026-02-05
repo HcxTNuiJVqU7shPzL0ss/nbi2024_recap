@@ -29,4 +29,14 @@ def ex03_01_find_number():
     Adding numbers in the series 1 + 2 + 3, and so on.
     Returns the number which brings the sum above 21.
     """
-    return None
+    starting_number = 1
+    largest_allowed = 21
+    current_number = starting_number
+    sum_so_far = 0
+    while True:
+        for numb in range(2, 100):
+            if sum_so_far > largest_allowed:
+                number_busting = current_number - 1
+                return number_busting
+            sum_so_far += current_number
+            current_number = numb

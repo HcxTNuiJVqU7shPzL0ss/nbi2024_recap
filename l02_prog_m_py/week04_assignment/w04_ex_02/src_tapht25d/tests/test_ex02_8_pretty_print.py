@@ -19,7 +19,7 @@
 
 
 # pylint: disable=import-error
-from ..ex02_functions import (ex02_08_pretty_print)
+from ..ex02_functions import ex02_08_pretty_print
 # pylint: enable=import-error
 
 

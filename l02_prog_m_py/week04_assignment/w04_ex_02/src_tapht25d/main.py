@@ -23,7 +23,7 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-from ex02_extra_calls import run_all_functions
+from ex02_extra_calls import run_all_functions_02
 # pylint: enable=import-error
 
 
@@ -42,7 +42,7 @@ def main():
     press_continue()
 
     # Run all functions
-    run_all_functions()
+    run_all_functions_02()
 
     press_exit()
 
