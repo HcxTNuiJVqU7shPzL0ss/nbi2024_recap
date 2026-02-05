@@ -156,3 +156,21 @@ def ex02_06_increase(x_06):
         return None
     x_06 += 1
     return x_06
+
+
+def ex02_07_average(x_07, y_07):
+    """Use to find the average of two numbers.
+
+    Exercise 02, part 07.
+    Input parameters are both to be numbers (int or float).
+    This function calculates the average of the two numbers
+    and returns this value.
+    Note that assignment calls for the function to be called
+    'average' and the input parameters as 'x' and 'y', I have
+    decided to make changes to this.
+    If invalid argument input to any parameter, returns None.
+    """
+    if ((not isinstance(x_07, (int, float))) or
+            (not isinstance(y_07, (int, float)))):
+        return None
+    return (x_07 + y_07) / 2

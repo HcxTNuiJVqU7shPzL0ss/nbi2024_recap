@@ -26,7 +26,7 @@ TAP HT 25D.
 from ex02_functions import (ex02_01_hacker, ex02_02a_echo_twice,
                             ex02_02b_echo_multi, ex02_03_end_loop,
                             ex02_04_last_element, ex02_05_cut_edges,
-                            ex02_06_increase)
+                            ex02_06_increase, ex02_07_average)
 # pylint: enable=import-error
 
 
@@ -162,18 +162,8 @@ def ex02_part5_cut_edges_off():
     press_continue()
 
 
-def ex02_part6_increase_number():
-    """Use to send an int or a float as parameter to function.
-
-    Takes the return value, which should have increased the
-    input by one (1), then prints it.
-    """
-    print('This is part 06, from exercise 02.\n'
-          'You will be asked to select if to input an '
-          'int (integer) or a float (decimal value).\n'
-          'The entered value will have one (1) added to it, '
-          'this will then be printed.')
-    press_continue()
+def enter_int_or_float():
+    """Use to have user enter either an int or a float."""
     select_str = 'Do you want to enter an (i)nt or a (f)loat: '
     while True:
         selected_type = input(select_str)
@@ -197,7 +187,48 @@ def ex02_part6_increase_number():
     else:
         value_to_use = None
         print('Something has gone wrong!')
+    return value_to_use
+
+
+def ex02_part6_increase_number():
+    """Use to send an int or a float as parameter to function.
+
+    Takes the return value, which should have increased the
+    input by one (1), then prints it.
+    """
+    print('This is part 06, from exercise 02.\n'
+          'You will be asked to select if to input an '
+          'int (integer) or a float (decimal value).\n'
+          'The entered value will have one (1) added to it, '
+          'this will then be printed.')
+    press_continue()
+    value_to_use = enter_int_or_float()
     increased_value = ex02_06_increase(value_to_use)
     print(f'\nYou entered the value {value_to_use}, when '
-          f'it was increased by one became: {increased_value}')
+          f'it was increased by 1 became: {increased_value}')
+    press_continue()
+
+
+def ex02_part7_average():
+    """Use to send two numbers to get the average value.
+
+    Sends two parameters, either can be int or float, the return
+    value is the average of the two numbers, this will be printed.
+    """
+    print('This is part 07, from exercise 02.\n'
+          'You will be asked to select if to input an '
+          'int (integer) or a float (decimal value).\n'
+          'This will need to be performed twice.\n'
+          'The entered values will be calculated for average, '
+          'this will then be printed.')
+    press_continue()
+    print('First selection of a number.\n')
+    first_value_x = enter_int_or_float()
+    print('\nSecond selection of a number\n')
+    second_value_y = enter_int_or_float()
+    the_average = ex02_07_average(first_value_x, second_value_y)
+    print(f'\nYou entered {first_value_x} as your first value.\n'
+          f'Next you entered {second_value_y} as your second value.\n'
+          f'The average of these two was calculated as: '
+          f'{the_average}')
     press_continue()

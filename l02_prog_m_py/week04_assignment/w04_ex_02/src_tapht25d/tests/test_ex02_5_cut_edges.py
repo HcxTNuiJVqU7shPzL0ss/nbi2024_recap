@@ -1,4 +1,4 @@
-"""Module for tests, L02, W04, Ex05."""
+"""Module for tests, L02, W04, Ex02, part 5."""
 
 #####################################################################
 # Copyright 2026 gnoff
