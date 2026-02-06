@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add base L02 W04 Ex04&#10;&#10;Base files to be able to get &#10;started with exercise 04&#10;No code or tests yet">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_extra_calls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_create_return_card.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00046" summary="L02 W03 Ex3 fix&#10;&#10;Used an f string without &#10;actual values, pylint found it &#10;Fixed">
-      <option name="closed" value="true" />
-      <created>1769693652050</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1769693652050</updated>
     </task>
     <task id="LOCAL-00047" summary="L02 W03 Ex4 added&#10;&#10;Adding files for week 3, &#10;exercise 4&#10;Also a folder name change">
       <option name="closed" value="true" />
@@ -527,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770319163148</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Add base L02 W04 Ex04&#10;&#10;Base files to be able to get &#10;started with exercise 04&#10;No code or tests yet">
+      <option name="closed" value="true" />
+      <created>1770389547506</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1770389547506</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
