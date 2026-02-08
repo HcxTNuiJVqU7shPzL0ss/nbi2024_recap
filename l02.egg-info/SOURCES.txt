@@ -156,6 +156,15 @@ l02_prog_m_py/week04_assignment/w04_ex_04/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_04/ex04_poker_hand.py
 l02_prog_m_py/week04_assignment/w04_ex_04/og_2024/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_04/og_2024/ex04_poker.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/__init__.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_extra_calls.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/main.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/__init__.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_count_ranks.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_count_suits.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_create_return_card.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_deal_hand.py
 l02_prog_m_py/week04_assignment/w04_ex_05/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_05/ex05_turtle_graphics.py
 l02_prog_m_py/week05_assignment/__init__.py

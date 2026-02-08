@@ -151,6 +151,7 @@ def check_pairs(hand_pairs):
 def prettify_print_card(hand_in):
     """Use to make a pretty print out of the hand."""
     print('Your cards are:')
+    # pylint: disable=duplicate-code
     for face, value_card in hand_in:
         print_value = {
         0: 'BUG',
@@ -169,6 +170,7 @@ def prettify_print_card(hand_in):
         14: 'Ace of',
         }.get(value_card)
         print(print_value, face)
+    # pylint: enable=duplicate-code
 
 
 def poker_hand(cards):
