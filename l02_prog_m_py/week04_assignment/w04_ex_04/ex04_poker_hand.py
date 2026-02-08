@@ -25,9 +25,6 @@ import random
 
 from collections import defaultdict
 
-# from my_funct_dir.my_base_functions import (press_continue,
-#                                             press_goback,
-#                                             press_exit)
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
@@ -36,6 +33,7 @@ color = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 value = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 
+# pylint: disable=duplicate-code
 def set_one():
     """Use to force One pair for test."""
     one_hand = [('hearts', 2), ('clubs', 5), ('diamonds', 8),
@@ -62,6 +60,7 @@ def set_four():
     four_hand = [('hearts', 5), ('clubs', 5), ('diamonds', 5),
                 ('spades', 5), ('diamonds', 6)]
     return four_hand
+# pylint: enable=duplicate-code
 
 
 def return_card(in_list, force_flush):

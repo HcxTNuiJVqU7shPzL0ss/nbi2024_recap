@@ -159,6 +159,7 @@ l02_prog_m_py/week04_assignment/w04_ex_04/og_2024/ex04_poker.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_extra_calls.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py
+l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/force_hands.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/main.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/__init__.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_count_ranks.py

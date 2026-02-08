@@ -151,6 +151,7 @@ def check_other_than_straight(the_hand):
         'Straight Flush': False,
         'Four of a kind': False,
         'Full House': False,
+        'Flush': False,
         'Straight': straight,
         'Three of a Kínd': False,
         'Two Pair': False,
@@ -158,12 +159,6 @@ def check_other_than_straight(the_hand):
         'Nothing': False,
         'Should not happen': False,
     }
-
-    # Check if Flush / Straight Flush
-    if max(suits_list) == 5:
-        the_result['Flush'] = True
-        if straight:
-            the_result['Straight Flush'] = True
 
     # Check the remaining rank based possibilities
     check_found = max(ranks_list)
@@ -175,8 +170,9 @@ def check_other_than_straight(the_hand):
     elif check_found == 3:
         the_result['Three of a Kínd'] = True
     elif check_found == 2:
-        pair_cnt = defaultdict(int)
-        if sorted(pair_cnt.values()) == [1, 2, 2]:
+        # pair_cnt = defaultdict(int)
+        if ranks_list.count(2) == 2:
+        # if sorted(pair_cnt.values()) == [1, 2, 2]:
             the_result['Two Pair'] = True
         else:
             the_result['One Pair'] = True
@@ -184,8 +180,24 @@ def check_other_than_straight(the_hand):
         the_result['Nothing'] = True
 
     # Special for Full House
-    if the_result['Three of a Kínd'] and the_result['One Pair']:
-        the_result['Full House'] = True
+    if the_result['Three of a Kínd']:
+        if ranks_list.count(2) == 1:
+            the_result['Full House'] = True
+            the_result['Three of a Kínd'] = False
+            the_result['One Pair'] = False
+
+    # Check if Flush / Straight Flush
+    if max(suits_list) == 5:
+        the_result['Flush'] = True
+        the_result['Nothing'] = False
+        if straight:
+            the_result['Straight Flush'] = True
+            the_result['Flush'] = False
+            the_result['Straight'] = False
+
+    # Handle straight
+    if straight:
+        the_result['Nothing'] = False
 
     # list_of_possibilities = [['Straight Flush', straight_flush],
     #                          ['Four of a Kind', four_of_a_kind],

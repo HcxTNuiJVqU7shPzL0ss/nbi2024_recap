@@ -24,6 +24,7 @@ TAP HT 25D.
 
 # pylint: disable=import-error
 from ex04_extra_calls import run_game
+from force_hands import run_forced_hands
 # pylint: enable=import-error
 
 
@@ -41,8 +42,16 @@ def main():
           'from week 4.')
     press_continue()
 
+    force = False
+    forced_list = []
+
     # Run all functions
-    run_game()
+    run_game(force, forced_list)
+
+    press_continue()
+
+    # Run a forced test over all hands
+    run_forced_hands()
 
     press_exit()
 

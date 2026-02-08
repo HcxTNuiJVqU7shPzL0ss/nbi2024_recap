@@ -36,9 +36,12 @@ def get_a_new_hand():
     return new_hand
 
 
-def run_game():
+def run_game(force, forced_list):
     """Use to run a poker game."""
-    my_hand = get_a_new_hand()
+    if force:
+        my_hand = forced_list
+    else:
+        my_hand = get_a_new_hand()
     possible_outcome = check_other_than_straight(my_hand)
     # Use a comprehension that extracts the second element of each
     # pair and counts how many are True (behaves as 1)
@@ -53,6 +56,7 @@ def run_game():
     magic_hand = next(hand for hand, is_true in possible_outcome
                       if is_true)
     if number_of_true > 1 or magic_hand == 'Should not happen':
+    # if magic_hand == 'Should not happen':
         print('You have found a bug!')
     print_pretty_output(my_hand, magic_hand)
 
