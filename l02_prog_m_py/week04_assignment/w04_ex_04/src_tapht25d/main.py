@@ -23,7 +23,7 @@ TAP HT 25D.
 
 
 # pylint: disable=import-error
-# from ex03_extra_calls import run_all_functions_03
+from ex04_extra_calls import run_game
 # pylint: enable=import-error
 
 
@@ -37,12 +37,12 @@ def main():
     This version made for 2025 (and 2026), TAP HT 25D.
     Practice functions and modules.
     """
-    print('\nThis is exercise 3, "Game 21", '
+    print('\nThis is exercise 4, "Poker Hand", '
           'from week 4.')
     press_continue()
 
     # Run all functions
-    # run_all_functions_03()
+    run_game()
 
     press_exit()
 

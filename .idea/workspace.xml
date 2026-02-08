@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex04 wip&#10;&#10;Code and tests in place for &#10;create card&#10;build a hand&#10;check if same rank&#10;code, but no tests for&#10;check if same suit&#10;check if a straight">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_count_suits.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,14 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00049" summary="L02 W03 Ex5 done&#10;&#10;Coded added for exercise 5">
-      <option name="closed" value="true" />
-      <created>1769770151803</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1769770151803</updated>
     </task>
     <task id="LOCAL-00050" summary="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6">
       <option name="closed" value="true" />
@@ -522,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770568501553</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit">
+      <option name="closed" value="true" />
+      <created>1770571013718</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1770571013718</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W04 Ex02 part 01&#10;&#10;Adding code and test for &#10;part 01 of exercise 02" />
     <MESSAGE value="L02 W04 Ex02 part 02a added&#10;&#10;Adding code and test for &#10;part 02a of exercise 02" />
     <MESSAGE value="L02 W04 Ex02 part 02b added&#10;&#10;Adding code and test for &#10;part 02b of exercise 02&#10;Additionally some refactoring &#10;to get rid of pylint warnings" />
     <MESSAGE value="L02 W04 Ex02 part 03 added&#10;&#10;Adding code and test for &#10;part 03 of exercise 02" />
@@ -562,6 +559,7 @@
     <MESSAGE value="Add base L02 W04 Ex04&#10;&#10;Base files to be able to get &#10;started with exercise 04&#10;No code or tests yet" />
     <MESSAGE value="L02 W04 Ex04 create card&#10;&#10;Add code and test for create &#10;and return a card&#10;First parts of code also for &#10;building a hand, though &#10;with no tests" />
     <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Code and tests in place for &#10;create card&#10;build a hand&#10;check if same rank&#10;code, but no tests for&#10;check if same suit&#10;check if a straight" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex04 wip&#10;&#10;Code and tests in place for &#10;create card&#10;build a hand&#10;check if same rank&#10;code, but no tests for&#10;check if same suit&#10;check if a straight" />
+    <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
   </component>
 </project>

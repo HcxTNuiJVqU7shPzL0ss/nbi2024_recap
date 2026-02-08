@@ -24,20 +24,21 @@ Poker Hand.
 
 
 # pylint: disable=import-error
-# from ex04_functions import deal_poker_hand, check_same_rank, check_same_suit, check_if_straight
+from ex04_functions import deal_poker_hand, check_if_straight
 # pylint: enable=import-error
 
 
-# my_hand = deal_poker_hand()
-# print(my_hand)
-# my_ranks = check_same_rank(my_hand)
-# for i, occurrence in enumerate(my_ranks):
-#     print(f'{i + 2}: {occurrence}')
-#
-# my_suits = check_same_suit(my_hand)
-# print(my_suits)
-#
-# straight_hand = [['', 2], ['', 3], ['', 4], ['', 5], ['', 6]]
-#
-# straight = check_if_straight(straight_hand)
-# print(straight)
+def get_a_new_hand():
+    """Use to get a hand to use for poker."""
+    new_hand = deal_poker_hand()
+    return new_hand
+
+
+def run_game():
+    """Use to run a poker game."""
+    my_hand = get_a_new_hand()
+    straight = check_if_straight(my_hand)
+    if straight:
+        print('You got a straight!')
+    else:
+        print('No straight')
