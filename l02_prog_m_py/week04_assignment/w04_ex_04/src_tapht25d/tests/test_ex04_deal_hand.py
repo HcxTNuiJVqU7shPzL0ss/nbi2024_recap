@@ -1,8 +1,6 @@
-"""Module for extra function calls used in exercise 04, week 04.
+"""Module for tests, L02, W04, Ex04.
 
-Lesson 02, Week 04, Exercise 04.
-TAP HT 25D.
-Poker Hand.
+Handle unit test of function: deal_poker_hand
 """
 
 #####################################################################
@@ -24,20 +22,16 @@ Poker Hand.
 
 
 # pylint: disable=import-error
-# from ex04_functions import deal_poker_hand, check_same_rank, check_same_suit, check_if_straight
+from ..ex04_functions import deal_poker_hand
 # pylint: enable=import-error
 
 
-# my_hand = deal_poker_hand()
-# print(my_hand)
-# my_ranks = check_same_rank(my_hand)
-# for i, occurrence in enumerate(my_ranks):
-#     print(f'{i + 2}: {occurrence}')
-#
-# my_suits = check_same_suit(my_hand)
-# print(my_suits)
-#
-# straight_hand = [['', 2], ['', 3], ['', 4], ['', 5], ['', 6]]
-#
-# straight = check_if_straight(straight_hand)
-# print(straight)
+def test_deal_poker_hand__correct_values():
+    """Use for unit test of function deal_poker_hand.
+
+    Checks that the returned value contains a total
+    of 5 cards.
+    """
+    hand_to_check = deal_poker_hand()
+    assert isinstance(hand_to_check, list)
+    assert len(hand_to_check) == 5
