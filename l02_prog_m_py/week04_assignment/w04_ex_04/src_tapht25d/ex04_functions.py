@@ -42,6 +42,7 @@ def create_and_return_card(list_of_cards):
     if not isinstance(list_of_cards, list):
         return None
     list_of_suits = ['spades', 'clubs', 'hearts', 'diamonds']
+    # list_of_suits = ['\u2660', '\u2663', '\u2665', '\u2666']
     list_of_ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     while True:
         # Create a random value from each list
@@ -72,6 +73,7 @@ def deal_poker_hand():
 def check_same_rank(card_list):
     """Use to check if cards have the same rank.
 
+    Exercise 04.
     Returns a list containing how many times all possible
     ranks appear in a hand.
     """
@@ -93,6 +95,7 @@ def check_same_rank(card_list):
 def check_same_suit(card_list):
     """Use to check if cards have the same suit.
 
+    Exercise 4.
     Returns a list containing how many times all possible
     suits appear in a hand.
     """
@@ -115,6 +118,7 @@ def check_same_suit(card_list):
 def check_if_straight(hand_maybe_straight):
     """Use to check if Straight or not.
 
+    Exercise 4.
     Takes the poker hand from the parameter.
     Returns True if the five cards form a Straight.
     Returns False for all other hands.
@@ -132,3 +136,66 @@ def check_if_straight(hand_maybe_straight):
     if len(set(rank_count.values())) == 1 and (rank_range == 4):
         return True # Yes, Straight!
     return False # No, not a Straight
+
+
+def check_other_than_straight(the_hand):
+    """Use to check the hand.
+
+    Checking of straight calls different function.
+    """
+    ranks_list = check_same_rank(the_hand)
+    suits_list = check_same_suit(the_hand)
+    straight = check_if_straight(the_hand)
+
+    the_result = {
+        'Straight Flush': False,
+        'Four of a kind': False,
+        'Full House': False,
+        'Straight': straight,
+        'Three of a Kínd': False,
+        'Two Pair': False,
+        'One Pair': False,
+        'Nothing': False,
+        'Should not happen': False,
+    }
+
+    # Check if Flush / Straight Flush
+    if max(suits_list) == 5:
+        the_result['Flush'] = True
+        if straight:
+            the_result['Straight Flush'] = True
+
+    # Check the remaining rank based possibilities
+    check_found = max(ranks_list)
+
+    if check_found == 5:
+        the_result['Should not happen'] = True
+    elif check_found == 4:
+        the_result['Four of a kind'] = True
+    elif check_found == 3:
+        the_result['Three of a Kínd'] = True
+    elif check_found == 2:
+        pair_cnt = defaultdict(int)
+        if sorted(pair_cnt.values()) == [1, 2, 2]:
+            the_result['Two Pair'] = True
+        else:
+            the_result['One Pair'] = True
+    else:
+        the_result['Nothing'] = True
+
+    # Special for Full House
+    if the_result['Three of a Kínd'] and the_result['One Pair']:
+        the_result['Full House'] = True
+
+    # list_of_possibilities = [['Straight Flush', straight_flush],
+    #                          ['Four of a Kind', four_of_a_kind],
+    #                          ['Full House', full_house],
+    #                          ['Flush', flush],
+    #                          ['Straight', straight],
+    #                          ['Three of a Kind', three_of_a_kind],
+    #                          ['Two Pair', two_pair],
+    #                          ['One Pair', one_pair],
+    #                          ['Nothing', nothing_at_all],
+    #                          ['Should not happen', bad_things]]
+
+    return [[you_got, is_true] for you_got, is_true in the_result.items()]

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex04 first version&#10;&#10;First basic version, builds &#10;a hand and check if a straight &#10;was dealt or not">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/ex04_poker_hand.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/ex04_poker_hand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_extra_calls.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_extra_calls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/ex04_functions.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,14 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00050" summary="L02 W03 Ex6 base&#10;&#10;First files to get started &#10;with exercise 6">
-      <option name="closed" value="true" />
-      <created>1769773366456</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1769773366458</updated>
     </task>
     <task id="LOCAL-00051" summary="L02 W03 Ex6 wip&#10;&#10;Exercise 6 work in progress&#10;Also some minor changes to &#10;earlier files">
       <option name="closed" value="true" />
@@ -520,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770571013718</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="L02 W04 Ex04 first version&#10;&#10;First basic version, builds &#10;a hand and check if a straight &#10;was dealt or not">
+      <option name="closed" value="true" />
+      <created>1770571856015</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1770571856015</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W04 Ex02 part 02a added&#10;&#10;Adding code and test for &#10;part 02a of exercise 02" />
     <MESSAGE value="L02 W04 Ex02 part 02b added&#10;&#10;Adding code and test for &#10;part 02b of exercise 02&#10;Additionally some refactoring &#10;to get rid of pylint warnings" />
     <MESSAGE value="L02 W04 Ex02 part 03 added&#10;&#10;Adding code and test for &#10;part 03 of exercise 02" />
     <MESSAGE value="L02 W04 Ex02 part 02b added&#10;&#10;Adding code and test for&#10;part 02b of exercise 02&#10;Additionally some refactoring&#10;to get rid of pylint warnings" />
@@ -560,6 +564,7 @@
     <MESSAGE value="L02 W04 Ex04 create card&#10;&#10;Add code and test for create &#10;and return a card&#10;First parts of code also for &#10;building a hand, though &#10;with no tests" />
     <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Code and tests in place for &#10;create card&#10;build a hand&#10;check if same rank&#10;code, but no tests for&#10;check if same suit&#10;check if a straight" />
     <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
+    <MESSAGE value="L02 W04 Ex04 first version&#10;&#10;First basic version, builds &#10;a hand and check if a straight &#10;was dealt or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex04 first version&#10;&#10;First basic version, builds &#10;a hand and check if a straight &#10;was dealt or not" />
   </component>
 </project>
