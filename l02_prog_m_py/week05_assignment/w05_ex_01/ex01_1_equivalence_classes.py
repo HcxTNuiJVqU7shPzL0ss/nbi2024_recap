@@ -1,6 +1,8 @@
 """Module for Lesson 02, Week 05, Exercise 01.1, Discuss.
 
 Which equivalence classes does the expressions have?
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -27,39 +29,78 @@ from my_funct_dir.my_base_functions import (press_continue,
 
 
 def w05_ex01_1a(x, unit):
-    """Use for 1.1a part."""
+    """Use for 1.1a part.
+
+    Parameter 'unit' used as True if to run unit test,
+    if False instead 'normal run'.
+    If other than int or float used as argument for
+    parameter 'x', raises ValueError.
+    """
     if not unit:
         print('This is part 1.1a.\nFunction: ',
               w05_ex01_1a.__name__, sep='')
         press_continue()
-    # x > 100 # EC == Any number greater than 100
+    if not isinstance(x, (int, float)):
+        raise ValueError('Need int or float for the parameter.')
+    # x > 100
+    # EC1 == Any number greater than 100 (int or float)
+    # EC2 == Any number of 100 or lower (int or float)
     if x > 100:
         return True
     return False
 
 
 def w05_ex01_1b(y, unit):
-    """Use for 1.1b part."""
+    """Use for 1.1b part.
+
+    Parameter 'unit' used as True if to run unit test,
+    if False instead 'normal run'.
+    If other than int or float used as argument for
+    parameter 'y', raises ValueError.
+    """
     if not unit:
-        print('This is part 1b.\nFunction: ',
+        print('This is part 1.1b.\nFunction: ',
               w05_ex01_1b.__name__, sep='')
         press_continue()
-    # y == 42 # EC == Only number 42
+    if not isinstance(y, (int, float)):
+        raise ValueError('Need int or float for the parameter.')
+    # y == 42
+    # EC1 == Only number 42 (int or float)
+    # EC2 == All other numbers (int or float)
     if y == 42:
         return True
     return False
 
 
 def w05_ex01_1c(text, unit):
-    """Use for 1.1c part."""
+    """Use for 1.1c part.
+
+    Parameter 'unit' used as True if to run unit test,
+    if False instead 'normal run'.
+    If other than a type supporting len used as argument for
+    parameter 'text', raises ValueError.
+    """
     if not unit:
         print('This is part 1c.\nFunction: ',
               w05_ex01_1c.__name__, sep='')
         press_continue()
-    # len(text) >= 5 # EC == Length of 5 or greater
-    if len(text) >= 5:
-        return True
-    return False
+    # if isinstance(text, (int, float, bool, complex, type(None))):
+    #     raise TypeError('Need parameter of type that '
+    #                     'supports len().')
+    # if isinstance(text, (range, str, list, tuple, dict, set,
+    #                      bytes, bytearray)):
+    #     # len(text) >= 5
+    #     # EC1 == Length of 5 or greater
+    #     # EC0 == Length less than 5 (4 to 0)
+    #     if len(text) >= 5:
+    #         return True
+    #     return False
+    # return None
+    try:
+        return len(text) >= 5
+    except TypeError as exc:
+        raise TypeError('Need parameter of type that '
+                        'supports len().') from exc
 
 
 def w05_ex01_1d(z, unit):
@@ -134,9 +175,13 @@ def run_1_1_b():
     print(check_1_1_b)  # False
     print('\nShould have been False.\n')
     ask_y_or_n()
-    check_1_1_b = w05_ex01_1b(42, False)
+    check_1_1_b = w05_ex01_1b(42.0, False)
     print(check_1_1_b)  # True
     print('\nShould have been True.\n')
+    ask_y_or_n()
+    check_1_1_b = w05_ex01_1b(43, False)
+    print(check_1_1_b)  # False
+    print('\nShould have been False.\n')
     ask_y_or_n()
     press_continue()
 

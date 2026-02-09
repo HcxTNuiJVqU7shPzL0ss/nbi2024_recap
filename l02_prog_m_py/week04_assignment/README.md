@@ -1,9 +1,9 @@
 
-# Veckouppgift 4
+# Veckouppgift 4  
 
 ---
 
-## Vecka 6, 2/2
+## Vecka 6, 2/2  
 
 
 (_2024 == Vecka 4, 27/1_)  
@@ -15,20 +15,20 @@ of the OG course on my own.
 
 ---
 
-### Summary
+### Summary  
 
 1. _Du ska lösa uppgiften självständigt eller tillsammans 
 med en annan student. Men vid minst ett tillfälle ska du 
-göra code review i en grupp._
+göra code review i en grupp._  
 
 2. _Du får ta hjälp av AI för att förklara koncept och 
 lösa fel. Du får inte be AI lösa uppgiften åt dig direkt. 
 Om du gör det, kommer du inte att lära dig grunderna, 
-och inte kunna lösa svårare problem._
+och inte kunna lösa svårare problem._  
 
 ---
 
-Student == **_gnoff_**
+Student == **_gnoff_**  
 
 ---
 

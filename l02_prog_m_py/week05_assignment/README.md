@@ -3,22 +3,32 @@
 
 ---
 
-## Vecka 5, 3/2
+## Vecka 6, 2/2  
+
+
+(_2024 == Vecka Vecka 5, 3/2_)  
+
+(**yes, it stated "5" (Feb 3 started in week 6)**)  
+
+Main bulk of the files are from when I've been working on a recap 
+of the OG course on my own.  
 
 ---
 
-1. Du ska lösa uppgiften självständigt eller tillsammans 
-med en annan student. Men vid minst ett tillfälle ska du 
-göra code review i en grupp.
+### Summary  
 
-2. Du får ta hjälp av AI för att förklara koncept och 
+1. _Du ska lösa uppgiften självständigt eller tillsammans 
+med en annan student. Men vid minst ett tillfälle ska du 
+göra code review i en grupp._  
+
+2. _Du får ta hjälp av AI för att förklara koncept och 
 lösa fel. Du får inte be AI lösa uppgiften åt dig direkt. 
 Om du gör det, kommer du inte att lära dig grunderna, 
-och inte kunna lösa svårare problem.
+och inte kunna lösa svårare problem._  
 
 ---
 
-Student == **_gnoff_**
+Student == **_gnoff_**  
 
 ---
 

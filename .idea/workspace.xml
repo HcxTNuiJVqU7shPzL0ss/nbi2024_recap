@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex04 extra&#10;&#10;Some changes to fix &#10;functionality&#10;Also added code to force &#10;various hands for manual test&#10;Still some things left, like &#10;more unit tests, may or may &#10;not happen later">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/ex05_draw_python.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W04 Ex05 partial&#10;&#10;Updates to attempt also &#10;to draw the letters &#10;PYTHON&#10;Cannot run this and the &#10;base work &#10;Not done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/ex05_turtle_graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/w04_ex_05/ex05_turtle_graphics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week04_assignment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_1_equivalence_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_1_equivalence_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_equivalence_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_equivalence_classes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,7 @@
     "Python.discuss_1.executor": "Run",
     "Python.e3_receipt_calculator_3_v1.executor": "Run",
     "Python.e3_receipt_calculator_3_v2.executor": "Run",
+    "Python.ex01_1_equivalence_classes.executor": "Run",
     "Python.ex01_discuss.executor": "Run",
     "Python.ex01_main_hello_name.executor": "Run",
     "Python.ex01_main_hello_name_v2.executor": "Run",
@@ -133,14 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Refactoring and adding og&#10;&#10;Adding more files from og 2024&#10;Refactoring some init files&#10;Preparing">
-      <option name="closed" value="true" />
-      <created>1769864707658</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1769864707658</updated>
     </task>
     <task id="LOCAL-00055" summary="Adding builds&#10;&#10;Updated version to 0.0.2&#10;Adding builds">
       <option name="closed" value="true" />
@@ -526,7 +521,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770594915263</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="L02 W04 Ex05 partial&#10;&#10;Updates to attempt also &#10;to draw the letters &#10;PYTHON&#10;Cannot run this and the &#10;base work &#10;Not done">
+      <option name="closed" value="true" />
+      <created>1770637083589</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1770637083589</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,7 +544,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Attempting to solve something&#10;&#10;Minor change&#10;See if I can get to fix &#10;commit and merge issues" />
     <MESSAGE value="Going back&#10;&#10;Seem to have fixed the &#10;issues&#10;Minor edit back on main" />
     <MESSAGE value="Add part 04&#10;&#10;Add code and test for &#10;part 4 or ex 2" />
     <MESSAGE value="Fix of comment&#10;&#10;Missed something in a &#10;comment, fixed" />
@@ -566,6 +568,7 @@
     <MESSAGE value="L02 W04 Ex04 code done&#10;&#10;Added all code to be able &#10;to run the program&#10;However, have not added &#10;unit tests for a lot of &#10;things, also have not built &#10;any functions to force hands &#10;outside of unit test&#10;Perhaps it will be continued" />
     <MESSAGE value="L02 W04 Ex04 builds&#10;&#10;Adding builds" />
     <MESSAGE value="L02 W04 Ex04 extra&#10;&#10;Some changes to fix &#10;functionality&#10;Also added code to force &#10;various hands for manual test&#10;Still some things left, like &#10;more unit tests, may or may &#10;not happen later" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex04 extra&#10;&#10;Some changes to fix &#10;functionality&#10;Also added code to force &#10;various hands for manual test&#10;Still some things left, like &#10;more unit tests, may or may &#10;not happen later" />
+    <MESSAGE value="L02 W04 Ex05 partial&#10;&#10;Updates to attempt also &#10;to draw the letters &#10;PYTHON&#10;Cannot run this and the &#10;base work &#10;Not done" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W04 Ex05 partial&#10;&#10;Updates to attempt also &#10;to draw the letters &#10;PYTHON&#10;Cannot run this and the &#10;base work &#10;Not done" />
   </component>
 </project>
