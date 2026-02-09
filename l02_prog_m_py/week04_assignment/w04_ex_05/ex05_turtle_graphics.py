@@ -21,10 +21,11 @@ Turtle graphics.
 #####################################################################
 
 
-from ex05_draw_python import draw_python
-
+# pylint: disable=import-error
 from turtle import Screen, Turtle
 
+from ex05_draw_python import draw_python
+# pylint: enable=import-error
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)

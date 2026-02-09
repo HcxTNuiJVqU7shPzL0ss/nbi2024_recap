@@ -3,6 +3,8 @@
 Turtle graphics.
 Draw: PYTHON
 """
+# pylint: skip-file
+# noqa
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -32,6 +34,7 @@ letter_spacing = 10
 
 
 def move_pen_right_without_drawing(distance):
+    """Use to move the pen without drawing."""
     t.penup()
     t.setheading(0)
     t.forward(distance)
@@ -106,6 +109,7 @@ def draw_n():
 
 
 def move_pen(letter_number):
+    """Use to move pen."""
     t.penup()
     t.setpos((float(letter_number*(letter_width+letter_spacing)),
               0.0))
@@ -114,6 +118,7 @@ def move_pen(letter_number):
 
 
 def draw_base_lines(length):
+    """Use to draw baselines."""
     color_previous = t.color()
     t.color("red")
     t.forward(length)
@@ -125,6 +130,7 @@ def draw_base_lines(length):
 
 
 def draw_python():
+    """Use to draw the letters."""
     letters = [draw_p, draw_y, draw_t, draw_h, draw_o, draw_n]
     draw_base_lines(letter_width*(len(letters)+1))
 

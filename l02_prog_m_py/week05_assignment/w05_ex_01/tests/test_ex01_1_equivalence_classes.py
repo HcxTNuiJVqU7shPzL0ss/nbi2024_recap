@@ -299,7 +299,9 @@ def test_w05_ex01_1c__false():
 )
 
 def test_w05_ex01_1c__unsupported_types_raise_typeerror(value):
-    with pytest.raises(TypeError): w05_ex01_1c(value, True)
+    """Use for different kind of raise testing."""
+    with pytest.raises(TypeError):
+        w05_ex01_1c(value, True)
 
 ### Special True ###
 @pytest.mark.parametrize(
