@@ -1,4 +1,7 @@
-"""Module for tests, L02, W05, Ex01.1."""
+"""Module for tests, L02, W05, Ex01.1.
+
+OG version, without special handling.
+"""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -26,6 +29,7 @@ from ..ex01_1_equivalence_classes import (w05_ex01_1a, w05_ex01_1b,
                                           w05_ex01_1e, w05_ex01_1f,
                                           w05_ex01_1g)
 
+
 ############################## 1a ###################################
 
 def test_w05_ex01_1a__raise():
@@ -33,11 +37,12 @@ def test_w05_ex01_1a__raise():
 
     Check that using other than int or float raise an exception.
     """
+    if_error = TypeError
     use_1a_str = '42'
     use_1a_list = [42]
-    with pytest.raises(ValueError):
+    with pytest.raises(if_error):
         w05_ex01_1a(use_1a_str, True)
-    with pytest.raises(ValueError):
+    with pytest.raises(if_error):
         w05_ex01_1a(use_1a_list, True)
 
 
@@ -103,11 +108,12 @@ def test_w05_ex01_1b__raise():
 
     Check that using other than int or float raise an exception.
     """
+    if_error = TypeError
     use_1b_str = '42'
     use_1b_list = [42]
-    with pytest.raises(ValueError):
+    with pytest.raises(if_error):
         w05_ex01_1b(use_1b_str, True)
-    with pytest.raises(ValueError):
+    with pytest.raises(if_error):
         w05_ex01_1b(use_1b_list, True)
 
 
@@ -162,6 +168,12 @@ def test_w05_ex01_1b__false():
     d = a or b or c
     assert d == expected
 
+    # Also with negative
+    actual = w05_ex01_1b(-42, True)
+    assert actual == expected
+    actual = w05_ex01_1b(-42.0, True)
+    assert actual == expected
+
 ############################## 1c ###################################
 
 def test_w05_ex01_1c__raise():
@@ -171,20 +183,21 @@ def test_w05_ex01_1c__raise():
     exception.
     E.g., int, float, bool, etc.
     """
+    if_error = TypeError
     use_1c_int = 42
     use_1c_float = 42.2
     use_1c_bool = True
     use_1c_complex = 1001+2j
     use_1c_none = None
-    with pytest.raises(TypeError):
+    with pytest.raises(if_error):
         w05_ex01_1c(use_1c_int, True)
-    with pytest.raises(TypeError):
+    with pytest.raises(if_error):
         w05_ex01_1c(use_1c_float, True)
-    with pytest.raises(TypeError):
+    with pytest.raises(if_error):
         w05_ex01_1c(use_1c_bool, True)
-    with pytest.raises(TypeError):
+    with pytest.raises(if_error):
         w05_ex01_1c(use_1c_complex, True)
-    with pytest.raises(TypeError):
+    with pytest.raises(if_error):
         w05_ex01_1c(use_1c_none, True)
 
 
@@ -259,88 +272,30 @@ def test_w05_ex01_1c__false():
     assert actual == expected
     actual = w05_ex01_1c({}, True)
     assert actual == expected
-    actual = w05_ex01_1c({}, True)
-    assert actual == expected
     actual = w05_ex01_1c(range(0), True)
     assert actual == expected
 
-
-# Three times below use a pytest decorator
-# Tells pytest to run the same test function multiple times with
-# different input values.
-# Takes two things, a string naming one or more argument names,
-# and a list of values to be passed into the test
-
-# @pytest.mark ==
-# A namespace that contains pytest’s built‑in markers.
-
-# .parametrize ==
-# A specific marker that expands a single test into many tests.
-
-# 'value' (first argument) ==
-# The name of the parameter that will be injected into the test function.
-
-# [ ... ] (second argument) ==
-# The list of values pytest will feed into the test.
-
-
-### Special Exception ###
-@pytest.mark.parametrize(
-    "value",
-    [
-        10,
-        3.14,
-        True,
-        None,
-        lambda x: x,
-        (i for i in range(5)), # generator
-        iter([1, 2, 3]), # iterator
-    ],
-)
-
-def test_w05_ex01_1c__unsupported_types_raise_typeerror(value):
-    """Use for different kind of raise testing."""
-    with pytest.raises(TypeError):
-        w05_ex01_1c(value, True)
-
-### Special True ###
-@pytest.mark.parametrize(
-    "value",
-    [
-        'hello',
-        [1, 2, 3, 4, 5],
-        (1, 2, 3, 4, 5),
-        {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5},
-        {1, 2, 3, 4, 5},
-        range(5),
-        b'abcde',
-        bytearray(b'abcde'),
-    ],
-)
-
-def test_w05_ex01_1c__supported_types_len_at_least_five(value):
-    """Use for different kind of True check."""
-    assert w05_ex01_1c(value, True) is True
-
-### Special False ###
-@pytest.mark.parametrize(
-    'value',
-    [
-        'hi',
-        [1, 2],
-        (1, 2, 3),
-        {'a': 1},
-        {1, 2, 3},
-        range(3),
-        b'abc',
-    ],
-)
-
-def test_w05_ex01_1c__supported_types_len_too_short(value):
-    """Use for different kind of False check."""
-    assert w05_ex01_1c(value, True) is False
-
 ############################## 1d ###################################
+
+def test_w05_ex01_1d__raise():
+    """Use for unit test of function w05_ex01_1d.
+
+    Check that using other type than bool raise an exception.
+    """
+    if_error = TypeError
+    use_1d_int = 42
+    use_1d_float = 42.42
+    use_1d_str = '42'
+    use_1d_list = [42]
+    with pytest.raises(if_error):
+        w05_ex01_1d(use_1d_int, True)
+    with pytest.raises(if_error):
+        w05_ex01_1d(use_1d_float, True)
+    with pytest.raises(if_error):
+        w05_ex01_1d(use_1d_str, True)
+    with pytest.raises(if_error):
+        w05_ex01_1d(use_1d_list, True)
+
 
 def test_w05_ex01_1d__true():
     """Used for unit test of function w05_ex01_1d, check True."""
@@ -352,12 +307,6 @@ def test_w05_ex01_1d__true():
 def test_w05_ex01_1d__false():
     """Used for unit test of function w05_ex01_1d, check False."""
     expected = False
-    actual = w05_ex01_1d(41, True)
-    assert actual == expected
-    actual = w05_ex01_1d('1234', True)
-    assert actual == expected
-    actual = w05_ex01_1d(['1', 2], True)
-    assert actual == expected
     actual = w05_ex01_1d(False, True)
     assert actual == expected
 
