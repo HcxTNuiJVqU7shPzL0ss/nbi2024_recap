@@ -312,6 +312,20 @@ def test_w05_ex01_1d__false():
 
 ############################## 1e ###################################
 
+def test_w05_ex01_1e__raise():
+    """Use for unit test of function w05_ex01_1e.
+
+    Check that using other than int or float raise an exception.
+    """
+    if_error = TypeError
+    use_1e_str = '42'
+    use_1e_list = [42]
+    with pytest.raises(if_error):
+        w05_ex01_1e(use_1e_str, True)
+    with pytest.raises(if_error):
+        w05_ex01_1e(use_1e_list, True)
+
+
 def test_w05_ex01_1e__true():
     """Used for unit test of function w05_ex01_1e, check True."""
 
@@ -319,6 +333,14 @@ def test_w05_ex01_1e__true():
     b = w05_ex01_1e(15, True)
     c = a and b
     assert c is True
+
+    # Also with float
+    assert w05_ex01_1e(8.01, True) is True
+    assert w05_ex01_1e(15.99, True) is True
+
+    # Silly
+    for v in range(9, 16, 1):
+        assert w05_ex01_1e(v, True) is True
 
 
 def test_w05_ex01_1e__false():
@@ -328,6 +350,15 @@ def test_w05_ex01_1e__false():
     y = w05_ex01_1e(16, True)
     z = x or y
     assert z is False
+
+    # Also with float and negative
+    assert w05_ex01_1e(-42.42, True) is False
+
+    # Silly
+    for v in range(-17, 8, 1):
+        assert w05_ex01_1e(v, True) is False
+    for v in range(16, 43, 1):
+        assert w05_ex01_1e(v, True) is False
 
 ############################## 1f ###################################
 

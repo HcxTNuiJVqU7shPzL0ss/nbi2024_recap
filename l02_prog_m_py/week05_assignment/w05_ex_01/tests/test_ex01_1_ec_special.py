@@ -294,21 +294,105 @@ def test_w05_ex01_1d__supported_types_len_too_short(z):
 ### Additional silly stuff, printout, mocking, etc. ###
 
 def test_w05_ex01_1d__normal_run_does_not_block(monkeypatch):
+    """Ensure the function does not wait for user input.
+
+     When unit=False.
+     This test verifies that the press_continue() call
+     (which normally blocks on input()) is safely bypassed
+     during testing.
+     """
     monkeypatch.setattr('builtins.input', lambda _: "")
     assert w05_ex01_1d(True, False) is True
 
 @pytest.mark.parametrize('z', [True, False])
 def test_w05_ex01_1d__normal_run(monkeypatch, z):
+    """Verify normal-run mode.
+
+    That is returns the same boolean value as input.
+    This test checks the core logic of the function when
+    unit=False:
+    True should return True
+    False should return False
+    It also ensures the input prompt doesn’t interfere with
+    execution.
+    """
     monkeypatch.setattr('builtins.input', lambda _: "")
     assert w05_ex01_1d(z, False) is z
 
 def test_w05_ex01_1d__normal_run_prints(monkeypatch, capsys):
+    """Confirm normal-run mode.
+
+    That it prints the expected header text.
+    This test ensures that the function prints its informational
+    message when unit=False, and that the printed output is
+    captured correctly.
+    """
     monkeypatch.setattr('builtins.input', lambda _: "")
     w05_ex01_1d(True, False)
     captured = capsys.readouterr()
     assert "This is part" in captured.out
 
 ############################## 1e ###################################
+
+### Special Exception ###
+# Note: Bool is troublesome, since isinstance will not
+# catch it, it is a subclass of int
+@pytest.mark.parametrize(
+    'v',
+    [
+        '10',
+        [3.14],
+        (2, 3),
+        {'no': 1},
+        {42, 41},
+        range(1),
+        b'abcde',
+        bytearray(b'abcde'),
+        None,
+        True,
+        False,
+        lambda x: x,
+        (i for i in range(5)),
+        iter([1, 2, 3]),
+    ],
+)
+
+def test_w05_ex01_1e__unsupported_types_raise_typeerror(v):
+    """Use for different kind of raise testing."""
+    with pytest.raises(TypeError):
+        w05_ex01_1e(v, True)
+
+
+### Special True ###
+@pytest.mark.parametrize(
+    'v',
+    [
+        8.001,
+        9,
+        14.99,
+        15.99,
+    ],
+)
+
+def test_w05_ex01_1e__supported_types_int_float_ok(v):
+    """Use for different kind of True check."""
+    assert w05_ex01_1e(v, True) is True
+
+
+### Special False ###
+@pytest.mark.parametrize(
+    'v',
+    [
+        8,
+        16,
+        42.42,
+        -101,
+    ],
+)
+
+def test_w05_ex01_1e__supported_types_int_float_nok(v):
+    """Use for different kind of False check."""
+    assert w05_ex01_1e(v, True) is False
 
 ############################## 1f ###################################
 

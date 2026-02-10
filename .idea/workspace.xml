@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Fixed warnings&#10;&#10;Took care of warnings from &#10;pylint and pydocstyle">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_ec_special.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex 1 work ongoing&#10;&#10;Played around a bit&#10;Two separate files for testing&#10;Worked through parts 1.1 a &#10;through 1.1 d">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_1_equivalence_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_1_equivalence_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_ec_special.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_ec_special.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_equivalence_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_equivalence_classes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,14 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Add L02 W06 Ex03&#10;&#10;Adding code and test for &#10;exercise 3&#10;Off course work">
-      <option name="closed" value="true" />
-      <created>1769963618465</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1769963618465</updated>
     </task>
     <task id="LOCAL-00058" summary="W06 Ex03 pylint fixes&#10;&#10;pylint fixes for &#10;exercise 3&#10;Off course work">
       <option name="closed" value="true" />
@@ -527,7 +519,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770658947300</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="L02 W05 Ex 1 work ongoing&#10;&#10;Played around a bit&#10;Two separate files for testing&#10;Worked through parts 1.1 a &#10;through 1.1 d">
+      <option name="closed" value="true" />
+      <created>1770735870510</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1770735870512</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +542,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix of comment&#10;&#10;Missed something in a &#10;comment, fixed" />
     <MESSAGE value="Add W04 Ex02 part 05&#10;&#10;Adding code and tests for &#10;part 05 of exercise 02, &#10;week 04" />
     <MESSAGE value="Refactoring week 04&#10;&#10;Realized I had the exact same &#10;name of the functions file &#10;for when doing off course work &#10;and 2025 work&#10;renamed the one for off course work, &#10;also changed the main file for the &#10;same" />
     <MESSAGE value="Adding L02 W04 Ex02 part 06&#10;&#10;Adding part 06 of exercise 02&#10;Code and tests" />
@@ -567,6 +566,7 @@
     <MESSAGE value="L02 W04 Ex05 partial&#10;&#10;Updates to attempt also &#10;to draw the letters &#10;PYTHON&#10;Cannot run this and the &#10;base work &#10;Not done" />
     <MESSAGE value="L02 W05 Ex01 rework&#10;&#10;Reusing the code written &#10;between OG 2024 and current &#10;TAP HT 25D classes.&#10;Did these very recently, &#10;take what I did and rewrite &#10;it for this week's &#10;assignment.&#10;So far, done work on parts &#10;1a through 1c, code and tests" />
     <MESSAGE value="Fixed warnings&#10;&#10;Took care of warnings from &#10;pylint and pydocstyle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed warnings&#10;&#10;Took care of warnings from &#10;pylint and pydocstyle" />
+    <MESSAGE value="L02 W05 Ex 1 work ongoing&#10;&#10;Played around a bit&#10;Two separate files for testing&#10;Worked through parts 1.1 a &#10;through 1.1 d" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex 1 work ongoing&#10;&#10;Played around a bit&#10;Two separate files for testing&#10;Worked through parts 1.1 a &#10;through 1.1 d" />
   </component>
 </project>

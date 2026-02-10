@@ -121,7 +121,6 @@ def w05_ex01_1d(z, unit):
     If other than bool used as argument for
     parameter 'z', raises TypeError.
     z == True
-    EC == True (Boolean)
     EC1 == True (Boolean)
     EC2 == False (Boolean)
     EC1 returns True.
@@ -139,12 +138,26 @@ def w05_ex01_1d(z, unit):
 
 
 def w05_ex01_1e(v, unit):
-    """Use for 1.1e part."""
+    """Use for 1.1e part.
+
+    Parameter 'unit' used as True if to run unit test,
+    if False instead 'normal run'.
+    If other than bool used as argument for
+    parameter 'z', raises TypeError.
+    8 < v < 16
+    EC1 == All numbers above 8 and below 16 (int or float)
+    EC2 == Numbers (int or float) from 8 and below (inc negative)
+    EC3 == Numbers (int or float) from 16 and above
+    EC1 returns True.
+    EC2 returns False.
+    EC3 returns False.
+    """
     if not unit:
         print('This is part 1e.\nFunction: ',
               w05_ex01_1e.__name__, sep='')
         press_continue()
-    # 8 < v < 16 # EC == 9 through 15
+    if isinstance(v, bool) or not isinstance(v, (int, float)):
+        raise TypeError('Need int or float for parameter: v.')
     if 8 < v < 16:
         return True
     return False
