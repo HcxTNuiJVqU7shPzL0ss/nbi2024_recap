@@ -28,18 +28,26 @@ from my_funct_dir.my_base_functions import (press_continue,
 def sum_list(list_in):
     """Sum up incoming numbered list.
 
+    If parameter is of a type other than list, return TypeError.
     If empty list, return None.
     If any non numbered items, return 'incorrect' string.
     """
+    param_name = dir()[0] # Store the function first parameter name
     tot = 0
+    if not isinstance(list_in, list): # Wrong type
+        wrong_type = type(list_in)
+        raise TypeError(f'Need a list for parameter: {param_name}.\n'
+                        f'What was entered is of type: {wrong_type}')
     if not list_in: # List is empty
         return None
     for item in list_in:
-        if isinstance(item, (int, float)):
+        if (not isinstance(item, bool) and
+                isinstance(item, (int, float))):
             tot += item
         else:
             tot = 'incorrect'
-            return tot
+            break
+            # return tot
     return tot
 
 
