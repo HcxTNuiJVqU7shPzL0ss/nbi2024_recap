@@ -396,4 +396,187 @@ def test_w05_ex01_1e__supported_types_int_float_nok(v):
 
 ############################## 1f ###################################
 
+### Special Exception ###
+# Note: Bool is troublesome, since isinstance will not
+# catch it, it is a subclass of int
+@pytest.mark.parametrize(
+    'w',
+    [
+        '10',
+        [3.14],
+        (2, 3),
+        {'no': 1},
+        {42, 41},
+        range(1),
+        b'abcde',
+        bytearray(b'abcde'),
+        None,
+        True,
+        False,
+        lambda x: x,
+        (i for i in range(5)),
+        iter([1, 2, 3]),
+    ],
+)
+
+def test_w05_ex01_1f__unsupported_types_raise_typeerror(w):
+    """Use for different kind of raise testing."""
+    with pytest.raises(TypeError):
+        w05_ex01_1f(w, True)
+
+
+### Special True ###
+@pytest.mark.parametrize(
+    'w',
+    [
+        32,
+        32.0,
+        64,
+        64.0,
+        128,
+        128.0,
+    ],
+)
+
+def test_w05_ex01_1f__supported_types_int_float_ok(w):
+    """Use for different kind of True check."""
+    assert w05_ex01_1f(w, True) is True
+
+
+### Special False ###
+@pytest.mark.parametrize(
+    'w',
+    [
+        31,
+        31.99,
+        32.01,
+        42,
+        63.99,
+        64.01,
+        96,
+        127.99,
+        128.01,
+        -32,
+        -32.0,
+        -64,
+        -64.0,
+        -128,
+        -128.0,
+    ],
+)
+
+def test_w05_ex01_1f__supported_types_int_float_nok(w):
+    """Use for different kind of False check."""
+    assert w05_ex01_1f(w, True) is False
+
 ############################## 1g ###################################
+
+### Special Exception ###
+# Note: Bool is troublesome, since isinstance will not
+# catch it, it is a subclass of int
+@pytest.mark.parametrize(
+    'x',
+    [
+        '10',
+        [3.14],
+        (2, 3),
+        {'no': 1},
+        {42, 41},
+        range(1),
+        b'abcde',
+        bytearray(b'abcde'),
+        None,
+        True,
+        False,
+        lambda x: x,
+        (i for i in range(5)),
+        iter([1, 2, 3]),
+    ],
+)
+
+def test_w05_ex01_1g__unsupported_types_raise_typeerror(x):
+    """Use for different kind of raise testing."""
+    with pytest.raises(TypeError):
+        w05_ex01_1g(x, True)
+
+
+### Special Value Check "Below 5" ###
+@pytest.mark.parametrize(
+    'x',
+    [
+        -666,
+        -42,
+        -0.987,
+        0,
+        1,
+        4.99,
+    ],
+)
+
+def test_w05_ex01_1g__supported_types_below5_ok(x):
+    """Use for different kind of value check.
+
+    Check "if x is below 5".
+    """
+    expected = 'less_5'
+    assert w05_ex01_1g(x, True) == expected
+
+
+### Special Value Check "Below 10 but 5 and Above" ###
+@pytest.mark.parametrize(
+    'x',
+    [
+        5,
+        6.42,
+        9,
+        9.99,
+    ],
+)
+
+def test_w05_ex01_1g__supported_types_below10_5above_ok(x):
+    """Use for different kind of value check.
+
+    Check "if x is below 10 but 5 or above".
+    """
+    expected = 'less10_more5'
+    assert w05_ex01_1g(x, True) == expected
+
+
+### Special Value Check "Below 15 but 10 and Above" ###
+@pytest.mark.parametrize(
+    'x',
+    [
+        10,
+        13.42,
+        14,
+        14.99,
+    ],
+)
+
+def test_w05_ex01_1g__supported_types_below15_10above_ok(x):
+    """Use for different kind of value check.
+
+    Check "if x is below 15 but 10 or above".
+    """
+    expected = 'less15_more10'
+    assert w05_ex01_1g(x, True) == expected
+
+
+### Special Value Check "Above 15" ###
+@pytest.mark.parametrize(
+    'x',
+    [
+        15,
+        42,
+        66,
+        199.99,
+    ],
+)
+
+def test_w05_ex01_1g__supported_types_15above_ok(x):
+    """Use for different kind of value check.
+
+    Check "if x is 15 or above".
+    """
+    expected = 'more15'
+    assert w05_ex01_1g(x, True) == expected

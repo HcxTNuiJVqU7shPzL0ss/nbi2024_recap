@@ -46,8 +46,10 @@ def w05_ex01_1a(x, unit):
               w05_ex01_1a.__name__, sep='')
         press_continue()
     if isinstance(x, bool) or not isinstance(x, (int, float)):
-        raise TypeError('Need int or float for parameter: x.')
-
+        wrong_type = type(x)
+        print(wrong_type)
+        raise TypeError(f'Need int or float for parameter: x.\n'
+                        f'What was entered is of type: {wrong_type}')
     if x > 100:
         return True
     return False
@@ -142,8 +144,8 @@ def w05_ex01_1e(v, unit):
 
     Parameter 'unit' used as True if to run unit test,
     if False instead 'normal run'.
-    If other than bool used as argument for
-    parameter 'z', raises TypeError.
+    If other than int or float used as argument for
+    parameter 'v', raises TypeError.
     8 < v < 16
     EC1 == All numbers above 8 and below 16 (int or float)
     EC2 == Numbers (int or float) from 8 and below (inc negative)
@@ -164,23 +166,58 @@ def w05_ex01_1e(v, unit):
 
 
 def w05_ex01_1f(w, unit):
-    """Use for 1.1f part."""
+    """Use for 1.1f part.
+
+    Parameter 'unit' used as True if to run unit test,
+    if False instead 'normal run'.
+    If other than int or float used as argument for
+    parameter 'w', raises TypeError.
+    w == 32 or w == 64 or w == 128
+    EC1 == The specific numbers 32, 64 and 128 (int or float)
+    EC2 == Numbers (int or float) below 32 (inc negative)
+    EC3 == Numbers (int or float) above 32 and below 54
+    EC4 == Numbers (int or float) above 128
+    EC1 returns True.
+    EC2 returns False.
+    EC3 returns False.
+    EC4 returns False.
+    """
     if not unit:
         print('This is part 1f.\nFunction: ',
               w05_ex01_1f.__name__, sep='')
         press_continue()
-    # w == 32 or w == 64 or w == 128 # EX== 32, 64 or 128
+    if isinstance(w, bool) or not isinstance(w, (int, float)):
+        raise TypeError('Need int or float for parameter: w.')
     if w in (32, 64, 128):
         return True
     return False
 
 
 def w05_ex01_1g(x, unit):
-    """Use for 1.1g part."""
+    """Use for 1.1g part.
+
+    Parameter 'unit' used as True if to run unit test,
+    if False instead 'normal run'.
+    If other than int or float used as argument for
+    parameter 'x', raises TypeError.
+    See if below in code for checks on x.
+    EC1 == All numbers below 5 (int or float), including negative
+    EC2 == Numbers (int or float) 5 --> above and below 10
+    EC3 == Numbers (int or float) 10 --> above and below 15
+    EC4 == All numbers 15 --> above (int or float)
+    EC1 returns a string that the value is less than 5.
+    EC2 returns a string that the value is greater than 5, though
+        less than 10.
+    EC3 returns a string that the value is greater than 10, though
+        less than 15.
+    EC4 returns a string that the value is greater than 15.
+    """
     if not unit:
         print('This is part 1g.\nFunction: ',
               w05_ex01_1g.__name__, sep='')
         press_continue()
+    if isinstance(x, bool) or not isinstance(x, (int, float)):
+        raise TypeError('Need int or float for parameter: x.')
     if x < 5:
         check_value = 'less_5'
     elif x < 10:

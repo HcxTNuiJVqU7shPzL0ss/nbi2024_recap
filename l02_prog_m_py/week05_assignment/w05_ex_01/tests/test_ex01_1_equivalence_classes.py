@@ -362,6 +362,20 @@ def test_w05_ex01_1e__false():
 
 ############################## 1f ###################################
 
+def test_w05_ex01_1f__raise():
+    """Use for unit test of function w05_ex01_1f.
+
+    Check that using other than int or float raise an exception.
+    """
+    if_error = TypeError
+    use_1f_str = '42'
+    use_1f_list = [42]
+    with pytest.raises(if_error):
+        w05_ex01_1f(use_1f_str, True)
+    with pytest.raises(if_error):
+        w05_ex01_1f(use_1f_list, True)
+
+
 def test_w05_ex01_1f__true():
     """Used for unit test of function w05_ex01_1f, check True."""
 
@@ -370,6 +384,13 @@ def test_w05_ex01_1f__true():
     c = w05_ex01_1f(128, True)
     d = a and b and c
     assert d is True
+
+    # Also with float
+    d = w05_ex01_1f(32.0, True)
+    e = w05_ex01_1f(64.0, True)
+    f = w05_ex01_1f(128.0, True)
+    g = d and e and f
+    assert g is True
 
 
 def test_w05_ex01_1f__false():
@@ -382,23 +403,71 @@ def test_w05_ex01_1f__false():
     z = m or n or o or p
     assert z is False
 
+    # Also with float
+    use_f_float_a = 31.99
+    use_f_float_b = 32.01
+    use_f_float_c = 63.99
+    use_f_float_d = 64.01
+    use_f_float_e = 127.99
+    use_f_float_f = 128.01
+    assert w05_ex01_1f(use_f_float_a, True) is False
+    assert w05_ex01_1f(use_f_float_b, True) is False
+    assert w05_ex01_1f(use_f_float_c, True) is False
+    assert w05_ex01_1f(use_f_float_d, True) is False
+    assert w05_ex01_1f(use_f_float_e, True) is False
+    assert w05_ex01_1f(use_f_float_f, True) is False
+
+    # Also with negative
+    use_f_neg_a = -32
+    use_f_neg_b = -64
+    use_f_neg_c = -128
+    assert w05_ex01_1f(use_f_neg_a, True) is False
+    assert w05_ex01_1f(use_f_neg_b, True) is False
+    assert w05_ex01_1f(use_f_neg_c, True) is False
+
 ############################## 1g ###################################
 
+def test_w05_ex01_1g__raise():
+    """Use for unit test of function w05_ex01_1g.
+
+    Check that using other than int or float raise an exception.
+    """
+    if_error = TypeError
+    use_1g_str = '42'
+    use_1g_list = [42]
+    with pytest.raises(if_error):
+        w05_ex01_1g(use_1g_str, True)
+    with pytest.raises(if_error):
+        w05_ex01_1g(use_1g_list, True)
+
+
 def test_w05_ex01_1g__check_values():
-    """Used for unit test of function w05_ex01_1g, check values."""
+    """Used for unit test of function w05_ex01_1g.
+
+    Check that the expected string is returned for the
+    values sent as argument to the function parameter.
+    """
 
     expected_less5 = 'less_5'
     a = w05_ex01_1g(-100, True)
+    a_2 = w05_ex01_1g(1.01, True)
+    assert a == a_2
     assert a == expected_less5
 
     expected_less10_more5 = 'less10_more5'
     b = w05_ex01_1g(5, True)
+    b_2 = w05_ex01_1g(7.5, True)
+    assert b == b_2
     assert b == expected_less10_more5
 
     expected_less15_more10 = 'less15_more10'
     c = w05_ex01_1g(10, True)
+    c_2 = w05_ex01_1g(12.5, True)
+    assert c == c_2
     assert c == expected_less15_more10
 
     expected_more15 = 'more15'
     d = w05_ex01_1g(15, True)
+    d_2 = w05_ex01_1g(15345.99, True)
+    assert d == d_2
     assert d == expected_more15
