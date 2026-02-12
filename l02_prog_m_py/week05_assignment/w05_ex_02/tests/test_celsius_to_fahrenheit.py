@@ -29,6 +29,9 @@ import pytest
 from ..src.celsius_to_fahrenheit import celsius_to_fahrenheit
 
 
+###
+
+
 ### Special Exception Type ###
 # Note: Bool is troublesome, since isinstance will not
 # catch it, it is a subclass of int
@@ -57,9 +60,11 @@ def test_celsius_to_fahrenheit__unsupported_types_raise_typeerror(c_degree_input
     with pytest.raises(TypeError):
         celsius_to_fahrenheit(c_degree_input)
 
+
 ###
 
-### Special Exception Value low ###
+
+### Special Exception Value: low ###
 @pytest.mark.parametrize(
     'c_degree_input',
     [
@@ -74,9 +79,11 @@ def test_celsius_to_fahrenheit__temp_too_low(c_degree_input):
     with pytest.raises(ValueError):
         celsius_to_fahrenheit(c_degree_input)
 
+
 ###
 
-### Special Exception Value high ###
+
+### Special Exception Value: high ###
 @pytest.mark.parametrize(
     'c_degree_input',
     [
@@ -90,7 +97,9 @@ def test_celsius_to_fahrenheit__temp_too_high(c_degree_input):
     with pytest.raises(ValueError):
         celsius_to_fahrenheit(c_degree_input)
 
+
 ###
+
 
 def test_celsius_to_fahrenheit__check_low_temps():
     """Used for unit test of function celsius_to_fahrenheit.
