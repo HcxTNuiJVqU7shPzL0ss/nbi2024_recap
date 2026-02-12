@@ -1,6 +1,6 @@
-"""Module for Lesson 02, Week 05, Exercise 02, part 1a.
+"""Module for Lesson 02, Week 05, Exercise 02, part 1.
 
-Part 2.1a function.
+Part 2.1 function.
 See file w05_ex02_functions for "just following the exercise"
 version of "easier not as complete" version.
 This one here can be considered extensive and very
@@ -23,6 +23,10 @@ overworked, used for learning things.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #####################################################################
+
+
+from my_funct_dir.my_base_functions import (press_continue,
+                                            enter_float)
 
 
 def celsius_to_fahrenheit(c_degree_input):
@@ -58,3 +62,21 @@ def celsius_to_fahrenheit(c_degree_input):
 
     # Perform temperature conversion calculation
     return c_degree_input * 9 / 5 + 32
+
+
+def run_c_to_f_conversion():
+    """Use to ask for a temperature to convert.
+
+    User should input a float in Celsius, this will be converted
+    into Fahrenheit, then presented.
+    """
+    print('You will be asked to input a float value.\n'
+          'This represents a temperature in Celsius.\n'
+          'The input value will be converted into Fahrenheit, '
+          'then presented as a result.')
+    press_continue()
+    ask_str = 'Please enter a value for degrees Celsius: '
+    use_to_convert = enter_float(ask_str)
+    is_fahrenheit = celsius_to_fahrenheit(use_to_convert)
+    print(f'\nYour value "{use_to_convert}" in Celsius '
+          f'is {is_fahrenheit} degrees Fahrenheit.')

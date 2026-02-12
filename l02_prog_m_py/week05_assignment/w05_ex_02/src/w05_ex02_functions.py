@@ -63,7 +63,7 @@ def count_words(sentence):
         return None # Only leading space(s) used as input
     if reduced_sentence[-1] == ' ':
         # Skips any trailing space (more than one handled previously)
-        reduced_sentence = reduced_sentence[:-2]
+        reduced_sentence = reduced_sentence[:-1]
 
     cnt_space = reduced_sentence.count(' ')
     return cnt_space + 1

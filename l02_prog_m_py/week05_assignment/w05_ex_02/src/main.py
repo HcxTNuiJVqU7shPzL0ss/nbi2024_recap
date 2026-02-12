@@ -25,6 +25,8 @@ Parts 2.1 through 2.4, file for main.py.
 from w05_ex02_functions import (c_to_f, count_words,
                                 find_median,
                                 is_sorted_ascending)
+from celsius_to_fahrenheit import run_c_to_f_conversion
+from count_words_in_string import run_space_check
 # pylint: enable=import-error
 
 
@@ -38,18 +40,33 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
+    # Version 1: Celsius to Fahrenheit
     check32 = c_to_f(0)
     print(check32)
     press_continue()
 
+    # Version 2
+    run_c_to_f_conversion()
+    press_continue()
+
+
+    # Version 1: Count words in string
     check_three = count_words('  1  2   3  ')
     print(check_three)
     press_continue()
 
+    # Version 2
+    run_space_check()
+    press_continue()
+
+
+    # Version 1: Check median
     check_median = find_median([-100.23, 2, 42.71, 100, -200])
     print(check_median)
     press_continue()
 
+
+    # Version 1: Sort ascending
     check_sorted_y = is_sorted_ascending([1, 2, 42])
     print(check_sorted_y)
     press_continue()
