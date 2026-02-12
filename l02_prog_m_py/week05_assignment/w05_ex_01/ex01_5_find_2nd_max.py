@@ -27,7 +27,7 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-def find_2nd_max(list_in):
+def find_2nd_max(list_in_2nd):
     """Find the second to max numbered value in incoming list.
 
     If empty list, there are no numbered items, or only one
@@ -35,41 +35,63 @@ def find_2nd_max(list_in):
     If there is a tie for first place, this value will be
     returned.
     """
+    # Store the function first parameter name from find_2nd_max
+    param_name_2nd_max = dir()[0]
     found_max = float('-inf')
     found_2nd_max = float('-inf')
     cnt_nr = 0
-    if not list_in: # List is empty
+    if not isinstance(list_in_2nd, list):
+        wrong_type = type(list_in_2nd)
+        raise TypeError(f'Need a list for parameter: '
+                        f'{param_name_2nd_max}.\n'
+                        f'What was entered is of type: '
+                        f'{wrong_type}')
+    # List is empty, or less than 2 values in the list
+    if not list_in_2nd or len(list_in_2nd) < 2:
         return None, None
-    if len(list_in) < 2: # Less than 2 values in list
-        return None, None
-    for item in list_in:
-        if isinstance(item, (int, float)): # Only check int and float
+    for item in list_in_2nd:
+        # Check only int and float
+        if (not isinstance(item, bool) and
+                isinstance(item, (int, float))):
             if cnt_nr == 0:
                 found_max = item
             elif item > found_max:
                 found_2nd_max = found_max
                 found_max = item
-            # Does not allow two "high" values only
-            #elif item > found_2nd_max and item != found_max:
             elif item > found_2nd_max:
                 found_2nd_max = item
             cnt_nr += 1
+    # Have not found 2 numbers, or 2 numbers found, but are identical
     if found_2nd_max == float('-inf') or cnt_nr < 2:
         return None, None
     return found_2nd_max, cnt_nr
 
 
+def run_2nd_max():
+    """Use to run function find_2nd_max.
+
+    Creates the input, handles the output.
+    """
+    second_max = 10
+    list_to_search = [second_max, 'a', 2, 3, 4, 5, 17]
+
+    print(f'Will search the list {list_to_search}.\n'
+          f'The second largest number will be presented.\n'
+          f'Should give: {second_max}.\n')
+
+    result = find_2nd_max(list_to_search)
+
+    print(f'The second to max found is: {result[0]}')
+    print(f'There were {result[1]} numbers in the list.')
+
+
 def main():
     """Use as main function."""
-    print('\nWeek 05, Exercise 01.5, Find 2nd max.\nFunction: ',
+    print('\nWeek 05, Exercise 1.5, Find 2nd max.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    list_to_search = [10, 'a', 2, 3, 4, 5, 17]
-
-    result = find_2nd_max(list_to_search)
-    print(f'The second to max found is: {result[0]}')
-    print(f'There were {result[1]} numbers in the list.')
+    run_2nd_max()
 
     press_exit()
 
