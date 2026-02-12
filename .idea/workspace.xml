@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex 1 part 4 done&#10;&#10;Done with Ex 1 part 4&#10;Some refactoring compared to what &#10;was done off course&#10;Minor changes in some other files &#10;to clean up, including fix of &#10;pylint warning">
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_5_find_2nd_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_5_find_2nd_max.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex 1 part 5 done&#10;&#10;Done with Ex 1 part 5&#10;Should be all of Ex 01 now">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/celsius_to_fahrenheit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_celsius_to_fahrenheit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_2.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_3.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_4.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/doc/w05_ex2_4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +62,7 @@
     "Python.01_diskussion.executor": "Run",
     "Python.balder_2.executor": "Run",
     "Python.calculator_5.executor": "Run",
+    "Python.celsius_to_fahrenheit.executor": "Run",
     "Python.circle.executor": "Run",
     "Python.discuss.executor": "Run",
     "Python.discuss_1.executor": "Run",
@@ -61,6 +72,7 @@
     "Python.ex01_2_sum_list.executor": "Run",
     "Python.ex01_3_count_vowels.executor": "Run",
     "Python.ex01_4_find_max.executor": "Run",
+    "Python.ex01_5_find_2nd_max.executor": "Run",
     "Python.ex01_discuss.executor": "Run",
     "Python.ex01_main_hello_name.executor": "Run",
     "Python.ex01_main_hello_name_v2.executor": "Run",
@@ -134,14 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00063" summary="L02 W05 Ex04 features again&#10;&#10;Added code and features&#10;have not added any unit tests&#10;and the files too">
-      <option name="closed" value="true" />
-      <created>1769979642696</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1769979642696</updated>
     </task>
     <task id="LOCAL-00064" summary="Adding builds">
       <option name="closed" value="true" />
@@ -527,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770888797753</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="L02 W05 Ex 1 part 5 done&#10;&#10;Done with Ex 1 part 5&#10;Should be all of Ex 01 now">
+      <option name="closed" value="true" />
+      <created>1770890076003</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1770890076003</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +554,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet" />
     <MESSAGE value="Adding L02 W04 Ex03 version 1&#10;&#10;Version 1 files added for &#10;exercise 03 or week 04&#10;code and test&#10;Also minor name refactoring due to &#10;kind of picky pylint&#10;And, removed some not needed &#10;parenthesis for ex 02 test files" />
     <MESSAGE value="Adding L02 W04 Ex03 version 2&#10;&#10;Version 2 files added for &#10;exercise 03 or week 04&#10;code and test" />
     <MESSAGE value="Adding L02 W04 Ex03 version 2, more test&#10;&#10;Adding two more asserts for test" />
@@ -567,6 +578,7 @@
     <MESSAGE value="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now" />
     <MESSAGE value="L02 W05 Ex 1 part 3 done&#10;&#10;Latest commit message mention &#10;Ex 2, but was actually Ex 1 part 2&#10;Now, also done with Ex 1 part 3, &#10;both a and b&#10;Some refactoring compared to what &#10;was done off course" />
     <MESSAGE value="L02 W05 Ex 1 part 4 done&#10;&#10;Done with Ex 1 part 4&#10;Some refactoring compared to what &#10;was done off course&#10;Minor changes in some other files &#10;to clean up, including fix of &#10;pylint warning" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex 1 part 4 done&#10;&#10;Done with Ex 1 part 4&#10;Some refactoring compared to what &#10;was done off course&#10;Minor changes in some other files &#10;to clean up, including fix of &#10;pylint warning" />
+    <MESSAGE value="L02 W05 Ex 1 part 5 done&#10;&#10;Done with Ex 1 part 5&#10;Should be all of Ex 01 now" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex 1 part 5 done&#10;&#10;Done with Ex 1 part 5&#10;Should be all of Ex 01 now" />
   </component>
 </project>
