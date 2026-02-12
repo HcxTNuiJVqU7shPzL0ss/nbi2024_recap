@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex 1 done&#10;&#10;Adding more for test, though &#10;now feel done with exercise 01">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_2_sum_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_2_sum_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_2_sum_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_2_sum_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_3_count_vowels.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_01/ex01_3_count_vowels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
     "Python.e3_receipt_calculator_3_v2.executor": "Run",
     "Python.ex01_1_equivalence_classes.executor": "Run",
     "Python.ex01_2_sum_list.executor": "Run",
+    "Python.ex01_3_count_vowels.executor": "Run",
     "Python.ex01_discuss.executor": "Run",
     "Python.ex01_main_hello_name.executor": "Run",
     "Python.ex01_main_hello_name_v2.executor": "Run",
@@ -111,7 +112,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
-    "settings.editor.selected.configurable": "preferences.externalTools"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -134,14 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Refactor file names&#10;&#10;Edits to file names to &#10;follow the same style &#10;over different weeks">
-      <option name="closed" value="true" />
-      <created>1769968509189</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1769968509189</updated>
     </task>
     <task id="LOCAL-00061" summary="L02 W05 Ex04 base&#10;&#10;Adding initial base files &#10;to be able to get started &#10;with exercise 04">
       <option name="closed" value="true" />
@@ -527,7 +520,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770813676442</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now">
+      <option name="closed" value="true" />
+      <created>1770819011078</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1770819011078</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,7 +543,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding L02 W04 Ex02 part 06&#10;&#10;Adding part 06 of exercise 02&#10;Code and tests" />
     <MESSAGE value="Adding L02 W04 Ex02 part 07&#10;&#10;Adding part 07 of exercise 02&#10;Code and tests&#10;Also fixing some docstring &#10;comments for clarity" />
     <MESSAGE value="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02" />
     <MESSAGE value="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet" />
@@ -567,6 +567,7 @@
     <MESSAGE value="L02 W05 Ex 1 work ongoing&#10;&#10;Played around a bit&#10;Two separate files for testing&#10;Worked through parts 1.1 a &#10;through 1.1 d" />
     <MESSAGE value="L02 W05 Ex 1 work ongoing e&#10;&#10;Played around a bit&#10;Worked through parts 1.1 a &#10;through 1.1 e" />
     <MESSAGE value="L02 W05 Ex 1 done&#10;&#10;Adding more for test, though &#10;now feel done with exercise 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex 1 done&#10;&#10;Adding more for test, though &#10;now feel done with exercise 01" />
+    <MESSAGE value="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now" />
   </component>
 </project>

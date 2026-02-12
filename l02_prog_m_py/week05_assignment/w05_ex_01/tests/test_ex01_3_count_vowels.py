@@ -34,7 +34,7 @@ def test_count_vowels__empty_word():
 def test_count_vowels__no_vowels():
     """Used for unit test of function count_vowels.
 
-    Check empty word.
+    Check when no vowels are used.
     """
     # No, one test case is not enough
     assert count_vowels('qwrt') == 0
