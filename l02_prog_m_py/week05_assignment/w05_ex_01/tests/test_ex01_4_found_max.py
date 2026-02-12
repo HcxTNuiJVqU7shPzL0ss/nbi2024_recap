@@ -1,4 +1,4 @@
-"""Module for tests, L02, W05, Ex01.4."""
+"""Module for tests, L02, W05, Ex1.4."""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -18,7 +18,10 @@
 #####################################################################
 
 
-from ..ex01_4_find_max import (find_max)
+import pytest
+
+
+from ..ex01_4_find_max import find_max
 
 
 def test_find_max__empty_list():
@@ -50,6 +53,8 @@ def test_find_max__number_list_max():
     assert find_max([105, 5, -5985, 500, 9]) == 500
     assert find_max([-999, 1.1]) == 1.1
 
+    assert find_max([-1, 'a']) == -1
+
 
 def test_find_max__non_numbered_list():
     """Used for unit test of function find_max.
@@ -62,3 +67,31 @@ def test_find_max__non_numbered_list():
     c = find_max([str(2), '234'])
     assert b == c
     assert a == expected
+
+
+### Special Exception ###
+@pytest.mark.parametrize(
+    'list_in',
+    [
+        42,
+        42.42,
+        '10',
+        (2, 3),
+        {'no': 1},
+        {42, 41},
+        range(1),
+        b'abcde',
+        bytearray(b'abcde'),
+        None,
+        True,
+        False,
+        lambda x: x,
+        (i for i in range(5)),
+        iter([1, 2, 3]),
+    ],
+)
+
+def test_find_max__unsupported_types_raise_typeerror(list_in):
+    """Use for raise testing when incorrect type."""
+    with pytest.raises(TypeError):
+        find_max(list_in)

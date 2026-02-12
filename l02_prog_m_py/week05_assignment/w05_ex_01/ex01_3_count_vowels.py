@@ -1,6 +1,8 @@
-"""Module for Lesson 02, Week 05, Exercise 01.2, Count vowels.
+"""Module for Lesson 02, Week 05, Exercise 1.3, Count vowels.
 
 Update the code and fix it, including tests in separate file.
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -33,8 +35,14 @@ def count_vowels(word_in):
         return None
     if isinstance(word_in, str):
         # word_in = word_in.casefold()
-        vowel = sum([1 for char in word_in.casefold() if
-                     char in check_vowels])
+        # # pylint: disable=consider-using-generator
+        # # For max, min and sum using a generator
+        # # is also recommended by pep289.
+        # vowel = sum([1 for char in word_in.casefold() if
+        #              char in check_vowels])
+        # # pylint: enable=consider-using-generator
+        vowel = sum(1 for char in word_in.casefold() if
+                     char in check_vowels)
         # for char in word_in:
         #     if char.lower() in check_vowels:
         #         vowel += 1

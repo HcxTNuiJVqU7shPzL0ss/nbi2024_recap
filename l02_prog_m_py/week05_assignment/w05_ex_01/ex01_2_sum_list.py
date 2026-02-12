@@ -1,6 +1,8 @@
-"""Module for Lesson 02, Week 05, Exercise 01.2, Fix "sum_list".
+"""Module for Lesson 02, Week 05, Exercise 1.2, Fix "sum_list".
 
 Update the code and fix it, including tests in separate file.
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -25,22 +27,23 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-def sum_list(list_in):
+def sum_list(list_in_sum):
     """Sum up incoming numbered list.
 
     If parameter is of a type other than list, return TypeError.
     If empty list, return None.
     If any non numbered items, return 'incorrect' string.
     """
-    param_name = dir()[0] # Store the function first parameter name
+    # Store the function first parameter name from sum_list
+    param_name_sum = dir()[0]
     tot = 0
-    if not isinstance(list_in, list): # Wrong type
-        wrong_type = type(list_in)
-        raise TypeError(f'Need a list for parameter: {param_name}.\n'
+    if not isinstance(list_in_sum, list): # Wrong type
+        wrong_type = type(list_in_sum)
+        raise TypeError(f'Need a list for parameter: {param_name_sum}.\n'
                         f'What was entered is of type: {wrong_type}')
-    if not list_in: # List is empty
+    if not list_in_sum: # List is empty
         return None
-    for item in list_in:
+    for item in list_in_sum:
         if (not isinstance(item, bool) and
                 isinstance(item, (int, float))):
             tot += item
@@ -51,16 +54,29 @@ def sum_list(list_in):
     return tot
 
 
+def run_sum_list():
+    """Use to run function sum_list.
+
+    Creates the input, handles the output.
+    """
+    expected_sum = 15
+    list_to_sum_up = [1, 2, 3, 4, 5]
+
+    print(f'Will search the list {list_to_sum_up}.\n'
+          f'The sum will be presented.\n'
+          f'Should give: {expected_sum}.\n')
+
+    result = sum_list(list_to_sum_up)
+    print(f'The sum is: {result}')
+
+
 def main():
     """Use as main function."""
-    print('\nWeek 05, Exercise 01.2, Sum list.\nFunction: ',
+    print('\nWeek 05, Exercise 1.2, Sum list.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    list_to_sum_up = [1, 2, 3, 4, 5]
-
-    result = sum_list(list_to_sum_up)
-    print(f'The result is: {result}')
+    run_sum_list()
 
     press_exit()
 

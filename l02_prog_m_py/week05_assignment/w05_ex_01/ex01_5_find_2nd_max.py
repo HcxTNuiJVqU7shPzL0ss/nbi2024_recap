@@ -1,6 +1,8 @@
-"""Module for Lesson 02, Week 05, Exercise 01.5, Find second max.
+"""Module for Lesson 02, Week 05, Exercise 1.5, Find second max.
 
 Build a function that finds the second-largest number in a list.
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################

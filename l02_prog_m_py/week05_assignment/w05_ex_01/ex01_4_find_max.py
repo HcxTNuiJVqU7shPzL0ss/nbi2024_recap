@@ -1,6 +1,8 @@
-"""Module for Lesson 02, Week 05, Exercise 01.4, Find max.
+"""Module for Lesson 02, Week 05, Exercise 1.4, Find max.
 
 Build a function that finds the largest number in a list.
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -25,36 +27,55 @@ from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
 
 
-def find_max(list_in):
+def find_max(list_in_max):
     """Find the max numbered value in incoming list.
 
     If empty list, return None.
     If there are no numbered items, return 'incorrect' string.
-    Will not use built-in "max", looking at numbers only.
+    Will not use built-in "max" directly, looking at numbers only.
     """
+    # Store the function first parameter name from find_max
+    param_name_max = dir()[0]
     found_max = float('-inf')
-    if not list_in: # List is empty
+    no_numbers = found_max
+    if not isinstance(list_in_max, list):
+        wrong_type = type(list_in_max)
+        raise TypeError(f'Need a list for parameter: {param_name_max}.\n'
+                        f'What was entered is of type: {wrong_type}')
+    if not list_in_max: # List is empty
         return None
-    for item in list_in:
-        if isinstance(item, (int, float)):
-            #if item > found_max:
+    for item in list_in_max:
+        if (not isinstance(item, bool) and
+                isinstance(item, (int, float))):
             found_max = max(found_max, item)
-                #found_max = item
-    if found_max == float('-inf'):
+    if found_max == no_numbers:
         return 'incorrect'
     return found_max
 
 
-def main():
-    """Use as main function."""
-    print('\nWeek 05, Exercise 01.4, Sum list.\nFunction: ',
-          main.__name__, sep = '')
-    press_continue()
+def run_find_max():
+    """Use to run function find_max.
 
-    list_to_search = [10, 'a', 2, 3, 4, 5]
+    Creates the input, handles the output.
+    """
+    max_no = 10
+    list_to_search = [max_no, 'a', 2, 3, 4, 5]
+
+    print(f'Will search the list {list_to_search}.\n'
+          f'The largest number will be presented.\n'
+          f'Should give: {max_no}.\n')
 
     result = find_max(list_to_search)
     print(f'The max found is: {result}')
+
+
+def main():
+    """Use as main function."""
+    print('\nWeek 05, Exercise 1.4, Sum list.\nFunction: ',
+          main.__name__, sep = '')
+    press_continue()
+
+    run_find_max()
 
     press_exit()
 

@@ -1,4 +1,4 @@
-"""Module for Lesson 02, Week 05, Exercise 01.1, Discuss.
+"""Module for Lesson 02, Week 05, Exercise 1.1, Discuss.
 
 Which equivalence classes does the expressions have?
 TAP HT 25D, though done in near time off course, then
@@ -93,7 +93,7 @@ def w05_ex01_1c(text, unit):
     EC2 returns False.
     """
     if not unit:
-        print('This is part 1c.\nFunction: ',
+        print('This is part 1.1c.\nFunction: ',
               w05_ex01_1c.__name__, sep='')
         press_continue()
     # if isinstance(text, (int, float, bool, complex, type(None))):
@@ -129,7 +129,7 @@ def w05_ex01_1d(z, unit):
     EC2 returns False.
     """
     if not unit:
-        print('This is part 1d.\nFunction: ',
+        print('This is part 1.1d.\nFunction: ',
               w05_ex01_1d.__name__, sep='')
         press_continue()
     if not isinstance(z, bool):
@@ -155,7 +155,7 @@ def w05_ex01_1e(v, unit):
     EC3 returns False.
     """
     if not unit:
-        print('This is part 1e.\nFunction: ',
+        print('This is part 1.1e.\nFunction: ',
               w05_ex01_1e.__name__, sep='')
         press_continue()
     if isinstance(v, bool) or not isinstance(v, (int, float)):
@@ -183,7 +183,7 @@ def w05_ex01_1f(w, unit):
     EC4 returns False.
     """
     if not unit:
-        print('This is part 1f.\nFunction: ',
+        print('This is part 1.1f.\nFunction: ',
               w05_ex01_1f.__name__, sep='')
         press_continue()
     if isinstance(w, bool) or not isinstance(w, (int, float)):
@@ -213,7 +213,7 @@ def w05_ex01_1g(x, unit):
     EC4 returns a string that the value is greater than 15.
     """
     if not unit:
-        print('This is part 1g.\nFunction: ',
+        print('This is part 1.1g.\nFunction: ',
               w05_ex01_1g.__name__, sep='')
         press_continue()
     if isinstance(x, bool) or not isinstance(x, (int, float)):
@@ -337,7 +337,7 @@ def run_1_1_g():
 
 def main():
     """Use as main function."""
-    print('\nWeek 05, Exercise 01.1, Discuss.\nFunction: ',
+    print('\nWeek 05, Exercise 1.1, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 

@@ -1,4 +1,4 @@
-"""Module for tests, L02, W05, Ex01.1.
+"""Module for tests, L02, W05, Ex1.1.
 
 OG version, without special handling.
 """
