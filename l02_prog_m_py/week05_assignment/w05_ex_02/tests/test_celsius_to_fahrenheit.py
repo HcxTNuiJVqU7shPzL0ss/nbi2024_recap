@@ -1,6 +1,6 @@
 """Module for tests, L02, W05, Ex02.
 
-Part 2.1a function test.
+Part 2.1 function test.
 This one here can be considered extensive and very
 overworked, used for learning things.
 """

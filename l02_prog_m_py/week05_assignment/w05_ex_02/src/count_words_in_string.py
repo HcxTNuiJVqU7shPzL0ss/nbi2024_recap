@@ -58,7 +58,7 @@ def remove_duplicate_spaces(string_in):
     return result_str
 
 
-def count_words_in_string(sentence_in):
+def count_words_in_sentence(sentence_in):
     """Use to count the number of words in a string.
 
     Will raise TypeError if input parameter is not of type str.
@@ -119,6 +119,6 @@ def run_space_check():
     ask_str = ('Please enter the string where you '
                'want the words counted: ')
     use_to_count_words = enter_string(ask_str)
-    no_of_words = count_words_in_string(use_to_count_words)
+    no_of_words = count_words_in_sentence(use_to_count_words)
     print(f'\nYour string "{use_to_count_words}" contained '
           f'{no_of_words} separate words.')

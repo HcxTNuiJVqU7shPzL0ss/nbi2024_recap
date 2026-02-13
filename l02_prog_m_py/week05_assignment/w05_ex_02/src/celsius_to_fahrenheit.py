@@ -78,5 +78,6 @@ def run_c_to_f_conversion():
     ask_str = 'Please enter a value for degrees Celsius: '
     use_to_convert = enter_float(ask_str)
     is_fahrenheit = celsius_to_fahrenheit(use_to_convert)
-    print(f'\nYour value "{use_to_convert}" in Celsius '
-          f'is {is_fahrenheit} degrees Fahrenheit.')
+    print(f'\nYour value "{use_to_convert}" '
+          f'in \N{DEGREE SIGN}Celsius '
+          f'is {is_fahrenheit:.2f} \N{DEGREE SIGN}Fahrenheit.')
