@@ -113,7 +113,7 @@ def run_space_check():
     information.
     """
     print('You will be asked to input a string.\n'
-          'Depending on how may spaces separate non-spaces, '
+          'Depending on how may times a space separate non-spaces, '
           'the number of "words" you have entered will be reported.')
     press_continue()
     ask_str = ('Please enter the string where you '

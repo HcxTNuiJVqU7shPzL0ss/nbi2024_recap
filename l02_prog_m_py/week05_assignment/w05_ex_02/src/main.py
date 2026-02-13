@@ -27,6 +27,7 @@ from w05_ex02_functions import (c_to_f, count_words,
                                 is_sorted_ascending)
 from celsius_to_fahrenheit import run_c_to_f_conversion
 from count_words_in_string import run_space_check
+from find_the_median import run_median_check
 # pylint: enable=import-error
 
 
@@ -63,6 +64,10 @@ def main():
     # Version 1: Check median
     check_median = find_median([-100.23, 2, 42.71, 100, -200])
     print(check_median)
+    press_continue()
+
+    # Version 2
+    run_median_check()
     press_continue()
 
 
