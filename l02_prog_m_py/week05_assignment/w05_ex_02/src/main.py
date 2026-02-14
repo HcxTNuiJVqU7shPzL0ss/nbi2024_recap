@@ -28,6 +28,7 @@ from w05_ex02_functions import (c_to_f, count_words,
 from celsius_to_fahrenheit import run_c_to_f_conversion
 from count_words_in_string import run_space_check
 from find_the_median import run_median_check
+from check_ascending_list import run_sorted_ascending
 # pylint: enable=import-error
 
 
@@ -77,6 +78,10 @@ def main():
     press_continue()
     check_sorted_n = is_sorted_ascending([42, 3])
     print(check_sorted_n)
+    press_continue()
+
+    # Version 2
+    run_sorted_ascending()
 
     press_exit()
 

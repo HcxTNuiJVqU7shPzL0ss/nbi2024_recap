@@ -129,9 +129,9 @@ def test_find_median_in_list__wrong_list(list_of_numbers):
 
     Tests part of (bullet 5):
     req_001 / ac_001
-    Will raise ValueError (not return: None)
+    Will raise TypeError (not return: None)
     """
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         find_median_in_list(list_of_numbers)
 
 

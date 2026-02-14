@@ -71,7 +71,7 @@ def find_median_in_list(list_of_numbers):
     # All elements in the list has to be of type int or float
     if not all(isinstance(element, (int, float)) for
                element in list_of_numbers):
-        raise ValueError('\nThe input list must only contain '
+        raise TypeError('\nThe input list must only contain '
                          '(at least 2) numeric values.')
 
     # Sort ascending: incoming list
@@ -130,13 +130,16 @@ def enter_value_for_list(selected_type):
     return number_to_use
 
 
-def build_numbered_list():
+def build_numbered_list(info, min_cnt):
     """Use to build a list of numbers."""
-    print('You will be asked to input numbers to store in a list.\n'
-          'First, you will be asked, each time, if to input a '
-          'float or an int, after this to input the selected type.\n'
-          'The list is required to contain at least 2 values.')
+    base_info = ('You will be asked to input numbers to store in '
+                 'a list.\n'
+                 'First, you will be asked, each time, if to input '
+                 'a float or an int, after this to input the '
+                 'selected type.\n')
+    print(base_info + info)
     press_continue()
+
     cnt_num = 0
     ask_continue = 'Do you want to add more values (y)es or (n)o: '
     numbered_list = []
@@ -146,7 +149,7 @@ def build_numbered_list():
         numbered_list.append(user_number)
         cnt_num += 1
         print('')
-        if cnt_num > 1:
+        if cnt_num > min_cnt - 1:
             one_more = y_or_n(ask_continue)
             if one_more == 'y':
                 print('')
@@ -163,7 +166,12 @@ def run_median_check():
     print('Welcome to median reporter!')
     press_continue()
 
-    numbers_list = build_numbered_list()
+    minimum_values_median = 2
+    print_info_median = (f'The list is required to contain at least '
+                         f'{minimum_values_median} values.')
+
+    numbers_list = build_numbered_list(print_info_median,
+                                       minimum_values_median)
     copy_of_list = numbers_list.copy()
 
     median_in_list = find_median_in_list(numbers_list)
