@@ -167,6 +167,7 @@ l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_count_sui
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_create_return_card.py
 l02_prog_m_py/week04_assignment/w04_ex_04/src_tapht25d/tests/test_ex04_deal_hand.py
 l02_prog_m_py/week04_assignment/w04_ex_05/__init__.py
+l02_prog_m_py/week04_assignment/w04_ex_05/ex05_draw_python.py
 l02_prog_m_py/week04_assignment/w04_ex_05/ex05_turtle_graphics.py
 l02_prog_m_py/week05_assignment/__init__.py
 l02_prog_m_py/week05_assignment/w05_ex_01/__init__.py
@@ -176,6 +177,7 @@ l02_prog_m_py/week05_assignment/w05_ex_01/ex01_3_count_vowels.py
 l02_prog_m_py/week05_assignment/w05_ex_01/ex01_4_find_max.py
 l02_prog_m_py/week05_assignment/w05_ex_01/ex01_5_find_2nd_max.py
 l02_prog_m_py/week05_assignment/w05_ex_01/tests/__init__.py
+l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_ec_special.py
 l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_1_equivalence_classes.py
 l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_2_sum_list.py
 l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_3_count_vowels.py
@@ -183,10 +185,20 @@ l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_4_found_max.py
 l02_prog_m_py/week05_assignment/w05_ex_01/tests/test_ex01_5_found_2nd_max.py
 l02_prog_m_py/week05_assignment/w05_ex_02/__init__.py
 l02_prog_m_py/week05_assignment/w05_ex_02/src/__init__.py
+l02_prog_m_py/week05_assignment/w05_ex_02/src/celsius_to_fahrenheit.py
+l02_prog_m_py/week05_assignment/w05_ex_02/src/check_ascending_list.py
+l02_prog_m_py/week05_assignment/w05_ex_02/src/count_words_in_string.py
+l02_prog_m_py/week05_assignment/w05_ex_02/src/find_the_median.py
 l02_prog_m_py/week05_assignment/w05_ex_02/src/main.py
 l02_prog_m_py/week05_assignment/w05_ex_02/src/w05_ex02_functions.py
 l02_prog_m_py/week05_assignment/w05_ex_02/tests/__init__.py
-l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_celsius_to_fahrenheit.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_count_words_in_string.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_find_the_median.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02_c_to_f.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02_count_words.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02_find_median.py
+l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_w05_ex02_is_sorted_ascending.py
 l02_prog_m_py/week05_assignment/w05_ex_03/__init__.py
 l02_prog_m_py/week05_assignment/w05_ex_03/src/__init__.py
 l02_prog_m_py/week05_assignment/w05_ex_03/src/main.py
@@ -218,5 +230,6 @@ l02_prog_m_py/week06_assignment/w06_ex_03/ex03_bank.py
 l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py
 l02_prog_m_py/week06_assignment/w06_ex_04/__init__.py
 l02_prog_m_py/week06_assignment/w06_ex_04/ex04_webshop.py
+l02_prog_m_py/week07_exam/__init__.py
 my_funct_dir/__init__.py
 my_funct_dir/my_base_functions.py

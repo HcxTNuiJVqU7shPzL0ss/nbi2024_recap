@@ -1,4 +1,4 @@
-"""Module for tests, L02, W05, Ex01.5."""
+"""Module for tests, L02, W05, Ex1.5."""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -16,6 +16,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #####################################################################
+
+
+import pytest
 
 
 from ..ex01_5_find_2nd_max import (find_2nd_max)
@@ -39,6 +42,28 @@ def test_find_2nd_max__one_element_list():
     expected = None
     actual = find_2nd_max([100])
     assert actual[0] == expected
+
+
+def test_find_2nd_max__two_element_list_one_number():
+    """Used for unit test of function find_2nd_max.
+
+    Check list with two element, but they are identical.
+    """
+    identical_no = 100
+    actual = find_2nd_max([identical_no, identical_no])
+    assert actual[0] == identical_no
+
+
+def test_find_2nd_max__share_first():
+    """Used for unit test of function find_2nd_max.
+
+    Check list with shared first place.
+    """
+    shared_first = 100
+    lower_no = 99
+    actual = find_2nd_max([lower_no, shared_first,
+                           lower_no, shared_first])
+    assert actual[0] == shared_first
 
 
 def test_find_2nd_max__number_list_max():
@@ -76,3 +101,31 @@ def test_find_2nd_max__non_numbered_list():
     c = find_2nd_max([str(2), '234'])
     assert b[0] == c[0]
     assert a[0] == expected
+
+
+### Special Exception ###
+@pytest.mark.parametrize(
+    'list_in_2nd',
+    [
+        42,
+        42.42,
+        '10',
+        (2, 3),
+        {'no': 1},
+        {42, 41},
+        range(1),
+        b'abcde',
+        bytearray(b'abcde'),
+        None,
+        True,
+        False,
+        lambda x: x,
+        (i for i in range(5)),
+        iter([1, 2, 3]),
+    ],
+)
+
+def test_2nd_find_max__unsupported_types_raise_typeerror(list_in_2nd):
+    """Use for raise testing when incorrect type."""
+    with pytest.raises(TypeError):
+        find_2nd_max(list_in_2nd)

@@ -4,7 +4,7 @@ Turtle graphics.
 """
 
 #####################################################################
-# Copyright 2025 gnoff
+# Copyright 2025-2026 gnoff
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,11 @@ Turtle graphics.
 #####################################################################
 
 
+# pylint: disable=import-error
 from turtle import Screen, Turtle
 
+from ex05_draw_python import draw_python
+# pylint: enable=import-error
 
 from my_funct_dir.my_base_functions import (press_continue,
                                             press_exit)
@@ -85,15 +88,22 @@ def draw_p(p_height):
     turtle.circle(90, 90)
 
 
+def draw_python_letters():
+    """Use to draw the letters: PYTHON."""
+    draw_python()
+
+
 def main():
     """Use as main function."""
     print('\nWeek 04, Exercise 05, Turtle graphics.'
           '\nFunction: ',
           main.__name__, sep = '')
     screen = Screen()
-    press_continue()
+    # press_continue()
 
     turtle.speed(3)
+
+    # draw_python_letters()
 
     # Part 1: Function that draws a square with length of side
     # as parameter.
