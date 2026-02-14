@@ -28,30 +28,38 @@ from dataclasses import dataclass
 class Item:
     """Use to represent items that can be picked up."""
 
-    def __init__(self, name, value=10, symbol="?"):
+    def __init__(self, name, value=10, symbol='?'):
         """Use to initialize an object."""
         self.name = name
         self.value = value
         self.symbol = symbol
+
 
     def __str__(self):
         """Use to print."""
         return self.symbol
 
 
+# Used to randomize OG fruits and veggies
+# These give points if/when picked up
 pickups = [Item("carrot"), Item("apple"), Item("strawberry"),
            Item("cherry"), Item("watermelon"), Item("radish"),
            Item("cucumber"), Item("meatball")]
 
 
 def randomize(grid):
-    """Use to create random items."""
+    """Use to create random items.
+
+    Place the items on the board grid.
+    """
     for item in pickups:
         while True:
-            # slumpa en position tills vi hittar en som är ledig
+            # Randomly generate a position until there is
+            # one not previously used
             x = grid.get_random_x()
             y = grid.get_random_y()
             if grid.is_empty(x, y):
                 grid.set(x, y, item)
-                # avbryt while-loopen, fortsätt med nästa varv i for-loopen
+                # Abort the while loop, continue
+                # with the next iteration of the for loop
                 break

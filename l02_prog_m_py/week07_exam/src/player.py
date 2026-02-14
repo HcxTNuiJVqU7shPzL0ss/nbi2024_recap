@@ -31,9 +31,9 @@ class Player:
         self.pos_x = x
         self.pos_y = y
 
-    # Move the player, "dx" and "dy" is the difference
+
     def move(self, dx, dy):
-        """Use to oves the player.
+        """Use to move the player.
 
         dx = horizontal movement, from left to right.
         dy = vertical movement, from up to down.
@@ -41,13 +41,14 @@ class Player:
         self.pos_x += dx
         self.pos_y += dy
 
+
     def can_move(self, x, y, grid):
         """Use to check that you can move."""
         check_x = self.pos_x + x
         check_y = self.pos_y + y
         check_wall = grid.get(check_x, check_y)
 
-        if check_wall == grid.wall:  # "■":
+        if check_wall == grid.wall:  # "■"
             print('Not allowed to walk through walls!')
             input('Press Enter to continue!')
             return False

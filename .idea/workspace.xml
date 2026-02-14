@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding builds">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/display_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00073" summary="L02 W04 Ex02 base&#10;&#10;Add first base files for &#10;exercise 02&#10;No real usable code yet">
-      <option name="closed" value="true" />
-      <created>1770209181177</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1770209181177</updated>
     </task>
     <task id="LOCAL-00074" summary="L02 W04 Ex02 part 01&#10;&#10;Adding code and test for &#10;part 01 of exercise 02">
       <option name="closed" value="true" />
@@ -532,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771087235390</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings">
+      <option name="closed" value="true" />
+      <created>1771090678921</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1771090678921</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Code and tests in place for &#10;create card&#10;build a hand&#10;check if same rank&#10;code, but no tests for&#10;check if same suit&#10;check if a straight" />
     <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
     <MESSAGE value="L02 W04 Ex04 first version&#10;&#10;First basic version, builds &#10;a hand and check if a straight &#10;was dealt or not" />
     <MESSAGE value="L02 W04 Ex04 code done&#10;&#10;Added all code to be able &#10;to run the program&#10;However, have not added &#10;unit tests for a lot of &#10;things, also have not built &#10;any functions to force hands &#10;outside of unit test&#10;Perhaps it will be continued" />
@@ -572,6 +575,7 @@
     <MESSAGE value="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part..." />
     <MESSAGE value="L02 Exam OG&#10;&#10;Adding files for the &#10;OG Exam" />
     <MESSAGE value="Adding builds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding builds" />
+    <MESSAGE value="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings" />
   </component>
 </project>
