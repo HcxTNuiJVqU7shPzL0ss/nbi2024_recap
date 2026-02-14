@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex2 part 3 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code only for now, no tests">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/tests/test_find_the_median.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part...">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week05_assignment/w05_ex_02/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,22 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00069" summary="L02 W04 Ex01 wip&#10;&#10;Added code for parts 1a &#10;through 1g&#10;Work in progress, parts &#10;mentioned done, need to &#10;fix 1h and ih, as they are now &#10;in the functions files is not &#10;good">
-      <option name="closed" value="true" />
-      <created>1770130039483</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1770130039483</updated>
-    </task>
-    <task id="LOCAL-00070" summary="L02 W04 Ex01 done&#10;&#10;Finished all planned parts &#10;for ex 01&#10;Had to disable some pylint &#10;warnings to be allowed to &#10;run this, despite changing &#10;some things">
-      <option name="closed" value="true" />
-      <created>1770132256426</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1770132256426</updated>
     </task>
     <task id="LOCAL-00071" summary="L02 W04 Ex01 tweak&#10;&#10;Some minor changes to make &#10;it less complicated">
       <option name="closed" value="true" />
@@ -532,7 +518,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770996690356</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="L02 W05 Ex2 part 3 added tests&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Tests added">
+      <option name="closed" value="true" />
+      <created>1771077893893</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1771077893898</updated>
+    </task>
+    <task id="LOCAL-00119" summary="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part...">
+      <option name="closed" value="true" />
+      <created>1771081149292</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1771081149292</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,8 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update for builds&#10;&#10;New builds with latest &#10;addons and changes" />
-    <MESSAGE value="W04 Ex03 fix&#10;&#10;Fixed a printout for version 3&#10;Added back so that version 1 &#10;and version 2 are also running" />
     <MESSAGE value="Add base L02 W04 Ex04&#10;&#10;Base files to be able to get &#10;started with exercise 04&#10;No code or tests yet" />
     <MESSAGE value="L02 W04 Ex04 create card&#10;&#10;Add code and test for create &#10;and return a card&#10;First parts of code also for &#10;building a hand, though &#10;with no tests" />
     <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Code and tests in place for &#10;create card&#10;build a hand&#10;check if same rank&#10;code, but no tests for&#10;check if same suit&#10;check if a straight" />
@@ -572,6 +572,8 @@
     <MESSAGE value="L02 W05 Ex2 added work&#10;&#10;Added more code for &#10;parts 1 and 2 for exercise 2&#10;Now runs both version 1 and &#10;version 2 for these&#10;Still only running version 1 &#10;for parts 3 and 4&#10;Not covered all regarding unit &#10;test" />
     <MESSAGE value="L02 W05 Ex2 added tests&#10;&#10;Tests added for the separate &#10;part of exercise 2&#10;Note that code and tests may &#10;be somewhat overworked &#10;compared to what the &#10;exercise is about, but also &#10;this is for me to learn &#10;different things" />
     <MESSAGE value="L02 W05 Ex2 part 3 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code only for now, no tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex2 part 3 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code only for now, no tests" />
+    <MESSAGE value="L02 W05 Ex2 part 3 added tests&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Tests added" />
+    <MESSAGE value="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part..." />
+    <option name="LAST_COMMIT_MESSAGE" value="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part..." />
   </component>
 </project>

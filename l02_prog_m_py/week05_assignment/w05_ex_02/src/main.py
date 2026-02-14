@@ -42,7 +42,8 @@ def main():
           main.__name__, sep = '')
     press_continue()
 
-    # Version 1: Celsius to Fahrenheit
+
+    # Ex2.1 Version 1: Celsius to Fahrenheit
     check32 = c_to_f(0)
     print(check32)
     press_continue()
@@ -52,7 +53,7 @@ def main():
     press_continue()
 
 
-    # Version 1: Count words in string
+    # Ex 2.2 Version 1: Count words in string
     check_three = count_words('  1  2   3  ')
     print(check_three)
     press_continue()
@@ -62,9 +63,9 @@ def main():
     press_continue()
 
 
-    # Version 1: Check median
-    check_median = find_median([-100.23, 2, 42.71, 100, -200])
-    print(check_median)
+    # Ex 2.3 Version 1: Check median
+    check_median_2 = find_median([-100.23, 2, 42.71, 100, -200])
+    print(check_median_2)
     press_continue()
 
     # Version 2
@@ -72,7 +73,7 @@ def main():
     press_continue()
 
 
-    # Version 1: Sort ascending
+    # Ex 2.4 Version 1: Sort ascending (True / False)
     check_sorted_y = is_sorted_ascending([1, 2, 42])
     print(check_sorted_y)
     press_continue()
@@ -82,6 +83,7 @@ def main():
 
     # Version 2
     run_sorted_ascending()
+
 
     press_exit()
 
