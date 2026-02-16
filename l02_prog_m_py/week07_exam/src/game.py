@@ -39,13 +39,13 @@ from print_to_user_command import print_commands, print_welcome_info
 # pylint: enable=import-error
 
 
-from my_funct_dir.my_base_functions import press_continue
+from my_funct_dir.my_base_functions import press_continue, press_exit
 
 
 def main():
     """Use as module for Main.
 
-    Exam: The Game.
+    Exam: The Game "Fruit Loop".
     """
     # Set the width of the board
     width = 37
@@ -88,7 +88,7 @@ def main():
 
 
     # Loop until user enters Q or X
-    while not command in exit_commands:
+    while command not in exit_commands:
         print_status(g, score)
 
         command = input('Enter your command (one character only), '
@@ -117,8 +117,10 @@ def main():
             print_commands(command, inventory)
 
 
-    # When exiting the while loop, we end up here
-    print("Thank you for playing!")
+    # When exiting the while loop, we end up here: Game Over!
+    print(f'\nThank you for playing!\n'
+          f'You ended with {score} points.')
+    press_exit()
 
 
 if __name__ == "__main__":

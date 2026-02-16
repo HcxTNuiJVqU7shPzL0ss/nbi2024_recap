@@ -24,6 +24,7 @@ This contains the Class which builds the board.
 
 import random
 
+
 class Grid:
     """Use to represent the board.
 
@@ -31,22 +32,20 @@ class Grid:
     different squares.
     """
 
-    # width = 36
-    # height = 12
-    empty = "."  # Indicates an empty square
-    wall = "■"   # Indicates a wall
+    empty = '.'             # Indicates an empty square
+    wall = '■'              # Indicates a wall
+    unstable_wall = '#'     # Indicates a wall that may be breached
+    gamer = '@'             # Indicates the current gamer
 
     def __init__(self, player, width, height):
         """Use to create an object of the Class Grid."""
         # The board if stored in a list of lists.
         # List comprehension is used to place the sign for
         # "empty" on each place on the board.
-        # self.data = [[self.empty for y in range(self.width)] for z in range(
-        #     self.height)]
         self.width = width
         self.height = height
-        self.data = [[self.empty for _ in range(self.width)] for _ in range(
-            self.height)]
+        self.data = [[self.empty for _ in range(self.width)]
+                     for _ in range(self.height)]
         self.player = player
 
 
@@ -68,19 +67,20 @@ class Grid:
 
     def __str__(self):
         """Use so the board can be displayed with print(grid)."""
-        xs = ""
+        xs = ''
         for y, row in enumerate(self.data):
             for x, cell in enumerate(row):
                 if x == self.player.pos_x and y == self.player.pos_y:
-                    xs += "@"
+                    xs += self.gamer
                 else:
                     xs += str(row[x])
-            xs += "\n"
+            xs += '\n'
         return xs
 
 
     def make_walls(self):
-        """Create walls around the board."""
+        """Use to create walls."""
+        # First two are for walls around the board
         for i in range(self.height):
             self.set(0, i, self.wall)
             self.set(self.width - 1, i, self.wall)
@@ -89,15 +89,32 @@ class Grid:
             self.set(j, 0, self.wall)
             self.set(j, self.height - 1, self.wall)
 
+        # Creates extra "inner" walls
+        # Exam Version 1: H (Use for loops in grid.py to create more
+        # than one connecting walls, though without creating a
+        # room which you cannot enter.)
+        for k in range(3, self.height // 2):
+            # Create a vertical wall, starting at 3, moving to
+            # maximum half the board
+            self.set(10, k, self.unstable_wall)
+            self.set(self.width - 1, k, self.wall)
+
+        for m in range(13, self.width - 7):
+            # Create a horizontal wall, starting at 13, moving
+            # to leave 7 spaces after (including the actual
+            # "fixed" wall to the right).
+            self.set(m, 8, self.unstable_wall)
+            self.set(m, self.height - 1, self.wall)
+
 
     # Used in the file pickups.py
     def get_random_x(self):
         """Use to randomize an x-pos on the board."""
-        return random.randint(0, self.width-1)
+        return random.randint(1, self.width - 1)
 
     def get_random_y(self):
         """Use to randomize a y-pos on the board."""
-        return random.randint(0, self.height-1)
+        return random.randint(1, self.height - 1)
 
     def is_empty(self, x, y):
         """Use to return True if nothing on the square."""

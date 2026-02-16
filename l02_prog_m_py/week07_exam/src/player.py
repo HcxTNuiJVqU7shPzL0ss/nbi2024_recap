@@ -53,7 +53,7 @@ class Player:
         check_y = self.pos_y + y
         check_wall = grid.get(check_x, check_y)
 
-        if check_wall == grid.wall:  # "■"
+        if check_wall in (grid.wall, grid.unstable_wall):
             print('Not allowed to walk through walls!')
             input('Press Enter to continue!')
             return False

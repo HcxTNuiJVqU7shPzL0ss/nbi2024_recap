@@ -30,10 +30,12 @@ from dataclasses import dataclass
 class Item:
     """Use to represent items that can be picked up."""
 
-    def __init__(self, name, value=20, symbol='?'):
+    def __init__(self, name, value = 10, symbol = '?'):
         """Use to initialize an object.
 
-        # Exam Version 1: D (Value is 20, not 10)
+        # Exam Version 1: D (Value is 20 for fruits, not 10)
+        Note that what is not botanically considered a fruit
+        is still worth the default 10 points.
         """
         self.name = name
         self.value = value
@@ -47,9 +49,19 @@ class Item:
 
 # Used to randomize OG fruits and veggies
 # These give points if/when picked up
-pickups = [Item('carrot'), Item('apple'), Item('strawberry'),
-           Item('cherry'), Item('watermelon'), Item('radish'),
-           Item('cucumber'), Item('meatball')]
+# Exam Version 1: D (Value is 20 for fruits, not 10)
+# As of random AI and google, the following are
+# considered to be fruits (from a botanical perspective):
+# apple, strawberry, cherry, watermelon, cucumber
+pickups = [Item('carrot'), # Root veggie
+           Item(name = 'apple', value = 20),
+           Item(name = 'strawberry', value = 20),
+           Item(name = 'cherry', value = 20),
+           Item(name = 'watermelon', value = 20),
+           Item('radish'), # Root veggie
+           Item(name = 'cucumber', value = 20),
+           Item('meatball') # Protein
+           ]
 
 
 def randomize(grid):

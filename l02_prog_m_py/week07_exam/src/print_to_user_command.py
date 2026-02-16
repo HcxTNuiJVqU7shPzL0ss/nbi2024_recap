@@ -65,7 +65,7 @@ def print_welcome_info():
                     '(y)es or (n)o: ')
 
     # Print welcome message and info
-    print('\nWelcome to an exciting game!\n\n'
+    print('\nWelcome to an exciting game: Fruit Loop!\n\n'
           'For help with commands, please select "h" '
           'as your command.\n\n'
           'Due to "The Floor is Lava", you will lose one point '
