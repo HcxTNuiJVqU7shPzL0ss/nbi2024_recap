@@ -24,12 +24,17 @@ Pickups view.
 from dataclasses import dataclass
 
 
+# Use a dataclass since not enough public functions
+# as to properly use a "regular" Class
 @dataclass
 class Item:
     """Use to represent items that can be picked up."""
 
-    def __init__(self, name, value=10, symbol='?'):
-        """Use to initialize an object."""
+    def __init__(self, name, value=20, symbol='?'):
+        """Use to initialize an object.
+
+        # Exam Version 1: D (Value is 20, not 10)
+        """
         self.name = name
         self.value = value
         self.symbol = symbol
@@ -42,9 +47,9 @@ class Item:
 
 # Used to randomize OG fruits and veggies
 # These give points if/when picked up
-pickups = [Item("carrot"), Item("apple"), Item("strawberry"),
-           Item("cherry"), Item("watermelon"), Item("radish"),
-           Item("cucumber"), Item("meatball")]
+pickups = [Item('carrot'), Item('apple'), Item('strawberry'),
+           Item('cherry'), Item('watermelon'), Item('radish'),
+           Item('cucumber'), Item('meatball')]
 
 
 def randomize(grid):

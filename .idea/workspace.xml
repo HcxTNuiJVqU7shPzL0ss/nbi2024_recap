@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings">
-      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/display_status.py" afterDir="false" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 14&#10;&#10;Minor edits to slowly &#10;get started&#10;&#10;Very much a work in &#10;progress for now">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/move_player_command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/print_to_user_command.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/display_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/display_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/grid.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/grid.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" afterDir="false" />
     </list>
@@ -35,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git&quot;,
-    &quot;accountId&quot;: &quot;70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d&quot;
+    &quot;accountId&quot;: &quot;55d36338-accb-4aaf-846a-e7cf55611cfe&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -110,6 +113,7 @@
     "Python.more_4.2.executor": "Run",
     "Python.more_4.3.executor": "Run",
     "Python.my_base_functions.executor": "Run",
+    "Python.print_to_user_command.executor": "Run",
     "Python.sports_results_3.executor": "Run",
     "Python.temp_convert_4.executor": "Run",
     "Python.variables_datatypes.executor": "Run",
@@ -131,7 +135,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f78a9d071105-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26574.90" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -143,14 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00074" summary="L02 W04 Ex02 part 01&#10;&#10;Adding code and test for &#10;part 01 of exercise 02">
-      <option name="closed" value="true" />
-      <created>1770210956283</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1770210956283</updated>
     </task>
     <task id="LOCAL-00075" summary="L02 W04 Ex02 part 02a added&#10;&#10;Adding code and test for &#10;part 02a of exercise 02">
       <option name="closed" value="true" />
@@ -536,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771090678921</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Exam wip Feb 14&#10;&#10;Minor edits to slowly &#10;get started&#10;&#10;Very much a work in &#10;progress for now">
+      <option name="closed" value="true" />
+      <created>1771092953505</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1771092953505</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -551,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W04 Ex04 wip&#10;&#10;Tests now in place for &#10;check if same suit" />
     <MESSAGE value="L02 W04 Ex04 first version&#10;&#10;First basic version, builds &#10;a hand and check if a straight &#10;was dealt or not" />
     <MESSAGE value="L02 W04 Ex04 code done&#10;&#10;Added all code to be able &#10;to run the program&#10;However, have not added &#10;unit tests for a lot of &#10;things, also have not built &#10;any functions to force hands &#10;outside of unit test&#10;Perhaps it will be continued" />
     <MESSAGE value="L02 W04 Ex04 builds&#10;&#10;Adding builds" />
@@ -576,6 +579,7 @@
     <MESSAGE value="L02 Exam OG&#10;&#10;Adding files for the &#10;OG Exam" />
     <MESSAGE value="Adding builds" />
     <MESSAGE value="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding exam template&#10;&#10;Add the exam template from &#10;2024 class&#10;Some changes done to get both &#10;pylint and pydocstyle to &#10;get happy and not warn&#10;Minor edits also from my own &#10;og code to further help &#10;with warnings" />
+    <MESSAGE value="Exam wip Feb 14&#10;&#10;Minor edits to slowly &#10;get started&#10;&#10;Very much a work in &#10;progress for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 14&#10;&#10;Minor edits to slowly &#10;get started&#10;&#10;Very much a work in &#10;progress for now" />
   </component>
 </project>

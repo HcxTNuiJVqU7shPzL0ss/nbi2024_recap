@@ -1,6 +1,7 @@
 """Module for Lesson 02, Exam.
 
 Grid view.
+This contains the Class which builds the board.
 """
 
 #####################################################################
@@ -30,18 +31,20 @@ class Grid:
     different squares.
     """
 
-    width = 36
-    height = 12
+    # width = 36
+    # height = 12
     empty = "."  # Indicates an empty square
     wall = "■"   # Indicates a wall
 
-    def __init__(self, player):
+    def __init__(self, player, width, height):
         """Use to create an object of the Class Grid."""
         # The board if stored in a list of lists.
         # List comprehension is used to place the sign for
         # "empty" on each place on the board.
         # self.data = [[self.empty for y in range(self.width)] for z in range(
         #     self.height)]
+        self.width = width
+        self.height = height
         self.data = [[self.empty for _ in range(self.width)] for _ in range(
             self.height)]
         self.player = player

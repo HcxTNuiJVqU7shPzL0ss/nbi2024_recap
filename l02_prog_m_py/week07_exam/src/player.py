@@ -1,6 +1,7 @@
 """Module for Lesson 02, Exam.
 
 Player view.
+This contains the Class which creates the player.
 """
 
 #####################################################################
@@ -27,7 +28,7 @@ class Player:
     marker = "@"
 
     def __init__(self, x, y):
-        """Use to create object."""
+        """Use to create an object of Player."""
         self.pos_x = x
         self.pos_y = y
 
@@ -43,7 +44,11 @@ class Player:
 
 
     def can_move(self, x, y, grid):
-        """Use to check that you can move."""
+        """Use to check that you can move.
+
+        # Exam Version 1: C (Player not allowed
+        to walk through walls).
+        """
         check_x = self.pos_x + x
         check_y = self.pos_y + y
         check_wall = grid.get(check_x, check_y)

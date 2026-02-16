@@ -21,7 +21,8 @@ View to print game status.
 #####################################################################
 
 
-def print_status(game_grid):
+def print_status(game_grid, score):
     """Use to display the board grid and number of points."""
-    print('--------------------------------------')
+    print('--------------------------------------\n')
+    print(f'You have {score} points.\n')
     print(game_grid)

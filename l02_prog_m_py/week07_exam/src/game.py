@@ -1,6 +1,7 @@
 """Module for Lesson 02, Exam.
 
 Main view.
+This is the file from which you run the game.
 """
 
 #####################################################################
@@ -27,56 +28,98 @@ from player import Player
 
 import pickups
 
+# Use to print the player score and the board
 from display_status import print_status
+
+# Use to handle player movement
+from move_player_command import move_commands
+
+# Use for printing inventory and help info
+from print_to_user_command import print_commands, print_welcome_info
 # pylint: enable=import-error
 
 
-# Set the player start position in the middle of the board
-player = Player(x = 18, y = 6)
-# Set player start score (0 when starting)
-score = 0
-# Create the player inventory (empty at start)
-inventory = []
-
-# Create board
-g = Grid(player)
-# Place player on the board
-g.set_player(player)
-# Create walls around the board
-g.make_walls()
-# Randomly create and place items on board
-pickups.randomize(g)
+from my_funct_dir.my_base_functions import press_continue
 
 
-# List of acceptable commands, not including q, x, i, h
-player_commands = ['a', 's', 'd', 'w']
+def main():
+    """Use as module for Main.
 
-# List of exit commands
-exit_commands = ['q', 'x']
+    Exam: The Game.
+    """
+    # Set the width of the board
+    width = 37
+    # Set the height of the board
+    height = 13
 
-# Default values
-command = 'a'
+    # Exam Version 1: A (Player starts in middle of board)
+    # Set the player start position in the middle of the board
+    player = Player(x = width // 2, y = height // 2)
+    # Set player start score (0 when starting)
+    score = 0
+    # Create the player inventory (empty at start)
+    inventory = []
 
-# Loop until user enters Q or X
-while not command.casefold() in ['q', 'x']:
-    print_status(g)
-
-    command = input('Use WASD to move, Q/X to quit. ')
-    command = command.casefold()[:1]
-
-    if command == 'd' and player.can_move(1, 0, g):  # move right
-        # skapa funktioner, så vi inte behöver upprepa så mycket
-        # kod för riktningarna "W, A, S"
-        maybe_item = g.get(player.pos_x + 1, player.pos_y)
-        player.move(1, 0)
-
-        if isinstance(maybe_item, pickups.Item):
-            # we found something
-            score += maybe_item.value
-            print(f"You found a {maybe_item.name}, +{maybe_item.value} points.")
-            #g.set(player.pos_x, player.pos_y, g.empty)
-            g.clear(player.pos_x, player.pos_y)
+    # Create board
+    g = Grid(player, width, height)
+    # Place player on the board
+    g.set_player(player)
+    # Create walls around the board
+    g.make_walls()
+    # Randomly create and place items on board
+    pickups.randomize(g)
 
 
-# Hit kommer vi när while-loopen slutar
-print("Thank you for playing!")
+    # List of move player commands
+    player_move_commands = ['a', 's', 'd', 'w']
+
+    # List of exit commands
+    exit_commands = ['q', 'x']
+
+    # List of print info commands
+    print_info_commands = ['i', 'h']
+
+    # Default value for command
+    command = 'a'
+
+    # Print welcome info and check if to use negative values
+    use_neg = print_welcome_info()
+    press_continue()
+
+
+    # Loop until user enters Q or X
+    while not command in exit_commands:
+        print_status(g, score)
+
+        command = input('Enter your command (one character only), '
+                        'then press enter to continue: ')
+        command = command.casefold()[:1]
+
+        if command in player_move_commands:
+            # Get coordinates based on command, if possible to move
+            coordinates = move_commands(command, player, g)
+
+            maybe_item = g.get(player.pos_x + coordinates[0],
+                               player.pos_y + coordinates[1])
+
+            player.move(coordinates[0], coordinates[1])
+
+            if isinstance(maybe_item, pickups.Item):
+                # we found something
+                score += maybe_item.value
+                print(f"You found a {maybe_item.name}, "
+                      f"+{maybe_item.value} points.")
+                #g.set(player.pos_x, player.pos_y, g.empty)
+                g.clear(player.pos_x, player.pos_y)
+                # Exam Version 1: E (Added to inventory)
+                inventory.append(maybe_item.name)
+        elif command in print_info_commands:
+            print_commands(command, inventory)
+
+
+    # When exiting the while loop, we end up here
+    print("Thank you for playing!")
+
+
+if __name__ == "__main__":
+    main()
