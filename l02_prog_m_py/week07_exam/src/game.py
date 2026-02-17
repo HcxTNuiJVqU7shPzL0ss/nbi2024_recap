@@ -29,7 +29,7 @@ from player import Player
 import pickups
 
 # Use to print the player score and the board
-from display_status import print_status
+# from display_status import print_status
 
 # Use to handle player movement
 from move_player_command import move_commands
@@ -56,9 +56,12 @@ def main():
 
     # Exam Version 1: A (Player starts in middle of board)
     # Set the player start position in the middle of the board
-    player = Player(x = width // 2, y = height // 2)
-    # Set player start score (0 when starting)
-    score = 0
+    player = Player(x = width // 2, y = height // 2,
+                    score = 0, use_neg = False)
+
+    # Easier access to score
+    score = player.score
+
     # Create the player inventory (empty at start)
     inventory = []
 
@@ -87,13 +90,14 @@ def main():
     # Print welcome info and check if to use negative values
     # use_neg is True if to allow below 0 score, else False
     use_neg = print_welcome_info()
+    player.set_lava_handling(use_neg)
     press_continue()
 
 
     # Loop until user enters Q or X
     while command not in exit_commands:
         # Print the board and current score
-        print_status(g, score)
+        player.print_status(g)
 
         # Ask user for command
         command = input('Enter your command (one character only), '
@@ -109,8 +113,8 @@ def main():
             y_c = coordinates[1]
 
             # Handle any movement and update score
-            score = player.move_happening(x_c, y_c, g, pickups.Item,
-                                          inventory, score, use_neg)
+            player.move_happening(x_c, y_c, g, pickups.Item,
+                                          inventory)
         # Check is command as of: I, H
         elif command in print_info_commands:
             print_commands(command, inventory)

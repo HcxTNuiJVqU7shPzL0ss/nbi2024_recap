@@ -47,7 +47,7 @@ def print_commands(command_check, inventory_list):
         if not inventory_list:
             print('\nThe inventory is empty.')
         else:
-            print('\nInventory:')
+            print('\nInventory')
             for i, item in enumerate(inventory_list):
                 print(f'{i + 1}: {item}')
 

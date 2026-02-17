@@ -23,13 +23,36 @@ Also handles interaction, like movement.
 #####################################################################
 
 
+import emoji
+
+
 class Player:
     """Use for Class Player."""
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, score, use_neg):
         """Use to create an object of Player."""
         self.pos_x = x
         self.pos_y = y
+        self.score = score
+        self.use_neg = use_neg
+
+
+    def set_lava_handling(self, lava_neg):
+        """Use to handle lava score reduction.
+
+        Checks if 0 shall be the lowest allowed score,
+        or if (unlimited) negative values are allowed.
+        """
+        self.use_neg = lava_neg
+
+
+    def print_status(self, game_grid):
+        """Use to display the board grid and number of points."""
+        print(f'>>> {emoji.emojize(':strawberry:')} '
+              f'Fruit Loop {emoji.emojize(':watermelon:')} <<<')
+        print('--------------------------------------\n')
+        print(f'You have {self.score} points.\n')
+        print(game_grid)
 
 
     def move(self, dx, dy):
@@ -60,8 +83,7 @@ class Player:
         return True
 
 
-    def move_happening(self, x, y, g, item, inventory, score_in,
-                       negative):
+    def move_happening(self, x, y, g, item, inventory):
         """Use to check if something happens when player move.
 
         Check if an item is picked up, and if so add to
@@ -79,21 +101,19 @@ class Player:
 
             # Handle "The Floor is Lava"
             # Exam Version 1: G (Lose 1 point per step)
-            score_in -= 1
+            self.score -= 1
             # If gamer has opted to not allow score below 0,
             # Ensure this happens
-            if not negative and score_in < 0:
-                score_in += 1
+            if not self.use_neg and self.score < 0:
+                self.score += 1
 
             # Check if there is something to pick up
             if isinstance(maybe_item, item):
                 # we found something, add score
-                score_in += maybe_item.value
+                self.score += maybe_item.value
                 print(f"You found a {maybe_item.name}, "
                       f"+{maybe_item.value} points.")
                 # Clear the picked up item on board
                 g.clear(self.pos_x, self.pos_y)
                 # Exam Version 1: E (Added to inventory)
                 inventory.append(maybe_item.name)
-
-        return score_in

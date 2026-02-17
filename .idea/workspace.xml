@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 17&#10;&#10;Some refactoring&#10;Moving code from game to &#10;player&#10;Implemented part G&#10;Full Version 1 now &#10;in place">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 17, part 2&#10;&#10;Reworked and added some&#10;Working game, but get &#10;some warnings from &#10;pylint&#10;Want to store this prior &#10;to rework due to warnings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/display_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/display_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/move_player_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/move_player_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/print_to_user_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/print_to_user_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,14 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Attempting to solve something&#10;&#10;Minor change&#10;See if I can get to fix &#10;commit and merge issues">
-      <option name="closed" value="true" />
-      <created>1770219708522</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1770219708522</updated>
     </task>
     <task id="LOCAL-00079" summary="Going back&#10;&#10;Seem to have fixed the &#10;issues&#10;Minor edit back on main">
       <option name="closed" value="true" />
@@ -538,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771323669264</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Exam wip Feb 17, part 2&#10;&#10;Reworked and added some&#10;Working game, but get &#10;some warnings from &#10;pylint&#10;Want to store this prior &#10;to rework due to warnings">
+      <option name="closed" value="true" />
+      <created>1771337841725</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1771337841725</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -553,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W04 Ex04 extra&#10;&#10;Some changes to fix &#10;functionality&#10;Also added code to force &#10;various hands for manual test&#10;Still some things left, like &#10;more unit tests, may or may &#10;not happen later" />
     <MESSAGE value="L02 W04 Ex05 partial&#10;&#10;Updates to attempt also &#10;to draw the letters &#10;PYTHON&#10;Cannot run this and the &#10;base work &#10;Not done" />
     <MESSAGE value="L02 W05 Ex01 rework&#10;&#10;Reusing the code written &#10;between OG 2024 and current &#10;TAP HT 25D classes.&#10;Did these very recently, &#10;take what I did and rewrite &#10;it for this week's &#10;assignment.&#10;So far, done work on parts &#10;1a through 1c, code and tests" />
     <MESSAGE value="Fixed warnings&#10;&#10;Took care of warnings from &#10;pylint and pydocstyle" />
@@ -578,6 +575,7 @@
     <MESSAGE value="Exam wip Feb 16&#10;&#10;Adding some more code&#10;More or less handling &#10;now version 1, as of:&#10;A, B, C, D, E, F" />
     <MESSAGE value="Exam wip Feb 16 part 2&#10;&#10;Adding some more code&#10;More or less handling &#10;now version 1, as of:&#10;A, B, C, D, E, F, H&#10;Sort of prepped a bit for:&#10;G, J" />
     <MESSAGE value="Exam wip Feb 17&#10;&#10;Some refactoring&#10;Moving code from game to &#10;player&#10;Implemented part G&#10;Full Version 1 now &#10;in place" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 17&#10;&#10;Some refactoring&#10;Moving code from game to &#10;player&#10;Implemented part G&#10;Full Version 1 now &#10;in place" />
+    <MESSAGE value="Exam wip Feb 17, part 2&#10;&#10;Reworked and added some&#10;Working game, but get &#10;some warnings from &#10;pylint&#10;Want to store this prior &#10;to rework due to warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 17, part 2&#10;&#10;Reworked and added some&#10;Working game, but get &#10;some warnings from &#10;pylint&#10;Want to store this prior &#10;to rework due to warnings" />
   </component>
 </project>
