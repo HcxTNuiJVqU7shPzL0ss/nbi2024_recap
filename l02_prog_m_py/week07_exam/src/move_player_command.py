@@ -30,25 +30,26 @@ def move_commands(command_check, player_active, g_active):
     w: Move player up
     s: Move player down
     Can only move if there is no wall in the way.
-    If attempting to move through a wall, is not
+    If attempting to move through a wall, it is not
     allowed.
     # Exam Version 1: B (Player can move in all 4 directions).
     """
+    # Ensure movement will only happen in one direction, x or y
     x = 0
     y = 0
-
-    if command_check == 'd':  # move right
-        x = 1
-    elif command_check == 'a': # move left
-        x = -1
-    elif command_check == 'w': # move up
-        y = -1
-    elif command_check == 's': # move down
-        y = 1
-
     # Check if allowed to move, or a wall
     if not player_active.can_move(x, y, g_active):
         x = 0
         y = 0
+    # Move happens below, depending on command
+    else:
+        if command_check == 'd':  # move right
+            x = 1
+        elif command_check == 'a': # move left
+            x = -1
+        elif command_check == 'w': # move up
+            y = -1
+        elif command_check == 's': # move down
+            y = 1
 
     return [x, y]

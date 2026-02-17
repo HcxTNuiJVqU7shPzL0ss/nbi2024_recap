@@ -21,8 +21,13 @@ View to print game status.
 #####################################################################
 
 
+import emoji
+
+
 def print_status(game_grid, score):
     """Use to display the board grid and number of points."""
+    print(f'>>> {emoji.emojize(':strawberry:')} '
+          f'Fruit Loop {emoji.emojize(':watermelon:')} <<<')
     print('--------------------------------------\n')
     print(f'You have {score} points.\n')
     print(game_grid)

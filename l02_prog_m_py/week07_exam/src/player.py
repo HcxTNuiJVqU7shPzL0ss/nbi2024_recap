@@ -52,6 +52,7 @@ class Player:
         check_y = self.pos_y + y
         check_wall = grid.get(check_x, check_y)
 
+        # Return True if no wall is found
         if check_wall in (grid.wall, grid.unstable_wall):
             print('Not allowed to walk through walls!')
             input('Press Enter to continue!')
@@ -65,9 +66,10 @@ class Player:
 
         Check if an item is picked up, and if so add to
         inventory, plus print info to user.
+        Also handles "The Floor is Lava" score reduction.
         """
         # Only check if player picked something up, and only
-        # move player if possible to move
+        # move player, if possible to move
         if self.can_move(x, y, g):
             # Check if there is an item on coordinates
             maybe_item = g.get(self.pos_x + x,

@@ -48,8 +48,9 @@ def print_commands(command_check, inventory_list):
             print('\nThe inventory is empty.')
         else:
             print('\nInventory:')
-            for item in inventory_list:
-                print(item)
+            for i, item in enumerate(inventory_list):
+                print(f'{i + 1}: {item}')
+
     elif command_check == 'h': # print help
         print(help_info)
     press_continue()
@@ -65,10 +66,23 @@ def print_welcome_info():
                     '(y)es or (n)o: ')
 
     # Print welcome message and info
-    print('\nWelcome to an exciting game: Fruit Loop!\n\n'
-          'For help with commands, please select "h" '
-          'as your command.\n\n'
-          'Due to "The Floor is Lava", you will lose one point '
+    print('\nWelcome to an exciting game: Fruit Loop!')
+    print_commands('h', [])
+
+    print('You are the player on the board, starting in the '
+          'middle, look for your marker: @\n\n'
+          'Around the edges are impassable walls, signified '
+          'by the following: ■\n\n'
+          'There are a few internal walls, which cannot be '
+          'passed, unless you have found a pickaxe. These '
+          'internal walls looks like this: #\n\n'
+          'The goal of this exciting game is to pick up things '
+          'from the board, items can be found where you see: ?')
+    press_continue()
+    print('For help with commands, please select "h" '
+          'as your command.')
+    press_continue()
+    print('Due to "The Floor is Lava", you will lose one (1) point '
           'for each movement when you do not find anything.\n'
           'Also, traps will have you lose 10 points.\n'
           'Either 0 can be the lowest score, or you can have '
