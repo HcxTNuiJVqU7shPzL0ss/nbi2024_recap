@@ -39,6 +39,8 @@ from print_to_user_command import print_commands, print_welcome_info
 # pylint: enable=import-error
 
 
+# Note that these functions are located in a different
+# directory
 from my_funct_dir.my_base_functions import press_continue, press_exit
 
 
@@ -83,42 +85,39 @@ def main():
     command = 'a'
 
     # Print welcome info and check if to use negative values
+    # use_neg is True if to allow below 0 score, else False
     use_neg = print_welcome_info()
     press_continue()
 
 
     # Loop until user enters Q or X
     while command not in exit_commands:
+        # Print the board and current score
         print_status(g, score)
 
+        # Ask user for command
         command = input('Enter your command (one character only), '
                         'then press enter to continue: ')
+        # Lower case only, first character only
         command = command.casefold()[:1]
 
+        # Check if any commands as of: W, A, S, D
         if command in player_move_commands:
             # Get coordinates based on command, if possible to move
             coordinates = move_commands(command, player, g)
+            x_c = coordinates[0]
+            y_c = coordinates[1]
 
-            maybe_item = g.get(player.pos_x + coordinates[0],
-                               player.pos_y + coordinates[1])
-
-            player.move(coordinates[0], coordinates[1])
-
-            if isinstance(maybe_item, pickups.Item):
-                # we found something
-                score += maybe_item.value
-                print(f"You found a {maybe_item.name}, "
-                      f"+{maybe_item.value} points.")
-                #g.set(player.pos_x, player.pos_y, g.empty)
-                g.clear(player.pos_x, player.pos_y)
-                # Exam Version 1: E (Added to inventory)
-                inventory.append(maybe_item.name)
+            # Handle any movement and update score
+            score = player.move_happening(x_c, y_c, g, pickups.Item,
+                                          inventory, score, use_neg)
+        # Check is command as of: I, H
         elif command in print_info_commands:
             print_commands(command, inventory)
 
 
     # When exiting the while loop, we end up here: Game Over!
-    print(f'\nThank you for playing!\n'
+    print(f'\nThank you for playing Fruit Loop!\n'
           f'You ended with {score} points.')
     press_exit()
 

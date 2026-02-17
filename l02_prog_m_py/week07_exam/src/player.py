@@ -2,6 +2,7 @@
 
 Player view.
 This contains the Class which creates the player.
+Also handles interaction, like movement.
 """
 
 #####################################################################
@@ -24,8 +25,6 @@ This contains the Class which creates the player.
 
 class Player:
     """Use for Class Player."""
-
-    marker = "@"
 
     def __init__(self, x, y):
         """Use to create an object of Player."""
@@ -58,3 +57,41 @@ class Player:
             input('Press Enter to continue!')
             return False
         return True
+
+
+    def move_happening(self, x, y, g, item, inventory, score_in,
+                       negative):
+        """Use to check if something happens when player move.
+
+        Check if an item is picked up, and if so add to
+        inventory, plus print info to user.
+        """
+        # Only check if player picked something up, and only
+        # move player if possible to move
+        if self.can_move(x, y, g):
+            # Check if there is an item on coordinates
+            maybe_item = g.get(self.pos_x + x,
+                               self.pos_y + y)
+            # Move player
+            self.move(x, y)
+
+            # Handle "The Floor is Lava"
+            # Exam Version 1: G (Lose 1 point per step)
+            score_in -= 1
+            # If gamer has opted to not allow score below 0,
+            # Ensure this happens
+            if not negative and score_in < 0:
+                score_in += 1
+
+            # Check if there is something to pick up
+            if isinstance(maybe_item, item):
+                # we found something, add score
+                score_in += maybe_item.value
+                print(f"You found a {maybe_item.name}, "
+                      f"+{maybe_item.value} points.")
+                # Clear the picked up item on board
+                g.clear(self.pos_x, self.pos_y)
+                # Exam Version 1: E (Added to inventory)
+                inventory.append(maybe_item.name)
+
+        return score_in
