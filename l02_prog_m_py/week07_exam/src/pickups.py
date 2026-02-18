@@ -30,13 +30,15 @@ from dataclasses import dataclass
 class Item:
     """Use to represent items that can be picked up."""
 
-    def __init__(self, name, value = 10, symbol = '?'):
+    def __init__(self, type_i = 'og', name = '',
+                 value = 10, symbol = '?'):
         """Use to initialize an object.
 
         # Exam Version 1: D (Value is 20 for fruits, not 10)
         Note that what is not botanically considered a fruit
         is still worth the default 10 points.
         """
+        self.type = type_i
         self.name = name
         self.value = value
         self.symbol = symbol
@@ -53,22 +55,23 @@ class Item:
 # As of random AI and google, the following are
 # considered to be fruits (from a botanical perspective):
 # apple, strawberry, cherry, watermelon, cucumber
-pickup_list = [Item('Carrot'),  # Root veggie
+pickup_list = [Item(name = 'Carrot'),  # Root veggie
                Item(name = 'Apple', value = 20),
                Item(name = 'Strawberry', value = 20),
                Item(name = 'Cherry', value = 20),
                Item(name = 'Watermelon', value = 20),
-               Item('Radish'),  # Root veggie
+               Item(name = 'Radish'),  # Root veggie
                Item(name = 'Cucumber', value = 20),
-               Item('Meatball')  # Protein
+               Item(name = 'Meatball')  # Protein
                ]
 
 # Use to randomize traps on the grid
 # Exam Version 2: I (Add traps to the board, -10 points, traps shall
 # remain on the board so gamer can fall into it multiple times)
-trap_list = [Item(name = 'Bear trap', value = -10, symbol = 't'),
-             Item(name = 'Bird snare', value = -10, symbol = 't')
-             ]
+trap_list = [Item(type_i = 'trap', name = 'Bear trap',
+                  value = -10, symbol = 't'),
+             Item(type_i = 'trap', name = 'Bird snare',
+                  value = -10, symbol = 't')]
 
 # Use to collect all board items in one list
 place_list = pickup_list + trap_list

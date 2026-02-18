@@ -112,19 +112,13 @@ class Player:
             self.move(x, y)
 
             # # Handle "The Floor is Lava"
-            # # Exam Version 1: G (Lose 1 point per step)
-            # self.score -= 1
-            # # If gamer has opted to not allow score below 0,
-            # # Ensure this happens
-            # if not self.use_neg and self.score < 0:
-            #     self.score += 1
             self.handle_lava_score()
 
             # Check if there is something to pick up
             if isinstance(maybe_item, item):
                 print('')
                 # we found something, handle score
-                if maybe_item.symbol != 't':
+                if maybe_item.type != 'trap':
                     self.score += maybe_item.value
                     print(f"You found a {maybe_item.name}, "
                           f"+{maybe_item.value} points.")

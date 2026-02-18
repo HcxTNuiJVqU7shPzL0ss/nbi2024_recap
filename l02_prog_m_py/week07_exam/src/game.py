@@ -107,9 +107,13 @@ def main():
 
             # Handle any movement and update score
             player.move_happening(x_c, y_c, g, pickups.Item)
-        # Check is command as of: I, H
+        # Check if command as of: I, H
         elif command in print_info_commands:
             print_commands(command, inventory)
+        elif command not in exit_commands:
+            print('\nThat command is not known.\n'
+                  'Please use "h" to check what the valid commands are.')
+            press_continue()
 
 
     # When exiting the while loop, we end up here: Game Over!
