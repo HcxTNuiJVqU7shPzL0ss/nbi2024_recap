@@ -29,21 +29,13 @@ import emoji
 class Player:
     """Use for Class Player."""
 
-    def __init__(self, x, y, score, use_neg):
+    def __init__(self, x, y):
         """Use to create an object of Player."""
         self.pos_x = x
         self.pos_y = y
-        self.score = score
-        self.use_neg = use_neg
-
-
-    def set_lava_handling(self, lava_neg):
-        """Use to handle lava score reduction.
-
-        Checks if 0 shall be the lowest allowed score,
-        or if (unlimited) negative values are allowed.
-        """
-        self.use_neg = lava_neg
+        self.score = 0
+        self.inventory = []
+        self.use_neg = False
 
 
     def print_status(self, game_grid):
@@ -53,6 +45,15 @@ class Player:
         print('--------------------------------------\n')
         print(f'You have {self.score} points.\n')
         print(game_grid)
+
+
+    def set_lava_handling(self, lava_neg):
+        """Use to handle lava score reduction.
+
+        Checks if 0 shall be the lowest allowed score,
+        or if (unlimited) negative values are allowed.
+        """
+        self.use_neg = lava_neg
 
 
     def move(self, dx, dy):
@@ -83,7 +84,7 @@ class Player:
         return True
 
 
-    def move_happening(self, x, y, g, item, inventory):
+    def move_happening(self, x, y, g, item):
         """Use to check if something happens when player move.
 
         Check if an item is picked up, and if so add to
@@ -111,9 +112,9 @@ class Player:
             if isinstance(maybe_item, item):
                 # we found something, add score
                 self.score += maybe_item.value
-                print(f"You found a {maybe_item.name}, "
-                      f"+{maybe_item.value} points.")
+                print(f"\nYou found a {maybe_item.name}, "
+                      f"+{maybe_item.value} points.\n")
                 # Clear the picked up item on board
                 g.clear(self.pos_x, self.pos_y)
                 # Exam Version 1: E (Added to inventory)
-                inventory.append(maybe_item.name)
+                self.inventory.append(maybe_item.name)

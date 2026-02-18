@@ -56,14 +56,13 @@ def main():
 
     # Exam Version 1: A (Player starts in middle of board)
     # Set the player start position in the middle of the board
-    player = Player(x = width // 2, y = height // 2,
-                    score = 0, use_neg = False)
+    player = Player(x = width // 2, y = height // 2)
 
     # Easier access to score
     score = player.score
 
-    # Create the player inventory (empty at start)
-    inventory = []
+    # Easier access to inventory (empty at start)
+    inventory = player.inventory
 
     # Create board
     g = Grid(player, width, height)
@@ -113,8 +112,7 @@ def main():
             y_c = coordinates[1]
 
             # Handle any movement and update score
-            player.move_happening(x_c, y_c, g, pickups.Item,
-                                          inventory)
+            player.move_happening(x_c, y_c, g, pickups.Item)
         # Check is command as of: I, H
         elif command in print_info_commands:
             print_commands(command, inventory)
