@@ -40,7 +40,7 @@ class Player:
 
     def print_status(self, game_grid):
         """Use to display the board grid and number of points."""
-        print(f'>>> {emoji.emojize(':strawberry:')} '
+        print(f'\n>>> {emoji.emojize(':strawberry:')} '
               f'Fruit Loop {emoji.emojize(':watermelon:')} <<<')
         print('--------------------------------------\n')
         print(f'You have {self.score} points.\n')
@@ -78,10 +78,21 @@ class Player:
 
         # Return True if no wall is found
         if check_wall in (grid.wall, grid.unstable_wall):
-            print('Not allowed to walk through walls!')
+            print('\nNot allowed to walk through walls!')
             input('Press Enter to continue!')
             return False
         return True
+
+
+    def handle_lava_score(self):
+        """Use to handle score for The Floor is Lava."""
+        # Handle "The Floor is Lava"
+        # Exam Version 1: G (Lose 1 point per step)
+        self.score -= 1
+        # If gamer has opted to not allow score below 0,
+        # Ensure this happens
+        if not self.use_neg and self.score < 0:
+            self.score += 1
 
 
     def move_happening(self, x, y, g, item):
@@ -100,21 +111,32 @@ class Player:
             # Move player
             self.move(x, y)
 
-            # Handle "The Floor is Lava"
-            # Exam Version 1: G (Lose 1 point per step)
-            self.score -= 1
-            # If gamer has opted to not allow score below 0,
-            # Ensure this happens
-            if not self.use_neg and self.score < 0:
-                self.score += 1
+            # # Handle "The Floor is Lava"
+            # # Exam Version 1: G (Lose 1 point per step)
+            # self.score -= 1
+            # # If gamer has opted to not allow score below 0,
+            # # Ensure this happens
+            # if not self.use_neg and self.score < 0:
+            #     self.score += 1
+            self.handle_lava_score()
 
             # Check if there is something to pick up
             if isinstance(maybe_item, item):
-                # we found something, add score
-                self.score += maybe_item.value
-                print(f"\nYou found a {maybe_item.name}, "
-                      f"+{maybe_item.value} points.\n")
-                # Clear the picked up item on board
-                g.clear(self.pos_x, self.pos_y)
-                # Exam Version 1: E (Added to inventory)
-                self.inventory.append(maybe_item.name)
+                print('')
+                # we found something, handle score
+                if maybe_item.symbol != 't':
+                    self.score += maybe_item.value
+                    print(f"You found a {maybe_item.name}, "
+                          f"+{maybe_item.value} points.")
+                    # Clear the picked up item on board
+                    g.clear(self.pos_x, self.pos_y)
+                    # Exam Version 1: E (Added to inventory)
+                    self.inventory.append(maybe_item.name)
+                else:
+                    print(f'Oh no, you found a {maybe_item.name}!\n'
+                          f'You lost {maybe_item.value} points.')
+                    if self.score >= 10 or self.use_neg:
+                        self.score += maybe_item.value
+                    else:
+                        self.score = 0
+                print('')

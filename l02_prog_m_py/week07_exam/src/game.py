@@ -28,9 +28,6 @@ from player import Player
 
 import pickups
 
-# Use to print the player score and the board
-# from display_status import print_status
-
 # Use to handle player movement
 from move_player_command import move_commands
 
@@ -58,9 +55,6 @@ def main():
     # Set the player start position in the middle of the board
     player = Player(x = width // 2, y = height // 2)
 
-    # Easier access to score
-    score = player.score
-
     # Easier access to inventory (empty at start)
     inventory = player.inventory
 
@@ -68,7 +62,7 @@ def main():
     g = Grid(player, width, height)
     # Place player on the board
     g.set_player(player)
-    # Create walls around the board
+    # Create walls around the board + some inside
     g.make_walls()
     # Randomly create and place items on board
     pickups.randomize(g)
@@ -88,7 +82,7 @@ def main():
 
     # Print welcome info and check if to use negative values
     # use_neg is True if to allow below 0 score, else False
-    use_neg = print_welcome_info()
+    use_neg = print_welcome_info(g)
     player.set_lava_handling(use_neg)
     press_continue()
 
@@ -120,7 +114,7 @@ def main():
 
     # When exiting the while loop, we end up here: Game Over!
     print(f'\nThank you for playing Fruit Loop!\n'
-          f'You ended with {score} points.')
+          f'You ended with {player.score} points.')
     press_exit()
 
 

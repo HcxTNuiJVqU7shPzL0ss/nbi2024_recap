@@ -47,21 +47,31 @@ class Item:
         return self.symbol
 
 
-# Used to randomize OG fruits and veggies
+# Use to randomize OG fruits and veggies
 # These give points if/when picked up
 # Exam Version 1: D (Value is 20 for fruits, not 10)
 # As of random AI and google, the following are
 # considered to be fruits (from a botanical perspective):
 # apple, strawberry, cherry, watermelon, cucumber
-pickups = [Item('carrot'), # Root veggie
-           Item(name = 'apple', value = 20),
-           Item(name = 'strawberry', value = 20),
-           Item(name = 'cherry', value = 20),
-           Item(name = 'watermelon', value = 20),
-           Item('radish'), # Root veggie
-           Item(name = 'cucumber', value = 20),
-           Item('meatball') # Protein
-           ]
+pickup_list = [Item('Carrot'),  # Root veggie
+               Item(name = 'Apple', value = 20),
+               Item(name = 'Strawberry', value = 20),
+               Item(name = 'Cherry', value = 20),
+               Item(name = 'Watermelon', value = 20),
+               Item('Radish'),  # Root veggie
+               Item(name = 'Cucumber', value = 20),
+               Item('Meatball')  # Protein
+               ]
+
+# Use to randomize traps on the grid
+# Exam Version 2: I (Add traps to the board, -10 points, traps shall
+# remain on the board so gamer can fall into it multiple times)
+trap_list = [Item(name = 'Bear trap', value = -10, symbol = 't'),
+             Item(name = 'Bird snare', value = -10, symbol = 't')
+             ]
+
+# Use to collect all board items in one list
+place_list = pickup_list + trap_list
 
 
 def randomize(grid):
@@ -69,7 +79,7 @@ def randomize(grid):
 
     Place the items on the board grid.
     """
-    for item in pickups:
+    for item in place_list:
         while True:
             # Randomly generate a position until there is
             # one not previously used

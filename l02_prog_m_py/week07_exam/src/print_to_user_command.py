@@ -21,6 +21,11 @@ Use to handle print to user commands.
 #####################################################################
 
 
+# pylint: disable=import-error
+from pickups import pickup_list
+# pylint: enable=import-error
+
+
 from my_funct_dir.my_base_functions import press_continue, y_or_n
 
 
@@ -56,7 +61,7 @@ def print_commands(command_check, inventory_list):
     press_continue()
 
 
-def print_welcome_info():
+def print_welcome_info(g):
     """Use to print initial welcome information.
 
     Also asks user if negative values are to be used, or not.
@@ -69,15 +74,16 @@ def print_welcome_info():
     print('\nWelcome to an exciting game: Fruit Loop!')
     print_commands('h', [])
 
-    print('You are the player on the board, starting in the '
-          'middle, look for your marker: @\n\n'
-          'Around the edges are impassable walls, signified '
-          'by the following: ■\n\n'
-          'There are a few internal walls, which cannot be '
-          'passed, unless you have found a pickaxe. These '
-          'internal walls looks like this: #\n\n'
-          'The goal of this exciting game is to pick up things '
-          'from the board, items can be found where you see: ?')
+    print(f'You are the player on the board, starting in the '
+          f'middle, look for your marker: {g.gamer}\n\n'
+          f'Around the edges are impassable walls, signified '
+          f'by the following: {g.wall}\n\n'
+          f'There are a few internal walls, which cannot be '
+          f'passed, unless you have found a pickaxe. These '
+          f'internal walls looks like this: {g.unstable_wall}\n\n'
+          f'The goal of this exciting game is to pick up things '
+          f'from the board, items can be found where you see: '
+          f'{pickup_list[0]}')
     press_continue()
     print('For help with commands, please select "h" '
           'as your command.')

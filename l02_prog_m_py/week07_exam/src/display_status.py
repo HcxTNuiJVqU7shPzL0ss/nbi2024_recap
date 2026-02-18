@@ -1,6 +1,7 @@
 """Module for Lesson 02, Exam.
 
 View to print game status.
+Moved function to player.
 """
 
 #####################################################################
