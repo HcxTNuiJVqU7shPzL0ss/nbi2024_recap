@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 18, part 2&#10;&#10;Added version 2, part I (traps)&#10;More refactoring">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 18, part 3&#10;&#10;More refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,14 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Fix of comment&#10;&#10;Missed something in a &#10;comment, fixed">
-      <option name="closed" value="true" />
-      <created>1770223469326</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1770223469326</updated>
     </task>
     <task id="LOCAL-00082" summary="Add W04 Ex02 part 05&#10;&#10;Adding code and tests for &#10;part 05 of exercise 02, &#10;week 04">
       <option name="closed" value="true" />
@@ -536,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771417760421</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Exam wip Feb 18, part 3&#10;&#10;More refactoring">
+      <option name="closed" value="true" />
+      <created>1771426583938</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1771426583938</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -551,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed warnings&#10;&#10;Took care of warnings from &#10;pylint and pydocstyle" />
     <MESSAGE value="L02 W05 Ex 1 work ongoing&#10;&#10;Played around a bit&#10;Two separate files for testing&#10;Worked through parts 1.1 a &#10;through 1.1 d" />
     <MESSAGE value="L02 W05 Ex 1 work ongoing e&#10;&#10;Played around a bit&#10;Worked through parts 1.1 a &#10;through 1.1 e" />
     <MESSAGE value="L02 W05 Ex 1 done&#10;&#10;Adding more for test, though &#10;now feel done with exercise 01" />
@@ -576,6 +572,7 @@
     <MESSAGE value="Exam wip Feb 17, part 2&#10;&#10;Reworked and added some&#10;Working game, but get &#10;some warnings from &#10;pylint&#10;Want to store this prior &#10;to rework due to warnings" />
     <MESSAGE value="Exam wip Feb 18&#10;&#10;Some refactoring&#10;Simplifying stuff&#10;Moved even more to player&#10;No warnings from pylint or &#10;pydocstyle at this point&#10;Game seem to run as it should" />
     <MESSAGE value="Exam wip Feb 18, part 2&#10;&#10;Added version 2, part I (traps)&#10;More refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 18, part 2&#10;&#10;Added version 2, part I (traps)&#10;More refactoring" />
+    <MESSAGE value="Exam wip Feb 18, part 3&#10;&#10;More refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 18, part 3&#10;&#10;More refactoring" />
   </component>
 </project>

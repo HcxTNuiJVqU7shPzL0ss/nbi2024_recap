@@ -49,12 +49,13 @@ class Item:
         return self.symbol
 
 
-# Use to randomize OG fruits and veggies
+# Use to add OG fruits and veggies
 # These give points if/when picked up
 # Exam Version 1: D (Value is 20 for fruits, not 10)
 # As of random AI and google, the following are
 # considered to be fruits (from a botanical perspective):
 # apple, strawberry, cherry, watermelon, cucumber
+# The others keep the default 10 points
 pickup_list = [Item(name = 'Carrot'),  # Root veggie
                Item(name = 'Apple', value = 20),
                Item(name = 'Strawberry', value = 20),
@@ -65,7 +66,7 @@ pickup_list = [Item(name = 'Carrot'),  # Root veggie
                Item(name = 'Meatball')  # Protein
                ]
 
-# Use to randomize traps on the grid
+# Use to add traps on the grid
 # Exam Version 2: I (Add traps to the board, -10 points, traps shall
 # remain on the board so gamer can fall into it multiple times)
 trap_list = [Item(type_i = 'trap', name = 'Bear trap',
@@ -73,14 +74,34 @@ trap_list = [Item(type_i = 'trap', name = 'Bear trap',
              Item(type_i = 'trap', name = 'Bird snare',
                   value = -10, symbol = 't')]
 
+# Use to add chests on the grid
+# Exam Version 2: K (Add chests to the board)
+# If you land on a chest, and have at least one key in inventory,
+# you will pick up the chest, value 100 points
+# The key will be used up
+chest_list = [Item(type_i = 'chest', name = 'Earth chest',
+                   value = 100, symbol = 'c'),
+              Item(type_i = 'chest', name = 'Wind chest',
+                   value = 100, symbol = 'c')]
+
+# Use to add keys on the grid
+# Exam Version 2: K (Add keys to the board)
+# If you land on a chest, and have at least one key in inventory,
+# you will pick up the chest
+# The key will be used up
+key_list = [Item(type_i = 'key', name = 'key',
+                 value = 0, symbol = 'k'),
+            Item(type_i = 'key', name = 'key',
+                  value = 0, symbol = 'k')]
+
 # Use to collect all board items in one list
-place_list = pickup_list + trap_list
+place_list = pickup_list + trap_list + chest_list + key_list
 
 
 def randomize(grid):
-    """Use to create random items.
+    """Use to create items on random positions.
 
-    Place the items on the board grid.
+    Place the items from the list on the board grid.
     """
     for item in place_list:
         while True:

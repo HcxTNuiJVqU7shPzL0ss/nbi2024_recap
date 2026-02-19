@@ -23,7 +23,17 @@ Also handles interaction, like movement.
 #####################################################################
 
 
+# pylint: disable=import-error
+from pickups import pickup_list, trap_list, chest_list, key_list
+# pylint: enable=import-error
+
+
 import emoji
+
+
+# Note that these functions are located in a different
+# directory
+from my_funct_dir.my_base_functions import press_continue
 
 
 class Player:
@@ -95,6 +105,55 @@ class Player:
             self.score += 1
 
 
+    def check_trap(self, name, value):
+        """Use to handle if gamer walks into a trap.
+
+        Exam Version 2: I (Add traps to the board)
+        """
+        print(f'Oh no, you found a {name}!\n'
+              f'You lost {value} points.')
+        if self.score >= 10 or self.use_neg:
+            self.score += value
+        else:
+            self.score = 0
+
+
+    def check_chest(self, g, name, value):
+        """Use to handle if gamer finds a chest.
+
+        Exam Version 2: K (Add chests to the board)
+        """
+        if key_list[0].name in self.inventory:
+            self.score += value
+            print(f'You found a {name}, '
+                  f'+{value} points.')
+            # Clear the picked up item on board
+            g.clear(self.pos_x, self.pos_y)
+            # Add to inventory
+            self.inventory.append(name)
+            # Remove key from inventory (first occurrence)
+            self.inventory.remove(key_list[0].name)
+        else:
+            print(f'You found a {name}, '
+                  f'but sadly you have not picked up any '
+                  f'{key_list[0].name}.')
+            press_continue()
+
+
+    def check_key(self, g, name):
+        """Use to handle of gamer finds a key.
+
+        Exam Version 2: K (Add keys to the board)
+        """
+        print(f'You found a {name}!\n'
+              f'Can you also find a {chest_list[0].type}?')
+        # Clear the picked up item on board
+        g.clear(self.pos_x, self.pos_y)
+        # Add to inventory
+        self.inventory.append(name)
+        press_continue()
+
+
     def move_happening(self, x, y, g, item):
         """Use to check if something happens when player move.
 
@@ -118,7 +177,7 @@ class Player:
             if isinstance(maybe_item, item):
                 print('')
                 # we found something, handle score
-                if maybe_item.type != 'trap':
+                if maybe_item.type == pickup_list[0].type:
                     self.score += maybe_item.value
                     print(f"You found a {maybe_item.name}, "
                           f"+{maybe_item.value} points.")
@@ -126,11 +185,11 @@ class Player:
                     g.clear(self.pos_x, self.pos_y)
                     # Exam Version 1: E (Added to inventory)
                     self.inventory.append(maybe_item.name)
+                elif maybe_item.type == chest_list[0].type:
+                    self.check_chest(g, maybe_item.name,
+                                     maybe_item.value)
+                elif maybe_item.type == key_list[0].type:
+                    self.check_key(g, maybe_item.name)
                 else:
-                    print(f'Oh no, you found a {maybe_item.name}!\n'
-                          f'You lost {maybe_item.value} points.')
-                    if self.score >= 10 or self.use_neg:
-                        self.score += maybe_item.value
-                    else:
-                        self.score = 0
+                    self.check_trap(maybe_item.name, maybe_item.value)
                 print('')

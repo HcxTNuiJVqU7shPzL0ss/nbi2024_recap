@@ -22,7 +22,7 @@ Use to handle print to user commands.
 
 
 # pylint: disable=import-error
-from pickups import pickup_list
+from pickups import pickup_list, trap_list
 # pylint: enable=import-error
 
 
@@ -88,11 +88,12 @@ def print_welcome_info(g):
     print('For help with commands, please select "h" '
           'as your command.')
     press_continue()
-    print('Due to "The Floor is Lava", you will lose one (1) point '
-          'for each movement when you do not find anything.\n'
-          'Also, traps will have you lose 10 points.\n'
-          'Either 0 can be the lowest score, or you can have '
-          'negative score.')
+    print(f'Due to "The Floor is Lava", you will lose one (1) point '
+          f'for each movement when you do not find anything.\n'
+          f'Also, traps will have you lose 10 points, they are '
+          f'marked on the map with: {trap_list[0]}\n'
+          f'Either 0 can be the lowest score, or you can have '
+          f'negative score.')
     press_continue()
 
     check_neg = y_or_n(ask_negative)
