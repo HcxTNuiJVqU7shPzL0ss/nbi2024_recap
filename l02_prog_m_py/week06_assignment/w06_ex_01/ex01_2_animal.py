@@ -168,7 +168,11 @@ def animal_farm(list_of_pets, last_pet):
 
 
 def main():
-    """Use as main function."""
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    Refactored for TAP HT 25D.
+    """
     print('\nWeek 06, Exercise 01.2, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()

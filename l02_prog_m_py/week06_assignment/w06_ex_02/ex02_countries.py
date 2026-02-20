@@ -1,7 +1,8 @@
 """Module for 'Countries'.
 
 Lesson 02, Week 06, Exercise 02, parts 1a through 1f.
-Done "off course".
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -102,6 +103,7 @@ def main():
     """Use as module for Main.
 
     This version made for the recap of 2024.
+    Refactored for TAP HT 25D.
     """
     print('\nLesson 02, Week 06, Exercise 02, Countries.')
     press_continue()
