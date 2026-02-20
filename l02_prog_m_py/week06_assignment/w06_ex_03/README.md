@@ -7,6 +7,16 @@
 
 ---
 
+See the files in this folder for TAP HT 25D week 6, 
+exercise 3, assignment.  
+
+Reference to files in "og_2024" folder for OG 2024 
+(TAP HT 24D) work.  
+
+---
+
+### Assignment Information  
+
 Skapa en klass som representerar ett bankkonto.  
 
 Banken ska kunna:  
@@ -26,11 +36,11 @@ innan du skriver koden.
 
 ---
 
-Student == **_gnoff_**
+Student == **_gnoff_**  
 
 ---
 
-Copyright 2025-2026 gnoff
+Copyright 2026 gnoff
 
 Licensed under the Apache License, Version 2.0 (the "License");  
 you may not use this file except in compliance with the License.  

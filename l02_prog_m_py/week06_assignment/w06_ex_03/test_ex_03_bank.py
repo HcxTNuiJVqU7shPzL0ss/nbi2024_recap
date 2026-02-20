@@ -1,4 +1,8 @@
-"""Module for tests, L02, W06, Ex03."""
+"""Module for tests, L02, W06, Ex03.
+
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
+"""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -18,14 +22,17 @@
 #####################################################################
 
 
+from dataclasses import dataclass
+
+
 import pytest
 
 
 from .ex03_bank import Bank
 
 
-# pylint: disable=too-few-public-methods
 # pylint: disable=too-many-instance-attributes
+@dataclass
 class MyValues:
     """Use to handle values."""
 
@@ -40,7 +47,6 @@ class MyValues:
                               (1 + self.interest_percent))
         self.bill_ok = 100
         self.bill_no = 1500
-# pylint: enable=too-few-public-methods
 # pylint: enable=too-many-instance-attributes
 
 

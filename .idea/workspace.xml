@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="W06 Ex01 refactor&#10;&#10;Some refactoring for &#10;exercise 1, week 6">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="W06 Ex02 refactor&#10;&#10;Some refactoring for &#10;exercise 2, week 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/ex02_countries.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_02/ex02_countries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/ex03_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/ex03_bank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,7 @@
     "Python.ex01_main_hello_name.executor": "Run",
     "Python.ex01_main_hello_name_v2.executor": "Run",
     "Python.ex02_balder.executor": "Run",
+    "Python.ex02_countries.executor": "Run",
     "Python.ex02_discuss.executor": "Run",
     "Python.ex02_discuss_v2.executor": "Run",
     "Python.ex02_extra_calls.executor": "Run",
@@ -83,6 +84,7 @@
     "Python.ex03_02a.executor": "Run",
     "Python.ex03_02b.executor": "Run",
     "Python.ex03_03_receipt_calc.executor": "Run",
+    "Python.ex03_bank.executor": "Run",
     "Python.ex03_extra_calls.executor": "Run",
     "Python.ex03_functions.executor": "Debug",
     "Python.ex03_sports_results.executor": "Run",
@@ -147,14 +149,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Adding L02 W04 Ex02 part 07&#10;&#10;Adding part 07 of exercise 02&#10;Code and tests&#10;Also fixing some docstring &#10;comments for clarity">
-      <option name="closed" value="true" />
-      <created>1770299242341</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1770299242341</updated>
     </task>
     <task id="LOCAL-00086" summary="Adding L02 W04 Ex02 part 08&#10;&#10;Adding part 08 of exercise 02&#10;Code and tests&#10;Changed so that main also only &#10;performs one function call&#10;Done with exercise 02">
       <option name="closed" value="true" />
@@ -540,7 +534,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771582530324</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="W06 Ex02 refactor&#10;&#10;Some refactoring for &#10;exercise 2, week 6">
+      <option name="closed" value="true" />
+      <created>1771589598429</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1771589598429</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -555,7 +557,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now" />
     <MESSAGE value="L02 W05 Ex 1 part 3 done&#10;&#10;Latest commit message mention &#10;Ex 2, but was actually Ex 1 part 2&#10;Now, also done with Ex 1 part 3, &#10;both a and b&#10;Some refactoring compared to what &#10;was done off course" />
     <MESSAGE value="L02 W05 Ex 1 part 4 done&#10;&#10;Done with Ex 1 part 4&#10;Some refactoring compared to what &#10;was done off course&#10;Minor changes in some other files &#10;to clean up, including fix of &#10;pylint warning" />
     <MESSAGE value="L02 W05 Ex 1 part 5 done&#10;&#10;Done with Ex 1 part 5&#10;Should be all of Ex 01 now" />
@@ -580,6 +581,7 @@
     <MESSAGE value="Exam wip Feb 19&#10;&#10;Added version 2, part K &#10;Chests and Keys&#10;Also some refactoring around &#10;how to handle traps" />
     <MESSAGE value="Exam wip Feb 20&#10;&#10;Fiddling around&#10;Making things better" />
     <MESSAGE value="W06 Ex01 refactor&#10;&#10;Some refactoring for &#10;exercise 1, week 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="W06 Ex01 refactor&#10;&#10;Some refactoring for &#10;exercise 1, week 6" />
+    <MESSAGE value="W06 Ex02 refactor&#10;&#10;Some refactoring for &#10;exercise 2, week 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="W06 Ex02 refactor&#10;&#10;Some refactoring for &#10;exercise 2, week 6" />
   </component>
 </project>

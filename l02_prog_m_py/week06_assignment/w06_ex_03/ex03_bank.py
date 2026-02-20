@@ -1,7 +1,8 @@
 """Module for 'Bank'.
 
 Lesson 02, Week 06, Exercise 03.
-Done "off course".
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -48,11 +49,9 @@ class Bank:
         else:
             raise ValueError('Not allowed to withdraw too much!')
 
-
     def balance(self):
         """Use to display the current balance."""
         return self.balance_now
-
 
     def apply_interest(self, interest):
         """Use to apply interest."""
@@ -61,7 +60,6 @@ class Bank:
                 round((self.balance_now * (1 + interest)), 2))
         else:
             raise ValueError('Negative interest not allowed!')
-
 
     def bill_check(self, bill):
         """Use to check if there is money for the bill."""
@@ -84,7 +82,8 @@ def create_account(input_list):
 def main():
     """Use as module for Main.
 
-    This version made for the recap of 2024.
+    TAP HT 25D, though done in near time off course, then
+    refactored for this week.
     """
     print('\nLesson 02, Week 06, Exercise 03, Bank.')
     press_continue()
