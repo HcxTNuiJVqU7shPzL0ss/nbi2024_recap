@@ -24,7 +24,7 @@ Also handles interaction, like movement.
 
 
 # pylint: disable=import-error
-from pickups import pickup_list, trap_list, chest_list, key_list
+from pickups import pickup_list, chest_list, key_list
 # pylint: enable=import-error
 
 

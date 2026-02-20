@@ -21,15 +21,17 @@ Use to handle print to user commands.
 #####################################################################
 
 
+from colorama import Back
+
 # pylint: disable=import-error
-from pickups import pickup_list, trap_list
+from pickups import pickup_list, trap_list, chest_list, key_list
 # pylint: enable=import-error
 
 
 from my_funct_dir.my_base_functions import press_continue, y_or_n
 
 
-def print_commands(command_check, inventory_list):
+def print_commands(command_check, inventory_list, g):
     """Use to check and handle commands for print status.
 
     A valid command was entered, as of:
@@ -45,6 +47,7 @@ def print_commands(command_check, inventory_list):
                  'D: Move right\n\n'
                  'I: Print inventory\n'
                  'H: Display commands\n\n'
+                 'P: Display board symbol information\n\n'
                  'Q: Quit (quit game)\n'
                  'X: Exit (exit game)\n'
                  '\n--------------------------------------')
@@ -55,10 +58,36 @@ def print_commands(command_check, inventory_list):
             print('\nInventory')
             for i, item in enumerate(inventory_list):
                 print(f'{i + 1}: {item}')
-
     elif command_check == 'h': # print help
         print(help_info)
+    elif command_check == 'p':
+        print_symbols(g)
+
     press_continue()
+
+
+def print_symbols(g):
+    """Use to print information about board symbols."""
+    print(f'You are the player on the board, starting in the '
+          f'middle, look for your marker: '
+          f'{Back.GREEN + g.gamer + Back.RESET}\n\n'
+          f'Around the edges are impassable walls, signified '
+          f'by the following: '
+          f'{Back.GREEN + g.wall + Back.RESET}\n\n'
+          f'There are a few internal walls, which cannot be '
+          f'passed, unless you have found a pickaxe. These '
+          f'internal walls looks like this: '
+          f'{Back.GREEN + g.unstable_wall + Back.RESET}\n\n'
+          f'The goal of this exciting game is to pick up things '
+          f'from the board, items can be found where you see: '
+          f'{Back.GREEN + pickup_list[0].symbol + Back.RESET}\n\n'
+          f'There are chests on the board, marked with '
+          f'{Back.GREEN + chest_list[0].symbol + Back.RESET}, '
+          f'to be able to pick up a chest, you '
+          f'first need a key, these are marked with '
+          f'{Back.GREEN + key_list[0].symbol + Back.RESET}\n\n'
+          f'Try to avoid the traps, marked with '
+          f'{Back.GREEN + trap_list[0].symbol + Back.RESET}')
 
 
 def print_welcome_info(g):
@@ -72,26 +101,16 @@ def print_welcome_info(g):
 
     # Print welcome message and info
     print('\nWelcome to an exciting game: Fruit Loop!')
-    print_commands('h', [])
+    print_commands('h', [], g)
 
-    print(f'You are the player on the board, starting in the '
-          f'middle, look for your marker: {g.gamer}\n\n'
-          f'Around the edges are impassable walls, signified '
-          f'by the following: {g.wall}\n\n'
-          f'There are a few internal walls, which cannot be '
-          f'passed, unless you have found a pickaxe. These '
-          f'internal walls looks like this: {g.unstable_wall}\n\n'
-          f'The goal of this exciting game is to pick up things '
-          f'from the board, items can be found where you see: '
-          f'{pickup_list[0]}')
-    press_continue()
     print('For help with commands, please select "h" '
           'as your command.')
     press_continue()
     print(f'Due to "The Floor is Lava", you will lose one (1) point '
-          f'for each movement when you do not find anything.\n'
-          f'Also, traps will have you lose 10 points, they are '
-          f'marked on the map with: {trap_list[0]}\n'
+          f'for each movement.\n'
+          f'Also, traps will have you lose {trap_list[0].value} '
+          f'points, they are marked on the map with: '
+          f'{trap_list[0]}\n'
           f'Either 0 can be the lowest score, or you can have '
           f'negative score.')
     press_continue()

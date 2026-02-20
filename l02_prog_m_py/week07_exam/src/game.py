@@ -75,7 +75,7 @@ def main():
     exit_commands = ['q', 'x']
 
     # List of print info commands
-    print_info_commands = ['i', 'h']
+    print_info_commands = ['i', 'h', 'p']
 
     # Default value for command
     command = 'a'
@@ -107,9 +107,9 @@ def main():
 
             # Handle any movement and update score
             player.move_happening(x_c, y_c, g, pickups.Item)
-        # Check if command as of: I, H
+        # Check if command as of: I, H, P
         elif command in print_info_commands:
-            print_commands(command, inventory)
+            print_commands(command, inventory, g)
         elif command not in exit_commands:
             print('\nThat command is not known.\n'
                   'Please use "h" to check what the valid commands are.')

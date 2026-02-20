@@ -43,7 +43,6 @@ class Item:
         self.value = value
         self.symbol = symbol
 
-
     def __str__(self):
         """Use to print."""
         return self.symbol
