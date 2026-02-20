@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 19&#10;&#10;Added version 2, part K &#10;Chests and Keys&#10;Also some refactoring around &#10;how to handle traps">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam wip Feb 20&#10;&#10;Fiddling around&#10;Making things better">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/print_to_user_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/print_to_user_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/ex01_1_safestorage.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/ex01_1_safestorage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/ex01_2_animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/ex01_2_animal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,81 +50,83 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in test_w06_ex05.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.01_diskussion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.balder_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.calculator_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.celsius_to_fahrenheit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.circle.executor&quot;: &quot;Run&quot;,
-    &quot;Python.count_words_in_string.executor&quot;: &quot;Run&quot;,
-    &quot;Python.discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.discuss_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.e3_receipt_calculator_3_v1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.e3_receipt_calculator_3_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_1_equivalence_classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_2_sum_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_3_count_vowels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_4_find_max.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_5_find_2nd_max.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex01_main_hello_name_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_balder.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_discuss_v2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_extra_calls.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex02_func_mod.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_01a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_01b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_02a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_02b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_03_receipt_calc.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_extra_calls.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex03_functions.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.ex03_sports_results.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_01c.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_03a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_03b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_extra_calls.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex04_temp_conv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex05_calculator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex05_turtle_graphics.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_01_1_safestorage.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_01_2_animal.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_02_countries.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_03_bank.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ex_04_webshop.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.exc3_1a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_1b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_2a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exc3_2b.executor&quot;: &quot;Run&quot;,
-    &quot;Python.find_the_median.executor&quot;: &quot;Run&quot;,
-    &quot;Python.game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.more_4.3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.my_base_functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.player.executor&quot;: &quot;Run&quot;,
-    &quot;Python.print_to_user_command.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sports_results_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.temp_convert_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.variables_datatypes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.w04_ex02_func_mod.executor&quot;: &quot;Run&quot;,
-    &quot;Python.w05_ex04_functions.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in test_w06_ex05.py.executor": "Run",
+    "Python.01_diskussion.executor": "Run",
+    "Python.balder_2.executor": "Run",
+    "Python.calculator_5.executor": "Run",
+    "Python.celsius_to_fahrenheit.executor": "Run",
+    "Python.circle.executor": "Run",
+    "Python.count_words_in_string.executor": "Run",
+    "Python.discuss.executor": "Run",
+    "Python.discuss_1.executor": "Run",
+    "Python.e3_receipt_calculator_3_v1.executor": "Run",
+    "Python.e3_receipt_calculator_3_v2.executor": "Run",
+    "Python.ex01_1_equivalence_classes.executor": "Run",
+    "Python.ex01_1_safestorage.executor": "Run",
+    "Python.ex01_2_animal.executor": "Run",
+    "Python.ex01_2_sum_list.executor": "Run",
+    "Python.ex01_3_count_vowels.executor": "Run",
+    "Python.ex01_4_find_max.executor": "Run",
+    "Python.ex01_5_find_2nd_max.executor": "Run",
+    "Python.ex01_discuss.executor": "Run",
+    "Python.ex01_main_hello_name.executor": "Run",
+    "Python.ex01_main_hello_name_v2.executor": "Run",
+    "Python.ex02_balder.executor": "Run",
+    "Python.ex02_discuss.executor": "Run",
+    "Python.ex02_discuss_v2.executor": "Run",
+    "Python.ex02_extra_calls.executor": "Run",
+    "Python.ex02_func_mod.executor": "Run",
+    "Python.ex03_01a.executor": "Run",
+    "Python.ex03_01b.executor": "Run",
+    "Python.ex03_02a.executor": "Run",
+    "Python.ex03_02b.executor": "Run",
+    "Python.ex03_03_receipt_calc.executor": "Run",
+    "Python.ex03_extra_calls.executor": "Run",
+    "Python.ex03_functions.executor": "Debug",
+    "Python.ex03_sports_results.executor": "Run",
+    "Python.ex04_01a.executor": "Run",
+    "Python.ex04_01b.executor": "Run",
+    "Python.ex04_01c.executor": "Run",
+    "Python.ex04_02.executor": "Run",
+    "Python.ex04_03a.executor": "Run",
+    "Python.ex04_03b.executor": "Run",
+    "Python.ex04_extra_calls.executor": "Run",
+    "Python.ex04_temp_conv.executor": "Run",
+    "Python.ex05_calculator.executor": "Run",
+    "Python.ex05_turtle_graphics.executor": "Run",
+    "Python.ex_01_1_safestorage.executor": "Run",
+    "Python.ex_01_2_animal.executor": "Run",
+    "Python.ex_02_countries.executor": "Run",
+    "Python.ex_03_bank.executor": "Run",
+    "Python.ex_04_webshop.executor": "Debug",
+    "Python.exc3_1a.executor": "Run",
+    "Python.exc3_1b.executor": "Run",
+    "Python.exc3_2a.executor": "Run",
+    "Python.exc3_2b.executor": "Run",
+    "Python.find_the_median.executor": "Run",
+    "Python.game.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.more_4.1.executor": "Run",
+    "Python.more_4.2.executor": "Run",
+    "Python.more_4.3.executor": "Run",
+    "Python.my_base_functions.executor": "Run",
+    "Python.player.executor": "Run",
+    "Python.print_to_user_command.executor": "Run",
+    "Python.sports_results_3.executor": "Run",
+    "Python.temp_convert_4.executor": "Run",
+    "Python.variables_datatypes.executor": "Run",
+    "Python.w04_ex02_func_mod.executor": "Run",
+    "Python.w05_ex04_functions.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rock_\OneDrive - Acumis Minds AB\Python-kurs\PycharmProjects\nbi2024_recap\l02_prog_m_py\week04_assignment\w04_ex_02\src_tapht25d" />
@@ -146,14 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Refactoring week 04&#10;&#10;Realized I had the exact same &#10;name of the functions file &#10;for when doing off course work &#10;and 2025 work&#10;renamed the one for off course work, &#10;also changed the main file for the &#10;same">
-      <option name="closed" value="true" />
-      <created>1770283959188</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1770283959188</updated>
     </task>
     <task id="LOCAL-00084" summary="Adding L02 W04 Ex02 part 06&#10;&#10;Adding part 06 of exercise 02&#10;Code and tests">
       <option name="closed" value="true" />
@@ -539,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771528361019</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Exam wip Feb 20&#10;&#10;Fiddling around&#10;Making things better">
+      <option name="closed" value="true" />
+      <created>1771580201637</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1771580201637</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex 1 work ongoing e&#10;&#10;Played around a bit&#10;Worked through parts 1.1 a &#10;through 1.1 e" />
     <MESSAGE value="L02 W05 Ex 1 done&#10;&#10;Adding more for test, though &#10;now feel done with exercise 01" />
     <MESSAGE value="L02 W05 Ex 2 done&#10;&#10;Edited to make some updates to &#10;code as well as for tests&#10;Done for now" />
     <MESSAGE value="L02 W05 Ex 1 part 3 done&#10;&#10;Latest commit message mention &#10;Ex 2, but was actually Ex 1 part 2&#10;Now, also done with Ex 1 part 3, &#10;both a and b&#10;Some refactoring compared to what &#10;was done off course" />
@@ -579,6 +579,7 @@
     <MESSAGE value="Exam wip Feb 18, part 2&#10;&#10;Added version 2, part I (traps)&#10;More refactoring" />
     <MESSAGE value="Exam wip Feb 18, part 3&#10;&#10;More refactoring" />
     <MESSAGE value="Exam wip Feb 19&#10;&#10;Added version 2, part K &#10;Chests and Keys&#10;Also some refactoring around &#10;how to handle traps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 19&#10;&#10;Added version 2, part K &#10;Chests and Keys&#10;Also some refactoring around &#10;how to handle traps" />
+    <MESSAGE value="Exam wip Feb 20&#10;&#10;Fiddling around&#10;Making things better" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam wip Feb 20&#10;&#10;Fiddling around&#10;Making things better" />
   </component>
 </project>

@@ -1,24 +1,33 @@
 
-# Veckouppgift 6
+# Veckouppgift 6  
 
 ---
 
-## Vecka 6, 10/2
+## Vecka 8, 16/2  
+
+(_2024 == Vecka Vecka 6, 10/2_)  
+
+(**yes, it stated "6" (Feb 10 started in week 7)**)  
+
+Main bulk of the files are from when I've been working on a recap 
+of the OG course on my own.  
 
 ---
 
-1. Du ska lösa uppgiften självständigt eller tillsammans 
+### Summary  
+
+1. _Du ska lösa uppgiften självständigt eller tillsammans 
 med en annan student.  
-Men vid minst ett tillfälle ska du göra code review i en grupp.
-<BR><BR>
-2. Du får ta hjälp av AI för att förklara koncept och lösa fel.  
+Men vid minst ett tillfälle ska du göra code review i en grupp._  
+
+2. _Du får ta hjälp av AI för att förklara koncept och lösa fel.  
 Du får inte be AI lösa uppgiften åt dig direkt.  
 Om du gör det, kommer du inte att lära dig grunderna, 
-och inte kunna lösa svårare problem.  
+och inte kunna lösa svårare problem._  
 
 ---
 
-Student == **_gnoff_**
+Student == **_gnoff_**  
 
 ---
 
