@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="W06 Ex03 refactor&#10;&#10;Some refactoring for &#10;exercise 3, week 6">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="W06 Ex04 refactor&#10;&#10;Some refactoring for &#10;exercise 4, week 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/ex04_webshop.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_04/ex04_webshop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week06_assignment/w06_ex_01/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,86 +47,86 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in test_w06_ex05.py.executor": "Run",
-    "Python.01_diskussion.executor": "Run",
-    "Python.balder_2.executor": "Run",
-    "Python.calculator_5.executor": "Run",
-    "Python.celsius_to_fahrenheit.executor": "Run",
-    "Python.circle.executor": "Run",
-    "Python.count_words_in_string.executor": "Run",
-    "Python.discuss.executor": "Run",
-    "Python.discuss_1.executor": "Run",
-    "Python.e3_receipt_calculator_3_v1.executor": "Run",
-    "Python.e3_receipt_calculator_3_v2.executor": "Run",
-    "Python.ex01_1_equivalence_classes.executor": "Run",
-    "Python.ex01_1_safestorage.executor": "Run",
-    "Python.ex01_2_animal.executor": "Run",
-    "Python.ex01_2_sum_list.executor": "Run",
-    "Python.ex01_3_count_vowels.executor": "Run",
-    "Python.ex01_4_find_max.executor": "Run",
-    "Python.ex01_5_find_2nd_max.executor": "Run",
-    "Python.ex01_discuss.executor": "Run",
-    "Python.ex01_main_hello_name.executor": "Run",
-    "Python.ex01_main_hello_name_v2.executor": "Run",
-    "Python.ex02_balder.executor": "Run",
-    "Python.ex02_countries.executor": "Run",
-    "Python.ex02_discuss.executor": "Run",
-    "Python.ex02_discuss_v2.executor": "Run",
-    "Python.ex02_extra_calls.executor": "Run",
-    "Python.ex02_func_mod.executor": "Run",
-    "Python.ex03_01a.executor": "Run",
-    "Python.ex03_01b.executor": "Run",
-    "Python.ex03_02a.executor": "Run",
-    "Python.ex03_02b.executor": "Run",
-    "Python.ex03_03_receipt_calc.executor": "Run",
-    "Python.ex03_bank.executor": "Run",
-    "Python.ex03_extra_calls.executor": "Run",
-    "Python.ex03_functions.executor": "Debug",
-    "Python.ex03_sports_results.executor": "Run",
-    "Python.ex04_01a.executor": "Run",
-    "Python.ex04_01b.executor": "Run",
-    "Python.ex04_01c.executor": "Run",
-    "Python.ex04_02.executor": "Run",
-    "Python.ex04_03a.executor": "Run",
-    "Python.ex04_03b.executor": "Run",
-    "Python.ex04_extra_calls.executor": "Run",
-    "Python.ex04_temp_conv.executor": "Run",
-    "Python.ex04_webshop.executor": "Run",
-    "Python.ex05_calculator.executor": "Run",
-    "Python.ex05_turtle_graphics.executor": "Run",
-    "Python.ex_01_1_safestorage.executor": "Run",
-    "Python.ex_01_2_animal.executor": "Run",
-    "Python.ex_02_countries.executor": "Run",
-    "Python.ex_03_bank.executor": "Run",
-    "Python.ex_04_webshop.executor": "Debug",
-    "Python.exc3_1a.executor": "Run",
-    "Python.exc3_1b.executor": "Run",
-    "Python.exc3_2a.executor": "Run",
-    "Python.exc3_2b.executor": "Run",
-    "Python.find_the_median.executor": "Run",
-    "Python.game.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.more_4.1.executor": "Run",
-    "Python.more_4.2.executor": "Run",
-    "Python.more_4.3.executor": "Run",
-    "Python.my_base_functions.executor": "Run",
-    "Python.player.executor": "Run",
-    "Python.print_to_user_command.executor": "Run",
-    "Python.sports_results_3.executor": "Run",
-    "Python.temp_convert_4.executor": "Run",
-    "Python.variables_datatypes.executor": "Run",
-    "Python.w04_ex02_func_mod.executor": "Run",
-    "Python.w05_ex04_functions.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in test_w06_ex05.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.01_diskussion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.balder_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calculator_5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.celsius_to_fahrenheit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.circle.executor&quot;: &quot;Run&quot;,
+    &quot;Python.count_words_in_string.executor&quot;: &quot;Run&quot;,
+    &quot;Python.discuss.executor&quot;: &quot;Run&quot;,
+    &quot;Python.discuss_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.e3_receipt_calculator_3_v1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.e3_receipt_calculator_3_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_1_equivalence_classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_1_safestorage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_2_animal.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_2_sum_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_3_count_vowels.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_4_find_max.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_5_find_2nd_max.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_discuss.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_main_hello_name.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex01_main_hello_name_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex02_balder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex02_countries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex02_discuss.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex02_discuss_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex02_extra_calls.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex02_func_mod.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_01a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_01b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_02a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_02b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_03_receipt_calc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_bank.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_extra_calls.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex03_functions.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.ex03_sports_results.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_01a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_01b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_01c.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_02.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_03a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_03b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_extra_calls.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_temp_conv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex04_webshop.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex05_calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex05_turtle_graphics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex_01_1_safestorage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex_01_2_animal.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex_02_countries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex_03_bank.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex_04_webshop.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.exc3_1a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exc3_1b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exc3_2a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exc3_2b.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_the_median.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.more_4.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.more_4.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.more_4.3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.my_base_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.player.executor&quot;: &quot;Run&quot;,
+    &quot;Python.print_to_user_command.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sports_results_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temp_convert_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.variables_datatypes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.w04_ex02_func_mod.executor&quot;: &quot;Run&quot;,
+    &quot;Python.w05_ex04_functions.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rock_/OneDrive - Acumis Minds AB/Python-kurs/PycharmProjects/nbi2024_recap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rock_\OneDrive - Acumis Minds AB\Python-kurs\PycharmProjects\nbi2024_recap\l02_prog_m_py\week04_assignment\w04_ex_02\src_tapht25d" />
@@ -149,14 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Adding L02 W04 Ex03 base&#10;&#10;First base files to get started &#10;with exercise 03 or week 04&#10;No code or test to use yet">
-      <option name="closed" value="true" />
-      <created>1770303393051</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1770303393051</updated>
     </task>
     <task id="LOCAL-00088" summary="Adding L02 W04 Ex03 version 1&#10;&#10;Version 1 files added for &#10;exercise 03 or week 04&#10;code and test&#10;Also minor name refactoring due to &#10;kind of picky pylint&#10;And, removed some not needed &#10;parenthesis for ex 02 test files">
       <option name="closed" value="true" />
@@ -542,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771591050295</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="W06 Ex04 refactor&#10;&#10;Some refactoring for &#10;exercise 4, week 6">
+      <option name="closed" value="true" />
+      <created>1771592973100</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1771592973100</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -557,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex 1 part 4 done&#10;&#10;Done with Ex 1 part 4&#10;Some refactoring compared to what &#10;was done off course&#10;Minor changes in some other files &#10;to clean up, including fix of &#10;pylint warning" />
     <MESSAGE value="L02 W05 Ex 1 part 5 done&#10;&#10;Done with Ex 1 part 5&#10;Should be all of Ex 01 now" />
     <MESSAGE value="L02 W05 Ex2 work ongoing&#10;&#10;Refactoring some&#10;Done some more overworking regarding &#10;part 1, though in separate files&#10;Moving to separate also the &quot;basic&quot; &#10;parts into separate files, work is &#10;ongoing&#10;Safety commit" />
     <MESSAGE value="L02 W05 Ex2 refactoring&#10;&#10;Refactoring some more&#10;Now all currently available &#10;tests are in separate files, based &#10;on which function they are testing&#10;Cleaner&#10;File name change due to this" />
@@ -582,6 +579,7 @@
     <MESSAGE value="W06 Ex01 refactor&#10;&#10;Some refactoring for &#10;exercise 1, week 6" />
     <MESSAGE value="W06 Ex02 refactor&#10;&#10;Some refactoring for &#10;exercise 2, week 6" />
     <MESSAGE value="W06 Ex03 refactor&#10;&#10;Some refactoring for &#10;exercise 3, week 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="W06 Ex03 refactor&#10;&#10;Some refactoring for &#10;exercise 3, week 6" />
+    <MESSAGE value="W06 Ex04 refactor&#10;&#10;Some refactoring for &#10;exercise 4, week 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="W06 Ex04 refactor&#10;&#10;Some refactoring for &#10;exercise 4, week 6" />
   </component>
 </project>
