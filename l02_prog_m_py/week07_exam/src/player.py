@@ -39,6 +39,8 @@ from my_funct_dir.my_base_functions import press_continue
 class Player:
     """Use for Class Player."""
 
+    grace_cnt = 0
+
     def __init__(self, x, y):
         """Use to create an object of Player."""
         self.pos_x = x
@@ -94,15 +96,26 @@ class Player:
         return True
 
 
-    def handle_lava_score(self):
-        """Use to handle score for The Floor is Lava."""
-        # Handle "The Floor is Lava"
-        # Exam Version 1: G (Lose 1 point per step)
-        self.score -= 1
-        # If gamer has opted to not allow score below 0,
-        # Ensure this happens
-        if not self.use_neg and self.score < 0:
-            self.score += 1
+    def handle_lava_score(self, grace):
+        """Use to handle score for The Floor is Lava.
+
+        If on "Grace Period", does not lose points.
+        """
+        if grace:
+            # Found an item, add grace period of 5
+            self.grace_cnt = 5
+        else:
+            if self.grace_cnt > 0:
+                self.grace_cnt -= 1
+            else:
+                # Handle "The Floor is Lava"
+                # Exam Version 1: G (Lose 1 point per step)
+                self.score -= 1
+                # If gamer has opted to not allow score below 0,
+                # Ensure this happens
+                if not self.use_neg and self.score < 0:
+                    self.score += 1
+        print(f'Grace period is at {self.grace_cnt}')
 
 
     def check_trap(self, name, value):
@@ -161,6 +174,9 @@ class Player:
         inventory, plus print info to user.
         Also handles "The Floor is Lava" score reduction.
         """
+        # Exam Version 3: O (When you pick something up, you can
+        # move 5 steps without lava damage)
+        grace_moves = False
         # Only check if player picked something up, and only
         # move player, if possible to move
         if self.can_move(x, y, g):
@@ -169,9 +185,6 @@ class Player:
                                self.pos_y + y)
             # Move player
             self.move(x, y)
-
-            # # Handle "The Floor is Lava"
-            self.handle_lava_score()
 
             # Check if there is something to pick up
             if isinstance(maybe_item, item):
@@ -185,6 +198,7 @@ class Player:
                     g.clear(self.pos_x, self.pos_y)
                     # Exam Version 1: E (Added to inventory)
                     self.inventory.append(maybe_item.name)
+                    grace_moves = True
                 elif maybe_item.type == chest_list[0].type:
                     self.check_chest(g, maybe_item.name,
                                      maybe_item.value)
@@ -193,3 +207,6 @@ class Player:
                 else:
                     self.check_trap(maybe_item.name, maybe_item.value)
                 print('')
+
+            # Handle "The Floor is Lava"
+            self.handle_lava_score(grace_moves)
