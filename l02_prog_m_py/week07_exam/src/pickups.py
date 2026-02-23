@@ -21,6 +21,9 @@ Pickups view.
 #####################################################################
 
 
+import random
+
+
 from dataclasses import dataclass
 
 
@@ -96,11 +99,21 @@ key_list = [Item(type_i = 'key', name = 'key',
 # Use to collect all board items in one list
 place_list = pickup_list + trap_list + chest_list + key_list
 
+# Used for fertile addons
+# Exam Version 2: L (Every 25 step adds new points item to board)
+fertile = [Item(type_i = 'fertile', name = 'mango',
+                value=25, symbol='*'),
+           Item(type_i = 'fertile', name = 'lime',
+                value = 25, symbol = '*'),
+           Item(type_i='fertile', name='orange',
+                value = 25, symbol = '*')
+           ]
+
 
 def randomize(grid):
     """Use to create items on random positions.
 
-    Place the items from the list on the board grid.
+    Place the items from the "place_list" on the board grid.
     """
     for item in place_list:
         while True:
@@ -113,3 +126,18 @@ def randomize(grid):
                 # Abort the while loop, continue
                 # with the next iteration of the for loop
                 break
+
+def fertile_generate(grid):
+    """Use to place fertile items.
+
+    Exam Version 2: L (Every 25 step adds new points item to board)
+    """
+    while True:
+        x = grid.get_random_x()
+        y = grid.get_random_y()
+        if grid.is_empty(x, y):
+            new_fruit = random.choice(fertile)
+            grid.set(x, y, new_fruit)
+            print(f'New item {new_fruit} has been added to: '
+                  f'{x}, y:{y}!')
+            break

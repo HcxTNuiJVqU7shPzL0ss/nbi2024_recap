@@ -90,4 +90,3 @@ def fertile_generate(grid):
             print(f"New item has been added to x:{x}, y:{y}!")
             hit_it()
             break
-

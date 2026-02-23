@@ -24,7 +24,8 @@ Also handles interaction, like movement.
 
 
 # pylint: disable=import-error
-from pickups import pickup_list, chest_list, key_list
+from pickups import (pickup_list, chest_list, key_list,
+                     fertile_generate)
 # pylint: enable=import-error
 
 
@@ -40,6 +41,7 @@ class Player:
     """Use for Class Player."""
 
     grace_cnt = 0
+    steps = 0
 
     def __init__(self, x, y):
         """Use to create an object of Player."""
@@ -55,7 +57,8 @@ class Player:
         print(f'\n>>> {emoji.emojize(':strawberry:')} '
               f'Fruit Loop {emoji.emojize(':watermelon:')} <<<')
         print('--------------------------------------\n')
-        print(f'You have {self.score} points.\n')
+        print(f'You have {self.score} points.\n'
+              f'You have used {self.steps} moves.\n')
         print(game_grid)
 
 
@@ -172,10 +175,11 @@ class Player:
 
         Check if an item is picked up, and if so add to
         inventory, plus print info to user.
-        Also handles "The Floor is Lava" score reduction.
+        Also handles "The Floor is Lava" score reduction,
+        unless gamer is on "Grace Period".
         """
         # Exam Version 3: O (When you pick something up, you can
-        # move 5 steps without lava damage)
+        # move 5 steps without lava damage - Grace Period)
         grace_moves = False
         # Only check if player picked something up, and only
         # move player, if possible to move
@@ -185,6 +189,7 @@ class Player:
                                self.pos_y + y)
             # Move player
             self.move(x, y)
+            self.steps += 1
 
             # Check if there is something to pick up
             if isinstance(maybe_item, item):
@@ -210,3 +215,8 @@ class Player:
 
             # Handle "The Floor is Lava"
             self.handle_lava_score(grace_moves)
+
+            # Handle fertile addition
+            if self.steps % 25 == 0:
+                fertile_generate(g)
+                press_continue()

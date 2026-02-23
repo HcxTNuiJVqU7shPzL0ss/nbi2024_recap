@@ -3,7 +3,7 @@
 
 ---
 
-## Programmering med Python  
+## Programmering med Python, TAP HT25 D  
 
 ---
 
@@ -11,7 +11,7 @@
 
 _Du ska lösa uppgiften självständigt.  
 När du tar hjälp av AI, eller diskuterar med andra studenter, 
-ska du se till att du förstår vad koden gör._
+ska du se till att du förstår vad koden gör._  
 
 ---
 
@@ -100,6 +100,7 @@ Men innan man tagit upp alla har inte Exit någon effekt.
 N.  
 Jump - om man skriver ett "J" innan något av "WASD", 
 ska spelaren hoppa över en ruta. 
+(Exempel: "JW" → två steg uppåt.)  
 Man förflyttar sig alltså två steg, men kan förstås bara plocka upp 
 eller interagera med saker där man landar. 
 Hoppar man in i en vägg blir det samma effekt som om man hade gått 
@@ -115,8 +116,8 @@ kan man gå 5 steg utan att det dras några poäng.
 
 P.  
 AI-fiender - placera 1-3 fiender på kartan. 
-För varje steg spelaren tar ska ska varje fiende ha en slumpmässig 
-chans att flytta sig ett steg närmare spelaren. 
+För varje steg spelaren tar ska ska [_sic_] varje fiende ha en 
+slumpmässig chans att flytta sig ett steg närmare spelaren. 
 Minus 20 poäng om en fiende hinner ifatt. 
 (Inte diagonalt, dvs. samma rörelsemönster som spelaren. 
 Fienderna ska vara lite "långsammare" så att det är lagom svårt att 
@@ -126,10 +127,14 @@ Q.
 Tryck "B" för att placera en bomb. 
 Efter 3 drag smäller bomben och förstör allt på sin ruta och de 
 åtta som gränsar till den. 
-(fällor, väggar, m.m.) Om spelaren är kvar förlorar man poäng.  
+(fällor, väggar, m.m.)  
+Om spelaren är kvar förlorar man poäng.  
 
 R.  
 Ett nytt kommando ("T" för trap) för att desarmera fällor.  
+
+S.  
+Använd TDD för att testa några av funktionerna i koden.  
 
 ---
 
@@ -149,8 +154,6 @@ teknikerna._
 * Det finns flera tips märkta med "TODO" i kodfilerna. 
 Du måste inte göra allt de säger, men flera av dem är tänkta 
 att hjälpa till.  
-
-* Du får använda TDD under utvecklingen.  
 
 * Undvik att upprepa kod - skapa loopar, funktioner eller 
 klasser i stället.  
@@ -179,8 +182,8 @@ Så här ser det ut i PyCharm:
 För att få betyget Godkänt (G) ska den studerande ha genomfört 
 kursen och nått alla kursens lärandemål.  
 
-Genom att uppfylla alla spelets grundkrav (version 1) kan du 
-visa att du nått kursens lärandemål.  
+_Genom att uppfylla alla spelets grundkrav (version 1) kan du 
+visa att du nått kursens lärandemål._  
 
 *För betyget (VG):*  
 För att få betyget Väl Godkänt (VG) ska den studerande dels 
@@ -190,10 +193,12 @@ arbetet med att planera och skapa en välstrukturerad och tydlig kod
 med högre kvalitet än för betyget G.  
 
 För att visa den högre nivå som krävs för VG, 
-behöver du arbeta med flera av kraven för version 2. 
+behöver du arbeta med flera av kraven för version 2 eller version 3. 
 Dessutom behöver du tänka på att koden ska vara tydlig 
 och välstrukturerad. 
 Det ska vara lätt att läsa och förstå din kod.  
+
+_Gör sammanlagt minst 4 av kraven för version 2 eller version 3._  
 
 ---
 
@@ -201,7 +206,7 @@ Det ska vara lätt att läsa och förstå din kod.
 
 Till din hjälp har du ett Git-repository med kod som du ska 
 utgå från:
-[GitHub exam_template](https://github.com/tap-ht24-python/exam_template?tab=readme-ov-file#examination) 
+[GitHub exam_template](https://github.com/tap-ht25-python/exam_template?tab=readme-ov-file#examination) 
 
 Observera att du inte kan arbeta i det repot. 
 Du måste skapa en egen kopia. 
@@ -212,14 +217,17 @@ Klicka på knappen Fork:
 <BR>  
 
 Kontrollera att ditt repo är publikt innan du lämnar in. 
-Ladda sedan upp en textfil på LearnPoint:  
+Ladda sedan upp en textfil på Teams:  
 * skapa filen i PyCharm/VS Code  
-* filen ska heta "ditt_namn.txt"  
+* filen ska heta "ditt_namn.txt" 
+(om du kompletterar, ladda upp en ny fil med namnet 
+"ditt_namn_2.txt" osv.  
 * filen ska innehålla länk till ditt GitHub-repo  
-* och eventuella andra kommentarer  
+* filen ska berätta vilka av kraven du har arbetat med och 
+eventuella andra kommentarer  
 
-För att bli godkänd måste all kod finnas med i repot och 
-projektet ska gå att köra utan fel.  
+För att bli godkänd måste all kod finnas med i repot. 
+Projektet ska gå att köra utan fel.  
 
 ---
 

@@ -118,7 +118,8 @@ def main():
 
     # When exiting the while loop, we end up here: Game Over!
     print(f'\nThank you for playing Fruit Loop!\n'
-          f'You ended with {player.score} points.')
+          f'You ended with {player.score} points.\n'
+          f'In total you used {player.steps} moves.')
     press_exit()
 
 
