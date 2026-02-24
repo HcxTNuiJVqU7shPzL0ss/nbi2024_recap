@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam add v3 part O&#10;&#10;Adding grace period&#10;Only for points items, &#10;not chests, not keys, not traps&#10;Cannot have more than 5 grace &#10;moves">
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam refactor&#10;&#10;Edit to readme when latest &#10;version for 2025 available&#10;Some minor code changes">
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/tests/test_player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/og_2024/src/pickups.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/og_2024/src/pickups.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/pickups.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/src/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,12 +31,12 @@
     &quot;assignee&quot;: &quot;HcxTNuiJVqU7shPzL0ss&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git&quot;,
-    &quot;accountId&quot;: &quot;70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git",
+    "accountId": "55d36338-accb-4aaf-846a-e7cf55611cfe"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -139,7 +137,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f78a9d071105-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26574.90" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -151,14 +149,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Adding L02 W04 Ex03 version 2, more test&#10;&#10;Adding two more asserts for test">
-      <option name="closed" value="true" />
-      <created>1770309225256</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1770309225256</updated>
     </task>
     <task id="LOCAL-00091" summary="Adding L02 W04 Ex03 version 3&#10;&#10;Add code and tests for &#10;version 3&#10;Done for now">
       <option name="closed" value="true" />
@@ -544,7 +534,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771841030561</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Exam refactor&#10;&#10;Edit to readme when latest &#10;version for 2025 available&#10;Some minor code changes">
+      <option name="closed" value="true" />
+      <created>1771861915970</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1771861915970</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +557,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex2 refactoring&#10;&#10;Refactoring some more&#10;Now all currently available &#10;tests are in separate files, based &#10;on which function they are testing&#10;Cleaner&#10;File name change due to this" />
     <MESSAGE value="L02 W05 Ex2 added work&#10;&#10;Added more code for &#10;parts 1 and 2 for exercise 2&#10;Now runs both version 1 and &#10;version 2 for these&#10;Still only running version 1 &#10;for parts 3 and 4&#10;Not covered all regarding unit &#10;test" />
     <MESSAGE value="L02 W05 Ex2 added tests&#10;&#10;Tests added for the separate &#10;part of exercise 2&#10;Note that code and tests may &#10;be somewhat overworked &#10;compared to what the &#10;exercise is about, but also &#10;this is for me to learn &#10;different things" />
     <MESSAGE value="L02 W05 Ex2 part 3 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code only for now, no tests" />
@@ -584,6 +581,7 @@
     <MESSAGE value="W06 Ex04 refactor&#10;&#10;Some refactoring for &#10;exercise 4, week 6" />
     <MESSAGE value="W06 Ex01 markdown&#10;&#10;Trying some things in &#10;md file" />
     <MESSAGE value="Exam add v3 part O&#10;&#10;Adding grace period&#10;Only for points items, &#10;not chests, not keys, not traps&#10;Cannot have more than 5 grace &#10;moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam add v3 part O&#10;&#10;Adding grace period&#10;Only for points items, &#10;not chests, not keys, not traps&#10;Cannot have more than 5 grace &#10;moves" />
+    <MESSAGE value="Exam refactor&#10;&#10;Edit to readme when latest &#10;version for 2025 available&#10;Some minor code changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam refactor&#10;&#10;Edit to readme when latest &#10;version for 2025 available&#10;Some minor code changes" />
   </component>
 </project>

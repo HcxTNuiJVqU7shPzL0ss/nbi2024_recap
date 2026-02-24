@@ -23,18 +23,18 @@ Also handles interaction, like movement.
 #####################################################################
 
 
-# pylint: disable=import-error
-from pickups import (pickup_list, chest_list, key_list,
-                     fertile_generate)
-# pylint: enable=import-error
-
-
 import emoji
 
 
 # Note that these functions are located in a different
 # directory
 from my_funct_dir.my_base_functions import press_continue
+
+
+# pylint: disable=import-error
+from .pickups import (pickup_list, chest_list, key_list,
+                     fertile_generate)
+# pylint: enable=import-error
 
 
 class Player:
@@ -94,7 +94,7 @@ class Player:
         # Return True if no wall is found
         if check_wall in (grid.wall, grid.unstable_wall):
             print('\nNot allowed to walk through walls!')
-            input('Press Enter to continue!')
+            press_continue()
             return False
         return True
 
