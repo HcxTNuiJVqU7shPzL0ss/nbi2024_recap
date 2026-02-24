@@ -1,4 +1,4 @@
-"""Module for tests, src file: player."""
+"""Module for tests, src directory file: player."""
 
 #####################################################################
 # Copyright 2026 gnoff
@@ -23,7 +23,13 @@ from ..src.player import Player
 # pylint: enable=import-error
 
 
-p = Player(0, 0) # Supply x and y
+X_START = 0
+Y_START = 0
+GRACE_START = 0
+SCORE_START = 0
+NEG_START = False
+
+p = Player(x=X_START, y=Y_START) # Supply x and y
 
 
 def test_print_status__dummy_values(capsys):
@@ -32,7 +38,6 @@ def test_print_status__dummy_values(capsys):
     Use capsys to capture stdout/stderr output.
     Test Player method "print_status"
     """
-    # p = Player(0, 0) # Supply x and y
     p.print_status(game_grid='dummy') # Dummy for print
 
     captured = capsys.readouterr()
@@ -68,7 +73,12 @@ def test_lava_handling__true():
     expected = True
     p.set_lava_handling(lava_neg=expected)
     actual = p.use_neg
-    assert actual == expected
+    assert actual is expected
+
+    # Reset to default
+    p.set_lava_handling(lava_neg=NEG_START)
+    actual = p.use_neg
+    assert actual is NEG_START
 
 
 def test_move__x1_y2():
@@ -77,8 +87,9 @@ def test_move__x1_y2():
     Test Player method "move"
     """
     # Check default is at 0 for both
-    assert p.pos_x == 0
-    assert p.pos_y == 0
+    assert p.pos_x == X_START
+    assert p.pos_y == Y_START
+
     # Change coordinates
     expected_x = 1
     expected_y = 2
@@ -86,3 +97,88 @@ def test_move__x1_y2():
     # Check that change happened
     assert p.pos_x == expected_x
     assert p.pos_y == expected_y
+
+    # Reset to default
+    p.move(dx=-expected_x, dy=-expected_y)
+    # Check that change happened
+    assert p.pos_x == X_START
+    assert p.pos_y == Y_START
+
+
+def test_handle_lava_score__no_grace_no_negative_default(capsys):
+    """Use to test Player metod handle_lava_score.
+
+    No grace period.
+    Negative values are not allowed.
+    Default "start" values.
+    """
+    # Check default
+    assert p.grace_cnt == GRACE_START
+    assert p.score == SCORE_START
+    assert p.use_neg is False
+
+    # Call the method without finding an item
+    p.handle_lava_score(grace=False)
+
+    # Check grace_cnt and score still at 0
+    assert p.grace_cnt == GRACE_START
+    assert p.score == SCORE_START
+
+    captured = capsys.readouterr()
+    output = captured.out
+
+    # Test that print happens
+    assert 'is at 0' in output
+
+
+def test_handle_lava_score__yes_grace_yes_negative_fake_score(capsys):
+    """Use to test Player method handle_lava_score.
+
+    Yes, grace period.
+    Yes, negative values allowed.
+    Fake score.
+    """
+    grace_set = 5
+    fake_score_set = 1
+    # Call the method when finding an item
+    p.handle_lava_score(grace=True)
+
+    # Check that grace_cnt is now at 5
+    assert p.grace_cnt == grace_set
+
+    captured = capsys.readouterr()
+    output = captured.out
+
+    # Test that print happens
+    assert 'is at 5' in output
+
+
+    # Change to allow negative values, and fake a score
+    p.use_neg = True
+    p.score = fake_score_set
+
+    for i in range(1, 6):
+        # Call the method without finding an item
+        p.handle_lava_score(grace=False)
+
+        # Check that grace_cnt decreases
+        assert p.grace_cnt == grace_set - i
+        # Check that score does not decrease
+        assert p.score == fake_score_set
+
+        captured = capsys.readouterr()
+        output = captured.out
+
+        # Test that print happens
+        assert f'is at {p.grace_cnt}' in output
+
+    for i in range(1, 3):
+        # With grace_cnt now at 0, check that score decrease
+        p.handle_lava_score(grace=False)
+        assert p.score == fake_score_set - i
+        print(p.score)
+
+    # Back to default
+    p.score = SCORE_START
+    p.grace_cnt = GRACE_START
+    p.use_neg = NEG_START
