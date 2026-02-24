@@ -1,7 +1,10 @@
 """Module for 'Discuss'.
 
 Lesson 02, Week 06, Exercise 01, parts 2a and 2b.
-Done "off course".
+What does the following code do?
+Fix any errors.
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -41,7 +44,7 @@ class Animal:
 
     def make_noise(self):
         """Use for function to print animal noise."""
-        print("Detta djur har vi inget ljud för.")
+        print('We do not have a sound for this animal!')
 
 
 class Dog(Animal):
@@ -55,7 +58,7 @@ class Dog(Animal):
 
     def make_noise(self):
         """Use for (Dog) noise."""
-        print("Voff!")
+        print('Woof!')
 
 
 class Cat(Animal):
@@ -69,7 +72,7 @@ class Cat(Animal):
 
     def make_noise(self):
         """Use for (Cat) noise."""
-        print("Mjau!")
+        print('Meow!')
 
 
 class Rooster(Animal):
@@ -81,9 +84,9 @@ class Rooster(Animal):
         """Use when wanting to print out the child class name."""
         return self.__class__.__name__
 
-    # def make_noise(self):
-    #     """Use for (Rooster) noise."""
-    #     print('Cock-a-doodle-doo!')
+    def make_noise(self):
+        """Use for (Rooster) noise."""
+        print('Cock-a-doodle-doo!')
 
 
 class GoldFish(Animal):
@@ -97,7 +100,31 @@ class GoldFish(Animal):
 
     def make_noise(self):
         """Use for (GoldFish) noise."""
-        print("Blubb!")
+        print('Blub blub!')
+
+
+class Parrot(Animal):
+    """Use for Parrot child class, extending Animal class."""
+
+    type = 'parrot'
+
+    def __str__(self):
+        """Use when wanting to print out the child class name."""
+        return self.__class__.__name__
+
+    def make_noise(self):
+        """Use for (Parrot) noise."""
+        print('Polly wants a cracker!')
+
+
+class GroundHog(Animal):
+    """Use for GroundHog child class, extending Animal class."""
+
+    type = 'groundhog'
+
+    def __str__(self):
+        """Use when wanting to print out the child class name."""
+        return self.__class__.__name__
 
 
 def sound_off(animal):
@@ -105,42 +132,84 @@ def sound_off(animal):
     animal.make_noise()
 
 
+def create_animals():
+    """Use to create list of animals."""
+    build_list = []
+    # Create Cat child class for c, name = Mewster
+    c = Cat('Mewster')
+    build_list.append(c)
+    # Create Dog child class for c, name = Boy
+    d = Dog('Boy')
+    build_list.append(d)
+    # Create Rooster child class for r, name = Pecker
+    r = Rooster('Pecker')
+    build_list.append(r)
+    # Create GoldFish child class for g, name = Blubber
+    g = GoldFish('Blubber')
+    build_list.append(g)
+    # Create Parrot child class for p, name = Polly
+    p = Parrot('Polly')
+    build_list.append(p)
+    # Create GroundHog child class for gh, name = Phil
+    gh = GroundHog('Phil')
+    build_list.append(gh)
+
+    return build_list
+
+
+def animal_farm(list_of_pets, last_pet):
+    """Use to display info of the animal farm."""
+    for animal in list_of_pets:
+        print(f'The animal is a {animal.type}, named {animal.name}, '
+              f'it sounds like this:')
+        sound_off(animal)
+        if animal != last_pet:
+            press_continue()
+
+
 def main():
-    """Use as main function."""
+    """Use as main function.
+
+    This version made for the recap of 2024.
+    Refactored for TAP HT 25D.
+    """
     print('\nWeek 06, Exercise 01.2, Discuss.\nFunction: ',
           main.__name__, sep = '')
     press_continue()
 
-    # Create Cat child class for c, name = Mewster
-    c = Cat('Mewster')
-    # Create Dog child class for c, name = Boy
-    d = Dog('Boy')
-    # Create Rooster child class for r, name = Pecker
-    r = Rooster('Pecker')
-    # Create GoldFish child class for g, name = Blubber
-    g = GoldFish('Blubber')
+    animal_list = create_animals()
+    last_one = animal_list[-1]
 
-    print(f'The animal is a {c.type}, named {c.name}, '
-          f'it sound like this:')
-    sound_off(c)
+    animal_farm(animal_list, last_one)
 
-    press_continue()
-
-    print(f'The animal is a {d.type}, named {d.name}, '
-          f'it sound like this:')
-    sound_off(d)
-
-    press_continue()
-
-    print(f'The animal is a {r.type}, named {r.name}, '
-          f'it sound like this:')
-    sound_off(r)
-
-    press_continue()
-
-    print(f'The animal is a {g.type}, named {g.name}, '
-          f'it sound like this:')
-    sound_off(g)
+    # print(f'The animal is a {c.type}, named {c.name}, '
+    #       f'it sounds like this:')
+    # sound_off(c)
+    # press_continue()
+    #
+    # print(f'The animal is a {d.type}, named {d.name}, '
+    #       f'it sounds like this:')
+    # sound_off(d)
+    # press_continue()
+    #
+    # print(f'The animal is a {r.type}, named {r.name}, '
+    #       f'it sounds like this:')
+    # sound_off(r)
+    # press_continue()
+    #
+    # print(f'The animal is a {g.type}, named {g.name}, '
+    #       f'it sounds like this:')
+    # sound_off(g)
+    # press_continue()
+    #
+    # print(f'The animal is a {p.type}, named {p.name}, '
+    #       f'it sounds like this:')
+    # sound_off(p)
+    # press_continue()
+    #
+    # print(f'The animal is a {gh.type}, named {gh.name}, '
+    #       f'it sounds like this:')
+    # sound_off(gh)
 
     press_exit()
 

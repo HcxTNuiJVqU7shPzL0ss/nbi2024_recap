@@ -1,7 +1,9 @@
 """Module for 'Discuss'.
 
 Lesson 02, Week 06, Exercise 01, part 1.
-Done "off course".
+What does the code do?
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -23,7 +25,8 @@ Done "off course".
 
 
 from my_funct_dir.my_base_functions import (press_continue,
-                                            press_exit)
+                                            press_exit,
+                                            ask_y_or_n)
 
 
 # What does the following code do?
@@ -52,6 +55,7 @@ def main():
     """Use as module for Main.
 
     This version made for the recap of 2024.
+    Refactored for TAP HT 25D.
     """
     print('\nLesson 02, Week 06, Exercise 01, part 1.')
     press_continue()
@@ -61,11 +65,13 @@ def main():
     press_continue()
 
     safe = SafeStorage()  # New instance / object of the class
-    safe.put("Anakonda")  # Put Anakonda in data for safe
+    safe.put('Anakonda')  # Put Anakonda in data for safe
     x = safe.get()  # Grab data (Anakonda) and place in variable x
-    safe.put("Boaorm")  # Overwrite earlier data with Boaorm
+    safe.put('Boaorm')  # Overwrite earlier data with Boaorm
     y = safe.get()  # Grab data (Boarom) and place in variable y
-    print(x, y)  # Print both == Anakonda Boarom
+    print(x, y, '\n')  # Print both == Anakonda Boarom
+
+    ask_y_or_n()
 
     # Yes, I got the result I had figured out
 

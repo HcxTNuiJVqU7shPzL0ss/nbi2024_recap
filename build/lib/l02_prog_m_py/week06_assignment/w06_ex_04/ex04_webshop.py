@@ -1,7 +1,8 @@
 """Module for 'Webshop'.
 
 Lesson 02, Week 06, Exercise 04.
-Done "off course".
+TAP HT 25D, though done in near time off course, then
+refactored for this week.
 """
 
 #####################################################################
@@ -164,7 +165,8 @@ def go_shopping():
 def main():
     """Use as module for Main.
 
-    This version made for the recap of 2024.
+    TAP HT 25D, though done in near time off course, then
+    refactored for this week.
     """
     print('\nLesson 02, Week 06, Exercise 04, Webshop.')
     press_continue()

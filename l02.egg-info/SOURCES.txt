@@ -231,5 +231,15 @@ l02_prog_m_py/week06_assignment/w06_ex_03/test_ex_03_bank.py
 l02_prog_m_py/week06_assignment/w06_ex_04/__init__.py
 l02_prog_m_py/week06_assignment/w06_ex_04/ex04_webshop.py
 l02_prog_m_py/week07_exam/__init__.py
+l02_prog_m_py/week07_exam/src/__init__.py
+l02_prog_m_py/week07_exam/src/display_status.py
+l02_prog_m_py/week07_exam/src/game.py
+l02_prog_m_py/week07_exam/src/grid.py
+l02_prog_m_py/week07_exam/src/move_player_command.py
+l02_prog_m_py/week07_exam/src/pickups.py
+l02_prog_m_py/week07_exam/src/player.py
+l02_prog_m_py/week07_exam/src/print_to_user_command.py
+l02_prog_m_py/week07_exam/tests/__init__.py
+l02_prog_m_py/week07_exam/tests/test_player.py
 my_funct_dir/__init__.py
 my_funct_dir/my_base_functions.py

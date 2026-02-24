@@ -1,7 +1,6 @@
-"""Module for init, lesson 02, week 06, exercise 02 directory.
+"""Module for init, Exam.
 
-TAP HT 25D, though done in near time off course, then
-refactored for this week.
+Directory: tests.
 """
 
 #####################################################################

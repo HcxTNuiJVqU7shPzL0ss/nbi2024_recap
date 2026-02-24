@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam, adding more tests&#10;&#10;More unit tests added for &#10;file player">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/tests/test_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/l02_prog_m_py/week07_exam/tests/test_player.py" afterDir="false" />
-    </list>
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,14 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Update for builds&#10;&#10;New builds with latest &#10;addons and changes">
-      <option name="closed" value="true" />
-      <created>1770316522187</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1770316522187</updated>
     </task>
     <task id="LOCAL-00094" summary="W04 Ex03 fix&#10;&#10;Fixed a printout for version 3&#10;Added back so that version 1 &#10;and version 2 are also running">
       <option name="closed" value="true" />
@@ -540,7 +529,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771935499748</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player">
+      <option name="closed" value="true" />
+      <created>1771942482815</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1771942482815</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -555,7 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex2 part 3 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code only for now, no tests" />
     <MESSAGE value="L02 W05 Ex2 part 3 added tests&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Tests added" />
     <MESSAGE value="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part..." />
     <MESSAGE value="L02 Exam OG&#10;&#10;Adding files for the &#10;OG Exam" />
@@ -580,6 +576,7 @@
     <MESSAGE value="Exam refactor&#10;&#10;Edit to readme when latest &#10;version for 2025 available&#10;Some minor code changes" />
     <MESSAGE value="Exam, adding some tests&#10;&#10;First unit tests added for &#10;file player" />
     <MESSAGE value="Exam, adding more tests&#10;&#10;More unit tests added for &#10;file player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam, adding more tests&#10;&#10;More unit tests added for &#10;file player" />
+    <MESSAGE value="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player" />
   </component>
 </project>
