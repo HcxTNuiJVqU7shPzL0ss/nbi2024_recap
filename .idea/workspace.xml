@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player" />
+    <list default="true" id="4ca791c6-6a2d-4625-909d-70256afe5d34" name="Changes" comment="Add builds">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +31,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/HcxTNuiJVqU7shPzL0ss/nbi2024_recap.git",
-    "accountId": "55d36338-accb-4aaf-846a-e7cf55611cfe"
+    "accountId": "70e36145-1f7f-4b5e-b38b-7fb3e71e2b8d"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -132,7 +134,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-f78a9d071105-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26574.90" />
       </set>
     </attachedChunks>
   </component>
@@ -144,14 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768376803616</updated>
-    </task>
-    <task id="LOCAL-00094" summary="W04 Ex03 fix&#10;&#10;Fixed a printout for version 3&#10;Added back so that version 1 &#10;and version 2 are also running">
-      <option name="closed" value="true" />
-      <created>1770319163148</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1770319163148</updated>
     </task>
     <task id="LOCAL-00095" summary="Add base L02 W04 Ex04&#10;&#10;Base files to be able to get &#10;started with exercise 04&#10;No code or tests yet">
       <option name="closed" value="true" />
@@ -537,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771942482815</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Add builds">
+      <option name="closed" value="true" />
+      <created>1771942625642</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1771942625642</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -552,7 +554,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="L02 W05 Ex2 part 3 added tests&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Tests added" />
     <MESSAGE value="L02 W05 Ex2 part 4 added code&#10;&#10;Rework in a new file for a &#10;different version of exercise &#10;2, part 3&#10;Code added, no tests yet&#10;So, not working TDD for this &#10;part..." />
     <MESSAGE value="L02 Exam OG&#10;&#10;Adding files for the &#10;OG Exam" />
     <MESSAGE value="Adding builds" />
@@ -577,6 +578,7 @@
     <MESSAGE value="Exam, adding some tests&#10;&#10;First unit tests added for &#10;file player" />
     <MESSAGE value="Exam, adding more tests&#10;&#10;More unit tests added for &#10;file player" />
     <MESSAGE value="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam, tests player&#10;&#10;More unit tests added for &#10;file player in test_player" />
+    <MESSAGE value="Add builds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add builds" />
   </component>
 </project>
